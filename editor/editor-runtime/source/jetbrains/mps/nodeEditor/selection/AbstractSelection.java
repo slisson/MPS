@@ -19,6 +19,7 @@ import jetbrains.mps.openapi.editor.EditorComponent;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.Graphics2D;
+import java.awt.event.KeyEvent;
 
 public abstract class AbstractSelection implements SelectionInternal {
   private EditorComponent myEditorComponent;
@@ -34,5 +35,10 @@ public abstract class AbstractSelection implements SelectionInternal {
   }
 
   public void paintSelection(Graphics2D g) {
+  }
+
+  @Override
+  public boolean processKeyTyped(KeyEvent e) {
+    return false;
   }
 }

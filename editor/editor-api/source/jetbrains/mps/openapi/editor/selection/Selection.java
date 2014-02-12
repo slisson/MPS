@@ -21,6 +21,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 /**
@@ -42,6 +43,8 @@ public interface Selection {
   public boolean canExecuteAction(CellActionType type);
 
   void executeAction(CellActionType type);
+
+  boolean processKeyTyped(KeyEvent e);
 
   /**
    * @return non-empty list of selected cells

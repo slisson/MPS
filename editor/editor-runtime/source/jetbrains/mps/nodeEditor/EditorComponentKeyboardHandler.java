@@ -20,6 +20,7 @@ import jetbrains.mps.nodeEditor.cells.APICellAdapter;
 import jetbrains.mps.nodeEditor.keymaps.KeymapHandler;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.KeyMapAction;
+import jetbrains.mps.openapi.editor.selection.Selection;
 import jetbrains.mps.smodel.ModelAccess;
 import jetbrains.mps.util.Computable;
 import jetbrains.mps.util.Pair;
@@ -66,6 +67,14 @@ public class EditorComponentKeyboardHandler implements KeyboardHandler {
 
     if (processKeyMaps(editorContext, keyEvent)) {
       return true;
+    }
+
+    Selection selection = editorContext.getSelectionManager().getSelection();
+    if (selection != null) {
+      if (selection.processKeyTyped(keyEvent)) {
+        keyEvent.consume();
+        return true;
+      }
     }
 
     final EditorCell selectedCell = editorContext.getSelectedCell();
