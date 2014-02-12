@@ -4,7 +4,7 @@ package jetbrains.mps.lang.editor.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class ScriptKindClassItem_BehaviorDescriptor extends StyleClassItem_BehaviorDescriptor {
+public class ScriptKindClassItem_BehaviorDescriptor extends StyleClassItem_BehaviorDescriptor implements ILegacyStyleClassItem_BehaviorDescriptor {
   public ScriptKindClassItem_BehaviorDescriptor() {
   }
 

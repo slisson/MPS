@@ -22,6 +22,7 @@ import jetbrains.mps.util.IndexableObjectSet;
  * User: shatalin
  * Date: 1/14/13
  */
+@Deprecated
 public class StyleAttributeSet extends IndexableObjectSet<StyleAttribute> {
   public StyleAttributeSet(boolean full) {
     super(StyleAttributes.getAttributesCount(), full);

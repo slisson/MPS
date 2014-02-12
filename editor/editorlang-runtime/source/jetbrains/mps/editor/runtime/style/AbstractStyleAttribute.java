@@ -25,7 +25,7 @@ public abstract class AbstractStyleAttribute<T> implements StyleAttribute<T> {
   private int myIndex;
   private String myName;
 
-  AbstractStyleAttribute(String name, boolean register) {
+  public AbstractStyleAttribute(String name, boolean register) {
     myName = name;
     if (register) {
       myIndex = StyleAttributes.register(this);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-dmk1erwfb1e9ytfqfc0hj1yzc2n6ouq">
+<dependencies version="2" modelHash="6o2ijh2fro8iqyrfl96xm7w0bgbuinh">
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/jetbrains.mps.nodeEditor.cellLayout@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
@@ -18,10 +18,10 @@
   <dep model="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" hash="4f3cqs31z8z3r319stgpvj95v4ex026" />
   <dep model="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" hash="2gg1pqtx5oviifer9wjwwhnmr9s8esl" />
   <dep model="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" hash="-1elofoc3ucuguiqvsq17l2dc14gzkcf" />
-  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" hash="-5npsvsyrn9wjxm8chqeqoks9rzxsct3" />
+  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" hash="1gr5ep6bleirjtwzr4z92i3nhb81kn6" />
   <dep model="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" hash="-4byk9l07h3msrgceb0q8gf61k638q9y" />
   <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" hash="b9gqsef1colm9him17g58pu6gkpx9sg" />
-  <dep model="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" hash="-3lya7xjjw0m6x9nvndipycec17m6hr2" />
+  <dep model="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" hash="-boe6alnpmni5qeljavj3kpaz7azhski" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="-d9unc9gvm0qs24lv6mjqlmcf6j09w62" />
   <dep model="r:00000000-0000-4000-0000-011c895902cc(jetbrains.mps.baseLanguage.generator.java.conceptFunctionDefaults@generator)" hash="-7awaq033a3kgl89pbjkeqgdywogljba" />
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" hash="dur0bgpqopfxy65j55x1p26ysx5646s" />
@@ -201,8 +201,8 @@
   <source id="1184145217087" name="reduce_CellMenuPart_Generic_Group" hash="-bgfdihsfqcihz2l7qlc1ufcm8tpuhqa" />
   <source id="1184145320988" name="reduce_CellMenuPart_Generic_Item" hash="-22l9qg3c3cy5pju74ayffkzlbfvn8sn" />
   <source id="1184145395052" name="reduce_CelllMenuPart_CellMenuComponent" hash="bl4alf10jbk0vf8c8zo7ou5rrzn60b4" />
-  <source id="1186404688558" name="StyleSheet" hash="58mlgfoi1ua1tlgf3045flqqmqij6a" />
-  <source id="1186404727331" name="StyleSheetClass" hash="5w8ta0i1pcbw9pcob3vbhrsfc2zb88s" />
+  <source id="1186404688558" name="StyleSheet" hash="-apt3x70p71qwn0v2twfunqa4m93mqd" />
+  <source id="1186404727331" name="StyleSheetClass" hash="dvnebddalnztnj4pzkwgcqegms2ypz5" />
   <source id="1186404942965" name="StyleAttributeValue" hash="-65t4s56hik3oklucq9xy0uhvz56jcwk" />
   <source id="1186410990478" name="StyleSheetClass_Stub" hash="5tr226bxeianith9uybpa4wwt486q1e" />
   <source id="1198257250013" name="reduce_CellModel_Indent" hash="ajkavb9bmn8lspbcw05w8w0ixfeg9u6" />
@@ -220,7 +220,7 @@
   <source id="1225901291056" name="reduce_CellModel_ReadOnlyModelAccessor" hash="barcj6z0xdfej4hkyaa26418iq6en7k" />
   <source id="1229342844257" name="reduce_WrapRootRefNode" hash="-97lbl07ueg2t60truke5hulz1lfsql1" />
   <source id="1236442846524" name="reduce_QueryFunction_String" hash="-528or0g4tw5nqxh81k4er0w1i5x3fom" />
-  <source id="5170495790389304146" name="template_cellSetupBlock" hash="e6dvqsnpmyyi3wbn3krad9uyosq5qyy" />
+  <source id="5170495790389304146" name="template_cellSetupBlock" hash="cya74kp0ixk0ij602xurjsl9afvu3f0" />
   <source id="996730828437272666" name="reduce_CellModel_JComponent" hash="3wz258k7g7vrockb5vl0m5o80uj03ln" />
   <source id="625126330683217337" name="reduce_CellModel_ReferencePresentation" hash="-4g08fxckrzhezjcld89pputn3r9twah" />
   <source id="4755152624710441322" name="class_ParametersInformation" hash="-1qwgiiahjzzkc8gnmmsg7uyeqektv8i" />

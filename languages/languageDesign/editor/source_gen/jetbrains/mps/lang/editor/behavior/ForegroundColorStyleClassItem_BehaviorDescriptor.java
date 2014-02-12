@@ -4,7 +4,7 @@ package jetbrains.mps.lang.editor.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class ForegroundColorStyleClassItem_BehaviorDescriptor extends ColorStyleClassItem_BehaviorDescriptor {
+public class ForegroundColorStyleClassItem_BehaviorDescriptor extends ColorStyleClassItem_BehaviorDescriptor implements ILegacyStyleClassItem_BehaviorDescriptor {
   public ForegroundColorStyleClassItem_BehaviorDescriptor() {
   }
 

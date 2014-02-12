@@ -450,6 +450,7 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
     if (editorCell == null) return;
     addCell(editorCell);
     ((EditorCell_Basic) editorCell).setParent(this);
+    getStyle().add(editorCell.getStyle());
   }
 
   public boolean containsCell(jetbrains.mps.nodeEditor.cells.EditorCell editorCell) {

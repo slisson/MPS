@@ -32,37 +32,34 @@ import java.util.List;
 public class StyleAttributes {
   private static List<StyleAttribute> ourAttributes = new ArrayList<StyleAttribute>();
   private static List<StyleAttribute> ourNotSimpleAttributes = new ArrayList<StyleAttribute>();
-  private static boolean ourFrozen = false;
 
   static int getAttributesCount() {
-    ourFrozen = true;
     return ourAttributes.size();
   }
 
   static List<StyleAttribute> getAttributes() {
-    ourFrozen = true;
     return Collections.unmodifiableList(ourAttributes);
   }
 
   static List<StyleAttribute> getNotSimpleAttributes() {
-    ourFrozen = true;
     return Collections.unmodifiableList(ourNotSimpleAttributes);
   }
 
   static StyleAttribute getAttribute(int index) {
-    ourFrozen = true;
     return ourAttributes.get(index);
   }
 
   static int register(StyleAttribute a) {
-    if (ourFrozen) {
-      throw new RuntimeException();
-    }
-    ourAttributes.add(a);
+    // copy on write to be thread-safe
+    List<StyleAttribute> newOurAttributes = new ArrayList<StyleAttribute>(ourAttributes);
+    List<StyleAttribute> newOurNotSimpleAttributes = new ArrayList<StyleAttribute>(ourNotSimpleAttributes);
+    newOurAttributes.add(a);
     if (!isSimple(a)) {
-      ourNotSimpleAttributes.add(a);
+      newOurNotSimpleAttributes.add(a);
     }
-    return ourAttributes.size() - 1;
+    ourAttributes = newOurAttributes;
+    ourNotSimpleAttributes = newOurNotSimpleAttributes;
+    return newOurAttributes.size() - 1;
   }
 
   static boolean isSimple(StyleAttribute a) {

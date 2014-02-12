@@ -2235,7 +2235,7 @@ public class QueriesGenerated {
     });
   }
 
-  public static Iterable sourceNodesQuery_6083395046985321886(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable sourceNodesQuery_6865425411205896308(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return ListSequence.fromList(SLinkOperations.getTargets(_context.getNode(), "styleItem", true)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return !(SNodeOperations.isInstanceOf(it, "jetbrains.mps.lang.editor.structure.PreDefinedStyleClassItem"));
@@ -2259,7 +2259,7 @@ public class QueriesGenerated {
     });
   }
 
-  public static Iterable sourceNodesQuery_6083395046985415685(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable sourceNodesQuery_6865425411205956468(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return ListSequence.fromList(SLinkOperations.getTargets(_context.getNode(), "styleItem", true)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return !(SNodeOperations.isInstanceOf(it, "jetbrains.mps.lang.editor.structure.PreDefinedStyleClassItem"));
@@ -2291,7 +2291,7 @@ public class QueriesGenerated {
     return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "menuDescriptor", true), "cellMenuPart", true);
   }
 
-  public static Iterable sourceNodesQuery_6083395046985517878(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable sourceNodesQuery_4950903812117802258(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "styleItem", true);
   }
 

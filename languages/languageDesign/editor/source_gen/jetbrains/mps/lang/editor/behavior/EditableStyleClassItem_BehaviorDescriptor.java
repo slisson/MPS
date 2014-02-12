@@ -5,7 +5,7 @@ package jetbrains.mps.lang.editor.behavior;
 import jetbrains.mps.openapi.editor.style.StyleAttribute;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class EditableStyleClassItem_BehaviorDescriptor extends BooleanStyleSheetItem_BehaviorDescriptor {
+public class EditableStyleClassItem_BehaviorDescriptor extends BooleanStyleSheetItem_BehaviorDescriptor implements ILegacyStyleClassItem_BehaviorDescriptor {
   public EditableStyleClassItem_BehaviorDescriptor() {
   }
 

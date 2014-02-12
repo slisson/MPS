@@ -5,7 +5,7 @@ package jetbrains.mps.lang.editor.behavior;
 import jetbrains.mps.openapi.editor.style.StyleAttribute;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class IndentLayoutNoWrapClassItem_BehaviorDescriptor extends BooleanStyleSheetItem_BehaviorDescriptor {
+public class IndentLayoutNoWrapClassItem_BehaviorDescriptor extends BooleanStyleSheetItem_BehaviorDescriptor implements ILegacyStyleClassItem_BehaviorDescriptor {
   public IndentLayoutNoWrapClassItem_BehaviorDescriptor() {
   }
 

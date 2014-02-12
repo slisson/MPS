@@ -4,7 +4,7 @@ package jetbrains.mps.lang.editor.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class PaddingLeftStyleClassItem_BehaviorDescriptor extends AbstractPaddingStyleClassItem_BehaviorDescriptor {
+public class PaddingLeftStyleClassItem_BehaviorDescriptor extends AbstractPaddingStyleClassItem_BehaviorDescriptor implements ILegacyStyleClassItem_BehaviorDescriptor {
   public PaddingLeftStyleClassItem_BehaviorDescriptor() {
   }
 

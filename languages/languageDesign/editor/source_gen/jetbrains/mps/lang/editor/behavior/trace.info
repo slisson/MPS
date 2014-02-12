@@ -136,6 +136,7 @@
   <unitInfo fileName="ForegroundNullColorStyleClassItem_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.ForegroundNullColorStyleClassItem_BehaviorDescriptor" />
   <unitInfo fileName="HorizontalAlign_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.HorizontalAlign_BehaviorDescriptor" />
   <unitInfo fileName="HorizontalGapStyleClassItem_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.HorizontalGapStyleClassItem_BehaviorDescriptor" />
+  <unitInfo fileName="ILegacyStyleClassItem_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.ILegacyStyleClassItem_BehaviorDescriptor" />
   <unitInfo fileName="IQueryFunction_Color_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.IQueryFunction_Color_BehaviorDescriptor" />
   <unitInfo fileName="IStyleContainer_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="10" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.IStyleContainer_BehaviorDescriptor" />
   <unitInfo fileName="IdSelector_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.IdSelector_BehaviorDescriptor" />
