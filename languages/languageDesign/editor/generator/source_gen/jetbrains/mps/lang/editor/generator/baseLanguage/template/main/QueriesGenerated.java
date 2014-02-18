@@ -2167,7 +2167,7 @@ public class QueriesGenerated {
     return SLinkOperations.getTargets(_context.getNode(), "styleClass", true);
   }
 
-  public static Iterable sourceNodesQuery_6083395046985415685(final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable sourceNodesQuery_5165578025855934805(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "styleItem", true);
   }
 
@@ -2195,7 +2195,7 @@ public class QueriesGenerated {
     return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "menuDescriptor", true), "cellMenuPart", true);
   }
 
-  public static Iterable sourceNodesQuery_6083395046985517878(final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable sourceNodesQuery_5165578025855769655(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "styleItem", true);
   }
 

@@ -22,7 +22,7 @@ package jetbrains.mps.editor.runtime.style;
 public class InheritableStyleAttribute<T> extends AbstractStyleAttribute<T> {
   private T myDefaultValue;
 
-  InheritableStyleAttribute(String name, T defaultValue) {
+  public InheritableStyleAttribute(String name, T defaultValue) {
     super(name, true);
     myDefaultValue = defaultValue;
   }

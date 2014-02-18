@@ -22,7 +22,7 @@ package jetbrains.mps.editor.runtime.style;
 public class SimpleStyleAttribute<T> extends AbstractStyleAttribute<T> {
   private T myDefaultValue;
 
-  SimpleStyleAttribute(String name, T defaultValue) {
+  public SimpleStyleAttribute(String name, T defaultValue) {
     super(name, true);
     myDefaultValue = defaultValue;
   }

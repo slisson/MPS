@@ -1981,6 +1981,9 @@
       <property name="name" nameId="tpck.1169194664001" value="style" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="1101211480448" resolveInfo="_FontStyle_Enum" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855477890" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186404549998" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -1990,6 +1993,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="text-foreground-color" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186403694788" resolveInfo="ColorStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855471578" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186404574412" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -1999,6 +2005,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="background-color" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186403694788" resolveInfo="ColorStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855470526" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186413799158" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2008,6 +2017,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="bracket-color" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186403694788" resolveInfo="ColorStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855471052" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186414536763" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
@@ -2034,6 +2046,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="selectable" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855469474" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186414949600" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2043,6 +2058,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="auto-deletable" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855458787" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186414976055" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2052,6 +2070,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="draw-border" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855459839" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186414999511" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2069,6 +2090,9 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="query" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="1221062700015" resolveInfo="QueryFunction_Underlined" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855484728" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186415722038" nodeInfo="ig">
@@ -2089,6 +2113,9 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855477364" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1186414860679" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2098,6 +2125,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="editable" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855462112" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1187258617779" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2107,6 +2137,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="text-foreground-null-color" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186403694788" resolveInfo="ColorStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855472104" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="1197893505573" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="_CaretPosition_Enum" />
@@ -2253,6 +2286,9 @@
       <property name="name" nameId="tpck.1169194664001" value="layoutConstraint" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="1138197387103" resolveInfo="_Layout_Constraints_Enum" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855478942" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1214320119173" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2272,6 +2308,9 @@
       <property name="name" nameId="tpck.1169194664001" value="tag" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="1140813780565" resolveInfo="RightTransformAnchorTag" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855483676" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1214406454886" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2281,6 +2320,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="text-background-color" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186403694788" resolveInfo="ColorStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855473156" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1214406466686" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2290,6 +2332,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="text-background-color-selected" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186403694788" resolveInfo="ColorStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855472630" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1214472762472" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2302,6 +2347,9 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1214472762473" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="position" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="1197893505573" resolveInfo="_CaretPosition_Enum" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855474208" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1215007762405" nodeInfo="ig">
@@ -2324,6 +2372,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.Paddings" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="padding-left" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1226339938453" resolveInfo="AbstractPaddingStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855475786" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1215007897487" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2333,6 +2384,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.Paddings" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="padding-right" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1226339938453" resolveInfo="AbstractPaddingStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855476312" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1215085112640" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2342,6 +2396,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="first-position-allowed" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855463688" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1215085197271" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2351,6 +2408,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="last-position-allowed" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855467896" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="1216308376568" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="_NextLine_Enum" />
@@ -2379,6 +2439,9 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1216308761668" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="position" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="1216308376568" resolveInfo="_NextLine_Enum" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855482624" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1216380990741" nodeInfo="ig">
@@ -2451,6 +2514,9 @@
       <property name="name" nameId="tpck.1169194664001" value="position" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="1216308376568" resolveInfo="_NextLine_Enum" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855482098" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1216672142186" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2469,6 +2535,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="draw-brackets" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855461586" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="1219418625346" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IStyleContainer" />
@@ -2524,6 +2593,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="strike-out" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855470000" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1223387125302" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2587,6 +2659,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.Paddings" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="padding-top" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1226339938453" resolveInfo="AbstractPaddingStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855476838" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1226339813308" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2596,6 +2671,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.Paddings" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="padding-bottom" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1226339938453" resolveInfo="AbstractPaddingStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855475260" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1226339938453" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
@@ -2637,6 +2715,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="tpce.1071489288298" resolveInfo="LinkDeclaration" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855481046" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1233148810477" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="InlineStyleDeclaration" />
@@ -2658,6 +2739,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="punctuation-left" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855468422" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1233759184865" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2667,6 +2751,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="punctuation-right" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855468948" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1233823429331" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2676,6 +2763,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.Paddings" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="horizontal-gap" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1226339938453" resolveInfo="AbstractPaddingStyleClassItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855474734" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1235728439575" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2685,6 +2775,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="base-line-cell" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855459313" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1235999440492" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2697,6 +2790,9 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1235999920262" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="align" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="1235999709834" resolveInfo="AlignEnum" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855478416" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
     </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="1235999709834" nodeInfo="ng">
@@ -2738,6 +2834,9 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="1236443640684" resolveInfo="QueryFunction_String" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855479468" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1236443640684" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="QueryFunction_String" />
@@ -2762,6 +2861,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.IndentLayout" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="indent-layout-indent" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855464740" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1237308012275" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2771,6 +2873,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.IndentLayout" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="indent-layout-new-line" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855465792" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1237375020029" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2780,6 +2885,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.IndentLayout" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="indent-layout-new-line-children" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855465266" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1237385578942" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2789,6 +2897,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.IndentLayout" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="indent-layout-on-new-line" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855466844" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConstrainedDataTypeDeclaration" typeId="tpce.1082978499127" id="1239805001815" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="_FloatOrInteger_String" />
@@ -2812,6 +2923,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.IndentLayout" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="indent-layout-no-wrap" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855466318" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="625126330682908270" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -2834,6 +2948,9 @@
       <property name="role" nameId="tpce.1071599776563" value="parametersInformation" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7667276221847612622" resolveInfo="ParametersInformationQuery" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855481572" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7667276221847612622" nodeInfo="ig">
@@ -2997,6 +3114,9 @@
       <property name="name" nameId="tpck.1169194664001" value="baseline" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="7620205565664606377" resolveInfo="DefaultBaseLineEnum" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855473682" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="7620205565664606377" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DefaultBaseLineEnum" />
@@ -3051,6 +3171,9 @@
       <property name="name" nameId="tpck.1169194664001" value="script" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8255250703325730686" resolveInfo="ScriptSwitchEnum" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855483150" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4203201205844553978" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -3098,6 +3221,9 @@
       <property name="name" nameId="tpck.1169194664001" value="tableComponent" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="6820251943131810951" resolveInfo="TableComponentEnum" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855484202" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8313721352726366579" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -3120,6 +3246,9 @@
       <property name="role" nameId="tpce.1071599776563" value="functionNode" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7597241200646296619" resolveInfo="QueryFunction_SNode" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855480520" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7597241200646296619" nodeInfo="ig">
@@ -3182,6 +3311,9 @@
       <property name="name" nameId="tpck.1169194664001" value="value" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855479994" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7667708318090877006" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -3191,6 +3323,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.IndentLayout" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="indent-layout-wrap-anchor" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855467370" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7667708318090725848" nodeInfo="ig">
     <property name="abstract" nameId="tpce.4628067390765956802" value="false" />
@@ -3200,6 +3335,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.IndentLayout" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="indent-layout-indent-anchor" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855464214" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1402906326895675325" nodeInfo="ig">
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="selected node (action map function parameter)" />
@@ -3267,6 +3405,9 @@
       <property name="role" nameId="tpce.1071599776563" value="key" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4151393920374910634" resolveInfo="StyleKey" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855444264" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4151393920374910634" nodeInfo="ig">
@@ -3551,6 +3692,9 @@
     <property name="name" nameId="tpck.1169194664001" value="ReadOnlyStyleClassItem" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="read-only" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855462638" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1950447826686048995" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
@@ -3562,6 +3706,9 @@
       <property name="role" nameId="tpce.1071599776563" value="target" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3383245079137422349" resolveInfo="StylePriorityGroupReference" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855451688" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="3383245079136928391" nodeInfo="ig">
@@ -3596,6 +3743,13 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="3383245079137422349" resolveInfo="StylePriorityGroupReference" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5165578025855448394" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5165578025855368774" resolveInfo="ILeagacyStyleItem" />
+    </node>
+  </root>
+  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5165578025855368774" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet" />
+    <property name="name" nameId="tpck.1169194664001" value="ILeagacyStyleItem" />
   </root>
 </model>
 
