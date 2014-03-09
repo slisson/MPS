@@ -40,4 +40,6 @@ public interface BaseConceptEditor {
   Collection<String> getContextHints();
 
   EditorCell createEditorCell(EditorContext editorContext, SNode node);
+
+  boolean isApplicable(SNode node);
 }

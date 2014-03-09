@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-49kn7woxnnrzeyalfbhpcfvmyler3tz" />
+<dependencies version="2" modelHash="-49kn7woxnnrzeyalfbhpcfvmyler3tz">
+  <common hash="8es50ikr23uc9qiaqhyipsj5v4rlrw1">
+    <file name="QueriesUtil.java" />
+  </common>
+  <source id="1186771508849" name="QueriesUtil" hash="5ns0jhi1avwsayzdsloxh7rcqaa93ez" />
+</dependencies>
 

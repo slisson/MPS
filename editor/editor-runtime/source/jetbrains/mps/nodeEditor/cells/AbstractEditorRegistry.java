@@ -25,6 +25,8 @@ import jetbrains.mps.smodel.language.LanguageRuntime;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
 import jetbrains.mps.util.NameUtil;
 import org.apache.log4j.LogManager;
+import org.jetbrains.annotations.Nullable;
+import org.jetbrains.mps.openapi.model.SNode;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -52,13 +54,17 @@ abstract class AbstractEditorRegistry<T extends BaseConceptEditor> {
   }
 
   T getEditor(ConceptDescriptor conceptDescriptor) {
+    return getEditor(conceptDescriptor, null);
+  }
+
+  T getEditor(ConceptDescriptor conceptDescriptor, @Nullable SNode node) {
     Queue<ConceptDescriptor> queue = new LinkedList<ConceptDescriptor>();
     Set<String> processedConcepts = new HashSet<String>();
     queue.add(conceptDescriptor);
     processedConcepts.add(conceptDescriptor.getConceptFqName());
     while (!queue.isEmpty()) {
       ConceptDescriptor nextConcept = queue.remove();
-      T conceptEditor = getEditorForConcept(nextConcept);
+      T conceptEditor = getEditorForConcept(nextConcept, node);
       if (conceptEditor != null) {
         return conceptEditor;
       }
@@ -73,8 +79,8 @@ abstract class AbstractEditorRegistry<T extends BaseConceptEditor> {
     return null;
   }
 
-  private T getEditorForConcept(ConceptDescriptor conceptDescriptor) {
-    List<T> conceptEditors = collectApplicableEditors(conceptDescriptor);
+  private T getEditorForConcept(ConceptDescriptor conceptDescriptor, @Nullable SNode node) {
+    List<T> conceptEditors = collectApplicableEditors(conceptDescriptor, node);
     if (conceptEditors.isEmpty()) {
       return null;
     }
@@ -95,15 +101,15 @@ abstract class AbstractEditorRegistry<T extends BaseConceptEditor> {
     return result;
   }
 
-  private List<T> collectApplicableEditors(ConceptDescriptor conceptDescriptor) {
+  private List<T> collectApplicableEditors(ConceptDescriptor conceptDescriptor, @Nullable SNode node) {
     List<T> result = new ArrayList<T>();
     LanguageRuntime languageRuntime = LanguageRegistry.getInstance().getLanguage(NameUtil.namespaceFromConceptFQName(conceptDescriptor.getConceptFqName()));
     for (Iterator<LanguageRuntime> extendingLanguagesIterator = null; languageRuntime != null; ) {
       EditorAspectDescriptor aspectDescriptor = languageRuntime.getAspectDescriptor(EditorAspectDescriptor.class);
       if (aspectDescriptor != null) {
         for (T conceptEditor : getEditors(aspectDescriptor, conceptDescriptor)) {
-          if (isApplicableInCurrentContext(conceptEditor)) {
-            result.add(conceptEditor);
+          if (isApplicableInCurrentContext(conceptEditor) && (node == null || conceptEditor.isApplicable(node))) {
+              result.add(conceptEditor);
           }
         }
       }

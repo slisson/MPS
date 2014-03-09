@@ -26,7 +26,7 @@ import org.jetbrains.mps.openapi.model.SNodeUtil;
 import java.util.Collection;
 import java.util.Collections;
 
-public class DefaultNodeEditor implements ConceptEditor {
+public class DefaultNodeEditor extends AbstractConceptEditor implements ConceptEditor {
   @Override
   public Collection<String> getContextHints() {
     return Collections.emptyList();

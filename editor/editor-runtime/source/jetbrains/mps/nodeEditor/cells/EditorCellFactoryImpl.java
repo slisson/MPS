@@ -16,6 +16,8 @@
 package jetbrains.mps.nodeEditor.cells;
 
 import jetbrains.mps.logging.Logger;
+import jetbrains.mps.nodeEditor.AbstractConceptEditor;
+import jetbrains.mps.nodeEditor.AbstractConceptEditorComponent;
 import jetbrains.mps.nodeEditor.DefaultEditor;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
@@ -69,7 +71,7 @@ public class EditorCellFactoryImpl implements EditorCellFactory {
 
     EditorCell result = null;
     try {
-      ConceptEditor editor = myConceptEditorRegistry.getEditor(conceptDescriptor);
+      ConceptEditor editor = myConceptEditorRegistry.getEditor(conceptDescriptor, node);
 
       if (editor != null) {
         result = isInspector ? editor.createInspectedCell(myEditorContext, node) : editor.createEditorCell(myEditorContext, node);
@@ -148,7 +150,7 @@ public class EditorCellFactoryImpl implements EditorCellFactory {
   private ConceptEditorComponent loadEditorComponent(SNode node, String editorComponentId) {
     SConcept concept = node.getConcept();
     ConceptDescriptor conceptDescriptor = ConceptRegistry.getInstance().getConceptDescriptor(concept.getQualifiedName());
-    ConceptEditorComponent conceptEditorComponent = new ConceptEditorComponentRegistry(editorComponentId).getEditor(conceptDescriptor);
+    ConceptEditorComponent conceptEditorComponent = new ConceptEditorComponentRegistry(editorComponentId).getEditor(conceptDescriptor, node);
     if (conceptEditorComponent != null) {
       return conceptEditorComponent;
     }
@@ -181,7 +183,7 @@ public class EditorCellFactoryImpl implements EditorCellFactory {
     }
   }
 
-  private static class DefaultInterfaceEditor implements ConceptEditor {
+  private static class DefaultInterfaceEditor extends AbstractConceptEditor implements ConceptEditor {
     @Override
     public Collection<String> getContextHints() {
       return Collections.emptyList();
@@ -198,7 +200,7 @@ public class EditorCellFactoryImpl implements EditorCellFactory {
     }
   }
 
-  private static class DefaultEditorComponent implements ConceptEditorComponent {
+  private static class DefaultEditorComponent extends AbstractConceptEditorComponent implements ConceptEditorComponent {
     private final String myEditorComponentId;
 
     private DefaultEditorComponent(String editorComponentId) {

@@ -1102,7 +1102,7 @@ public class QueriesGenerated {
   }
 
   public static Object referenceMacro_GetReferent_996730828437274970(final ReferenceMacroContext _context) {
-    return SNodeOperations.cast(_context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), "componentProvider", true), "jcomponent_query_method"), "jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration");
+    return SNodeOperations.cast(_context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), "componentProvider", true), "jcomponent_query_method"), "jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration");
   }
 
   public static Object referenceMacro_GetReferent_996730828437274981(final ReferenceMacroContext _context) {
@@ -1166,6 +1166,10 @@ public class QueriesGenerated {
 
   public static boolean ifMacro_Condition_7517620136073240821(final IfMacroContext _context) {
     return ListSequence.fromList(SLinkOperations.getTargets(_context.getNode(), "contextHints", true)).isNotEmpty();
+  }
+
+  public static boolean ifMacro_Condition_615350266065063442(final IfMacroContext _context) {
+    return (SLinkOperations.getTarget(_context.getNode(), "condition", true) != null);
   }
 
   public static boolean ifMacro_Condition_1168384460946(final IfMacroContext _context) {
@@ -1322,10 +1326,6 @@ public class QueriesGenerated {
 
   public static boolean ifMacro_Condition_1184142273353(final IfMacroContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "nodeFactory", true) != null;
-  }
-
-  public static boolean ifMacro_Condition_1184142273367(final IfMacroContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "nodeFactory", true) == null;
   }
 
   public static boolean ifMacro_Condition_1184142273396(final IfMacroContext _context) {
@@ -2117,6 +2117,10 @@ public class QueriesGenerated {
 
   public static Iterable sourceNodesQuery_7517620136073798900(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "contextHints", true);
+  }
+
+  public static Iterable sourceNodesQuery_615350266065210244(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "condition", true), "body", true), "statement", true);
   }
 
   public static Iterable sourceNodesQuery_568532409372115836(final SourceSubstituteMacroNodesContext _context) {
