@@ -26,4 +26,9 @@ public abstract class AbstractBaseConceptEditor implements BaseConceptEditor {
   public boolean isApplicable(SNode node) {
     return true;
   }
+
+  @Override
+  public int getPriority() {
+    return 0;
+  }
 }

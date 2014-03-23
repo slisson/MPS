@@ -16,10 +16,14 @@
 package jetbrains.mps.nodeEditor.cells;
 
 import jetbrains.mps.openapi.editor.cells.EditorCellContext;
+import jetbrains.mps.openapi.editor.descriptor.BaseConceptEditor;
 
+import java.util.ArrayDeque;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Deque;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -28,9 +32,11 @@ import java.util.Set;
  */
 public class EditorCellContextImpl implements EditorCellContext {
   private Set<String> myHints = new HashSet<String>();
+  private Deque<BaseConceptEditor> myNextEditors = new ArrayDeque<BaseConceptEditor>();
 
   public EditorCellContextImpl(EditorCellContext parentContext) {
     myHints.addAll(parentContext.getHints());
+    setNextEditors(myNextEditors);
   }
 
   @Override
@@ -53,5 +59,14 @@ public class EditorCellContextImpl implements EditorCellContext {
     for (String hint : hints) {
       myHints.remove(hint);
     }
+  }
+
+  public void setNextEditors(Collection<? extends BaseConceptEditor> nextEditors) {
+    myNextEditors.clear();
+    myNextEditors.addAll(nextEditors);
+  }
+
+  public BaseConceptEditor getNextEditor() {
+    return myNextEditors.pollFirst();
   }
 }

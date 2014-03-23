@@ -1045,6 +1045,17 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
+  <dependency className="jetbrains.mps.lang.editor.editor.CellModel_NextEditor_Editor" file="CellModel_NextEditor_Editor.java">
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.MPSFonts" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
   <dependency className="jetbrains.mps.lang.editor.editor.CellModel_Property_Editor" file="CellModel_Property_Editor.java">
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.lang.Class" />
@@ -1630,6 +1641,7 @@
     <classNode dependClassName="jetbrains.mps.lang.editor.editor.CellModel_Indent_Editor" />
     <classNode dependClassName="jetbrains.mps.lang.editor.editor.CellModel_JComponent_Editor" />
     <classNode dependClassName="jetbrains.mps.lang.editor.editor.CellModel_ModelAccess_Editor" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.editor.CellModel_NextEditor_Editor" />
     <classNode dependClassName="jetbrains.mps.lang.editor.editor.CellModel_Property_Editor" />
     <classNode dependClassName="jetbrains.mps.lang.editor.editor.CellModel_ReadOnlyModelAccessor_Editor" />
     <classNode dependClassName="jetbrains.mps.lang.editor.editor.CellModel_RefCell_Editor" />

@@ -21,7 +21,7 @@
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="-2hubvwh7bwismm0eld02cqmdefvj5by" />
   <dep model="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" hash="-4onv91o8y9x2lqujnjyqyswaz2ut4ku" />
   <dep model="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" hash="1456l4f473hired2n1le0oup7kiwjxt" />
-  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" hash="-8z4x8rqg8lr2wdoob8d3pqq99kx1re" />
+  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" hash="4js1k3jm6nsbfb7cyr04yv3j0phhte5" />
   <dep model="r:00000000-0000-4000-0000-011c895902a9(jetbrains.mps.lang.actions.generator.baseLanguage.template.main@generator)" hash="-cvjfgy3hbmgprb35d4uvb1dqys9coz1" />
   <dep model="r:00000000-0000-4000-0000-011c895902b7(jetbrains.mps.lang.typesystem.generator.baseLanguage.template.main@generator)" hash="b76a16jljdk0t25f3o793ktss6o75n0" />
   <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" hash="-5iqb3tk0keb6d6ox6e5kfjcl0aibp44" />
@@ -278,6 +278,7 @@
     <file name="CellModel_JComponent_BehaviorDescriptor.java" />
     <file name="CellModel_ListWithRole_BehaviorDescriptor.java" />
     <file name="CellModel_ModelAccess_BehaviorDescriptor.java" />
+    <file name="CellModel_NextEditor_BehaviorDescriptor.java" />
     <file name="CellModel_NonEmptyProperty_BehaviorDescriptor.java" />
     <file name="CellModel_Property_BehaviorDescriptor.java" />
     <file name="CellModel_ReadOnlyModelAccessor_BehaviorDescriptor.java" />

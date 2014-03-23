@@ -42,4 +42,6 @@ public interface BaseConceptEditor {
   EditorCell createEditorCell(EditorContext editorContext, SNode node);
 
   boolean isApplicable(SNode node);
+
+  int getPriority();
 }

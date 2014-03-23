@@ -365,6 +365,10 @@
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <property name="name" nameId="tpck.1169194664001" value="BaseEditorComponent" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1166049232041" resolveInfo="AbstractComponent" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="4490542319083431145" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="priority" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1080736633877" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="cellModel" />
@@ -3607,6 +3611,12 @@
     <property name="name" nameId="tpck.1169194664001" value="QueryFunction_EditorCondition" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="isApplicable" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1137021947720" resolveInfo="ConceptFunction" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3534563621787273377" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="CellModel" />
+    <property name="name" nameId="tpck.1169194664001" value="CellModel_NextEditor" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="next-editor" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1073389214265" resolveInfo="EditorCellModel" />
   </root>
 </model>
 

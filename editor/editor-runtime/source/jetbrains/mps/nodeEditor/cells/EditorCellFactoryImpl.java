@@ -23,6 +23,7 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.EditorCellContext;
 import jetbrains.mps.openapi.editor.cells.EditorCellFactory;
+import jetbrains.mps.openapi.editor.descriptor.BaseConceptEditor;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
@@ -37,6 +38,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * User: shatalin
@@ -65,16 +67,28 @@ public class EditorCellFactoryImpl implements EditorCellFactory {
     myEditorContext = editorContext;
   }
 
+  public EditorCell createNextEditor(SNode node) {
+    EditorCellContextImpl context = myCellContextStack.getLast();
+    ConceptEditor editor = (ConceptEditor) context.getNextEditor();
+    EditorCell cell = editor.createEditorCell(myEditorContext, node);
+    return cell;
+  }
+
   @Override
   public EditorCell createEditorCell(SNode node, boolean isInspector) {
     ConceptDescriptor conceptDescriptor = ConceptRegistry.getInstance().getConceptDescriptor(node.getConcept().getQualifiedName());
 
     EditorCell result = null;
     try {
-      ConceptEditor editor = myConceptEditorRegistry.getEditor(conceptDescriptor, node);
+      pushCellContext();
+      try {
+        ConceptEditor editor = myConceptEditorRegistry.getEditor(conceptDescriptor, node);
 
-      if (editor != null) {
-        result = isInspector ? editor.createInspectedCell(myEditorContext, node) : editor.createEditorCell(myEditorContext, node);
+        if (editor != null) {
+            result = isInspector ? editor.createInspectedCell(myEditorContext, node) : editor.createEditorCell(myEditorContext, node);
+        }
+      } finally {
+        popCellContext();
       }
     } catch (RuntimeException e) {
       LOG.warning("Failed to create cell for node: " + SNodeUtil.getDebugText(node) + " using default editor", e, node);
@@ -145,6 +159,10 @@ public class EditorCellFactoryImpl implements EditorCellFactory {
       throw new IllegalStateException("There is no CellContext in the stack");
     }
     myCellContextStack.getLast().removeHints(hints);
+  }
+
+  public void setNextEditors(List<? extends BaseConceptEditor> nextEditors) {
+    myCellContextStack.getLast().setNextEditors(nextEditors);
   }
 
   private ConceptEditorComponent loadEditorComponent(SNode node, String editorComponentId) {

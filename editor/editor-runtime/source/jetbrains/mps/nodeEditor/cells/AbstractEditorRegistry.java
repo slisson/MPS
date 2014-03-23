@@ -23,6 +23,7 @@ import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.smodel.language.LanguageRegistry;
 import jetbrains.mps.smodel.language.LanguageRuntime;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.util.IntegerValueDocumentFilter;
 import jetbrains.mps.util.NameUtil;
 import org.apache.log4j.LogManager;
 import org.jetbrains.annotations.Nullable;
@@ -58,29 +59,11 @@ abstract class AbstractEditorRegistry<T extends BaseConceptEditor> {
   }
 
   T getEditor(ConceptDescriptor conceptDescriptor, @Nullable SNode node) {
-    Queue<ConceptDescriptor> queue = new LinkedList<ConceptDescriptor>();
-    Set<String> processedConcepts = new HashSet<String>();
-    queue.add(conceptDescriptor);
-    processedConcepts.add(conceptDescriptor.getConceptFqName());
-    while (!queue.isEmpty()) {
-      ConceptDescriptor nextConcept = queue.remove();
-      T conceptEditor = getEditorForConcept(nextConcept, node);
-      if (conceptEditor != null) {
-        return conceptEditor;
-      }
-      for (String ancestorName : nextConcept.getParentsNames()) {
-        if (processedConcepts.contains(ancestorName)) {
-          continue;
-        }
-        processedConcepts.add(ancestorName);
-        queue.add(ConceptRegistry.getInstance().getConceptDescriptor(ancestorName));
-      }
-    }
-    return null;
+    return getEditorForConcept(conceptDescriptor, node);
   }
 
   private T getEditorForConcept(ConceptDescriptor conceptDescriptor, @Nullable SNode node) {
-    List<T> conceptEditors = collectApplicableEditors(conceptDescriptor, node);
+    List<T> conceptEditors = collectApplicableSuperEditors(conceptDescriptor, node);
     if (conceptEditors.isEmpty()) {
       return null;
     }
@@ -92,23 +75,28 @@ abstract class AbstractEditorRegistry<T extends BaseConceptEditor> {
     for (T conceptEditor : conceptEditors) {
       if (result == null) {
         result = conceptEditor;
-      } else if (conceptEditor.getContextHints().size() == result.getContextHints().size()) {
-        LOG.error(getErrorMessage(conceptEditor, result));
+      } else if (conceptEditor.getPriority() == result.getPriority() && conceptEditor.getContextHints().size() == result.getContextHints().size()) {
+        //LOG.error(getErrorMessage(conceptEditor, result));
       } else {
         break;
       }
     }
+
+    conceptEditors.remove(result);
+    ((EditorCellFactoryImpl)myCellFactory).setNextEditors(conceptEditors);
+
     return result;
   }
 
-  private List<T> collectApplicableEditors(ConceptDescriptor conceptDescriptor, @Nullable SNode node) {
+  private List<T> collectApplicableEditors(ConceptDescriptor conceptDescriptor, @Nullable SNode node, int minPriority) {
     List<T> result = new ArrayList<T>();
     LanguageRuntime languageRuntime = LanguageRegistry.getInstance().getLanguage(NameUtil.namespaceFromConceptFQName(conceptDescriptor.getConceptFqName()));
     for (Iterator<LanguageRuntime> extendingLanguagesIterator = null; languageRuntime != null; ) {
       EditorAspectDescriptor aspectDescriptor = languageRuntime.getAspectDescriptor(EditorAspectDescriptor.class);
       if (aspectDescriptor != null) {
         for (T conceptEditor : getEditors(aspectDescriptor, conceptDescriptor)) {
-          if (isApplicableInCurrentContext(conceptEditor) && (node == null || conceptEditor.isApplicable(node))) {
+//          if (conceptEditor.getPriority() >= minPriority && isApplicableInCurrentContext(conceptEditor) && (node == null || conceptEditor.isApplicable(node))) {
+          if (conceptEditor.getPriority() >= minPriority && isApplicableInCurrentContext(conceptEditor) && (node == null || conceptEditor.isApplicable(node))) {
               result.add(conceptEditor);
           }
         }
@@ -118,6 +106,33 @@ abstract class AbstractEditorRegistry<T extends BaseConceptEditor> {
         extendingLanguagesIterator = languageRuntime.getExtendingLanguages().iterator();
       }
       languageRuntime = extendingLanguagesIterator.hasNext() ? extendingLanguagesIterator.next() : null;
+    }
+    return result;
+  }
+
+  private List<T> collectApplicableSuperEditors(ConceptDescriptor conceptDescriptor, @Nullable SNode node) {
+    List<T> result = new ArrayList<T>();
+    Queue<ConceptDescriptor> queue = new LinkedList<ConceptDescriptor>();
+    Set<String> processedConcepts = new HashSet<String>();
+    queue.add(conceptDescriptor);
+    processedConcepts.add(conceptDescriptor.getConceptFqName());
+    int maxPriority = Integer.MIN_VALUE;
+    while (!queue.isEmpty()) {
+      ConceptDescriptor nextConcept = queue.remove();
+
+      List<T> currentEditors = collectApplicableEditors(nextConcept, node, maxPriority + 1);
+      for (T e : currentEditors) {
+        maxPriority = Math.max(maxPriority, e.getPriority());
+      }
+      result.addAll(currentEditors);
+
+      for (String ancestorName : nextConcept.getParentsNames()) {
+        if (processedConcepts.contains(ancestorName)) {
+          continue;
+        }
+        processedConcepts.add(ancestorName);
+        queue.add(ConceptRegistry.getInstance().getConceptDescriptor(ancestorName));
+      }
     }
     return result;
   }
@@ -139,7 +154,7 @@ abstract class AbstractEditorRegistry<T extends BaseConceptEditor> {
       }
       context += contextHint;
     }
-    return "Additional editor " + additionalEditor.getClass() + " is applicable to the current context (" + context + "). Skipping this editor , using " +
+    return "Additional editor " + additionalEditor.getClass() + " with same priority is applicable to the current context (" + context + "). Skipping this editor , using " +
         mainEditor.getClass() + ".";
   }
 
@@ -148,10 +163,14 @@ abstract class AbstractEditorRegistry<T extends BaseConceptEditor> {
       myEditorComparator = new Comparator<BaseConceptEditor>() {
         @Override
         public int compare(BaseConceptEditor editor1, BaseConceptEditor editor2) {
-          if (editor1.getContextHints().size() == editor2.getContextHints().size()) {
-            return editor1.getClass().getName().compareTo(editor2.getClass().getName());
+          if (editor1.getPriority() != editor2.getPriority()) {
+            return editor2.getPriority() - editor1.getPriority();
           }
-          return editor2.getContextHints().size() - editor1.getContextHints().size();
+          if (editor1.getContextHints().size() != editor2.getContextHints().size()) {
+            return editor2.getContextHints().size() - editor1.getContextHints().size();
+          }
+          return 0;
+          //return editor1.getClass().getName().compareTo(editor2.getClass().getName());
         }
       };
     }
