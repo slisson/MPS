@@ -121,7 +121,7 @@ public class CellLayout_Indent extends AbstractCellLayout {
       return;
     }
 
-    new CellLayouter(editorCells, getMaxWidth(editorCells), getIndentSize()).layout();
+    new CellLayouter(editorCells, getMaxWidth(editorCells), getIndentSize(), getWrapIndentSize(editorCells)).layout();
   }
 
   private int getMaxWidth(EditorCell_Collection editorCells) {
@@ -131,9 +131,15 @@ public class CellLayout_Indent extends AbstractCellLayout {
     return editorCells.getRootParent().getX() + EditorSettings.getInstance().getVerticalBoundWidth();
   }
 
-  private int getIndentSize() {
+  protected int getIndentSize() {
     EditorSettings settings = EditorSettings.getInstance();
     return settings.getSpacesWidth(settings.getIndentSize());
+  }
+
+  protected int getWrapIndentSize(EditorCell_Collection editorCells) {
+    Float factor = editorCells.getStyle().get(StyleAttributes.INDENT_LAYOUT_WRAP_INDENT_FACTOR);
+    if (factor == null) factor = 2f;
+    return Math.round(getIndentSize() * factor);
   }
 
   @Override
@@ -244,13 +250,14 @@ public class CellLayout_Indent extends AbstractCellLayout {
     private List<EditorCell> myLineContent = new ArrayList<EditorCell>();
     private List<Integer> myLineWrapIndent = new ArrayList<Integer>();
     private int myIndentSize;
+    private int myWrapIndentSize;
 
     private Stack<Integer> myIndentStack = new Stack<Integer>();
     private Stack<Integer> myWrapStack = new Stack<Integer>();
     private int myCurrentIndent;
     private int myCurrentIndentAfterWrap;
 
-    private CellLayouter(EditorCell_Collection cell, int maxWidth, int indentSize) {
+    private CellLayouter(EditorCell_Collection cell, int maxWidth, int indentSize, int wrapIndentSize) {
       myCell = cell;
       myX = myCell.getX();
 
@@ -266,8 +273,9 @@ public class CellLayout_Indent extends AbstractCellLayout {
 
       myMaxWidth = maxWidth;
       myIndentSize = indentSize;
+      myWrapIndentSize = wrapIndentSize;
 
-      myCurrentIndentAfterWrap = myIndentSize * 2;
+      myCurrentIndentAfterWrap = wrapIndentSize;
     }
 
     public void layout() {
@@ -283,7 +291,7 @@ public class CellLayout_Indent extends AbstractCellLayout {
       }
 
       if (cell.getStyle().get(StyleAttributes.INDENT_LAYOUT_INDENT)) {
-        withIndent(myCurrentIndent + myIndentSize, myCurrentIndent + 3 * myIndentSize, new Runnable() {
+        withIndent(myCurrentIndent + myIndentSize, myCurrentIndent + myIndentSize + myWrapIndentSize, new Runnable() {
           @Override
           public void run() {
             appendCell(cell, false);
@@ -325,7 +333,7 @@ public class CellLayout_Indent extends AbstractCellLayout {
           hasAnchor ? currentIndent() + getFirstChildLeftGap(collection)
             : myCurrentIndent;
       int wrapIndent = hasWrapAnchor ? currentIndent() + getFirstChildLeftGap(collection) :
-        (hasAnchor || hasIndent) ? indent + 2 * myIndentSize
+        (hasAnchor || hasIndent) ? indent + myWrapIndentSize
           : myCurrentIndentAfterWrap;
 
       withIndent(indent, wrapIndent, new Runnable() {

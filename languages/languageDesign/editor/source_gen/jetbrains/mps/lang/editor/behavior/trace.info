@@ -11,7 +11,7 @@
   <unitInfo fileName="BackgroundColorStyleClassItem_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.BackgroundColorStyleClassItem_BehaviorDescriptor" />
   <unitInfo fileName="BaseEditorComponent_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.BaseEditorComponent_BehaviorDescriptor" />
   <unitInfo fileName="BaseLineCell_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.BaseLineCell_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="424" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="428" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="BooleanStyleSheetItem_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.BooleanStyleSheetItem_BehaviorDescriptor" />
   <unitInfo fileName="BracketColorStyleClassItem_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.BracketColorStyleClassItem_BehaviorDescriptor" />
   <unitInfo fileName="CaretPositionParameter_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.CaretPositionParameter_BehaviorDescriptor" />
@@ -151,6 +151,7 @@
   <unitInfo fileName="IndentLayoutNoWrapClassItem_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.IndentLayoutNoWrapClassItem_BehaviorDescriptor" />
   <unitInfo fileName="IndentLayoutOnNewLineStyleClassItem_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.IndentLayoutOnNewLineStyleClassItem_BehaviorDescriptor" />
   <unitInfo fileName="IndentLayoutWrapAnchorStyleClassItem_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.IndentLayoutWrapAnchorStyleClassItem_BehaviorDescriptor" />
+  <unitInfo fileName="IndentLayoutWrapIndentFactorStyleClassItem_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.IndentLayoutWrapIndentFactorStyleClassItem_BehaviorDescriptor" />
   <unitInfo fileName="InlineEditorComponent_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.InlineEditorComponent_BehaviorDescriptor" />
   <unitInfo fileName="InlineStyleDeclaration_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="21" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.InlineStyleDeclaration_BehaviorDescriptor" />
   <unitInfo fileName="LastPositionAllowedStyleClassItem_BehaviorDescriptor.java" startLine="8" startPosition="0" endLine="25" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.LastPositionAllowedStyleClassItem_BehaviorDescriptor" />
@@ -177,6 +178,7 @@
   <unitInfo fileName="QueryFunction_Boolean_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.QueryFunction_Boolean_BehaviorDescriptor" />
   <unitInfo fileName="QueryFunction_CellProvider_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.QueryFunction_CellProvider_BehaviorDescriptor" />
   <unitInfo fileName="QueryFunction_Color_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.QueryFunction_Color_BehaviorDescriptor" />
+  <unitInfo fileName="QueryFunction_Float_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.QueryFunction_Float_BehaviorDescriptor" />
   <unitInfo fileName="QueryFunction_FontStyle_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.QueryFunction_FontStyle_BehaviorDescriptor" />
   <unitInfo fileName="QueryFunction_ImagePath_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="27" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.QueryFunction_ImagePath_BehaviorDescriptor" />
   <unitInfo fileName="QueryFunction_Integer_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="20" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.QueryFunction_Integer_BehaviorDescriptor" />
@@ -4715,6 +4717,33 @@
       <varInfo nodeId="878629418303286498" varName="model" />
     </scopeInfo>
     <unitInfo nodeId="7348800710866869604" fileName="EditorComponentDeclarationScope.java" startLine="23" startPosition="0" endLine="56" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.EditorComponentDeclarationScope" />
+  </root>
+  <root nodeRef="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)/7656031417253402791">
+    <nodeInfo nodeId="7656031417253402983" fileName="QueryFunction_Float_Behavior.java" startLine="13" startPosition="83" endLine="14" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="17" startPosition="60" endLine="18" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="18" startPosition="63" endLine="19" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="19" startPosition="30" endLine="20" endPosition="133" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="19" startPosition="30" endLine="20" endPosition="133" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="19" startPosition="30" endLine="20" endPosition="133" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="20" startPosition="133" endLine="21" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7656031417253402791" fileName="QueryFunction_Float_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="7656031417253402791" fileName="QueryFunction_Float_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getExpectedReturnType_1213877374441#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <nodeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="17" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="_quotation_createNode_4qj5my_a0a0#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+    <scopeInfo nodeId="7656031417253402793" fileName="QueryFunction_Float_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
+    <scopeInfo nodeId="7656031417253402982" fileName="QueryFunction_Float_Behavior.java" startLine="13" startPosition="83" endLine="14" endPosition="47" />
+    <scopeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="19" startPosition="30" endLine="20" endPosition="133" />
+    <scopeInfo nodeId="7656031417253402791" fileName="QueryFunction_Float_Behavior.java" startLine="10" startPosition="0" endLine="12" endPosition="0">
+      <varInfo nodeId="7656031417253402791" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="7656031417253402791" fileName="QueryFunction_Float_Behavior.java" startLine="13" startPosition="0" endLine="16" endPosition="0">
+      <varInfo nodeId="7656031417253402791" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="17" startPosition="60" endLine="21" endPosition="24">
+      <varInfo nodeId="7656031417253402984" varName="facade" />
+      <varInfo nodeId="7656031417253402984" varName="quotedNode_1" />
+    </scopeInfo>
+    <scopeInfo nodeId="7656031417253402984" fileName="QueryFunction_Float_Behavior.java" startLine="17" startPosition="0" endLine="23" endPosition="0" />
+    <unitInfo nodeId="7656031417253402791" fileName="QueryFunction_Float_Behavior.java" startLine="9" startPosition="0" endLine="24" endPosition="0" unitName="jetbrains.mps.lang.editor.behavior.QueryFunction_Float_Behavior" />
   </root>
   <root nodeRef="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)/7667708318090934613">
     <nodeInfo nodeId="6245941980854787918" fileName="IndentLayoutIndentAnchorStyleClassItem_Behavior.java" startLine="15" startPosition="95" endLine="16" endPosition="676" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
