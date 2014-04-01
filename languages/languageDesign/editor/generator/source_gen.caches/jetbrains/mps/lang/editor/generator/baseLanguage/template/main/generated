@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-dbo73nzh1z1zp1kfo327tpvngsycme6">
+<dependencies version="2" modelHash="-64u3aw767lua6u6ldv60gf5bnziv49w">
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/jetbrains.mps.nodeEditor.cellLayout@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
@@ -17,8 +17,8 @@
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="-2hubvwh7bwismm0eld02cqmdefvj5by" />
   <dep model="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" hash="as9hl24ixb8yk8g3oawrjeu3fzs5kl9" />
   <dep model="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" hash="1456l4f473hired2n1le0oup7kiwjxt" />
-  <dep model="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" hash="6hzqa6fgwk98c604vjq7w331cdbem0q" />
-  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" hash="-45x5jy1m5q6kr9pv8znrlch8rff9obh" />
+  <dep model="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" hash="-3jjjfgetpl7j56hwr0djj5acxmgl57z" />
+  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" hash="-1h4lzb34ppcu7b4fvkck00id8frwk85" />
   <dep model="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" hash="-4byk9l07h3msrgceb0q8gf61k638q9y" />
   <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" hash="-5iqb3tk0keb6d6ox6e5kfjcl0aibp44" />
   <dep model="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" hash="-56up0tjm2rx5wn0zl664gjqsf8m4w2h" />
@@ -239,7 +239,7 @@
   <source id="8313721352726742367" name="reduce_CellModel_Empty" hash="2412g7igli1r8trb102zm8jv9z9lbs7" />
   <source id="1096629760203" name="MAPPING_main" hash="-40cmcr4vieerhv2x7lzyundnafdq510" />
   <source id="6287772348368334582" name="template_cellSetSubstituteInfo" hash="-1no9f7vi3gn5w8jsshk462eshfq0h3g" />
-  <source id="6083395046987581465" name="StyleAttribute" hash="50oazjttu4v2gwvyq79hlf3ezf2rdl7" />
+  <source id="6083395046987581465" name="StyleAttribute" hash="-2ldt1rmqmy5g3dys4o9ls1g3n3y5dno" />
   <source id="7991857262602250026" name="template_StyleClassItemQueryCall" hash="-15hk0l7fpgqnwc5wlt1i6jpquznl44s" />
   <source id="8233876857997955247" name="reduce_CellMenuPart_ApplySideTransforms" hash="bhhp7prizzvuc0cn0ukcomf73olo6ga" />
   <source id="2548761562328299818" name="CellModelChildrenIterator" hash="8vycgs7jsu0e39vbpx3et6rjyqyk40z" />

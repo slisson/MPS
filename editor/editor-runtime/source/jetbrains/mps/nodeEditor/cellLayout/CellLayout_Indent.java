@@ -463,7 +463,7 @@ public class CellLayout_Indent extends AbstractCellLayout {
       EditorCell current = result;
 
       while (true) {
-        if (!isIndentCollection(current.getParent())) break;
+        if (!isIndentCollection(current.getParent()) || current.getParent().getStyle().get(StyleAttributes.INDENT_LAYOUT_FILL_LINES)) break;
 
         EditorCell indentLeaf = getFirstIndentLeaf(current.getParent());
         EditorCell unitStart = expandToUnitStart(indentLeaf);

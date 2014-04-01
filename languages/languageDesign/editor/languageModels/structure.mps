@@ -3697,5 +3697,11 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="float function" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="1221059528506" resolveInfo="QueryFunction_StyleParameter" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6855370243087411727" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Stylesheet.IndentLayout" />
+    <property name="name" nameId="tpck.1169194664001" value="IndentLayoutFillLinesStyleClassItem" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="indent-layout-fill-lines" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1186414536763" resolveInfo="BooleanStyleSheetItem" />
+  </root>
 </model>
 
