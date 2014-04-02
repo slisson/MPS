@@ -18,6 +18,7 @@ package jetbrains.mps.nodeEditor.messageTargets;
 import jetbrains.mps.nodeEditor.EditorComponent;
 import jetbrains.mps.nodeEditor.cells.CellFinderUtil;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.IPropertyCell;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
 import jetbrains.mps.nodeEditor.inspector.InspectorEditorComponent;
@@ -63,11 +64,9 @@ public class CellFinder {
     EditorCell child = CellFinderUtil.findChildByCondition(rawCell, new Condition<EditorCell>() {
       @Override
       public boolean met(EditorCell cell) {
-        if (!(cell instanceof EditorCell_Property)) return false;
-        EditorCell_Property propertyCell = (EditorCell_Property) cell;
-        ModelAccessor modelAccessor = propertyCell.getModelAccessor();
-        return modelAccessor instanceof PropertyAccessor && node == propertyCell.getSNode()
-            && name.equals(((PropertyAccessor) modelAccessor).getPropertyName());
+        if (!(cell instanceof IPropertyCell)) return false;
+        IPropertyCell propertyCell = (IPropertyCell) cell;
+        return node == propertyCell.getSNode() && name.equals(propertyCell.getPropertyName());
       }
     }, true, true);
     if (child != null) {
