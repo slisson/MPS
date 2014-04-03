@@ -93,6 +93,7 @@
       <modulePath path="$PROJECT_DIR$/languages/core/stub/MPS.Platform/MPS.Platform.msd" folder="core.stub" />
       <modulePath path="$PROJECT_DIR$/languages/core/stub/MPS.Workbench/MPS.Workbench.msd" folder="core.stub" />
       <modulePath path="$PROJECT_DIR$/languages/core/stub/Testbench/Testbench.msd" folder="core.stub" />
+      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.samples.richtext/jetbrains.mps.samples.richtext.mpl" folder="samples" />
       <modulePath path="$PROJECT_DIR$/languages/languageDesign/access/jetbrains.mps.lang.access.mpl" folder="core.languages" />
       <modulePath path="$PROJECT_DIR$/languages/languageDesign/actions/jetbrains.mps.lang.actions.mpl" folder="core.aspects.actions" />
       <modulePath path="$PROJECT_DIR$/languages/languageDesign/analyzers/jetbrains.mps.lang.dataFlow.analyzers.mpl" folder="core.aspects.dataflow" />
@@ -356,6 +357,7 @@
       <modulePath path="$PROJECT_DIR$/samples/xmlPersistence/languages/jetbrains.mps.samples.xmlPersistence.build/jetbrains.mps.samples.xmlPersistence.build.msd" folder="samples.persistence" />
       <modulePath path="$PROJECT_DIR$/samples/xmlPersistence/languages/jetbrains.mps.samples.xmlPersistence.ideaPlugin/jetbrains.mps.samples.xmlPersistence.ideaPlugin.msd" folder="samples.persistence" />
       <modulePath path="$PROJECT_DIR$/samples/xmlPersistence/languages/jetbrains.mps.samples.xmlPersistence/jetbrains.mps.samples.xmlPersistence.msd" folder="samples.persistence" />
+      <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.samples.richtext.sandbox/jetbrains.mps.samples.richtext.sandbox.msd" folder="samples" />
       <modulePath path="$PROJECT_DIR$/testbench/languages/jetbrains.mps.testbench.suite.mpl" folder="tests" />
       <modulePath path="$PROJECT_DIR$/testbench/languages/solutions/pluginSolution/jetbrains.mps.testbench.suite.pluginSolution.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/testbench/modules/miscTests/solutions/jetbrains.mps.refactoring.tests.msd" folder="tests" />
