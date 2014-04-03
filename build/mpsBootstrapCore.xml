@@ -60,6 +60,14 @@
     <fileset file="${mps_home}/lib/tools.jar" />
   </path>
   
+  <path id="path.java.library.diff_match_patch">
+    <fileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/lib/diff_match_patch.jar" />
+  </path>
+  
+  <path id="path.java.library.commons-lang3">
+    <fileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/lib/commons-lang3-3.1.jar" />
+  </path>
+  
   <path id="path.mps.ant.path">
     <pathelement location="${build.tmp}/antTasks/ant/lib/ant-mps.jar" />
     <pathelement location="${artifacts.IDEA}/lib/jdom.jar" />
@@ -313,6 +321,90 @@
       <zipfileset dir="${mps_home}/editor/typesystemIntegration" includes="icons/**, resources/**" prefix="modules/typesystemIntegration" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-typesystemIntegration-models" prefix="modules/typesystemIntegration/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/mps-richtext.jar" />
+    <mkdir dir="${build.tmp}/default/mps-richtext.jar/modules" />
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar" />
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.slisson.mps.editor.multiline.jar/META-INF/module.xml">
+      <module namespace="de.slisson.mps.editor.multiline" type="language" uuid="31c91def-a131-41a1-9018-102874f49a12">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="de.slisson.mps.editor.multiline-src.jar" descriptor="multiline.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-richtext.jar/modules/de.slisson.mps.editor.multiline.jar">
+      <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline" />
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar" />
+    </jar>
+    <jar destfile="${build.tmp}/default/mps-richtext.jar/modules/de.slisson.mps.editor.multiline-generator.jar">
+      <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-multiline-generator-template">
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-multiline-languageModels">
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-richtext.jar/modules/de.slisson.mps.editor.multiline-src.jar">
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/generator/source_gen" includes="**/*.java" />
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/source_gen" includes="**/*.java" />
+      <zipfileset file="${mps_home}/editor/richtext-editor/languages/multiline/multiline.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-multiline-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-multiline-languageModels" prefix="module/languageModels" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar" />
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar/META-INF/module.xml">
+      <module namespace="de.slisson.mps.editor.multiline.runtime" type="solution" uuid="dc038ceb-b7ea-4fea-ac12-55f7400e97ba">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <library jar="../../diff_match_patch.jar" />
+        <library jar="../../commons-lang3-3.1.jar" />
+        <sources jar="de.slisson.mps.editor.multiline.runtime-src.jar" descriptor="runtime.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/mps-richtext.jar/modules/de.slisson.mps.editor.multiline.runtime.jar">
+      <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" />
+      <fileset dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-solutions-multiline.runtime-models">
+      <fileset dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/mps-richtext.jar/modules/de.slisson.mps.editor.multiline.runtime-src.jar">
+      <fileset dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/source_gen" includes="**/*.java" />
+      <zipfileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/runtime.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-solutions-multiline.runtime-models" prefix="module/models" />
+    </jar>
+    <jar destfile="${build.layout}/lib/mps-richtext.jar">
+      <fileset dir="${build.tmp}/java/out/mps-richtext" />
+      <fileset dir="${build.tmp}/default/mps-richtext.jar" />
+    </jar>
+    <copy todir="${build.layout}/lib">
+      <fileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/lib/diff_match_patch.jar" />
+    </copy>
+    <copy todir="${build.layout}/lib">
+      <fileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/lib/commons-lang3-3.1.jar" />
+    </copy>
     <jar destfile="${build.layout}/lib/mps-editor-runtime.jar">
       <fileset dir="${build.tmp}/java/out/mps-editorlang-runtime" />
     </jar>
@@ -1902,6 +1994,79 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-languageDesign-typesystem-generator-baseLanguage-template" prefix="module/generator/baseLanguage/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-languageDesign-typesystem-languageModels" prefix="module/languageModels" />
     </jar>
+    <mkdir dir="${build.layout}/languages/richtext" />
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar1" />
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.slisson.mps.editor.multiline.jar1/META-INF/module.xml">
+      <module namespace="de.slisson.mps.editor.multiline" type="language" uuid="31c91def-a131-41a1-9018-102874f49a12">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="de.slisson.mps.editor.multiline-src.jar" descriptor="multiline.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/languages/richtext/de.slisson.mps.editor.multiline.jar">
+      <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline" />
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/de.slisson.mps.editor.multiline.jar1" />
+    </jar>
+    <jar destfile="${build.layout}/languages/richtext/de.slisson.mps.editor.multiline-generator.jar">
+      <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-multiline-generator-template1">
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-multiline-languageModels1">
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/languages/richtext/de.slisson.mps.editor.multiline-src.jar">
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/generator/source_gen" includes="**/*.java" />
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/source_gen" includes="**/*.java" />
+      <zipfileset file="${mps_home}/editor/richtext-editor/languages/multiline/multiline.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-multiline-generator-template1" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-multiline-languageModels1" prefix="module/languageModels" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar1" />
+    <mkdir dir="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar1/META-INF/module.xml">
+      <module namespace="de.slisson.mps.editor.multiline.runtime" type="solution" uuid="dc038ceb-b7ea-4fea-ac12-55f7400e97ba">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <library jar="../../lib/diff_match_patch.jar" />
+        <library jar="../../lib/commons-lang3-3.1.jar" />
+        <sources jar="de.slisson.mps.editor.multiline.runtime-src.jar" descriptor="runtime.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/languages/richtext/de.slisson.mps.editor.multiline.runtime.jar">
+      <fileset dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" />
+      <fileset dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/de.slisson.mps.editor.multiline.runtime.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-solutions-multiline.runtime-models1">
+      <fileset dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/languages/richtext/de.slisson.mps.editor.multiline.runtime-src.jar">
+      <fileset dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/source_gen" includes="**/*.java" />
+      <zipfileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/runtime.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-solutions-multiline.runtime-models1" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.layout}/languages/baseLanguage" />
     <mkdir dir="${build.tmp}/default/jetbrains.mps.baseLanguage.jar" />
     <mkdir dir="${build.tmp}/default/jetbrains.mps.baseLanguage.jar/META-INF" />
@@ -2820,7 +2985,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.mps-tuples, java.compile.mps-closures, java.compile.mps-collections, java.compile.mps-openapi, java.compile.java.modules.cycle.1, java.compile.mps-core, java.compile.mps-smodel, java.compile.mps-persistence, java.compile.mps-editor-api, java.compile.mps-editorlang-runtime, java.compile.ant-mps, java.compile.mps-tool, java.compile.java.modules.cycle.2, java.compile.mps-platform, java.compile.mps-ui, java.compile.mps-icons, java.compile.mps-debugger, java.compile.mps-editor, java.compile.mps-test, java.compile.java.modules.cycle.3, java.compile.jetbrains.mps.baseLanguage, java.compile.jetbrains.mps.baseLanguage#1129914002933, java.compile.jetbrains.mps.baseLanguage.closures, java.compile.jetbrains.mps.baseLanguage.closures#1199623535494, java.compile.jetbrains.mps.baseLanguage.collections, java.compile.jetbrains.mps.baseLanguage.collections#1151699677197, java.compile.jetbrains.mps.baseLanguageInternal, java.compile.jetbrains.mps.baseLanguageInternal#1238251529692, java.compile.jetbrains.mps.baseLanguage.blTypes, java.compile.jetbrains.mps.baseLanguage.checkedDots, java.compile.jetbrains.mps.baseLanguage.checkedDots#4549711462050000009, java.compile.jetbrains.mps.baseLanguage.classifiers, java.compile.jetbrains.mps.baseLanguage.classifiers#1205839057922, java.compile.jetbrains.mps.baseLanguage.constructors, java.compile.jetbrains.mps.baseLanguage.constructors#4413962600136203329, java.compile.jetbrains.mps.baseLanguage.javadoc, java.compile.jetbrains.mps.baseLanguage.jdk7, java.compile.jetbrains.mps.baseLanguage.jdk7#616711547384942258, java.compile.jetbrains.mps.baseLanguage.logging, java.compile.jetbrains.mps.baseLanguage.logging#1167240554582, java.compile.jetbrains.mps.baseLanguage.overloadedOperators, java.compile.jetbrains.mps.baseLanguage.overloadedOperators#6677452554239623057, java.compile.jetbrains.mps.baseLanguage.tuples, java.compile.jetbrains.mps.baseLanguage.tuples#1238919486295, java.compile.jetbrains.mps.baseLanguage.extensionMethods, java.compile.jetbrains.mps.baseLanguage.extensionMethods#6225815798156427146, java.compile.jetbrains.mps.baseLanguage.regexp, java.compile.jetbrains.mps.baseLanguage.regexp#1174510748147, java.compile.jetbrains.mps.baseLanguage.regexp.runtime, java.compile.jetbrains.mps.baseLanguage.scopes, java.compile.jetbrains.mps.baseLanguage.builders, java.compile.jetbrains.mps.baseLanguage.builders#7057666463730688471, java.compile.jetbrains.mps.baseLanguage.varVariable, java.compile.jetbrains.mps.baseLanguage.varVariable#8067700594454597207, java.compile.jetbrains.mps.baseLanguage.doubleDispatch, java.compile.jetbrains.mps.baseLanguage.doubleDispatch#4496691318496554192, java.compile.jetbrains.mps.lang.dataFlow.analyzers, java.compile.jetbrains.mps.lang.dataFlow.analyzers#9177062368042328054, java.compile.jetbrains.mps.lang.core, java.compile.jetbrains.mps.lang.actions, java.compile.jetbrains.mps.lang.actions#1154466409006, java.compile.jetbrains.mps.lang.behavior, java.compile.jetbrains.mps.lang.behavior#1225195312923, java.compile.jetbrains.mps.lang.constraints, java.compile.jetbrains.mps.lang.constraints#1147476727047, java.compile.jetbrains.mps.lang.dataFlow, java.compile.jetbrains.mps.lang.dataFlow#1206455293228, java.compile.jetbrains.mps.lang.editor, java.compile.jetbrains.mps.lang.editor#1129914002149, java.compile.jetbrains.mps.lang.extension, java.compile.jetbrains.mps.lang.extension#3729007189729193566, java.compile.java.modules.cycle.4, java.compile.jetbrains.mps.lang.findUsages, java.compile.jetbrains.mps.lang.findUsages#1197044805809, java.compile.jetbrains.mps.lang.descriptor, java.compile.jetbrains.mps.lang.descriptor#9020561928507175817, java.compile.jetbrains.mps.lang.generator.generationContext, java.compile.jetbrains.mps.lang.generator.generationContext#1216862161405, java.compile.jetbrains.mps.lang.generator.generationParameters, java.compile.jetbrains.mps.lang.generator.generationParameters#650531548512001931, java.compile.jetbrains.mps.lang.generator, java.compile.jetbrains.mps.lang.generator#1167163152317, java.compile.jetbrains.mps.lang.intentions, java.compile.jetbrains.mps.lang.intentions#1192798684353, java.compile.jetbrains.mps.lang.pattern, java.compile.jetbrains.mps.lang.pattern#1174810948060, java.compile.jetbrains.mps.lang.plugin, java.compile.jetbrains.mps.lang.plugin#1203080439937, java.compile.jetbrains.mps.lang.checkedName, java.compile.jetbrains.mps.lang.checkedName#4844813484172930521, java.compile.jetbrains.mps.lang.access, java.compile.jetbrains.mps.lang.access#8974276187400410207, java.compile.jetbrains.mps.lang.resources, java.compile.jetbrains.mps.lang.resources#8974276187400288250, java.compile.jetbrains.mps.lang.project, java.compile.jetbrains.mps.lang.quotation, java.compile.jetbrains.mps.lang.quotation#1196351859310, java.compile.jetbrains.mps.lang.refactoring, java.compile.jetbrains.mps.lang.refactoring#1189697379687, java.compile.jetbrains.mps.lang.script, java.compile.jetbrains.mps.lang.script#1172274134493, java.compile.jetbrains.mps.lang.sharedConcepts, java.compile.jetbrains.mps.lang.sharedConcepts#1161623873951, java.compile.jetbrains.mps.lang.smodel, java.compile.jetbrains.mps.lang.smodel#1139186730696, java.compile.jetbrains.mps.lang.structure, java.compile.jetbrains.mps.lang.structure#1170324972255, java.compile.jetbrains.mps.lang.stubs, java.compile.jetbrains.mps.lang.stubs#444366895203565719, java.compile.jetbrains.mps.lang.textGen, java.compile.jetbrains.mps.lang.textGen#1233678176149, java.compile.jetbrains.mps.lang.traceable, java.compile.jetbrains.mps.lang.traceable.operations, java.compile.jetbrains.mps.lang.traceable.operations#6942529559415687113, java.compile.jetbrains.mps.lang.typesystem, java.compile.jetbrains.mps.lang.typesystem#1174411220599, java.compile.jetbrains.mps.lang.scopes, java.compile.jetbrains.mps.lang.scopes#8077936094962908999, java.compile.jetbrains.mps.lang.scopes.runtime, java.compile.jetbrains.mps.core.xml, java.compile.jetbrains.mps.core.xml#3080189811177537724, java.compile.jetbrains.mps.core.xml.sax, java.compile.jetbrains.mps.core.xml.sax#2264311582634171386, java.compile.java.modules.cycle.5, java.compile.jetbrains.mps.make.facet, java.compile.jetbrains.mps.make.facet#5086995156117116954, java.compile.jetbrains.mps.make.script, java.compile.jetbrains.mps.make.script#4629164904928166564, java.compile.jetbrains.mps.tool.gentest, java.compile.jetbrains.mps.make.reduced, java.compile.jetbrains.mps.execution.util" />
+  <target name="compileJava" depends="java.compile.mps-tuples, java.compile.mps-closures, java.compile.mps-collections, java.compile.mps-openapi, java.compile.java.modules.cycle.1, java.compile.mps-core, java.compile.mps-smodel, java.compile.mps-persistence, java.compile.mps-editor-api, java.compile.mps-editorlang-runtime, java.compile.ant-mps, java.compile.mps-tool, java.compile.java.modules.cycle.2, java.compile.mps-platform, java.compile.mps-ui, java.compile.mps-icons, java.compile.mps-debugger, java.compile.mps-editor, java.compile.mps-richtext, java.compile.mps-test, java.compile.java.modules.cycle.3, java.compile.jetbrains.mps.baseLanguage, java.compile.jetbrains.mps.baseLanguage#1129914002933, java.compile.jetbrains.mps.baseLanguage.closures, java.compile.jetbrains.mps.baseLanguage.closures#1199623535494, java.compile.jetbrains.mps.baseLanguage.collections, java.compile.jetbrains.mps.baseLanguage.collections#1151699677197, java.compile.jetbrains.mps.baseLanguageInternal, java.compile.jetbrains.mps.baseLanguageInternal#1238251529692, java.compile.jetbrains.mps.baseLanguage.blTypes, java.compile.jetbrains.mps.baseLanguage.checkedDots, java.compile.jetbrains.mps.baseLanguage.checkedDots#4549711462050000009, java.compile.jetbrains.mps.baseLanguage.classifiers, java.compile.jetbrains.mps.baseLanguage.classifiers#1205839057922, java.compile.jetbrains.mps.baseLanguage.constructors, java.compile.jetbrains.mps.baseLanguage.constructors#4413962600136203329, java.compile.jetbrains.mps.baseLanguage.javadoc, java.compile.jetbrains.mps.baseLanguage.jdk7, java.compile.jetbrains.mps.baseLanguage.jdk7#616711547384942258, java.compile.jetbrains.mps.baseLanguage.logging, java.compile.jetbrains.mps.baseLanguage.logging#1167240554582, java.compile.jetbrains.mps.baseLanguage.overloadedOperators, java.compile.jetbrains.mps.baseLanguage.overloadedOperators#6677452554239623057, java.compile.jetbrains.mps.baseLanguage.tuples, java.compile.jetbrains.mps.baseLanguage.tuples#1238919486295, java.compile.jetbrains.mps.baseLanguage.extensionMethods, java.compile.jetbrains.mps.baseLanguage.extensionMethods#6225815798156427146, java.compile.jetbrains.mps.baseLanguage.regexp, java.compile.jetbrains.mps.baseLanguage.regexp#1174510748147, java.compile.jetbrains.mps.baseLanguage.regexp.runtime, java.compile.jetbrains.mps.baseLanguage.scopes, java.compile.jetbrains.mps.baseLanguage.builders, java.compile.jetbrains.mps.baseLanguage.builders#7057666463730688471, java.compile.jetbrains.mps.baseLanguage.varVariable, java.compile.jetbrains.mps.baseLanguage.varVariable#8067700594454597207, java.compile.jetbrains.mps.baseLanguage.doubleDispatch, java.compile.jetbrains.mps.baseLanguage.doubleDispatch#4496691318496554192, java.compile.jetbrains.mps.lang.dataFlow.analyzers, java.compile.jetbrains.mps.lang.dataFlow.analyzers#9177062368042328054, java.compile.jetbrains.mps.lang.core, java.compile.jetbrains.mps.lang.actions, java.compile.jetbrains.mps.lang.actions#1154466409006, java.compile.jetbrains.mps.lang.behavior, java.compile.jetbrains.mps.lang.behavior#1225195312923, java.compile.jetbrains.mps.lang.constraints, java.compile.jetbrains.mps.lang.constraints#1147476727047, java.compile.jetbrains.mps.lang.dataFlow, java.compile.jetbrains.mps.lang.dataFlow#1206455293228, java.compile.jetbrains.mps.lang.editor, java.compile.jetbrains.mps.lang.editor#1129914002149, java.compile.jetbrains.mps.lang.extension, java.compile.jetbrains.mps.lang.extension#3729007189729193566, java.compile.java.modules.cycle.4, java.compile.jetbrains.mps.lang.findUsages, java.compile.jetbrains.mps.lang.findUsages#1197044805809, java.compile.jetbrains.mps.lang.descriptor, java.compile.jetbrains.mps.lang.descriptor#9020561928507175817, java.compile.jetbrains.mps.lang.generator.generationContext, java.compile.jetbrains.mps.lang.generator.generationContext#1216862161405, java.compile.jetbrains.mps.lang.generator.generationParameters, java.compile.jetbrains.mps.lang.generator.generationParameters#650531548512001931, java.compile.jetbrains.mps.lang.generator, java.compile.jetbrains.mps.lang.generator#1167163152317, java.compile.jetbrains.mps.lang.intentions, java.compile.jetbrains.mps.lang.intentions#1192798684353, java.compile.jetbrains.mps.lang.pattern, java.compile.jetbrains.mps.lang.pattern#1174810948060, java.compile.jetbrains.mps.lang.plugin, java.compile.jetbrains.mps.lang.plugin#1203080439937, java.compile.jetbrains.mps.lang.checkedName, java.compile.jetbrains.mps.lang.checkedName#4844813484172930521, java.compile.jetbrains.mps.lang.access, java.compile.jetbrains.mps.lang.access#8974276187400410207, java.compile.jetbrains.mps.lang.resources, java.compile.jetbrains.mps.lang.resources#8974276187400288250, java.compile.jetbrains.mps.lang.project, java.compile.jetbrains.mps.lang.quotation, java.compile.jetbrains.mps.lang.quotation#1196351859310, java.compile.jetbrains.mps.lang.refactoring, java.compile.jetbrains.mps.lang.refactoring#1189697379687, java.compile.jetbrains.mps.lang.script, java.compile.jetbrains.mps.lang.script#1172274134493, java.compile.jetbrains.mps.lang.sharedConcepts, java.compile.jetbrains.mps.lang.sharedConcepts#1161623873951, java.compile.jetbrains.mps.lang.smodel, java.compile.jetbrains.mps.lang.smodel#1139186730696, java.compile.jetbrains.mps.lang.structure, java.compile.jetbrains.mps.lang.structure#1170324972255, java.compile.jetbrains.mps.lang.stubs, java.compile.jetbrains.mps.lang.stubs#444366895203565719, java.compile.jetbrains.mps.lang.textGen, java.compile.jetbrains.mps.lang.textGen#1233678176149, java.compile.jetbrains.mps.lang.traceable, java.compile.jetbrains.mps.lang.traceable.operations, java.compile.jetbrains.mps.lang.traceable.operations#6942529559415687113, java.compile.jetbrains.mps.lang.typesystem, java.compile.jetbrains.mps.lang.typesystem#1174411220599, java.compile.jetbrains.mps.lang.scopes, java.compile.jetbrains.mps.lang.scopes#8077936094962908999, java.compile.jetbrains.mps.lang.scopes.runtime, java.compile.jetbrains.mps.core.xml, java.compile.jetbrains.mps.core.xml#3080189811177537724, java.compile.jetbrains.mps.core.xml.sax, java.compile.jetbrains.mps.core.xml.sax#2264311582634171386, java.compile.java.modules.cycle.5, java.compile.jetbrains.mps.make.facet, java.compile.jetbrains.mps.make.facet#5086995156117116954, java.compile.jetbrains.mps.make.script, java.compile.jetbrains.mps.make.script#4629164904928166564, java.compile.jetbrains.mps.tool.gentest, java.compile.jetbrains.mps.make.reduced, java.compile.jetbrains.mps.execution.util, java.compile.de.slisson.mps.editor.multiline.runtime, java.compile.de.slisson.mps.editor.multiline, java.compile.de.slisson.mps.editor.multiline#5792856961266375224" />
   
   <target name="processResources" />
   
@@ -2924,6 +3089,8 @@
       <chunk>
         <module file="${mps_home}/languages/core/stub/Ant/Ant.msd" />
         <module file="${mps_home}/languages/core/stub/Testbench/Testbench.msd" />
+        <module file="${mps_home}/editor/richtext-editor/languages/multiline/multiline.mpl" />
+        <module file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/runtime.msd" />
         <module file="${mps_home}/languages/baseLanguage/constructors/jetbrains.mps.baseLanguage.constructors.mpl" />
         <module file="${mps_home}/languages/baseLanguage/doubleDispatch/jetbrains.mps.baseLanguage.doubleDispatch.mpl" />
         <module file="${mps_home}/languages/baseLanguage/overloadedOperators/languages/overloadedOperators/jetbrains.mps.baseLanguage.overloadedOperators.mpl" />
@@ -3539,6 +3706,38 @@
       <fileset dir="${mps_home}/editor/typesystemIntegration/source_gen" includes="**/*.properties, **/*.html, **/*.png, **/*.txt, **/*.ico, **/*.zip, **/*.info" />
       <fileset dir="${mps_home}/workbench/mps-editor/source" includes="**/*.properties, **/*.html, **/*.png, **/*.txt, **/*.ico, **/*.zip, **/*.info" />
       <fileset dir="${mps_home}/workbench/mps-editor/source_gen" includes="**/*.properties, **/*.html, **/*.png, **/*.txt, **/*.ico, **/*.zip, **/*.info" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.mps-richtext" depends="java.compile.mps-openapi, java.compile.mps-closures, java.compile.mps-collections, java.compile.mps-tuples, java.compile.mps-smodel, java.compile.mps-core, java.compile.mps-editor-api, java.compile.mps-editorlang-runtime, java.compile.mps-editor, java.compile.mps-ui, java.compile.mps-platform, fetchDependencies">
+    <mkdir dir="${build.tmp}/java/out/mps-richtext" />
+    <javac2 destdir="${build.tmp}/java/out/mps-richtext" fork="true" memorymaximumsize="1024m" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src path="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/source_gen" />
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/mps-openapi" />
+        <pathelement path="${build.tmp}/java/out/mps-closures" />
+        <pathelement path="${build.tmp}/java/out/mps-collections" />
+        <pathelement path="${build.tmp}/java/out/mps-tuples" />
+        <pathelement path="${build.tmp}/java/out/mps-smodel" />
+        <pathelement path="${build.tmp}/java/out/mps-core" />
+        <pathelement path="${build.tmp}/java/out/mps-editor-api" />
+        <pathelement path="${build.tmp}/java/out/mps-editorlang-runtime" />
+        <pathelement path="${build.tmp}/java/out/mps-editor" />
+        <pathelement path="${build.tmp}/java/out/mps-ui" />
+        <pathelement path="${build.tmp}/java/out/mps-platform" />
+        <path refid="path.java.library.commons-lang3" />
+        <path refid="path.java.library.diff_match_patch" />
+        <path refid="path.java.library.annotations-lib" />
+        <path refid="path.java.library.jdom-lib" />
+        <path refid="path.java.library.log4j-lib" />
+        <path refid="path.java.library.core-libraries" />
+        <path refid="path.java.library.idea-libraries" />
+        <path refid="path.jdk.classpath" />
+      </classpath>
+    </javac2>
+    <copy todir="${build.tmp}/java/out/mps-richtext">
+      <fileset dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/source_gen" includes="**/*.properties, **/*.xml, **/*.html, **/*.png, **/*.txt, **/*.ico, **/*.zip, **/*.info" />
     </copy>
   </target>
   
@@ -8440,7 +8639,148 @@
     </copy>
   </target>
   
+  <target name="java.compile.de.slisson.mps.editor.multiline.runtime" depends="java.compile.mps-openapi, java.compile.mps-closures, java.compile.mps-collections, java.compile.mps-tuples, java.compile.mps-smodel, java.compile.mps-core, java.compile.mps-ui, java.compile.mps-platform, java.compile.mps-persistence, java.compile.mps-editor-api, java.compile.mps-editorlang-runtime, java.compile.mps-editor, fetchDependencies">
+    <mkdir dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" />
+    <javac2 destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime" fork="true" memorymaximumsize="1024m" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/mps-openapi" />
+        <pathelement path="${build.tmp}/java/out/mps-closures" />
+        <pathelement path="${build.tmp}/java/out/mps-collections" />
+        <pathelement path="${build.tmp}/java/out/mps-tuples" />
+        <pathelement path="${build.tmp}/java/out/mps-smodel" />
+        <pathelement path="${build.tmp}/java/out/mps-core" />
+        <pathelement path="${build.tmp}/java/out/mps-ui" />
+        <pathelement path="${build.tmp}/java/out/mps-platform" />
+        <pathelement path="${build.tmp}/java/out/mps-persistence" />
+        <pathelement path="${build.tmp}/java/out/mps-editor-api" />
+        <pathelement path="${build.tmp}/java/out/mps-editorlang-runtime" />
+        <pathelement path="${build.tmp}/java/out/mps-editor" />
+        <fileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/lib/diff_match_patch.jar" />
+        <fileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/lib/commons-lang3-3.1.jar" />
+        <path refid="path.java.library.annotations-lib" />
+        <path refid="path.java.library.jdom-lib" />
+        <path refid="path.java.library.log4j-lib" />
+        <path refid="path.java.library.core-libraries" />
+        <path refid="path.java.library.idea-libraries" />
+        <path refid="path.jdk.classpath" />
+      </classpath>
+    </javac2>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.editor.multiline.runtime">
+      <fileset dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/source_gen" includes="**/*.properties, **/*.xml, **/*.html, **/*.png, **/*.txt, **/*.ico, **/*.zip, **/*.info" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.slisson.mps.editor.multiline" depends="java.compile.mps-openapi, java.compile.mps-closures, java.compile.mps-collections, java.compile.mps-tuples, java.compile.mps-smodel, java.compile.mps-core, java.compile.mps-persistence, java.compile.mps-editor-api, java.compile.mps-editorlang-runtime, java.compile.mps-editor, java.compile.mps-ui, java.compile.mps-platform, java.compile.jetbrains.mps.baseLanguage, java.compile.jetbrains.mps.baseLanguage.blTypes, java.compile.jetbrains.mps.baseLanguage.classifiers, java.compile.jetbrains.mps.baseLanguage.closures, java.compile.jetbrains.mps.baseLanguage.collections, java.compile.jetbrains.mps.baseLanguage.jdk7, java.compile.jetbrains.mps.baseLanguage.scopes, java.compile.jetbrains.mps.lang.actions, java.compile.jetbrains.mps.lang.constraints, java.compile.jetbrains.mps.lang.core, java.compile.jetbrains.mps.lang.editor, java.compile.jetbrains.mps.lang.project, java.compile.jetbrains.mps.lang.sharedConcepts, java.compile.jetbrains.mps.lang.smodel, java.compile.jetbrains.mps.lang.structure, java.compile.jetbrains.mps.lang.traceable, fetchDependencies">
+    <mkdir dir="${mps_home}/editor/richtext-editor/languages/multiline/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline" />
+    <javac2 destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline" fork="true" memorymaximumsize="1024m" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mps_home}/editor/richtext-editor/languages/multiline/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/mps-openapi" />
+        <pathelement path="${build.tmp}/java/out/mps-closures" />
+        <pathelement path="${build.tmp}/java/out/mps-collections" />
+        <pathelement path="${build.tmp}/java/out/mps-tuples" />
+        <pathelement path="${build.tmp}/java/out/mps-smodel" />
+        <pathelement path="${build.tmp}/java/out/mps-core" />
+        <pathelement path="${build.tmp}/java/out/mps-persistence" />
+        <pathelement path="${build.tmp}/java/out/mps-editor-api" />
+        <pathelement path="${build.tmp}/java/out/mps-editorlang-runtime" />
+        <pathelement path="${build.tmp}/java/out/mps-editor" />
+        <pathelement path="${build.tmp}/java/out/mps-ui" />
+        <pathelement path="${build.tmp}/java/out/mps-platform" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.blTypes" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.classifiers" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.closures" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.collections" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.jdk7" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.scopes" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.actions" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.constraints" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.core" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.editor" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.project" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.sharedConcepts" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.smodel" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.structure" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.traceable" />
+        <fileset file="${artifacts.IDEA}/lib/log4j.jar" />
+        <path refid="path.java.library.annotations-lib" />
+        <path refid="path.java.library.jdom-lib" />
+        <path refid="path.java.library.log4j-lib" />
+        <path refid="path.java.library.core-libraries" />
+        <path refid="path.java.library.idea-libraries" />
+        <path refid="path.jdk.classpath" />
+      </classpath>
+    </javac2>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.editor.multiline">
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/source_gen" includes="**/*.properties, **/*.xml, **/*.html, **/*.png, **/*.txt, **/*.ico, **/*.zip, **/*.info" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.de.slisson.mps.editor.multiline#5792856961266375224" depends="java.compile.mps-openapi, java.compile.mps-closures, java.compile.mps-collections, java.compile.mps-tuples, java.compile.mps-smodel, java.compile.mps-core, java.compile.mps-persistence, java.compile.mps-editor-api, java.compile.mps-editorlang-runtime, java.compile.mps-editor, java.compile.mps-ui, java.compile.mps-platform, java.compile.de.slisson.mps.editor.multiline, java.compile.jetbrains.mps.baseLanguage, java.compile.jetbrains.mps.baseLanguage.blTypes, java.compile.jetbrains.mps.baseLanguage.classifiers, java.compile.jetbrains.mps.baseLanguage.closures, java.compile.jetbrains.mps.baseLanguage.collections, java.compile.jetbrains.mps.baseLanguage.jdk7, java.compile.jetbrains.mps.baseLanguage.scopes, java.compile.jetbrains.mps.lang.actions, java.compile.jetbrains.mps.lang.constraints, java.compile.jetbrains.mps.lang.core, java.compile.jetbrains.mps.lang.editor, java.compile.jetbrains.mps.lang.sharedConcepts, java.compile.jetbrains.mps.lang.smodel, java.compile.jetbrains.mps.lang.structure, java.compile.jetbrains.mps.lang.traceable, fetchDependencies">
+    <mkdir dir="${mps_home}/editor/richtext-editor/languages/multiline/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224" />
+    <javac2 destdir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224" fork="true" memorymaximumsize="1024m" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${mps_home}/editor/richtext-editor/languages/multiline/generator/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/mps-openapi" />
+        <pathelement path="${build.tmp}/java/out/mps-closures" />
+        <pathelement path="${build.tmp}/java/out/mps-collections" />
+        <pathelement path="${build.tmp}/java/out/mps-tuples" />
+        <pathelement path="${build.tmp}/java/out/mps-smodel" />
+        <pathelement path="${build.tmp}/java/out/mps-core" />
+        <pathelement path="${build.tmp}/java/out/mps-persistence" />
+        <pathelement path="${build.tmp}/java/out/mps-editor-api" />
+        <pathelement path="${build.tmp}/java/out/mps-editorlang-runtime" />
+        <pathelement path="${build.tmp}/java/out/mps-editor" />
+        <pathelement path="${build.tmp}/java/out/mps-ui" />
+        <pathelement path="${build.tmp}/java/out/mps-platform" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.editor.multiline" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.blTypes" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.classifiers" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.closures" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.collections" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.jdk7" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.baseLanguage.scopes" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.actions" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.constraints" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.core" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.editor" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.sharedConcepts" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.smodel" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.structure" />
+        <pathelement path="${build.tmp}/java/out/jetbrains.mps.lang.traceable" />
+        <fileset file="${artifacts.IDEA}/lib/log4j.jar" />
+        <path refid="path.java.library.annotations-lib" />
+        <path refid="path.java.library.jdom-lib" />
+        <path refid="path.java.library.log4j-lib" />
+        <path refid="path.java.library.core-libraries" />
+        <path refid="path.java.library.idea-libraries" />
+        <path refid="path.jdk.classpath" />
+      </classpath>
+    </javac2>
+    <copy todir="${build.tmp}/java/out/de.slisson.mps.editor.multiline#5792856961266375224">
+      <fileset dir="${mps_home}/editor/richtext-editor/languages/multiline/generator/source_gen" includes="**/*.properties, **/*.xml, **/*.html, **/*.png, **/*.txt, **/*.ico, **/*.zip, **/*.info" />
+    </copy>
+  </target>
+  
   <target name="cleanSources">
+    <delete dir="${mps_home}/editor/richtext-editor/languages/multiline/source_gen" />
+    <delete dir="${mps_home}/editor/richtext-editor/languages/multiline/generator/source_gen" />
+    <delete dir="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/source_gen" />
     <delete dir="${mps_home}/languages/baseLanguage/baseLanguage/generator/source_gen" />
     <delete dir="${mps_home}/languages/util/builders/generator/source_gen" />
     <delete dir="${mps_home}/languages/baseLanguage/checkDot/languages/checkedDots/generator/source_gen" />
