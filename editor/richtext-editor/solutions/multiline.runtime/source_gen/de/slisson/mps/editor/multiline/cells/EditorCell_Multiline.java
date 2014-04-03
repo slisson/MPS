@@ -5,7 +5,6 @@ package de.slisson.mps.editor.multiline.cells;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.IPropertyCell;
 import jetbrains.mps.nodeEditor.cells.IDiffPaintingCell;
-import org.apache.log4j.Logger;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import java.util.List;
 import java.util.ArrayList;
@@ -41,7 +40,6 @@ import java.util.TreeSet;
 import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
 
 public class EditorCell_Multiline extends EditorCell_Collection implements IPropertyCell, IDiffPaintingCell {
-  private static final Logger LOG = Logger.getLogger(EditorCell_Multiline.class);
   private ModelAccessor myModelAccessor;
   private MultilineText myMultilineText;
   private List<WordCellInitializer> myWordCellInitializers = new ArrayList<WordCellInitializer>();
@@ -124,7 +122,7 @@ public class EditorCell_Multiline extends EditorCell_Collection implements IProp
 
   public void textToProperty(String newText) {
     String oldText = myModelAccessor.getText();
-    if (neq_v798xa_a0b0l(oldText, newText)) {
+    if (neq_v798xa_a0b0k(oldText, newText)) {
       myModelAccessor.setText(MultilineUtil.escapeText(newText));
     }
   }
@@ -202,7 +200,7 @@ public class EditorCell_Multiline extends EditorCell_Collection implements IProp
     // If the EditorComponent is rebuild after a model modification, this cell might not be part of the component 
     // anymore. Therefor, we search for the new multiline cell and forward the call to that one. 
     getEditor().flushEvents();
-    check_v798xa_a3a02(((EditorCell_Multiline) getCellInfo().findCell(getEditor())), pos, enforceSelection, this);
+    check_v798xa_a3a91(((EditorCell_Multiline) getCellInfo().findCell(getEditor())), pos, enforceSelection, this);
   }
 
   private void setCaretPosition_(int pos, boolean enforceSelection) {
@@ -279,7 +277,7 @@ public class EditorCell_Multiline extends EditorCell_Collection implements IProp
   }
 
   public void setText(String newText) {
-    newText = check_v798xa_a0a0fb(newText);
+    newText = check_v798xa_a0a0eb(newText);
     myMultilineText.setText(newText);
     modelToView();
   }
@@ -304,7 +302,7 @@ public class EditorCell_Multiline extends EditorCell_Collection implements IProp
   @Override
   public void addEditorCellAt(int i, EditorCell cell, boolean b) {
     if (!(cell instanceof EditorCell_Word)) {
-      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0jb(check_v798xa_a0a0a0a0a53(cell)));
+      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0ib(check_v798xa_a0a0a0a0a43(cell)));
 
     }
     super.addEditorCellAt(i, cell, b);
@@ -506,43 +504,43 @@ public class EditorCell_Multiline extends EditorCell_Collection implements IProp
   public void paintPropertyChange(Graphics g, String name, String oldValue, String newValue) {
     newValue = MultilineUtil.unescapeText(newValue);
     oldValue = MultilineUtil.unescapeText(oldValue);
-    boolean iAmOld = neq_v798xa_a0a2a35(getText(), newValue);
+    boolean iAmOld = neq_v798xa_a0a2a25(getText(), newValue);
     paintDiff(g, oldValue, newValue, iAmOld);
   }
 
-  private static void check_v798xa_a3a02(EditorCell_Multiline checkedDotOperand, int pos, boolean enforceSelection, EditorCell_Multiline checkedDotThisExpression) {
+  private static void check_v798xa_a3a91(EditorCell_Multiline checkedDotOperand, int pos, boolean enforceSelection, EditorCell_Multiline checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.setCaretPosition_(pos, enforceSelection);
     }
 
   }
 
-  private static String check_v798xa_a0a0fb(String checkedDotOperand) {
+  private static String check_v798xa_a0a0eb(String checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.replace("\\n", "\n");
     }
     return null;
   }
 
-  private static String check_v798xa_a0a0a0a0jb(Class<?> checkedDotOperand) {
+  private static String check_v798xa_a0a0a0a0ib(Class<?> checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getName();
     }
     return null;
   }
 
-  private static Class<?> check_v798xa_a0a0a0a0a53(EditorCell checkedDotOperand) {
+  private static Class<?> check_v798xa_a0a0a0a0a43(EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getClass();
     }
     return null;
   }
 
-  private static boolean neq_v798xa_a0b0l(Object a, Object b) {
+  private static boolean neq_v798xa_a0b0k(Object a, Object b) {
     return !((a != null ? a.equals(b) : a == b));
   }
 
-  private static boolean neq_v798xa_a0a2a35(Object a, Object b) {
+  private static boolean neq_v798xa_a0a2a25(Object a, Object b) {
     return !((a != null ? a.equals(b) : a == b));
   }
 }

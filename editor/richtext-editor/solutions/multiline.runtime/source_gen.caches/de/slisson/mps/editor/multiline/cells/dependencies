@@ -50,7 +50,6 @@
     <classNode dependClassName="name.fraser.neil.plaintext.diff_match_patch" />
     <classNode dependClassName="org.apache.commons.lang3.ArrayUtils" />
     <classNode dependClassName="org.apache.commons.lang3.StringUtils" />
-    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.IDiffPaintingCell" />
@@ -68,7 +67,6 @@
     <classNode dependClassName="java.awt.event.KeyEvent" />
     <classNode dependClassName="java.awt.event.MouseEvent" />
     <classNode dependClassName="java.lang.Boolean" />
-    <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.IllegalArgumentException" />
     <classNode dependClassName="java.lang.Math" />
     <classNode dependClassName="java.lang.Override" />
@@ -95,7 +93,6 @@
     <classNode dependClassName="jetbrains.mps.util.Pair" />
     <classNode dependClassName="org.apache.commons.lang3.StringEscapeUtils" />
     <classNode dependClassName="org.apache.commons.lang3.StringUtils" />
-    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
   </dependency>
@@ -136,7 +133,6 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SelectionStoreException" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SingularSelection" />
     <classNode dependClassName="jetbrains.mps.smodel.ModelAccess" />
-    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
@@ -155,7 +151,6 @@
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
     <classNode dependClassName="org.apache.commons.lang3.Range" />
-    <classNode dependClassName="org.apache.log4j.Logger" />
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.NewLineAction" file="NewLineAction.java">
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
