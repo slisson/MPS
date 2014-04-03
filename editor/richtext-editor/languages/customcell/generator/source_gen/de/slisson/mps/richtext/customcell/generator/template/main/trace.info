@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="QueriesGenerated.java" startLine="14" startPosition="0" endLine="32" endPosition="0" unitName="de.slisson.mps.richtext.customcell.generator.template.main.QueriesGenerated" />
+  <root nodeRef="r:1e754f7d-d47f-4c2a-bb70-d673383fe75a(de.slisson.mps.richtext.customcell.generator.template.main@generator)/1097158831835">
+    <nodeInfo nodeId="1210364947674" fileName="QueriesGenerated.java" startLine="16" startPosition="148" endLine="17" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2490242408671612736" fileName="QueriesGenerated.java" startLine="20" startPosition="151" endLine="21" endPosition="152" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2490242408671003391" fileName="QueriesGenerated.java" startLine="24" startPosition="150" endLine="25" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2490242408670989883" fileName="QueriesGenerated.java" startLine="28" startPosition="150" endLine="29" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <scopeInfo nodeId="1210364947673" fileName="QueriesGenerated.java" startLine="16" startPosition="148" endLine="17" endPosition="106" />
+    <scopeInfo nodeId="2490242408671612598" fileName="QueriesGenerated.java" startLine="20" startPosition="151" endLine="21" endPosition="152" />
+    <scopeInfo nodeId="2490242408671003385" fileName="QueriesGenerated.java" startLine="24" startPosition="150" endLine="25" endPosition="121" />
+    <scopeInfo nodeId="2490242408670988862" fileName="QueriesGenerated.java" startLine="28" startPosition="150" endLine="29" endPosition="81" />
+  </root>
+</debugInfo>
+

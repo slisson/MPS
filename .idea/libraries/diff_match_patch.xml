@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="diff_match_patch">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/editor/richtext-editor/solutions/multiline.runtime/lib/diff_match_patch.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/editor/richtext-editor/solutions/multiline.runtime/lib/diff_match_patch-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>

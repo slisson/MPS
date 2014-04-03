@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="QueriesGenerated.java" startLine="9" startPosition="0" endLine="14" endPosition="0" unitName="de.slisson.mps.richtext.actions.QueriesGenerated" />
+  <root nodeRef="r:679fb3e6-5e0c-4117-b382-6c02f3a1f0ac(de.slisson.mps.richtext.actions)/793221525401868614">
+    <nodeInfo nodeId="793221525401868618" fileName="QueriesGenerated.java" startLine="10" startPosition="143" endLine="11" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="793221525401868616" fileName="QueriesGenerated.java" startLine="10" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="nodeFactory_NodeSetup_Text_793221525401868616#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/action/NodeSetupContext;)V" />
+    <scopeInfo nodeId="793221525401868617" fileName="QueriesGenerated.java" startLine="10" startPosition="143" endLine="11" endPosition="83" />
+    <scopeInfo nodeId="793221525401868616" fileName="QueriesGenerated.java" startLine="10" startPosition="0" endLine="13" endPosition="0">
+      <varInfo nodeId="793221525401868616" varName="_context" />
+      <varInfo nodeId="793221525401868616" varName="operationContext" />
+    </scopeInfo>
+  </root>
+</debugInfo>
+

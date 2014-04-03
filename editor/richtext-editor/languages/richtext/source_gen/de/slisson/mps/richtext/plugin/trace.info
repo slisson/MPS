@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:bef7c8c4-a9ab-4327-9bdc-f32ca505c6e7(de.slisson.mps.richtext.plugin)/1185192475716847950">
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="13" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myId" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="18" startPosition="27" endLine="19" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="22" startPosition="30" endLine="23" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="23" startPosition="30" endLine="24" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="24" startPosition="50" endLine="25" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="25" startPosition="54" endLine="26" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="26" startPosition="55" endLine="27" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="27" startPosition="51" endLine="28" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="31" startPosition="48" endLine="32" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="32" startPosition="92" endLine="33" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="33" startPosition="89" endLine="34" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="15" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Richtext_ApplicationPlugin#()V" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="18" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="31" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initKeymaps#()Ljava/util/List;" />
+    <nodeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="22" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createGroups#()V" />
+    <scopeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="15" startPosition="39" endLine="15" endPosition="39" />
+    <scopeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="18" startPosition="27" endLine="19" endPosition="16" />
+    <scopeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="15" startPosition="0" endLine="17" endPosition="0" />
+    <scopeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="18" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="31" startPosition="48" endLine="34" endPosition="15">
+      <varInfo nodeId="1185192475716847950" varName="res" />
+    </scopeInfo>
+    <scopeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="31" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="22" startPosition="30" endLine="28" endPosition="14" />
+    <scopeInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="22" startPosition="0" endLine="30" endPosition="0" />
+    <unitInfo nodeId="1185192475716847950" fileName="Richtext_ApplicationPlugin.java" startLine="12" startPosition="0" endLine="37" endPosition="0" unitName="de.slisson.mps.richtext.plugin.Richtext_ApplicationPlugin" />
+  </root>
+  <root nodeRef="r:bef7c8c4-a9ab-4327-9bdc-f32ca505c6e7(de.slisson.mps.richtext.plugin)/1185192475716920403">
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="11" startPosition="52" endLine="12" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="12" startPosition="14" endLine="13" endPosition="112" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="13" startPosition="112" endLine="14" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="14" startPosition="121" endLine="15" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="15" startPosition="121" endLine="16" endPosition="114" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="16" startPosition="114" endLine="17" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="17" startPosition="28" endLine="18" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="21" startPosition="29" endLine="22" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="25" startPosition="53" endLine="26" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="21" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getScheme#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="25" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getShortcut#(Ljava/lang/String;)Lcom/intellij/openapi/actionSystem/Shortcut;" />
+    <nodeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="11" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="RichtextSelectionHandling_KeymapChanges#()V" />
+    <scopeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="21" startPosition="29" endLine="22" endPosition="22" />
+    <scopeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="25" startPosition="53" endLine="26" endPosition="70" />
+    <scopeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="21" startPosition="0" endLine="24" endPosition="0" />
+    <scopeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="25" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="1185192475716920403" varName="stroke" />
+    </scopeInfo>
+    <scopeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="11" startPosition="52" endLine="18" endPosition="15" />
+    <scopeInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="11" startPosition="0" endLine="20" endPosition="0" />
+    <unitInfo nodeId="1185192475716920403" fileName="RichtextSelectionHandling_KeymapChanges.java" startLine="10" startPosition="0" endLine="29" endPosition="0" unitName="de.slisson.mps.richtext.plugin.RichtextSelectionHandling_KeymapChanges" />
+  </root>
+  <root nodeRef="r:bef7c8c4-a9ab-4327-9bdc-f32ca505c6e7(de.slisson.mps.richtext.plugin)/5740484903843212652">
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="23" startPosition="46" endLine="24" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="24" startPosition="50" endLine="25" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="25" startPosition="35" endLine="26" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="30" startPosition="32" endLine="31" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843212672" fileName="RichtextSelectionLocalHome_Action.java" startLine="35" startPosition="214" endLine="36" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843212688" fileName="RichtextSelectionLocalHome_Action.java" startLine="37" startPosition="5" endLine="38" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5740484903843212700" fileName="RichtextSelectionLocalHome_Action.java" startLine="39" startPosition="49" endLine="40" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843212705" fileName="RichtextSelectionLocalHome_Action.java" startLine="41" startPosition="5" endLine="42" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="47" startPosition="7" endLine="48" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="48" startPosition="60" endLine="49" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="52" startPosition="45" endLine="53" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="54" startPosition="7" endLine="55" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="60" startPosition="53" endLine="61" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="62" startPosition="5" endLine="63" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="64" startPosition="70" endLine="65" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="66" startPosition="5" endLine="67" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843212655" fileName="RichtextSelectionLocalHome_Action.java" startLine="71" startPosition="9" endLine="72" endPosition="163" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="74" startPosition="45" endLine="75" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="80" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="5740484903843212670" fileName="RichtextSelectionLocalHome_Action.java" startLine="34" startPosition="87" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843212698" fileName="RichtextSelectionLocalHome_Action.java" startLine="38" startPosition="135" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="59" startPosition="95" endLine="62" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="63" startPosition="107" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="46" startPosition="9" endLine="50" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="62" startPosition="5" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="23" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="RichtextSelectionLocalHome_Action#()V" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="70" startPosition="96" endLine="77" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="70" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="34" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="59" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="45" startPosition="89" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="45" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="30" startPosition="32" endLine="31" endPosition="16" />
+    <scopeInfo nodeId="5740484903843212671" fileName="RichtextSelectionLocalHome_Action.java" startLine="35" startPosition="214" endLine="36" endPosition="19" />
+    <scopeInfo nodeId="5740484903843212699" fileName="RichtextSelectionLocalHome_Action.java" startLine="39" startPosition="49" endLine="40" endPosition="18" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="52" startPosition="45" endLine="53" endPosition="101" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="60" startPosition="53" endLine="61" endPosition="19" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="64" startPosition="70" endLine="65" endPosition="19" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="71" startPosition="9" endLine="72" endPosition="163" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="74" startPosition="45" endLine="75" endPosition="100" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="47" startPosition="7" endLine="49" endPosition="63">
+      <varInfo nodeId="5740484903843212652" varName="enabled" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="23" startPosition="46" endLine="26" endPosition="41" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="73" startPosition="0" endLine="76" endPosition="7">
+      <varInfo nodeId="5740484903843212652" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="46" startPosition="9" endLine="50" endPosition="7" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="51" startPosition="0" endLine="55" endPosition="44">
+      <varInfo nodeId="5740484903843212652" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="51" startPosition="27" endLine="55" endPosition="44" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="62" startPosition="5" endLine="66" endPosition="5" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="23" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="70" startPosition="96" endLine="77" endPosition="5" />
+    <scopeInfo nodeId="5740484903843212669" fileName="RichtextSelectionLocalHome_Action.java" startLine="34" startPosition="87" endLine="42" endPosition="17">
+      <varInfo nodeId="5740484903843212689" varName="selection" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="59" startPosition="95" endLine="67" endPosition="16" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="70" startPosition="0" endLine="79" endPosition="0">
+      <varInfo nodeId="5740484903843212652" varName="_params" />
+      <varInfo nodeId="5740484903843212652" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="34" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="5740484903843212652" varName="_params" />
+      <varInfo nodeId="5740484903843212652" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="59" startPosition="0" endLine="69" endPosition="0">
+      <varInfo nodeId="5740484903843212652" varName="_params" />
+      <varInfo nodeId="5740484903843212652" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="45" startPosition="89" endLine="56" endPosition="5" />
+    <scopeInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="45" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="5740484903843212652" varName="_params" />
+      <varInfo nodeId="5740484903843212652" varName="event" />
+    </scopeInfo>
+    <unitInfo nodeId="5740484903843212652" fileName="RichtextSelectionLocalHome_Action.java" startLine="20" startPosition="0" endLine="82" endPosition="0" unitName="de.slisson.mps.richtext.plugin.RichtextSelectionLocalHome_Action" />
+  </root>
+  <root nodeRef="r:bef7c8c4-a9ab-4327-9bdc-f32ca505c6e7(de.slisson.mps.richtext.plugin)/5740484903843233147">
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="23" startPosition="45" endLine="24" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="24" startPosition="49" endLine="25" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="25" startPosition="35" endLine="26" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="30" startPosition="32" endLine="31" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843233167" fileName="RichtextSelectionLocalEnd_Action.java" startLine="35" startPosition="214" endLine="36" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843233183" fileName="RichtextSelectionLocalEnd_Action.java" startLine="37" startPosition="5" endLine="38" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5740484903843233195" fileName="RichtextSelectionLocalEnd_Action.java" startLine="39" startPosition="49" endLine="40" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843233200" fileName="RichtextSelectionLocalEnd_Action.java" startLine="41" startPosition="5" endLine="42" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="47" startPosition="7" endLine="48" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="48" startPosition="60" endLine="49" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="52" startPosition="45" endLine="53" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="54" startPosition="7" endLine="55" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="60" startPosition="53" endLine="61" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="62" startPosition="5" endLine="63" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="64" startPosition="70" endLine="65" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="66" startPosition="5" endLine="67" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5740484903843233150" fileName="RichtextSelectionLocalEnd_Action.java" startLine="71" startPosition="9" endLine="72" endPosition="162" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="74" startPosition="45" endLine="75" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="80" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="5740484903843233165" fileName="RichtextSelectionLocalEnd_Action.java" startLine="34" startPosition="87" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843233193" fileName="RichtextSelectionLocalEnd_Action.java" startLine="38" startPosition="135" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="59" startPosition="95" endLine="62" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="63" startPosition="107" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="46" startPosition="9" endLine="50" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="62" startPosition="5" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="23" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="RichtextSelectionLocalEnd_Action#()V" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="70" startPosition="96" endLine="77" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="70" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="34" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="59" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="45" startPosition="89" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="45" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="30" startPosition="32" endLine="31" endPosition="16" />
+    <scopeInfo nodeId="5740484903843233166" fileName="RichtextSelectionLocalEnd_Action.java" startLine="35" startPosition="214" endLine="36" endPosition="19" />
+    <scopeInfo nodeId="5740484903843233194" fileName="RichtextSelectionLocalEnd_Action.java" startLine="39" startPosition="49" endLine="40" endPosition="18" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="52" startPosition="45" endLine="53" endPosition="100" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="60" startPosition="53" endLine="61" endPosition="19" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="64" startPosition="70" endLine="65" endPosition="19" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="71" startPosition="9" endLine="72" endPosition="162" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="74" startPosition="45" endLine="75" endPosition="99" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="47" startPosition="7" endLine="49" endPosition="63">
+      <varInfo nodeId="5740484903843233147" varName="enabled" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="23" startPosition="45" endLine="26" endPosition="41" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="73" startPosition="0" endLine="76" endPosition="7">
+      <varInfo nodeId="5740484903843233147" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="46" startPosition="9" endLine="50" endPosition="7" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="51" startPosition="0" endLine="55" endPosition="44">
+      <varInfo nodeId="5740484903843233147" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="51" startPosition="27" endLine="55" endPosition="44" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="62" startPosition="5" endLine="66" endPosition="5" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="23" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="70" startPosition="96" endLine="77" endPosition="5" />
+    <scopeInfo nodeId="5740484903843233164" fileName="RichtextSelectionLocalEnd_Action.java" startLine="34" startPosition="87" endLine="42" endPosition="17">
+      <varInfo nodeId="5740484903843233184" varName="selection" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="59" startPosition="95" endLine="67" endPosition="16" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="70" startPosition="0" endLine="79" endPosition="0">
+      <varInfo nodeId="5740484903843233147" varName="_params" />
+      <varInfo nodeId="5740484903843233147" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="34" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="5740484903843233147" varName="_params" />
+      <varInfo nodeId="5740484903843233147" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="59" startPosition="0" endLine="69" endPosition="0">
+      <varInfo nodeId="5740484903843233147" varName="_params" />
+      <varInfo nodeId="5740484903843233147" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="45" startPosition="89" endLine="56" endPosition="5" />
+    <scopeInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="45" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="5740484903843233147" varName="_params" />
+      <varInfo nodeId="5740484903843233147" varName="event" />
+    </scopeInfo>
+    <unitInfo nodeId="5740484903843233147" fileName="RichtextSelectionLocalEnd_Action.java" startLine="20" startPosition="0" endLine="82" endPosition="0" unitName="de.slisson.mps.richtext.plugin.RichtextSelectionLocalEnd_Action" />
+  </root>
+  <root nodeRef="r:bef7c8c4-a9ab-4327-9bdc-f32ca505c6e7(de.slisson.mps.richtext.plugin)/6973228588407164110">
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="23" startPosition="41" endLine="24" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="24" startPosition="44" endLine="25" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="25" startPosition="35" endLine="26" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="30" startPosition="32" endLine="31" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407164163" fileName="RichtextSelectionLeft_Action.java" startLine="35" startPosition="214" endLine="36" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407164179" fileName="RichtextSelectionLeft_Action.java" startLine="37" startPosition="5" endLine="38" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6973228588407164191" fileName="RichtextSelectionLeft_Action.java" startLine="39" startPosition="49" endLine="40" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407176632" fileName="RichtextSelectionLeft_Action.java" startLine="41" startPosition="5" endLine="42" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="47" startPosition="7" endLine="48" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="48" startPosition="60" endLine="49" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="52" startPosition="45" endLine="53" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="54" startPosition="7" endLine="55" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="60" startPosition="53" endLine="61" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="62" startPosition="5" endLine="63" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="64" startPosition="70" endLine="65" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="66" startPosition="5" endLine="67" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2549531600787651884" fileName="RichtextSelectionLeft_Action.java" startLine="71" startPosition="9" endLine="72" endPosition="157" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="74" startPosition="45" endLine="75" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="80" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="6973228588407164161" fileName="RichtextSelectionLeft_Action.java" startLine="34" startPosition="87" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407164189" fileName="RichtextSelectionLeft_Action.java" startLine="38" startPosition="135" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="59" startPosition="95" endLine="62" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="63" startPosition="107" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="46" startPosition="9" endLine="50" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="62" startPosition="5" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="23" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="RichtextSelectionLeft_Action#()V" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="70" startPosition="96" endLine="77" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="70" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="34" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="59" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="45" startPosition="89" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="45" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="30" startPosition="32" endLine="31" endPosition="16" />
+    <scopeInfo nodeId="6973228588407164162" fileName="RichtextSelectionLeft_Action.java" startLine="35" startPosition="214" endLine="36" endPosition="19" />
+    <scopeInfo nodeId="6973228588407164190" fileName="RichtextSelectionLeft_Action.java" startLine="39" startPosition="49" endLine="40" endPosition="18" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="52" startPosition="45" endLine="53" endPosition="96" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="60" startPosition="53" endLine="61" endPosition="19" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="64" startPosition="70" endLine="65" endPosition="19" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="71" startPosition="9" endLine="72" endPosition="157" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="74" startPosition="45" endLine="75" endPosition="95" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="47" startPosition="7" endLine="49" endPosition="63">
+      <varInfo nodeId="6973228588407164110" varName="enabled" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="23" startPosition="41" endLine="26" endPosition="41" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="73" startPosition="0" endLine="76" endPosition="7">
+      <varInfo nodeId="6973228588407164110" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="46" startPosition="9" endLine="50" endPosition="7" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="51" startPosition="0" endLine="55" endPosition="44">
+      <varInfo nodeId="6973228588407164110" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="51" startPosition="27" endLine="55" endPosition="44" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="62" startPosition="5" endLine="66" endPosition="5" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="23" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="70" startPosition="96" endLine="77" endPosition="5" />
+    <scopeInfo nodeId="6973228588407164154" fileName="RichtextSelectionLeft_Action.java" startLine="34" startPosition="87" endLine="42" endPosition="17">
+      <varInfo nodeId="6973228588407164180" varName="selection" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="59" startPosition="95" endLine="67" endPosition="16" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="70" startPosition="0" endLine="79" endPosition="0">
+      <varInfo nodeId="6973228588407164110" varName="_params" />
+      <varInfo nodeId="6973228588407164110" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="34" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="6973228588407164110" varName="_params" />
+      <varInfo nodeId="6973228588407164110" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="59" startPosition="0" endLine="69" endPosition="0">
+      <varInfo nodeId="6973228588407164110" varName="_params" />
+      <varInfo nodeId="6973228588407164110" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="45" startPosition="89" endLine="56" endPosition="5" />
+    <scopeInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="45" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="6973228588407164110" varName="_params" />
+      <varInfo nodeId="6973228588407164110" varName="event" />
+    </scopeInfo>
+    <unitInfo nodeId="6973228588407164110" fileName="RichtextSelectionLeft_Action.java" startLine="20" startPosition="0" endLine="82" endPosition="0" unitName="de.slisson.mps.richtext.plugin.RichtextSelectionLeft_Action" />
+  </root>
+  <root nodeRef="r:bef7c8c4-a9ab-4327-9bdc-f32ca505c6e7(de.slisson.mps.richtext.plugin)/6973228588407176642">
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="ICON" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="23" startPosition="42" endLine="24" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="24" startPosition="44" endLine="25" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="25" startPosition="35" endLine="26" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="30" startPosition="32" endLine="31" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407176668" fileName="RichtextSelectionRight_Action.java" startLine="35" startPosition="214" endLine="36" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407176684" fileName="RichtextSelectionRight_Action.java" startLine="37" startPosition="5" endLine="38" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6973228588407176696" fileName="RichtextSelectionRight_Action.java" startLine="39" startPosition="49" endLine="40" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407176701" fileName="RichtextSelectionRight_Action.java" startLine="41" startPosition="5" endLine="42" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="47" startPosition="7" endLine="48" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="48" startPosition="60" endLine="49" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="52" startPosition="45" endLine="53" endPosition="97" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="54" startPosition="7" endLine="55" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="60" startPosition="53" endLine="61" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="62" startPosition="5" endLine="63" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="64" startPosition="70" endLine="65" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="66" startPosition="5" endLine="67" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6973228588407176645" fileName="RichtextSelectionRight_Action.java" startLine="71" startPosition="9" endLine="72" endPosition="158" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="74" startPosition="45" endLine="75" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="80" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="6973228588407176666" fileName="RichtextSelectionRight_Action.java" startLine="34" startPosition="87" endLine="37" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407176694" fileName="RichtextSelectionRight_Action.java" startLine="38" startPosition="135" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="59" startPosition="95" endLine="62" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="63" startPosition="107" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="29" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isDumbAware#()Z" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="46" startPosition="9" endLine="50" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="62" startPosition="5" endLine="66" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="23" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="RichtextSelectionRight_Action#()V" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="70" startPosition="96" endLine="77" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="70" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="34" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="59" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="45" startPosition="89" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="45" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="30" startPosition="32" endLine="31" endPosition="16" />
+    <scopeInfo nodeId="6973228588407176667" fileName="RichtextSelectionRight_Action.java" startLine="35" startPosition="214" endLine="36" endPosition="19" />
+    <scopeInfo nodeId="6973228588407176695" fileName="RichtextSelectionRight_Action.java" startLine="39" startPosition="49" endLine="40" endPosition="18" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="52" startPosition="45" endLine="53" endPosition="97" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="60" startPosition="53" endLine="61" endPosition="19" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="64" startPosition="70" endLine="65" endPosition="19" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="71" startPosition="9" endLine="72" endPosition="158" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="74" startPosition="45" endLine="75" endPosition="96" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="47" startPosition="7" endLine="49" endPosition="63">
+      <varInfo nodeId="6973228588407176642" varName="enabled" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="23" startPosition="42" endLine="26" endPosition="41" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="51" startPosition="27" endLine="54" endPosition="7" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="73" startPosition="0" endLine="76" endPosition="7">
+      <varInfo nodeId="6973228588407176642" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="73" startPosition="27" endLine="76" endPosition="7" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="29" startPosition="0" endLine="33" endPosition="0" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="46" startPosition="9" endLine="50" endPosition="7" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="51" startPosition="0" endLine="55" endPosition="44">
+      <varInfo nodeId="6973228588407176642" varName="t" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="51" startPosition="27" endLine="55" endPosition="44" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="62" startPosition="5" endLine="66" endPosition="5" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="23" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="70" startPosition="96" endLine="77" endPosition="5" />
+    <scopeInfo nodeId="6973228588407176659" fileName="RichtextSelectionRight_Action.java" startLine="34" startPosition="87" endLine="42" endPosition="17">
+      <varInfo nodeId="6973228588407176685" varName="selection" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="59" startPosition="95" endLine="67" endPosition="16" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="70" startPosition="0" endLine="79" endPosition="0">
+      <varInfo nodeId="6973228588407176642" varName="_params" />
+      <varInfo nodeId="6973228588407176642" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="34" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="6973228588407176642" varName="_params" />
+      <varInfo nodeId="6973228588407176642" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="59" startPosition="0" endLine="69" endPosition="0">
+      <varInfo nodeId="6973228588407176642" varName="_params" />
+      <varInfo nodeId="6973228588407176642" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="45" startPosition="89" endLine="56" endPosition="5" />
+    <scopeInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="45" startPosition="0" endLine="58" endPosition="0">
+      <varInfo nodeId="6973228588407176642" varName="_params" />
+      <varInfo nodeId="6973228588407176642" varName="event" />
+    </scopeInfo>
+    <unitInfo nodeId="6973228588407176642" fileName="RichtextSelectionRight_Action.java" startLine="20" startPosition="0" endLine="82" endPosition="0" unitName="de.slisson.mps.richtext.plugin.RichtextSelectionRight_Action" />
+  </root>
+</debugInfo>
+

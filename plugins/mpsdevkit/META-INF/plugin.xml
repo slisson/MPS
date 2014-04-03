@@ -76,6 +76,8 @@
     <mps.VisibleModuleMask mask="stubUtils"/>
     <mps.VisibleModuleMask mask="Testbench"/>
     <mps.VisibleModuleMask mask="typesystemIntegration"/>
+    <mps.VisibleModuleMask mask="de\.slisson\.mps\.editor\.multiline.*"/>
+    <mps.VisibleModuleMask mask="de\.slisson\.mps\.richtext.*"/>
   </extensions>
   <actions>
     <group id="MPSWelcomeDocumentationMenu">
