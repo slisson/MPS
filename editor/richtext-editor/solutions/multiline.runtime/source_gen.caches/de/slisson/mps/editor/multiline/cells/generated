@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="88vfx0j9rrjozmhmrdacu8cpgnle0od">
+<dependencies version="2" modelHash="9l3xtb7kqa0b24x6cghf1fzhij0222o">
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.selection(MPS.Editor/jetbrains.mps.nodeEditor.selection@java_stub)" />
@@ -120,7 +120,7 @@
     <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
     <file name="WordPasteAction.java" />
   </source>
-  <source id="4950521006212361787" name="MultilineSelection" hash="1mca3um6dyv1760093uo9aq6svuw5t0">
+  <source id="4950521006212361787" name="MultilineSelection" hash="-8oxphguk550l9ui0tkezps64ry3bdq">
     <dep root="6159071989902643399" />
     <dep root="8291359990510677541" />
     <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
@@ -154,6 +154,10 @@
   <source id="7453862918668948221" name="TabAction" hash="cnna0v2lasz6w2pnqpqtyyri8slfs6r">
     <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
     <file name="TabAction.java" />
+  </source>
+  <source id="5232239503568314559" name="SelectionKeyboardHandler" hash="-csyek38sdrxs20am70mj27ykliue8tj">
+    <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
+    <file name="SelectionKeyboardHandler.java" />
   </source>
 </dependencies>
 

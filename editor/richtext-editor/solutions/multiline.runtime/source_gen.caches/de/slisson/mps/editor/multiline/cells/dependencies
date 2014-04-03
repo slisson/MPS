@@ -109,6 +109,7 @@
     <classNode dependClassName="com.intellij.openapi.editor.colors.EditorColorsManager" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Multiline" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.SelectionKeyboardHandler" />
     <classNode dependClassName="de.slisson.mps.editor.multiline.runtime.ClipboardUtils" />
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Graphics2D" />
@@ -184,6 +185,14 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SelectionManager" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.cells.CellAction" />
+  </dependency>
+  <dependency className="de.slisson.mps.editor.multiline.cells.SelectionKeyboardHandler" file="SelectionKeyboardHandler.java">
+    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
+    <classNode dependClassName="java.awt.event.KeyEvent" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.KeyboardHandler" />
   </dependency>
   <dependency className="de.slisson.mps.editor.multiline.cells.TabAction" file="TabAction.java">
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />

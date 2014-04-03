@@ -124,364 +124,375 @@
     <nodeInfo nodeId="1534219577530313053" fileName="MultilineSelection.java" startLine="34" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
     <nodeInfo nodeId="1534219577530305103" fileName="MultilineSelection.java" startLine="35" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PROPERTY_SELECTION_START" />
     <nodeInfo nodeId="1534219577530305114" fileName="MultilineSelection.java" startLine="36" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="PROPERTY_SELECTION_END" />
-    <nodeInfo nodeId="4950521006212362767" fileName="MultilineSelection.java" startLine="37" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myMultilineCell" />
-    <nodeInfo nodeId="4950521006212362771" fileName="MultilineSelection.java" startLine="38" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="mySelectionStart" />
-    <nodeInfo nodeId="1534219577530305171" fileName="MultilineSelection.java" startLine="44" startPosition="171" endLine="45" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="1534219577530305175" fileName="MultilineSelection.java" startLine="46" startPosition="27" endLine="47" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="1534219577530305182" fileName="MultilineSelection.java" startLine="48" startPosition="5" endLine="49" endPosition="108" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530305191" fileName="MultilineSelection.java" startLine="50" startPosition="53" endLine="51" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530305202" fileName="MultilineSelection.java" startLine="52" startPosition="12" endLine="53" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="1534219577530305289" fileName="MultilineSelection.java" startLine="54" startPosition="5" endLine="55" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530305298" fileName="MultilineSelection.java" startLine="55" startPosition="92" endLine="56" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530305311" fileName="MultilineSelection.java" startLine="56" startPosition="88" endLine="57" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4950521006212361796" fileName="MultilineSelection.java" startLine="60" startPosition="118" endLine="61" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="4950521006212375615" fileName="MultilineSelection.java" startLine="61" startPosition="27" endLine="62" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530314682" fileName="MultilineSelection.java" startLine="62" startPosition="36" endLine="63" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530231703" fileName="MultilineSelection.java" startLine="66" startPosition="47" endLine="67" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1185192475716873071" fileName="MultilineSelection.java" startLine="70" startPosition="34" endLine="71" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1185192475716873138" fileName="MultilineSelection.java" startLine="74" startPosition="32" endLine="75" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1534219577530231708" fileName="MultilineSelection.java" startLine="78" startPosition="45" endLine="79" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530231713" fileName="MultilineSelection.java" startLine="82" startPosition="59" endLine="83" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530231740" fileName="MultilineSelection.java" startLine="83" startPosition="32" endLine="84" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1185192475716888236" fileName="MultilineSelection.java" startLine="87" startPosition="50" endLine="88" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1534219577530348227" fileName="MultilineSelection.java" startLine="91" startPosition="64" endLine="92" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008184121" fileName="MultilineSelection.java" startLine="93" startPosition="28" endLine="94" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008184127" fileName="MultilineSelection.java" startLine="94" startPosition="26" endLine="95" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008184154" fileName="MultilineSelection.java" startLine="95" startPosition="24" endLine="96" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530324597" fileName="MultilineSelection.java" startLine="97" startPosition="5" endLine="98" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530324610" fileName="MultilineSelection.java" startLine="99" startPosition="92" endLine="100" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530348336" fileName="MultilineSelection.java" startLine="100" startPosition="51" endLine="101" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530348366" fileName="MultilineSelection.java" startLine="102" startPosition="79" endLine="103" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530324624" fileName="MultilineSelection.java" startLine="104" startPosition="7" endLine="105" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530324634" fileName="MultilineSelection.java" startLine="105" startPosition="82" endLine="106" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530324644" fileName="MultilineSelection.java" startLine="106" startPosition="78" endLine="107" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530343641" fileName="MultilineSelection.java" startLine="111" startPosition="26" endLine="112" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530324682" fileName="MultilineSelection.java" startLine="115" startPosition="28" endLine="116" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5973846538640515263" fileName="MultilineSelection.java" startLine="119" startPosition="31" endLine="120" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5973846538640640497" fileName="MultilineSelection.java" startLine="121" startPosition="28" endLine="122" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5973846538640405793" fileName="MultilineSelection.java" startLine="123" startPosition="5" endLine="124" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008180886" fileName="MultilineSelection.java" startLine="129" startPosition="84" endLine="130" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008180990" fileName="MultilineSelection.java" startLine="130" startPosition="98" endLine="131" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734018900" fileName="MultilineSelection.java" startLine="132" startPosition="83" endLine="133" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734037424" fileName="MultilineSelection.java" startLine="134" startPosition="45" endLine="135" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734019099" fileName="MultilineSelection.java" startLine="136" startPosition="44" endLine="137" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734018917" fileName="MultilineSelection.java" startLine="137" startPosition="41" endLine="138" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187067" fileName="MultilineSelection.java" startLine="139" startPosition="46" endLine="140" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187188" fileName="MultilineSelection.java" startLine="141" startPosition="92" endLine="142" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008196263" fileName="MultilineSelection.java" startLine="143" startPosition="90" endLine="144" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187033" fileName="MultilineSelection.java" startLine="145" startPosition="137" endLine="146" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7793244833751819219" fileName="MultilineSelection.java" startLine="147" startPosition="12" endLine="148" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1643598191275563146" fileName="MultilineSelection.java" startLine="169" startPosition="14" endLine="170" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1643598191275705727" fileName="MultilineSelection.java" startLine="171" startPosition="14" endLine="172" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4878119692008202476" fileName="MultilineSelection.java" startLine="178" startPosition="35" endLine="179" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008202500" fileName="MultilineSelection.java" startLine="179" startPosition="59" endLine="180" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008202467" fileName="MultilineSelection.java" startLine="180" startPosition="58" endLine="181" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4878119692008187015" fileName="MultilineSelection.java" startLine="184" startPosition="32" endLine="185" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008187019" fileName="MultilineSelection.java" startLine="185" startPosition="34" endLine="186" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187023" fileName="MultilineSelection.java" startLine="186" startPosition="42" endLine="187" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187051" fileName="MultilineSelection.java" startLine="192" startPosition="25" endLine="193" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187053" fileName="MultilineSelection.java" startLine="193" startPosition="29" endLine="194" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008187057" fileName="MultilineSelection.java" startLine="194" startPosition="64" endLine="195" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187322" fileName="MultilineSelection.java" startLine="200" startPosition="42" endLine="201" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5986960525548616985" fileName="MultilineSelection.java" startLine="201" startPosition="90" endLine="202" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187223" fileName="MultilineSelection.java" startLine="202" startPosition="99" endLine="203" endPosition="181" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008187235" fileName="MultilineSelection.java" startLine="204" startPosition="53" endLine="205" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4878119692008187240" fileName="MultilineSelection.java" startLine="206" startPosition="5" endLine="207" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008187248" fileName="MultilineSelection.java" startLine="208" startPosition="62" endLine="209" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4878119692008187256" fileName="MultilineSelection.java" startLine="210" startPosition="5" endLine="211" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="4878119692008187276" fileName="MultilineSelection.java" startLine="211" startPosition="0" endLine="212" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008187283" fileName="MultilineSelection.java" startLine="212" startPosition="59" endLine="213" endPosition="119" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008193282" fileName="MultilineSelection.java" startLine="213" startPosition="119" endLine="214" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734018995" fileName="MultilineSelection.java" startLine="218" startPosition="44" endLine="219" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734019010" fileName="MultilineSelection.java" startLine="222" startPosition="27" endLine="223" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008219907" fileName="MultilineSelection.java" startLine="229" startPosition="36" endLine="230" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4878119692008219913" fileName="MultilineSelection.java" startLine="230" startPosition="59" endLine="231" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4054375835734019135" fileName="MultilineSelection.java" startLine="231" startPosition="58" endLine="232" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4054375835734019169" fileName="MultilineSelection.java" startLine="232" startPosition="44" endLine="233" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734038981" fileName="MultilineSelection.java" startLine="233" startPosition="74" endLine="234" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734042086" fileName="MultilineSelection.java" startLine="234" startPosition="34" endLine="235" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4054375835734026891" fileName="MultilineSelection.java" startLine="235" startPosition="28" endLine="236" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2983918873756931850" fileName="MultilineSelection.java" startLine="240" startPosition="65" endLine="241" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1534219577530305782" fileName="MultilineSelection.java" startLine="242" startPosition="5" endLine="243" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530305788" fileName="MultilineSelection.java" startLine="243" startPosition="83" endLine="244" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530306124" fileName="MultilineSelection.java" startLine="245" startPosition="35" endLine="246" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530305812" fileName="MultilineSelection.java" startLine="247" startPosition="12" endLine="248" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530305823" fileName="MultilineSelection.java" startLine="249" startPosition="54" endLine="250" endPosition="186" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5986960525544612641" fileName="MultilineSelection.java" startLine="252" startPosition="5" endLine="253" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530304141" fileName="MultilineSelection.java" startLine="256" startPosition="74" endLine="257" endPosition="239" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530304154" fileName="MultilineSelection.java" startLine="257" startPosition="239" endLine="258" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530304170" fileName="MultilineSelection.java" startLine="258" startPosition="61" endLine="259" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530304179" fileName="MultilineSelection.java" startLine="259" startPosition="103" endLine="260" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530305131" fileName="MultilineSelection.java" startLine="260" startPosition="99" endLine="261" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4950521006212375455" fileName="MultilineSelection.java" startLine="265" startPosition="24" endLine="266" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4950521006212375562" fileName="MultilineSelection.java" startLine="268" startPosition="58" endLine="269" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4950521006212375569" fileName="MultilineSelection.java" startLine="270" startPosition="5" endLine="271" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4950521006212375671" fileName="MultilineSelection.java" startLine="272" startPosition="68" endLine="273" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4950521006212375731" fileName="MultilineSelection.java" startLine="275" startPosition="62" endLine="276" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4950521006212375796" fileName="MultilineSelection.java" startLine="278" startPosition="58" endLine="279" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4950521006212375736" fileName="MultilineSelection.java" startLine="280" startPosition="5" endLine="281" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4887533856267060690" fileName="MultilineSelection.java" startLine="284" startPosition="44" endLine="285" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4887533856270494401" fileName="MultilineSelection.java" startLine="285" startPosition="120" endLine="286" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4887533856270739564" fileName="MultilineSelection.java" startLine="286" startPosition="59" endLine="287" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4887533856257473152" fileName="MultilineSelection.java" startLine="287" startPosition="62" endLine="288" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4878119692008180993" fileName="MultilineSelection.java" startLine="291" startPosition="33" endLine="292" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7793244833751855595" fileName="MultilineSelection.java" startLine="295" startPosition="51" endLine="296" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1534219577530322814" fileName="MultilineSelection.java" startLine="299" startPosition="61" endLine="300" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1534219577530322820" fileName="MultilineSelection.java" startLine="300" startPosition="23" endLine="301" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530322865" fileName="MultilineSelection.java" startLine="301" startPosition="35" endLine="302" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530322910" fileName="MultilineSelection.java" startLine="302" startPosition="35" endLine="303" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1643598191267400065" fileName="MultilineSelection.java" startLine="308" startPosition="46" endLine="309" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5792856961227094768" fileName="MultilineSelection.java" startLine="314" startPosition="41" endLine="315" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1534219577530305200" fileName="MultilineSelection.java" startLine="52" startPosition="10" endLine="54" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="7793244833751819217" fileName="MultilineSelection.java" startLine="147" startPosition="10" endLine="149" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1534219577530305173" fileName="MultilineSelection.java" startLine="45" startPosition="27" endLine="48" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1534219577530231682" fileName="MultilineSelection.java" startLine="66" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectionStart#(I)V" />
-    <nodeInfo nodeId="1185192475716873026" fileName="MultilineSelection.java" startLine="70" startPosition="0" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectionStart#()I" />
-    <nodeInfo nodeId="1185192475716873093" fileName="MultilineSelection.java" startLine="74" startPosition="0" endLine="77" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectionEnd#()I" />
-    <nodeInfo nodeId="1534219577530231688" fileName="MultilineSelection.java" startLine="78" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectionEnd#(I)V" />
-    <nodeInfo nodeId="1185192475716888191" fileName="MultilineSelection.java" startLine="87" startPosition="0" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getMultilineCell#()Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;" />
-    <nodeInfo nodeId="1534219577530348259" fileName="MultilineSelection.java" startLine="101" startPosition="43" endLine="104" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4950521006212361798" fileName="MultilineSelection.java" startLine="111" startPosition="0" endLine="114" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="activate#()V" />
-    <nodeInfo nodeId="4950521006212361802" fileName="MultilineSelection.java" startLine="115" startPosition="0" endLine="118" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deactivate#()V" />
-    <nodeInfo nodeId="5973846538640579143" fileName="MultilineSelection.java" startLine="120" startPosition="84" endLine="123" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4878119692008187233" fileName="MultilineSelection.java" startLine="203" startPosition="181" endLine="206" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4878119692008187246" fileName="MultilineSelection.java" startLine="207" startPosition="74" endLine="210" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1643598191276620661" fileName="MultilineSelection.java" startLine="222" startPosition="0" endLine="225" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
-    <nodeInfo nodeId="2983918873756931746" fileName="MultilineSelection.java" startLine="239" startPosition="44" endLine="242" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1534219577530305821" fileName="MultilineSelection.java" startLine="248" startPosition="83" endLine="251" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4950521006212375427" fileName="MultilineSelection.java" startLine="264" startPosition="42" endLine="267" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4950521006212375459" fileName="MultilineSelection.java" startLine="267" startPosition="5" endLine="270" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4950521006212375578" fileName="MultilineSelection.java" startLine="271" startPosition="67" endLine="274" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4950521006212375675" fileName="MultilineSelection.java" startLine="274" startPosition="5" endLine="277" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4950521006212375740" fileName="MultilineSelection.java" startLine="277" startPosition="5" endLine="280" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7793244833751855550" fileName="MultilineSelection.java" startLine="291" startPosition="0" endLine="294" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCaretPosition#()I" />
-    <nodeInfo nodeId="7793244833751855537" fileName="MultilineSelection.java" startLine="295" startPosition="0" endLine="298" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCellContainingCaret#()Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
-    <nodeInfo nodeId="4950521006212362777" fileName="MultilineSelection.java" startLine="39" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="mySelectionEnd" />
-    <nodeInfo nodeId="1534219577530231694" fileName="MultilineSelection.java" startLine="82" startPosition="0" endLine="86" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectionRange#(II)V" />
-    <nodeInfo nodeId="1534219577530305189" fileName="MultilineSelection.java" startLine="49" startPosition="108" endLine="54" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4950521006212361789" fileName="MultilineSelection.java" startLine="60" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MultilineSelection#(Ljetbrains/mps/openapi/editor/EditorComponent;Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;II)V" />
-    <nodeInfo nodeId="4878119692008184092" fileName="MultilineSelection.java" startLine="92" startPosition="26" endLine="97" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4878119692008202445" fileName="MultilineSelection.java" startLine="178" startPosition="0" endLine="183" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectedText#()Ljava/lang/String;" />
-    <nodeInfo nodeId="4878119692008187007" fileName="MultilineSelection.java" startLine="184" startPosition="0" endLine="189" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clearSelection#()V" />
-    <nodeInfo nodeId="4878119692008187049" fileName="MultilineSelection.java" startLine="192" startPosition="0" endLine="197" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
-    <nodeInfo nodeId="4054375835734019002" fileName="MultilineSelection.java" startLine="220" startPosition="12" endLine="225" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1534219577530305810" fileName="MultilineSelection.java" startLine="247" startPosition="10" endLine="252" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="1643598191267263178" fileName="MultilineSelection.java" startLine="306" startPosition="0" endLine="311" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectedCells#()Ljava/util/List;" />
-    <nodeInfo nodeId="5792856961226372423" fileName="MultilineSelection.java" startLine="312" startPosition="0" endLine="317" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectedNodes#()Ljava/util/List;" />
-    <nodeInfo nodeId="4054375835734019000" fileName="MultilineSelection.java" startLine="220" startPosition="10" endLine="226" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="4950521006212361847" fileName="MultilineSelection.java" startLine="284" startPosition="0" endLine="290" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paintSelection#(Ljava/awt/Graphics2D;)V" />
-    <nodeInfo nodeId="1534219577530322800" fileName="MultilineSelection.java" startLine="299" startPosition="0" endLine="305" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="limitValue#(III)I" />
-    <nodeInfo nodeId="4950521006212361806" fileName="MultilineSelection.java" startLine="119" startPosition="0" endLine="126" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="ensureVisible#()V" />
-    <nodeInfo nodeId="4878119692008187043" fileName="MultilineSelection.java" startLine="190" startPosition="36" endLine="197" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4950521006212361832" fileName="MultilineSelection.java" startLine="256" startPosition="0" endLine="263" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectionInfo#()Ljetbrains/mps/openapi/editor/selection/SelectionInfo;" />
-    <nodeInfo nodeId="1534219577530305791" fileName="MultilineSelection.java" startLine="244" startPosition="27" endLine="252" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4878119692008187035" fileName="MultilineSelection.java" startLine="190" startPosition="0" endLine="199" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="pasteClipboardText#()V" />
-    <nodeInfo nodeId="4054375835734018993" fileName="MultilineSelection.java" startLine="217" startPosition="43" endLine="226" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4054375835734019012" fileName="MultilineSelection.java" startLine="229" startPosition="0" endLine="238" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteSelectedText#()V" />
-    <nodeInfo nodeId="1534219577530324604" fileName="MultilineSelection.java" startLine="98" startPosition="22" endLine="108" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="4054375835734018989" fileName="MultilineSelection.java" startLine="217" startPosition="0" endLine="228" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="executeDeleteSelectedText#()V" />
-    <nodeInfo nodeId="1534219577530305144" fileName="MultilineSelection.java" startLine="44" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MultilineSelection#(Ljetbrains/mps/openapi/editor/EditorComponent;Ljava/util/Map;Ljetbrains/mps/nodeEditor/cells/CellInfo;)V" />
-    <nodeInfo nodeId="4878119692008187180" fileName="MultilineSelection.java" startLine="200" startPosition="0" endLine="216" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="selectUpOrDown#(Z)V" />
-    <nodeInfo nodeId="1534219577530305738" fileName="MultilineSelection.java" startLine="239" startPosition="0" endLine="255" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="changeSelection#(I)V" />
-    <nodeInfo nodeId="1534219577530324571" fileName="MultilineSelection.java" startLine="91" startPosition="0" endLine="110" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="updateVisibleSelection#(II)V" />
-    <nodeInfo nodeId="4950521006212361839" fileName="MultilineSelection.java" startLine="264" startPosition="0" endLine="283" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isSame#(Ljetbrains/mps/openapi/editor/selection/Selection;)Z" />
-    <nodeInfo nodeId="1643598191272212874" fileName="MultilineSelection.java" startLine="153" startPosition="56" endLine="173" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.SwitchStatement" />
-    <nodeInfo nodeId="1534219577530305346" fileName="MultilineSelection.java" startLine="128" startPosition="50" endLine="149" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5792856961223656520" fileName="MultilineSelection.java" startLine="152" startPosition="0" endLine="175" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canExecuteAction#(Ljetbrains/mps/openapi/editor/cells/CellActionType;)Z" />
-    <nodeInfo nodeId="4950521006212361810" fileName="MultilineSelection.java" startLine="127" startPosition="0" endLine="151" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="executeAction#(Ljetbrains/mps/openapi/editor/cells/CellActionType;)V" />
-    <scopeInfo nodeId="1643598191272326546" fileName="MultilineSelection.java" startLine="155" startPosition="23" endLine="155" endPosition="23" />
-    <scopeInfo nodeId="1643598191272556215" fileName="MultilineSelection.java" startLine="156" startPosition="24" endLine="156" endPosition="24" />
-    <scopeInfo nodeId="1643598191272756617" fileName="MultilineSelection.java" startLine="157" startPosition="18" endLine="157" endPosition="18" />
-    <scopeInfo nodeId="1643598191272785129" fileName="MultilineSelection.java" startLine="158" startPosition="21" endLine="158" endPosition="21" />
-    <scopeInfo nodeId="1643598191272846514" fileName="MultilineSelection.java" startLine="159" startPosition="16" endLine="159" endPosition="16" />
-    <scopeInfo nodeId="1643598191272907922" fileName="MultilineSelection.java" startLine="160" startPosition="15" endLine="160" endPosition="15" />
-    <scopeInfo nodeId="1643598191272907984" fileName="MultilineSelection.java" startLine="161" startPosition="17" endLine="161" endPosition="17" />
-    <scopeInfo nodeId="1643598191272908055" fileName="MultilineSelection.java" startLine="162" startPosition="27" endLine="162" endPosition="27" />
-    <scopeInfo nodeId="1643598191272908135" fileName="MultilineSelection.java" startLine="163" startPosition="21" endLine="163" endPosition="21" />
-    <scopeInfo nodeId="1643598191272908224" fileName="MultilineSelection.java" startLine="164" startPosition="23" endLine="164" endPosition="23" />
-    <scopeInfo nodeId="1643598191272908322" fileName="MultilineSelection.java" startLine="165" startPosition="23" endLine="165" endPosition="23" />
-    <scopeInfo nodeId="1643598191272908429" fileName="MultilineSelection.java" startLine="166" startPosition="16" endLine="166" endPosition="16" />
-    <scopeInfo nodeId="1643598191273616283" fileName="MultilineSelection.java" startLine="167" startPosition="17" endLine="167" endPosition="17" />
-    <scopeInfo nodeId="1643598191273686853" fileName="MultilineSelection.java" startLine="168" startPosition="16" endLine="168" endPosition="16" />
-    <scopeInfo nodeId="1534219577530305174" fileName="MultilineSelection.java" startLine="46" startPosition="27" endLine="47" endPosition="79" />
-    <scopeInfo nodeId="1534219577530305190" fileName="MultilineSelection.java" startLine="50" startPosition="53" endLine="51" endPosition="58" />
-    <scopeInfo nodeId="1534219577530305201" fileName="MultilineSelection.java" startLine="52" startPosition="12" endLine="53" endPosition="44" />
-    <scopeInfo nodeId="1534219577530231685" fileName="MultilineSelection.java" startLine="66" startPosition="47" endLine="67" endPosition="48" />
-    <scopeInfo nodeId="1185192475716873029" fileName="MultilineSelection.java" startLine="70" startPosition="34" endLine="71" endPosition="28" />
-    <scopeInfo nodeId="1185192475716873096" fileName="MultilineSelection.java" startLine="74" startPosition="32" endLine="75" endPosition="26" />
-    <scopeInfo nodeId="1534219577530231691" fileName="MultilineSelection.java" startLine="78" startPosition="45" endLine="79" endPosition="50" />
-    <scopeInfo nodeId="1185192475716888194" fileName="MultilineSelection.java" startLine="87" startPosition="50" endLine="88" endPosition="27" />
-    <scopeInfo nodeId="1534219577530348260" fileName="MultilineSelection.java" startLine="102" startPosition="79" endLine="103" endPosition="56" />
-    <scopeInfo nodeId="4950521006212361801" fileName="MultilineSelection.java" startLine="111" startPosition="26" endLine="112" endPosition="80" />
-    <scopeInfo nodeId="4950521006212361805" fileName="MultilineSelection.java" startLine="115" startPosition="28" endLine="116" endPosition="33" />
-    <scopeInfo nodeId="5973846538640579146" fileName="MultilineSelection.java" startLine="121" startPosition="28" endLine="122" endPosition="13" />
-    <scopeInfo nodeId="4054375835734018899" fileName="MultilineSelection.java" startLine="132" startPosition="83" endLine="133" endPosition="34" />
-    <scopeInfo nodeId="4054375835734019071" fileName="MultilineSelection.java" startLine="134" startPosition="45" endLine="135" endPosition="57" />
-    <scopeInfo nodeId="4054375835734018923" fileName="MultilineSelection.java" startLine="139" startPosition="46" endLine="140" endPosition="27" />
-    <scopeInfo nodeId="4878119692008187094" fileName="MultilineSelection.java" startLine="141" startPosition="92" endLine="142" endPosition="27" />
-    <scopeInfo nodeId="4878119692008196252" fileName="MultilineSelection.java" startLine="143" startPosition="90" endLine="144" endPosition="28" />
-    <scopeInfo nodeId="7793244833751820851" fileName="MultilineSelection.java" startLine="145" startPosition="137" endLine="146" endPosition="23" />
-    <scopeInfo nodeId="7793244833751819218" fileName="MultilineSelection.java" startLine="147" startPosition="12" endLine="148" endPosition="44" />
-    <scopeInfo nodeId="1643598191273723153" fileName="MultilineSelection.java" startLine="169" startPosition="14" endLine="170" endPosition="20" />
-    <scopeInfo nodeId="1643598191272212876" fileName="MultilineSelection.java" startLine="171" startPosition="14" endLine="172" endPosition="21" />
-    <scopeInfo nodeId="4878119692008187234" fileName="MultilineSelection.java" startLine="204" startPosition="53" endLine="205" endPosition="13" />
-    <scopeInfo nodeId="4878119692008187247" fileName="MultilineSelection.java" startLine="208" startPosition="62" endLine="209" endPosition="13" />
-    <scopeInfo nodeId="4054375835734018994" fileName="MultilineSelection.java" startLine="218" startPosition="44" endLine="219" endPosition="27" />
-    <scopeInfo nodeId="1643598191276620665" fileName="MultilineSelection.java" startLine="222" startPosition="27" endLine="223" endPosition="31" />
-    <scopeInfo nodeId="2983918873756931747" fileName="MultilineSelection.java" startLine="240" startPosition="65" endLine="241" endPosition="13" />
-    <scopeInfo nodeId="1534219577530305792" fileName="MultilineSelection.java" startLine="245" startPosition="35" endLine="246" endPosition="109" />
-    <scopeInfo nodeId="1534219577530305822" fileName="MultilineSelection.java" startLine="249" startPosition="54" endLine="250" endPosition="186" />
-    <scopeInfo nodeId="4950521006212375429" fileName="MultilineSelection.java" startLine="265" startPosition="24" endLine="266" endPosition="18" />
-    <scopeInfo nodeId="4950521006212375460" fileName="MultilineSelection.java" startLine="268" startPosition="58" endLine="269" endPosition="19" />
-    <scopeInfo nodeId="4950521006212375669" fileName="MultilineSelection.java" startLine="272" startPosition="68" endLine="273" endPosition="19" />
-    <scopeInfo nodeId="4950521006212375676" fileName="MultilineSelection.java" startLine="275" startPosition="62" endLine="276" endPosition="19" />
-    <scopeInfo nodeId="4950521006212375741" fileName="MultilineSelection.java" startLine="278" startPosition="58" endLine="279" endPosition="19" />
-    <scopeInfo nodeId="7793244833751855553" fileName="MultilineSelection.java" startLine="291" startPosition="33" endLine="292" endPosition="26" />
-    <scopeInfo nodeId="7793244833751855540" fileName="MultilineSelection.java" startLine="295" startPosition="51" endLine="296" endPosition="72" />
-    <scopeInfo nodeId="1643598191267263186" fileName="MultilineSelection.java" startLine="308" startPosition="46" endLine="309" endPosition="67" />
-    <scopeInfo nodeId="5792856961226372431" fileName="MultilineSelection.java" startLine="314" startPosition="41" endLine="315" endPosition="65" />
-    <scopeInfo nodeId="1534219577530231697" fileName="MultilineSelection.java" startLine="82" startPosition="59" endLine="84" endPosition="28" />
-    <scopeInfo nodeId="1534219577530305347" fileName="MultilineSelection.java" startLine="129" startPosition="84" endLine="131" endPosition="30">
+    <nodeInfo nodeId="4950521006212362767" fileName="MultilineSelection.java" startLine="38" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myMultilineCell" />
+    <nodeInfo nodeId="4950521006212362771" fileName="MultilineSelection.java" startLine="39" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="mySelectionStart" />
+    <nodeInfo nodeId="1534219577530305171" fileName="MultilineSelection.java" startLine="46" startPosition="171" endLine="47" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="1534219577530305175" fileName="MultilineSelection.java" startLine="48" startPosition="27" endLine="49" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="1534219577530305182" fileName="MultilineSelection.java" startLine="50" startPosition="5" endLine="51" endPosition="108" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530305191" fileName="MultilineSelection.java" startLine="52" startPosition="53" endLine="53" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530305202" fileName="MultilineSelection.java" startLine="54" startPosition="12" endLine="55" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="1534219577530305289" fileName="MultilineSelection.java" startLine="56" startPosition="5" endLine="57" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530305298" fileName="MultilineSelection.java" startLine="57" startPosition="92" endLine="58" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530305311" fileName="MultilineSelection.java" startLine="58" startPosition="88" endLine="59" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4950521006212361796" fileName="MultilineSelection.java" startLine="62" startPosition="118" endLine="63" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="4950521006212375615" fileName="MultilineSelection.java" startLine="63" startPosition="27" endLine="64" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530314682" fileName="MultilineSelection.java" startLine="64" startPosition="36" endLine="65" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530231703" fileName="MultilineSelection.java" startLine="68" startPosition="47" endLine="69" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716873071" fileName="MultilineSelection.java" startLine="72" startPosition="34" endLine="73" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1185192475716873138" fileName="MultilineSelection.java" startLine="76" startPosition="32" endLine="77" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1534219577530231708" fileName="MultilineSelection.java" startLine="80" startPosition="45" endLine="81" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530231713" fileName="MultilineSelection.java" startLine="84" startPosition="59" endLine="85" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530231740" fileName="MultilineSelection.java" startLine="85" startPosition="32" endLine="86" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1185192475716888236" fileName="MultilineSelection.java" startLine="89" startPosition="50" endLine="90" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1534219577530348227" fileName="MultilineSelection.java" startLine="93" startPosition="64" endLine="94" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008184121" fileName="MultilineSelection.java" startLine="95" startPosition="28" endLine="96" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008184127" fileName="MultilineSelection.java" startLine="96" startPosition="26" endLine="97" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008184154" fileName="MultilineSelection.java" startLine="97" startPosition="24" endLine="98" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530324597" fileName="MultilineSelection.java" startLine="99" startPosition="5" endLine="100" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530324610" fileName="MultilineSelection.java" startLine="101" startPosition="92" endLine="102" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530348336" fileName="MultilineSelection.java" startLine="102" startPosition="51" endLine="103" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530348366" fileName="MultilineSelection.java" startLine="104" startPosition="79" endLine="105" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530324624" fileName="MultilineSelection.java" startLine="106" startPosition="7" endLine="107" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530324634" fileName="MultilineSelection.java" startLine="107" startPosition="82" endLine="108" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530324644" fileName="MultilineSelection.java" startLine="108" startPosition="78" endLine="109" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5232239503568244884" fileName="MultilineSelection.java" startLine="113" startPosition="26" endLine="114" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5232239503568405737" fileName="MultilineSelection.java" startLine="114" startPosition="121" endLine="115" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530343641" fileName="MultilineSelection.java" startLine="115" startPosition="103" endLine="116" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5232239503568535893" fileName="MultilineSelection.java" startLine="119" startPosition="28" endLine="120" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5232239503568536863" fileName="MultilineSelection.java" startLine="120" startPosition="121" endLine="121" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530324682" fileName="MultilineSelection.java" startLine="121" startPosition="35" endLine="122" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5973846538640515263" fileName="MultilineSelection.java" startLine="125" startPosition="31" endLine="126" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5973846538640640497" fileName="MultilineSelection.java" startLine="127" startPosition="28" endLine="128" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5973846538640405793" fileName="MultilineSelection.java" startLine="129" startPosition="5" endLine="130" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008180886" fileName="MultilineSelection.java" startLine="135" startPosition="84" endLine="136" endPosition="98" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008180990" fileName="MultilineSelection.java" startLine="136" startPosition="98" endLine="137" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734018900" fileName="MultilineSelection.java" startLine="138" startPosition="83" endLine="139" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734037424" fileName="MultilineSelection.java" startLine="140" startPosition="45" endLine="141" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734019099" fileName="MultilineSelection.java" startLine="142" startPosition="44" endLine="143" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734018917" fileName="MultilineSelection.java" startLine="143" startPosition="41" endLine="144" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008187067" fileName="MultilineSelection.java" startLine="145" startPosition="46" endLine="146" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008187188" fileName="MultilineSelection.java" startLine="147" startPosition="92" endLine="148" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008196263" fileName="MultilineSelection.java" startLine="149" startPosition="90" endLine="150" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008187033" fileName="MultilineSelection.java" startLine="151" startPosition="137" endLine="152" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7793244833751819219" fileName="MultilineSelection.java" startLine="153" startPosition="12" endLine="154" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1643598191275563146" fileName="MultilineSelection.java" startLine="175" startPosition="14" endLine="176" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1643598191275705727" fileName="MultilineSelection.java" startLine="177" startPosition="14" endLine="178" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4878119692008202476" fileName="MultilineSelection.java" startLine="184" startPosition="35" endLine="185" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008202500" fileName="MultilineSelection.java" startLine="185" startPosition="59" endLine="186" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008202467" fileName="MultilineSelection.java" startLine="186" startPosition="58" endLine="187" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4878119692008187015" fileName="MultilineSelection.java" startLine="190" startPosition="32" endLine="191" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008187019" fileName="MultilineSelection.java" startLine="191" startPosition="34" endLine="192" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008187023" fileName="MultilineSelection.java" startLine="192" startPosition="42" endLine="193" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="330549270703756957" fileName="MultilineSelection.java" startLine="196" startPosition="36" endLine="197" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="330549270703751697" fileName="MultilineSelection.java" startLine="202" startPosition="25" endLine="203" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="330549270703751703" fileName="MultilineSelection.java" startLine="203" startPosition="29" endLine="204" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008187322" fileName="MultilineSelection.java" startLine="209" startPosition="42" endLine="210" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5986960525548616985" fileName="MultilineSelection.java" startLine="210" startPosition="90" endLine="211" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008187223" fileName="MultilineSelection.java" startLine="211" startPosition="99" endLine="212" endPosition="181" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008187235" fileName="MultilineSelection.java" startLine="213" startPosition="53" endLine="214" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4878119692008187240" fileName="MultilineSelection.java" startLine="215" startPosition="5" endLine="216" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008187248" fileName="MultilineSelection.java" startLine="217" startPosition="62" endLine="218" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4878119692008187256" fileName="MultilineSelection.java" startLine="219" startPosition="5" endLine="220" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4878119692008187276" fileName="MultilineSelection.java" startLine="220" startPosition="0" endLine="221" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008187283" fileName="MultilineSelection.java" startLine="221" startPosition="59" endLine="222" endPosition="119" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008193282" fileName="MultilineSelection.java" startLine="222" startPosition="119" endLine="223" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734018995" fileName="MultilineSelection.java" startLine="227" startPosition="44" endLine="228" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734019010" fileName="MultilineSelection.java" startLine="231" startPosition="27" endLine="232" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008219907" fileName="MultilineSelection.java" startLine="238" startPosition="36" endLine="239" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4878119692008219913" fileName="MultilineSelection.java" startLine="239" startPosition="59" endLine="240" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4054375835734019135" fileName="MultilineSelection.java" startLine="240" startPosition="58" endLine="241" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4054375835734019169" fileName="MultilineSelection.java" startLine="241" startPosition="44" endLine="242" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734038981" fileName="MultilineSelection.java" startLine="242" startPosition="74" endLine="243" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734042086" fileName="MultilineSelection.java" startLine="243" startPosition="34" endLine="244" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734026891" fileName="MultilineSelection.java" startLine="244" startPosition="28" endLine="245" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2983918873756931850" fileName="MultilineSelection.java" startLine="249" startPosition="65" endLine="250" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1534219577530305782" fileName="MultilineSelection.java" startLine="251" startPosition="5" endLine="252" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530305788" fileName="MultilineSelection.java" startLine="252" startPosition="83" endLine="253" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530306124" fileName="MultilineSelection.java" startLine="254" startPosition="35" endLine="255" endPosition="109" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530305812" fileName="MultilineSelection.java" startLine="256" startPosition="12" endLine="257" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530305823" fileName="MultilineSelection.java" startLine="258" startPosition="54" endLine="259" endPosition="186" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5986960525544612641" fileName="MultilineSelection.java" startLine="261" startPosition="5" endLine="262" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530304141" fileName="MultilineSelection.java" startLine="265" startPosition="74" endLine="266" endPosition="239" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530304154" fileName="MultilineSelection.java" startLine="266" startPosition="239" endLine="267" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530304170" fileName="MultilineSelection.java" startLine="267" startPosition="61" endLine="268" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530304179" fileName="MultilineSelection.java" startLine="268" startPosition="103" endLine="269" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530305131" fileName="MultilineSelection.java" startLine="269" startPosition="99" endLine="270" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4950521006212375455" fileName="MultilineSelection.java" startLine="274" startPosition="24" endLine="275" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4950521006212375562" fileName="MultilineSelection.java" startLine="277" startPosition="58" endLine="278" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4950521006212375569" fileName="MultilineSelection.java" startLine="279" startPosition="5" endLine="280" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4950521006212375671" fileName="MultilineSelection.java" startLine="281" startPosition="68" endLine="282" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4950521006212375731" fileName="MultilineSelection.java" startLine="284" startPosition="62" endLine="285" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4950521006212375796" fileName="MultilineSelection.java" startLine="287" startPosition="58" endLine="288" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4950521006212375736" fileName="MultilineSelection.java" startLine="289" startPosition="5" endLine="290" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4887533856267060690" fileName="MultilineSelection.java" startLine="293" startPosition="44" endLine="294" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4887533856270494401" fileName="MultilineSelection.java" startLine="294" startPosition="120" endLine="295" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4887533856270739564" fileName="MultilineSelection.java" startLine="295" startPosition="59" endLine="296" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4887533856257473152" fileName="MultilineSelection.java" startLine="296" startPosition="62" endLine="297" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4878119692008180993" fileName="MultilineSelection.java" startLine="300" startPosition="33" endLine="301" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7793244833751855595" fileName="MultilineSelection.java" startLine="304" startPosition="51" endLine="305" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1534219577530322814" fileName="MultilineSelection.java" startLine="308" startPosition="61" endLine="309" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1534219577530322820" fileName="MultilineSelection.java" startLine="309" startPosition="23" endLine="310" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530322865" fileName="MultilineSelection.java" startLine="310" startPosition="35" endLine="311" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530322910" fileName="MultilineSelection.java" startLine="311" startPosition="35" endLine="312" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1643598191267400065" fileName="MultilineSelection.java" startLine="317" startPosition="46" endLine="318" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5792856961227094768" fileName="MultilineSelection.java" startLine="323" startPosition="41" endLine="324" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1534219577530305200" fileName="MultilineSelection.java" startLine="54" startPosition="10" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7793244833751819217" fileName="MultilineSelection.java" startLine="153" startPosition="10" endLine="155" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1534219577530305173" fileName="MultilineSelection.java" startLine="47" startPosition="27" endLine="50" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1534219577530231682" fileName="MultilineSelection.java" startLine="68" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectionStart#(I)V" />
+    <nodeInfo nodeId="1185192475716873026" fileName="MultilineSelection.java" startLine="72" startPosition="0" endLine="75" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectionStart#()I" />
+    <nodeInfo nodeId="1185192475716873093" fileName="MultilineSelection.java" startLine="76" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectionEnd#()I" />
+    <nodeInfo nodeId="1534219577530231688" fileName="MultilineSelection.java" startLine="80" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectionEnd#(I)V" />
+    <nodeInfo nodeId="1185192475716888191" fileName="MultilineSelection.java" startLine="89" startPosition="0" endLine="92" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getMultilineCell#()Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;" />
+    <nodeInfo nodeId="1534219577530348259" fileName="MultilineSelection.java" startLine="103" startPosition="43" endLine="106" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5973846538640579143" fileName="MultilineSelection.java" startLine="126" startPosition="84" endLine="129" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4878119692008187035" fileName="MultilineSelection.java" startLine="196" startPosition="0" endLine="199" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="pasteClipboardText#()V" />
+    <nodeInfo nodeId="4878119692008187233" fileName="MultilineSelection.java" startLine="212" startPosition="181" endLine="215" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4878119692008187246" fileName="MultilineSelection.java" startLine="216" startPosition="74" endLine="219" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1643598191276620661" fileName="MultilineSelection.java" startLine="231" startPosition="0" endLine="234" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <nodeInfo nodeId="2983918873756931746" fileName="MultilineSelection.java" startLine="248" startPosition="44" endLine="251" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1534219577530305821" fileName="MultilineSelection.java" startLine="257" startPosition="83" endLine="260" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4950521006212375427" fileName="MultilineSelection.java" startLine="273" startPosition="42" endLine="276" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4950521006212375459" fileName="MultilineSelection.java" startLine="276" startPosition="5" endLine="279" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4950521006212375578" fileName="MultilineSelection.java" startLine="280" startPosition="67" endLine="283" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4950521006212375675" fileName="MultilineSelection.java" startLine="283" startPosition="5" endLine="286" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4950521006212375740" fileName="MultilineSelection.java" startLine="286" startPosition="5" endLine="289" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7793244833751855550" fileName="MultilineSelection.java" startLine="300" startPosition="0" endLine="303" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCaretPosition#()I" />
+    <nodeInfo nodeId="7793244833751855537" fileName="MultilineSelection.java" startLine="304" startPosition="0" endLine="307" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCellContainingCaret#()Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
+    <nodeInfo nodeId="4950521006212362777" fileName="MultilineSelection.java" startLine="40" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="mySelectionEnd" />
+    <nodeInfo nodeId="1534219577530231694" fileName="MultilineSelection.java" startLine="84" startPosition="0" endLine="88" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectionRange#(II)V" />
+    <nodeInfo nodeId="330549270703751695" fileName="MultilineSelection.java" startLine="202" startPosition="0" endLine="206" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <nodeInfo nodeId="1534219577530305189" fileName="MultilineSelection.java" startLine="51" startPosition="108" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4950521006212361789" fileName="MultilineSelection.java" startLine="62" startPosition="0" endLine="67" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MultilineSelection#(Ljetbrains/mps/openapi/editor/EditorComponent;Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;II)V" />
+    <nodeInfo nodeId="4878119692008184092" fileName="MultilineSelection.java" startLine="94" startPosition="26" endLine="99" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4950521006212361798" fileName="MultilineSelection.java" startLine="113" startPosition="0" endLine="118" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="activate#()V" />
+    <nodeInfo nodeId="4950521006212361802" fileName="MultilineSelection.java" startLine="119" startPosition="0" endLine="124" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deactivate#()V" />
+    <nodeInfo nodeId="4878119692008202445" fileName="MultilineSelection.java" startLine="184" startPosition="0" endLine="189" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectedText#()Ljava/lang/String;" />
+    <nodeInfo nodeId="4878119692008187007" fileName="MultilineSelection.java" startLine="190" startPosition="0" endLine="195" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clearSelection#()V" />
+    <nodeInfo nodeId="4054375835734019002" fileName="MultilineSelection.java" startLine="229" startPosition="12" endLine="234" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1534219577530305810" fileName="MultilineSelection.java" startLine="256" startPosition="10" endLine="261" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="1643598191267263178" fileName="MultilineSelection.java" startLine="315" startPosition="0" endLine="320" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectedCells#()Ljava/util/List;" />
+    <nodeInfo nodeId="5792856961226372423" fileName="MultilineSelection.java" startLine="321" startPosition="0" endLine="326" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectedNodes#()Ljava/util/List;" />
+    <nodeInfo nodeId="330549270703751689" fileName="MultilineSelection.java" startLine="200" startPosition="54" endLine="206" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4054375835734019000" fileName="MultilineSelection.java" startLine="229" startPosition="10" endLine="235" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="4950521006212361847" fileName="MultilineSelection.java" startLine="293" startPosition="0" endLine="299" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paintSelection#(Ljava/awt/Graphics2D;)V" />
+    <nodeInfo nodeId="1534219577530322800" fileName="MultilineSelection.java" startLine="308" startPosition="0" endLine="314" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="limitValue#(III)I" />
+    <nodeInfo nodeId="4950521006212361806" fileName="MultilineSelection.java" startLine="125" startPosition="0" endLine="132" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="ensureVisible#()V" />
+    <nodeInfo nodeId="4950521006212361832" fileName="MultilineSelection.java" startLine="265" startPosition="0" endLine="272" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelectionInfo#()Ljetbrains/mps/openapi/editor/selection/SelectionInfo;" />
+    <nodeInfo nodeId="330549270703582871" fileName="MultilineSelection.java" startLine="200" startPosition="0" endLine="208" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="replaceSelectedText#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="1534219577530305791" fileName="MultilineSelection.java" startLine="253" startPosition="27" endLine="261" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4054375835734018993" fileName="MultilineSelection.java" startLine="226" startPosition="43" endLine="235" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4054375835734019012" fileName="MultilineSelection.java" startLine="238" startPosition="0" endLine="247" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="deleteSelectedText#()V" />
+    <nodeInfo nodeId="1534219577530324604" fileName="MultilineSelection.java" startLine="100" startPosition="22" endLine="110" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="4054375835734018989" fileName="MultilineSelection.java" startLine="226" startPosition="0" endLine="237" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="executeDeleteSelectedText#()V" />
+    <nodeInfo nodeId="1534219577530305144" fileName="MultilineSelection.java" startLine="46" startPosition="0" endLine="61" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MultilineSelection#(Ljetbrains/mps/openapi/editor/EditorComponent;Ljava/util/Map;Ljetbrains/mps/nodeEditor/cells/CellInfo;)V" />
+    <nodeInfo nodeId="4878119692008187180" fileName="MultilineSelection.java" startLine="209" startPosition="0" endLine="225" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="selectUpOrDown#(Z)V" />
+    <nodeInfo nodeId="1534219577530305738" fileName="MultilineSelection.java" startLine="248" startPosition="0" endLine="264" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="changeSelection#(I)V" />
+    <nodeInfo nodeId="1534219577530324571" fileName="MultilineSelection.java" startLine="93" startPosition="0" endLine="112" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="updateVisibleSelection#(II)V" />
+    <nodeInfo nodeId="4950521006212361839" fileName="MultilineSelection.java" startLine="273" startPosition="0" endLine="292" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isSame#(Ljetbrains/mps/openapi/editor/selection/Selection;)Z" />
+    <nodeInfo nodeId="1643598191272212874" fileName="MultilineSelection.java" startLine="159" startPosition="56" endLine="179" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+    <nodeInfo nodeId="1534219577530305346" fileName="MultilineSelection.java" startLine="134" startPosition="50" endLine="155" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5792856961223656520" fileName="MultilineSelection.java" startLine="158" startPosition="0" endLine="181" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canExecuteAction#(Ljetbrains/mps/openapi/editor/cells/CellActionType;)Z" />
+    <nodeInfo nodeId="4950521006212361810" fileName="MultilineSelection.java" startLine="133" startPosition="0" endLine="157" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="executeAction#(Ljetbrains/mps/openapi/editor/cells/CellActionType;)V" />
+    <scopeInfo nodeId="1643598191272326546" fileName="MultilineSelection.java" startLine="161" startPosition="23" endLine="161" endPosition="23" />
+    <scopeInfo nodeId="1643598191272556215" fileName="MultilineSelection.java" startLine="162" startPosition="24" endLine="162" endPosition="24" />
+    <scopeInfo nodeId="1643598191272756617" fileName="MultilineSelection.java" startLine="163" startPosition="18" endLine="163" endPosition="18" />
+    <scopeInfo nodeId="1643598191272785129" fileName="MultilineSelection.java" startLine="164" startPosition="21" endLine="164" endPosition="21" />
+    <scopeInfo nodeId="1643598191272846514" fileName="MultilineSelection.java" startLine="165" startPosition="16" endLine="165" endPosition="16" />
+    <scopeInfo nodeId="1643598191272907922" fileName="MultilineSelection.java" startLine="166" startPosition="15" endLine="166" endPosition="15" />
+    <scopeInfo nodeId="1643598191272907984" fileName="MultilineSelection.java" startLine="167" startPosition="17" endLine="167" endPosition="17" />
+    <scopeInfo nodeId="1643598191272908055" fileName="MultilineSelection.java" startLine="168" startPosition="27" endLine="168" endPosition="27" />
+    <scopeInfo nodeId="1643598191272908135" fileName="MultilineSelection.java" startLine="169" startPosition="21" endLine="169" endPosition="21" />
+    <scopeInfo nodeId="1643598191272908224" fileName="MultilineSelection.java" startLine="170" startPosition="23" endLine="170" endPosition="23" />
+    <scopeInfo nodeId="1643598191272908322" fileName="MultilineSelection.java" startLine="171" startPosition="23" endLine="171" endPosition="23" />
+    <scopeInfo nodeId="1643598191272908429" fileName="MultilineSelection.java" startLine="172" startPosition="16" endLine="172" endPosition="16" />
+    <scopeInfo nodeId="1643598191273616283" fileName="MultilineSelection.java" startLine="173" startPosition="17" endLine="173" endPosition="17" />
+    <scopeInfo nodeId="1643598191273686853" fileName="MultilineSelection.java" startLine="174" startPosition="16" endLine="174" endPosition="16" />
+    <scopeInfo nodeId="1534219577530305174" fileName="MultilineSelection.java" startLine="48" startPosition="27" endLine="49" endPosition="79" />
+    <scopeInfo nodeId="1534219577530305190" fileName="MultilineSelection.java" startLine="52" startPosition="53" endLine="53" endPosition="58" />
+    <scopeInfo nodeId="1534219577530305201" fileName="MultilineSelection.java" startLine="54" startPosition="12" endLine="55" endPosition="44" />
+    <scopeInfo nodeId="1534219577530231685" fileName="MultilineSelection.java" startLine="68" startPosition="47" endLine="69" endPosition="48" />
+    <scopeInfo nodeId="1185192475716873029" fileName="MultilineSelection.java" startLine="72" startPosition="34" endLine="73" endPosition="28" />
+    <scopeInfo nodeId="1185192475716873096" fileName="MultilineSelection.java" startLine="76" startPosition="32" endLine="77" endPosition="26" />
+    <scopeInfo nodeId="1534219577530231691" fileName="MultilineSelection.java" startLine="80" startPosition="45" endLine="81" endPosition="50" />
+    <scopeInfo nodeId="1185192475716888194" fileName="MultilineSelection.java" startLine="89" startPosition="50" endLine="90" endPosition="27" />
+    <scopeInfo nodeId="1534219577530348260" fileName="MultilineSelection.java" startLine="104" startPosition="79" endLine="105" endPosition="56" />
+    <scopeInfo nodeId="5973846538640579146" fileName="MultilineSelection.java" startLine="127" startPosition="28" endLine="128" endPosition="13" />
+    <scopeInfo nodeId="4054375835734018899" fileName="MultilineSelection.java" startLine="138" startPosition="83" endLine="139" endPosition="34" />
+    <scopeInfo nodeId="4054375835734019071" fileName="MultilineSelection.java" startLine="140" startPosition="45" endLine="141" endPosition="57" />
+    <scopeInfo nodeId="4054375835734018923" fileName="MultilineSelection.java" startLine="145" startPosition="46" endLine="146" endPosition="27" />
+    <scopeInfo nodeId="4878119692008187094" fileName="MultilineSelection.java" startLine="147" startPosition="92" endLine="148" endPosition="27" />
+    <scopeInfo nodeId="4878119692008196252" fileName="MultilineSelection.java" startLine="149" startPosition="90" endLine="150" endPosition="28" />
+    <scopeInfo nodeId="7793244833751820851" fileName="MultilineSelection.java" startLine="151" startPosition="137" endLine="152" endPosition="23" />
+    <scopeInfo nodeId="7793244833751819218" fileName="MultilineSelection.java" startLine="153" startPosition="12" endLine="154" endPosition="44" />
+    <scopeInfo nodeId="1643598191273723153" fileName="MultilineSelection.java" startLine="175" startPosition="14" endLine="176" endPosition="20" />
+    <scopeInfo nodeId="1643598191272212876" fileName="MultilineSelection.java" startLine="177" startPosition="14" endLine="178" endPosition="21" />
+    <scopeInfo nodeId="4878119692008187038" fileName="MultilineSelection.java" startLine="196" startPosition="36" endLine="197" endPosition="59" />
+    <scopeInfo nodeId="4878119692008187234" fileName="MultilineSelection.java" startLine="213" startPosition="53" endLine="214" endPosition="13" />
+    <scopeInfo nodeId="4878119692008187247" fileName="MultilineSelection.java" startLine="217" startPosition="62" endLine="218" endPosition="13" />
+    <scopeInfo nodeId="4054375835734018994" fileName="MultilineSelection.java" startLine="227" startPosition="44" endLine="228" endPosition="27" />
+    <scopeInfo nodeId="1643598191276620665" fileName="MultilineSelection.java" startLine="231" startPosition="27" endLine="232" endPosition="31" />
+    <scopeInfo nodeId="2983918873756931747" fileName="MultilineSelection.java" startLine="249" startPosition="65" endLine="250" endPosition="13" />
+    <scopeInfo nodeId="1534219577530305792" fileName="MultilineSelection.java" startLine="254" startPosition="35" endLine="255" endPosition="109" />
+    <scopeInfo nodeId="1534219577530305822" fileName="MultilineSelection.java" startLine="258" startPosition="54" endLine="259" endPosition="186" />
+    <scopeInfo nodeId="4950521006212375429" fileName="MultilineSelection.java" startLine="274" startPosition="24" endLine="275" endPosition="18" />
+    <scopeInfo nodeId="4950521006212375460" fileName="MultilineSelection.java" startLine="277" startPosition="58" endLine="278" endPosition="19" />
+    <scopeInfo nodeId="4950521006212375669" fileName="MultilineSelection.java" startLine="281" startPosition="68" endLine="282" endPosition="19" />
+    <scopeInfo nodeId="4950521006212375676" fileName="MultilineSelection.java" startLine="284" startPosition="62" endLine="285" endPosition="19" />
+    <scopeInfo nodeId="4950521006212375741" fileName="MultilineSelection.java" startLine="287" startPosition="58" endLine="288" endPosition="19" />
+    <scopeInfo nodeId="7793244833751855553" fileName="MultilineSelection.java" startLine="300" startPosition="33" endLine="301" endPosition="26" />
+    <scopeInfo nodeId="7793244833751855540" fileName="MultilineSelection.java" startLine="304" startPosition="51" endLine="305" endPosition="72" />
+    <scopeInfo nodeId="1643598191267263186" fileName="MultilineSelection.java" startLine="317" startPosition="46" endLine="318" endPosition="67" />
+    <scopeInfo nodeId="5792856961226372431" fileName="MultilineSelection.java" startLine="323" startPosition="41" endLine="324" endPosition="65" />
+    <scopeInfo nodeId="1534219577530231697" fileName="MultilineSelection.java" startLine="84" startPosition="59" endLine="86" endPosition="28" />
+    <scopeInfo nodeId="1534219577530305347" fileName="MultilineSelection.java" startLine="135" startPosition="84" endLine="137" endPosition="30">
       <varInfo nodeId="4878119692008180887" varName="newEnd" />
     </scopeInfo>
-    <scopeInfo nodeId="4054375835734018913" fileName="MultilineSelection.java" startLine="136" startPosition="44" endLine="138" endPosition="34" />
-    <scopeInfo nodeId="4950521006212361792" fileName="MultilineSelection.java" startLine="60" startPosition="118" endLine="63" endPosition="34" />
-    <scopeInfo nodeId="1534219577530231682" fileName="MultilineSelection.java" startLine="66" startPosition="0" endLine="69" endPosition="0">
+    <scopeInfo nodeId="4054375835734018913" fileName="MultilineSelection.java" startLine="142" startPosition="44" endLine="144" endPosition="34" />
+    <scopeInfo nodeId="330549270703751696" fileName="MultilineSelection.java" startLine="202" startPosition="25" endLine="204" endPosition="41" />
+    <scopeInfo nodeId="4950521006212361792" fileName="MultilineSelection.java" startLine="62" startPosition="118" endLine="65" endPosition="34" />
+    <scopeInfo nodeId="1534219577530231682" fileName="MultilineSelection.java" startLine="68" startPosition="0" endLine="71" endPosition="0">
       <varInfo nodeId="1534219577530231686" varName="newValue" />
     </scopeInfo>
-    <scopeInfo nodeId="1185192475716873026" fileName="MultilineSelection.java" startLine="70" startPosition="0" endLine="73" endPosition="0" />
-    <scopeInfo nodeId="1185192475716873093" fileName="MultilineSelection.java" startLine="74" startPosition="0" endLine="77" endPosition="0" />
-    <scopeInfo nodeId="1534219577530231688" fileName="MultilineSelection.java" startLine="78" startPosition="0" endLine="81" endPosition="0">
+    <scopeInfo nodeId="1185192475716873026" fileName="MultilineSelection.java" startLine="72" startPosition="0" endLine="75" endPosition="0" />
+    <scopeInfo nodeId="1185192475716873093" fileName="MultilineSelection.java" startLine="76" startPosition="0" endLine="79" endPosition="0" />
+    <scopeInfo nodeId="1534219577530231688" fileName="MultilineSelection.java" startLine="80" startPosition="0" endLine="83" endPosition="0">
       <varInfo nodeId="1534219577530231692" varName="newValue" />
     </scopeInfo>
-    <scopeInfo nodeId="1185192475716888191" fileName="MultilineSelection.java" startLine="87" startPosition="0" endLine="90" endPosition="0" />
-    <scopeInfo nodeId="4878119692008184093" fileName="MultilineSelection.java" startLine="93" startPosition="28" endLine="96" endPosition="20">
+    <scopeInfo nodeId="1185192475716888191" fileName="MultilineSelection.java" startLine="89" startPosition="0" endLine="92" endPosition="0" />
+    <scopeInfo nodeId="4878119692008184093" fileName="MultilineSelection.java" startLine="95" startPosition="28" endLine="98" endPosition="20">
       <varInfo nodeId="4878119692008184122" varName="temp" />
     </scopeInfo>
-    <scopeInfo nodeId="4950521006212361798" fileName="MultilineSelection.java" startLine="111" startPosition="0" endLine="114" endPosition="0" />
-    <scopeInfo nodeId="4950521006212361802" fileName="MultilineSelection.java" startLine="115" startPosition="0" endLine="118" endPosition="0" />
-    <scopeInfo nodeId="4878119692008202448" fileName="MultilineSelection.java" startLine="178" startPosition="35" endLine="181" endPosition="60">
+    <scopeInfo nodeId="4950521006212361801" fileName="MultilineSelection.java" startLine="113" startPosition="26" endLine="116" endPosition="24">
+      <varInfo nodeId="5232239503568244885" varName="component" />
+    </scopeInfo>
+    <scopeInfo nodeId="4950521006212361805" fileName="MultilineSelection.java" startLine="119" startPosition="28" endLine="122" endPosition="33">
+      <varInfo nodeId="5232239503568535894" varName="component" />
+    </scopeInfo>
+    <scopeInfo nodeId="4878119692008202448" fileName="MultilineSelection.java" startLine="184" startPosition="35" endLine="187" endPosition="60">
       <varInfo nodeId="4878119692008202477" varName="first" />
       <varInfo nodeId="4878119692008202501" varName="last" />
     </scopeInfo>
-    <scopeInfo nodeId="4878119692008187010" fileName="MultilineSelection.java" startLine="184" startPosition="32" endLine="187" endPosition="53">
+    <scopeInfo nodeId="4878119692008187010" fileName="MultilineSelection.java" startLine="190" startPosition="32" endLine="193" endPosition="53">
       <varInfo nodeId="4878119692008187016" varName="caretPos" />
     </scopeInfo>
-    <scopeInfo nodeId="4878119692008187050" fileName="MultilineSelection.java" startLine="192" startPosition="25" endLine="195" endPosition="49">
-      <varInfo nodeId="4878119692008187054" varName="textToInsert" />
-    </scopeInfo>
-    <scopeInfo nodeId="1643598191276620661" fileName="MultilineSelection.java" startLine="222" startPosition="0" endLine="225" endPosition="0" />
-    <scopeInfo nodeId="7793244833751855550" fileName="MultilineSelection.java" startLine="291" startPosition="0" endLine="294" endPosition="0" />
-    <scopeInfo nodeId="7793244833751855537" fileName="MultilineSelection.java" startLine="295" startPosition="0" endLine="298" endPosition="0" />
-    <scopeInfo nodeId="1534219577530231694" fileName="MultilineSelection.java" startLine="82" startPosition="0" endLine="86" endPosition="0">
+    <scopeInfo nodeId="4878119692008187035" fileName="MultilineSelection.java" startLine="196" startPosition="0" endLine="199" endPosition="0" />
+    <scopeInfo nodeId="1643598191276620661" fileName="MultilineSelection.java" startLine="231" startPosition="0" endLine="234" endPosition="0" />
+    <scopeInfo nodeId="7793244833751855550" fileName="MultilineSelection.java" startLine="300" startPosition="0" endLine="303" endPosition="0" />
+    <scopeInfo nodeId="7793244833751855537" fileName="MultilineSelection.java" startLine="304" startPosition="0" endLine="307" endPosition="0" />
+    <scopeInfo nodeId="1534219577530231694" fileName="MultilineSelection.java" startLine="84" startPosition="0" endLine="88" endPosition="0">
       <varInfo nodeId="1534219577530231700" varName="selEnd" />
       <varInfo nodeId="1534219577530231698" varName="selStart" />
     </scopeInfo>
-    <scopeInfo nodeId="1534219577530305811" fileName="MultilineSelection.java" startLine="247" startPosition="12" endLine="251" endPosition="7" />
-    <scopeInfo nodeId="4950521006212361852" fileName="MultilineSelection.java" startLine="284" startPosition="44" endLine="288" endPosition="60">
+    <scopeInfo nodeId="330549270703751695" fileName="MultilineSelection.java" startLine="202" startPosition="0" endLine="206" endPosition="0" />
+    <scopeInfo nodeId="1534219577530305811" fileName="MultilineSelection.java" startLine="256" startPosition="12" endLine="260" endPosition="7" />
+    <scopeInfo nodeId="4950521006212361852" fileName="MultilineSelection.java" startLine="293" startPosition="44" endLine="297" endPosition="60">
       <varInfo nodeId="4887533856267060691" varName="color" />
       <varInfo nodeId="4887533856270494404" varName="first" />
       <varInfo nodeId="4887533856270739567" varName="last" />
     </scopeInfo>
-    <scopeInfo nodeId="1534219577530322803" fileName="MultilineSelection.java" startLine="299" startPosition="61" endLine="303" endPosition="18">
+    <scopeInfo nodeId="1534219577530322803" fileName="MultilineSelection.java" startLine="308" startPosition="61" endLine="312" endPosition="18">
       <varInfo nodeId="1534219577530322815" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="4950521006212361789" fileName="MultilineSelection.java" startLine="60" startPosition="0" endLine="65" endPosition="0">
+    <scopeInfo nodeId="4950521006212361789" fileName="MultilineSelection.java" startLine="62" startPosition="0" endLine="67" endPosition="0">
       <varInfo nodeId="4950521006212361794" varName="editorComponent" />
       <varInfo nodeId="1534219577530306018" varName="end" />
       <varInfo nodeId="4950521006212375610" varName="multilineCell" />
       <varInfo nodeId="1534219577530306010" varName="start" />
     </scopeInfo>
-    <scopeInfo nodeId="4950521006212361809" fileName="MultilineSelection.java" startLine="119" startPosition="31" endLine="124" endPosition="49">
+    <scopeInfo nodeId="4950521006212361798" fileName="MultilineSelection.java" startLine="113" startPosition="0" endLine="118" endPosition="0" />
+    <scopeInfo nodeId="4950521006212361802" fileName="MultilineSelection.java" startLine="119" startPosition="0" endLine="124" endPosition="0" />
+    <scopeInfo nodeId="4950521006212361809" fileName="MultilineSelection.java" startLine="125" startPosition="31" endLine="130" endPosition="49">
       <varInfo nodeId="5973846538640515264" varName="caretCell" />
     </scopeInfo>
-    <scopeInfo nodeId="4878119692008202445" fileName="MultilineSelection.java" startLine="178" startPosition="0" endLine="183" endPosition="0" />
-    <scopeInfo nodeId="4878119692008187007" fileName="MultilineSelection.java" startLine="184" startPosition="0" endLine="189" endPosition="0" />
-    <scopeInfo nodeId="4878119692008187049" fileName="MultilineSelection.java" startLine="192" startPosition="0" endLine="197" endPosition="0" />
-    <scopeInfo nodeId="4054375835734019001" fileName="MultilineSelection.java" startLine="220" startPosition="12" endLine="225" endPosition="9" />
-    <scopeInfo nodeId="4950521006212361836" fileName="MultilineSelection.java" startLine="256" startPosition="74" endLine="261" endPosition="25">
+    <scopeInfo nodeId="4878119692008202445" fileName="MultilineSelection.java" startLine="184" startPosition="0" endLine="189" endPosition="0" />
+    <scopeInfo nodeId="4878119692008187007" fileName="MultilineSelection.java" startLine="190" startPosition="0" endLine="195" endPosition="0" />
+    <scopeInfo nodeId="4054375835734019001" fileName="MultilineSelection.java" startLine="229" startPosition="12" endLine="234" endPosition="9" />
+    <scopeInfo nodeId="4950521006212361836" fileName="MultilineSelection.java" startLine="265" startPosition="74" endLine="270" endPosition="25">
       <varInfo nodeId="1534219577530304142" varName="selectionInfo" />
     </scopeInfo>
-    <scopeInfo nodeId="1643598191267263178" fileName="MultilineSelection.java" startLine="306" startPosition="0" endLine="311" endPosition="0" />
-    <scopeInfo nodeId="5792856961226372423" fileName="MultilineSelection.java" startLine="312" startPosition="0" endLine="317" endPosition="0" />
-    <scopeInfo nodeId="4950521006212361847" fileName="MultilineSelection.java" startLine="284" startPosition="0" endLine="290" endPosition="0">
+    <scopeInfo nodeId="1643598191267263178" fileName="MultilineSelection.java" startLine="315" startPosition="0" endLine="320" endPosition="0" />
+    <scopeInfo nodeId="5792856961226372423" fileName="MultilineSelection.java" startLine="321" startPosition="0" endLine="326" endPosition="0" />
+    <scopeInfo nodeId="330549270703582875" fileName="MultilineSelection.java" startLine="200" startPosition="54" endLine="206" endPosition="7" />
+    <scopeInfo nodeId="4950521006212361847" fileName="MultilineSelection.java" startLine="293" startPosition="0" endLine="299" endPosition="0">
       <varInfo nodeId="4950521006212361850" varName="g" />
     </scopeInfo>
-    <scopeInfo nodeId="1534219577530322800" fileName="MultilineSelection.java" startLine="299" startPosition="0" endLine="305" endPosition="0">
+    <scopeInfo nodeId="1534219577530322800" fileName="MultilineSelection.java" startLine="308" startPosition="0" endLine="314" endPosition="0">
       <varInfo nodeId="1534219577530322811" varName="max" />
       <varInfo nodeId="1534219577530322808" varName="min" />
       <varInfo nodeId="1534219577530322806" varName="value" />
     </scopeInfo>
-    <scopeInfo nodeId="4950521006212361806" fileName="MultilineSelection.java" startLine="119" startPosition="0" endLine="126" endPosition="0" />
-    <scopeInfo nodeId="4878119692008187038" fileName="MultilineSelection.java" startLine="190" startPosition="36" endLine="197" endPosition="7" />
-    <scopeInfo nodeId="4054375835734019015" fileName="MultilineSelection.java" startLine="229" startPosition="36" endLine="236" endPosition="50">
+    <scopeInfo nodeId="4950521006212361806" fileName="MultilineSelection.java" startLine="125" startPosition="0" endLine="132" endPosition="0" />
+    <scopeInfo nodeId="4054375835734019015" fileName="MultilineSelection.java" startLine="238" startPosition="36" endLine="245" endPosition="50">
       <varInfo nodeId="4878119692008219908" varName="first" />
       <varInfo nodeId="4878119692008219914" varName="last" />
       <varInfo nodeId="4054375835734019136" varName="text" />
     </scopeInfo>
-    <scopeInfo nodeId="4950521006212361832" fileName="MultilineSelection.java" startLine="256" startPosition="0" endLine="263" endPosition="0" />
-    <scopeInfo nodeId="1534219577530324609" fileName="MultilineSelection.java" startLine="99" startPosition="92" endLine="107" endPosition="65">
+    <scopeInfo nodeId="4950521006212361832" fileName="MultilineSelection.java" startLine="265" startPosition="0" endLine="272" endPosition="0" />
+    <scopeInfo nodeId="1534219577530324609" fileName="MultilineSelection.java" startLine="101" startPosition="92" endLine="109" endPosition="65">
       <varInfo nodeId="1534219577530348337" varName="wordEnd" />
       <varInfo nodeId="1534219577530324611" varName="wordLength" />
     </scopeInfo>
-    <scopeInfo nodeId="4878119692008187035" fileName="MultilineSelection.java" startLine="190" startPosition="0" endLine="199" endPosition="0" />
-    <scopeInfo nodeId="4054375835734018992" fileName="MultilineSelection.java" startLine="217" startPosition="43" endLine="226" endPosition="5" />
-    <scopeInfo nodeId="4054375835734019012" fileName="MultilineSelection.java" startLine="229" startPosition="0" endLine="238" endPosition="0" />
-    <scopeInfo nodeId="1534219577530324604" fileName="MultilineSelection.java" startLine="98" startPosition="22" endLine="108" endPosition="5">
+    <scopeInfo nodeId="330549270703582871" fileName="MultilineSelection.java" startLine="200" startPosition="0" endLine="208" endPosition="0">
+      <varInfo nodeId="330549270703733334" varName="text" />
+    </scopeInfo>
+    <scopeInfo nodeId="4054375835734018992" fileName="MultilineSelection.java" startLine="226" startPosition="43" endLine="235" endPosition="5" />
+    <scopeInfo nodeId="4054375835734019012" fileName="MultilineSelection.java" startLine="238" startPosition="0" endLine="247" endPosition="0" />
+    <scopeInfo nodeId="1534219577530324604" fileName="MultilineSelection.java" startLine="100" startPosition="22" endLine="110" endPosition="5">
       <varInfo nodeId="1534219577530324605" varName="wordCell" />
     </scopeInfo>
-    <scopeInfo nodeId="4054375835734018989" fileName="MultilineSelection.java" startLine="217" startPosition="0" endLine="228" endPosition="0" />
-    <scopeInfo nodeId="1534219577530305147" fileName="MultilineSelection.java" startLine="44" startPosition="171" endLine="57" endPosition="34">
+    <scopeInfo nodeId="4054375835734018989" fileName="MultilineSelection.java" startLine="226" startPosition="0" endLine="237" endPosition="0" />
+    <scopeInfo nodeId="1534219577530305147" fileName="MultilineSelection.java" startLine="46" startPosition="171" endLine="59" endPosition="34">
       <varInfo nodeId="1534219577530305183" varName="editorCell" />
       <varInfo nodeId="1534219577530305299" varName="end" />
       <varInfo nodeId="1534219577530305290" varName="start" />
     </scopeInfo>
-    <scopeInfo nodeId="4878119692008187183" fileName="MultilineSelection.java" startLine="200" startPosition="42" endLine="214" endPosition="28">
+    <scopeInfo nodeId="4878119692008187183" fileName="MultilineSelection.java" startLine="209" startPosition="42" endLine="223" endPosition="28">
       <varInfo nodeId="4878119692008187323" varName="cursorCell" />
       <varInfo nodeId="4878119692008187284" varName="newEnd" />
       <varInfo nodeId="4878119692008187224" varName="upperOrLower" />
       <varInfo nodeId="4878119692008187241" varName="upperOrLowerWordCell" />
     </scopeInfo>
-    <scopeInfo nodeId="1534219577530305741" fileName="MultilineSelection.java" startLine="239" startPosition="44" endLine="253" endPosition="48">
+    <scopeInfo nodeId="1534219577530305741" fileName="MultilineSelection.java" startLine="248" startPosition="44" endLine="262" endPosition="48">
       <varInfo nodeId="1534219577530305789" varName="newSelection" />
       <varInfo nodeId="1534219577530305783" varName="selectionManager" />
     </scopeInfo>
-    <scopeInfo nodeId="1534219577530305144" fileName="MultilineSelection.java" startLine="44" startPosition="0" endLine="59" endPosition="0">
+    <scopeInfo nodeId="1534219577530305144" fileName="MultilineSelection.java" startLine="46" startPosition="0" endLine="61" endPosition="0">
       <varInfo nodeId="1534219577530305158" varName="cellInfo" />
       <varInfo nodeId="1534219577530305152" varName="editorComponent" />
       <varInfo nodeId="1534219577530305154" varName="properties" />
     </scopeInfo>
-    <scopeInfo nodeId="4878119692008187180" fileName="MultilineSelection.java" startLine="200" startPosition="0" endLine="216" endPosition="0">
+    <scopeInfo nodeId="4878119692008187180" fileName="MultilineSelection.java" startLine="209" startPosition="0" endLine="225" endPosition="0">
       <varInfo nodeId="4878119692008196229" varName="up" />
     </scopeInfo>
-    <scopeInfo nodeId="1534219577530305738" fileName="MultilineSelection.java" startLine="239" startPosition="0" endLine="255" endPosition="0">
+    <scopeInfo nodeId="1534219577530305738" fileName="MultilineSelection.java" startLine="248" startPosition="0" endLine="264" endPosition="0">
       <varInfo nodeId="4878119692008180821" varName="newEnd" />
     </scopeInfo>
-    <scopeInfo nodeId="1534219577530324574" fileName="MultilineSelection.java" startLine="91" startPosition="64" endLine="108" endPosition="5">
+    <scopeInfo nodeId="1534219577530324574" fileName="MultilineSelection.java" startLine="93" startPosition="64" endLine="110" endPosition="5">
       <varInfo nodeId="1534219577530348228" varName="caretPos" />
       <varInfo nodeId="1534219577530324598" varName="wordStart" />
     </scopeInfo>
-    <scopeInfo nodeId="4950521006212361844" fileName="MultilineSelection.java" startLine="264" startPosition="42" endLine="281" endPosition="16">
+    <scopeInfo nodeId="4950521006212361844" fileName="MultilineSelection.java" startLine="273" startPosition="42" endLine="290" endPosition="16">
       <varInfo nodeId="4950521006212375570" varName="otherSelection" />
     </scopeInfo>
-    <scopeInfo nodeId="1534219577530324571" fileName="MultilineSelection.java" startLine="91" startPosition="0" endLine="110" endPosition="0">
+    <scopeInfo nodeId="1534219577530324571" fileName="MultilineSelection.java" startLine="93" startPosition="0" endLine="112" endPosition="0">
       <varInfo nodeId="1534219577530324661" varName="selEnd" />
       <varInfo nodeId="1534219577530324659" varName="selStart" />
     </scopeInfo>
-    <scopeInfo nodeId="4950521006212361839" fileName="MultilineSelection.java" startLine="264" startPosition="0" endLine="283" endPosition="0">
+    <scopeInfo nodeId="4950521006212361839" fileName="MultilineSelection.java" startLine="273" startPosition="0" endLine="292" endPosition="0">
       <varInfo nodeId="4950521006212361842" varName="other" />
     </scopeInfo>
-    <scopeInfo nodeId="5792856961223656528" fileName="MultilineSelection.java" startLine="153" startPosition="56" endLine="173" endPosition="5" />
-    <scopeInfo nodeId="4950521006212361815" fileName="MultilineSelection.java" startLine="128" startPosition="50" endLine="149" endPosition="5" />
-    <scopeInfo nodeId="5792856961223656520" fileName="MultilineSelection.java" startLine="152" startPosition="0" endLine="175" endPosition="0">
+    <scopeInfo nodeId="5792856961223656528" fileName="MultilineSelection.java" startLine="159" startPosition="56" endLine="179" endPosition="5" />
+    <scopeInfo nodeId="4950521006212361815" fileName="MultilineSelection.java" startLine="134" startPosition="50" endLine="155" endPosition="5" />
+    <scopeInfo nodeId="5792856961223656520" fileName="MultilineSelection.java" startLine="158" startPosition="0" endLine="181" endPosition="0">
       <varInfo nodeId="5792856961223656524" varName="type" />
     </scopeInfo>
-    <scopeInfo nodeId="4950521006212361810" fileName="MultilineSelection.java" startLine="127" startPosition="0" endLine="151" endPosition="0">
+    <scopeInfo nodeId="4950521006212361810" fileName="MultilineSelection.java" startLine="133" startPosition="0" endLine="157" endPosition="0">
       <varInfo nodeId="4950521006212361813" varName="type" />
     </scopeInfo>
-    <unitInfo nodeId="1643598191276620659" fileName="MultilineSelection.java" startLine="221" startPosition="65" endLine="225" endPosition="7" unitName="de.slisson.mps.editor.multiline.cells.MultilineSelection$2" />
-    <unitInfo nodeId="4878119692008187049" fileName="MultilineSelection.java" startLine="191" startPosition="63" endLine="197" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.MultilineSelection$1" />
-    <unitInfo nodeId="4950521006212361787" fileName="MultilineSelection.java" startLine="33" startPosition="0" endLine="318" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
+    <unitInfo nodeId="1643598191276620659" fileName="MultilineSelection.java" startLine="230" startPosition="65" endLine="234" endPosition="7" unitName="de.slisson.mps.editor.multiline.cells.MultilineSelection$2" />
+    <unitInfo nodeId="330549270703751695" fileName="MultilineSelection.java" startLine="201" startPosition="63" endLine="206" endPosition="5" unitName="de.slisson.mps.editor.multiline.cells.MultilineSelection$1" />
+    <unitInfo nodeId="4950521006212361787" fileName="MultilineSelection.java" startLine="33" startPosition="0" endLine="327" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
   </root>
   <root nodeRef="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)/5205698381779289256">
     <nodeInfo nodeId="5205698381779290183" fileName="WordPasteAction.java" startLine="10" startPosition="0" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myWordCell" />
@@ -512,6 +523,89 @@
     <scopeInfo nodeId="1643598191261669623" fileName="WordPasteAction.java" startLine="24" startPosition="0" endLine="27" endPosition="0" />
     <scopeInfo nodeId="1643598191261669630" fileName="WordPasteAction.java" startLine="28" startPosition="0" endLine="31" endPosition="0" />
     <unitInfo nodeId="5205698381779289256" fileName="WordPasteAction.java" startLine="9" startPosition="0" endLine="32" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.WordPasteAction" />
+  </root>
+  <root nodeRef="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)/5232239503568314559">
+    <nodeInfo nodeId="5232239503568315685" fileName="SelectionKeyboardHandler.java" startLine="11" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myOriginalHandler" />
+    <nodeInfo nodeId="5232239503568546326" fileName="SelectionKeyboardHandler.java" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="mySelection" />
+    <nodeInfo nodeId="5232239503568547733" fileName="SelectionKeyboardHandler.java" startLine="15" startPosition="91" endLine="16" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5232239503568318338" fileName="SelectionKeyboardHandler.java" startLine="16" startPosition="28" endLine="17" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="330549270703285603" fileName="SelectionKeyboardHandler.java" startLine="21" startPosition="40" endLine="22" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703292131" fileName="SelectionKeyboardHandler.java" startLine="23" startPosition="5" endLine="24" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703272295" fileName="SelectionKeyboardHandler.java" startLine="28" startPosition="40" endLine="29" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703808423" fileName="SelectionKeyboardHandler.java" startLine="31" startPosition="34" endLine="32" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703279003" fileName="SelectionKeyboardHandler.java" startLine="33" startPosition="5" endLine="34" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5232239503568323113" fileName="SelectionKeyboardHandler.java" startLine="37" startPosition="76" endLine="38" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8153623671333892309" fileName="SelectionKeyboardHandler.java" startLine="42" startPosition="37" endLine="43" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703774701" fileName="SelectionKeyboardHandler.java" startLine="44" startPosition="5" endLine="45" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="330549270703788087" fileName="SelectionKeyboardHandler.java" startLine="45" startPosition="42" endLine="46" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5780564382827742514" fileName="SelectionKeyboardHandler.java" startLine="46" startPosition="42" endLine="47" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703260368" fileName="SelectionKeyboardHandler.java" startLine="52" startPosition="72" endLine="53" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="330549270703260376" fileName="SelectionKeyboardHandler.java" startLine="54" startPosition="73" endLine="55" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="330549270703260381" fileName="SelectionKeyboardHandler.java" startLine="55" startPosition="44" endLine="56" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703262436" fileName="SelectionKeyboardHandler.java" startLine="57" startPosition="5" endLine="58" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703066755" fileName="SelectionKeyboardHandler.java" startLine="62" startPosition="78" endLine="63" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703078252" fileName="SelectionKeyboardHandler.java" startLine="65" startPosition="79" endLine="66" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703091715" fileName="SelectionKeyboardHandler.java" startLine="67" startPosition="5" endLine="68" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="330549270703285601" fileName="SelectionKeyboardHandler.java" startLine="20" startPosition="75" endLine="23" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="330549270703269973" fileName="SelectionKeyboardHandler.java" startLine="27" startPosition="73" endLine="30" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="330549270703801874" fileName="SelectionKeyboardHandler.java" startLine="30" startPosition="5" endLine="33" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5232239503568314621" fileName="SelectionKeyboardHandler.java" startLine="37" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="processKeyReleased#(Ljetbrains/mps/nodeEditor/EditorContext;Ljava/awt/event/KeyEvent;)Z" />
+    <nodeInfo nodeId="8153623671333619320" fileName="SelectionKeyboardHandler.java" startLine="41" startPosition="54" endLine="44" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="330549270703044539" fileName="SelectionKeyboardHandler.java" startLine="61" startPosition="88" endLine="64" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="330549270703078250" fileName="SelectionKeyboardHandler.java" startLine="64" startPosition="5" endLine="67" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5232239503568317731" fileName="SelectionKeyboardHandler.java" startLine="15" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="SelectionKeyboardHandler#(Lde/slisson/mps/editor/multiline/cells/MultilineSelection;Ljetbrains/mps/nodeEditor/KeyboardHandler;)V" />
+    <nodeInfo nodeId="330549270703260374" fileName="SelectionKeyboardHandler.java" startLine="53" startPosition="62" endLine="57" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5232239503568314599" fileName="SelectionKeyboardHandler.java" startLine="20" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="processKeyPressed#(Ljetbrains/mps/nodeEditor/EditorContext;Ljava/awt/event/KeyEvent;)Z" />
+    <nodeInfo nodeId="5780564382827422870" fileName="SelectionKeyboardHandler.java" startLine="41" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="processTextTyped#(Ljava/awt/event/KeyEvent;)Z" />
+    <nodeInfo nodeId="330549270703245403" fileName="SelectionKeyboardHandler.java" startLine="52" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="processAction#(Ljetbrains/mps/nodeEditor/EditorContext;Ljava/awt/event/KeyEvent;)Z" />
+    <nodeInfo nodeId="5232239503568314610" fileName="SelectionKeyboardHandler.java" startLine="27" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="processKeyTyped#(Ljetbrains/mps/nodeEditor/EditorContext;Ljava/awt/event/KeyEvent;)Z" />
+    <nodeInfo nodeId="330549270703026993" fileName="SelectionKeyboardHandler.java" startLine="61" startPosition="0" endLine="70" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getActionType#(Ljetbrains/mps/nodeEditor/EditorContext;Ljava/awt/event/KeyEvent;)Ljetbrains/mps/openapi/editor/cells/CellActionType;" />
+    <scopeInfo nodeId="330549270703285602" fileName="SelectionKeyboardHandler.java" startLine="21" startPosition="40" endLine="22" endPosition="18" />
+    <scopeInfo nodeId="330549270703269976" fileName="SelectionKeyboardHandler.java" startLine="28" startPosition="40" endLine="29" endPosition="18" />
+    <scopeInfo nodeId="330549270703801877" fileName="SelectionKeyboardHandler.java" startLine="31" startPosition="34" endLine="32" endPosition="18" />
+    <scopeInfo nodeId="5232239503568314629" fileName="SelectionKeyboardHandler.java" startLine="37" startPosition="76" endLine="38" endPosition="64" />
+    <scopeInfo nodeId="8153623671333619323" fileName="SelectionKeyboardHandler.java" startLine="42" startPosition="37" endLine="43" endPosition="19" />
+    <scopeInfo nodeId="330549270703044542" fileName="SelectionKeyboardHandler.java" startLine="62" startPosition="78" endLine="63" endPosition="40" />
+    <scopeInfo nodeId="330549270703078251" fileName="SelectionKeyboardHandler.java" startLine="65" startPosition="79" endLine="66" endPosition="41" />
+    <scopeInfo nodeId="5232239503568317735" fileName="SelectionKeyboardHandler.java" startLine="15" startPosition="91" endLine="17" endPosition="33" />
+    <scopeInfo nodeId="330549270703260375" fileName="SelectionKeyboardHandler.java" startLine="54" startPosition="73" endLine="56" endPosition="18" />
+    <scopeInfo nodeId="5232239503568314621" fileName="SelectionKeyboardHandler.java" startLine="37" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="5232239503568314625" varName="context" />
+      <varInfo nodeId="5232239503568314627" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5232239503568317731" fileName="SelectionKeyboardHandler.java" startLine="15" startPosition="0" endLine="19" endPosition="0">
+      <varInfo nodeId="5232239503568318054" varName="original" />
+      <varInfo nodeId="5232239503568547338" varName="selection" />
+    </scopeInfo>
+    <scopeInfo nodeId="5232239503568314607" fileName="SelectionKeyboardHandler.java" startLine="20" startPosition="75" endLine="24" endPosition="63" />
+    <scopeInfo nodeId="5232239503568314599" fileName="SelectionKeyboardHandler.java" startLine="20" startPosition="0" endLine="26" endPosition="0">
+      <varInfo nodeId="5232239503568314603" varName="context" />
+      <varInfo nodeId="5232239503568314605" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5780564382827422876" fileName="SelectionKeyboardHandler.java" startLine="41" startPosition="54" endLine="47" endPosition="16">
+      <varInfo nodeId="330549270703774704" varName="text" />
+    </scopeInfo>
+    <scopeInfo nodeId="330549270703245407" fileName="SelectionKeyboardHandler.java" startLine="52" startPosition="72" endLine="58" endPosition="17">
+      <varInfo nodeId="330549270703260369" varName="actionType" />
+    </scopeInfo>
+    <scopeInfo nodeId="5232239503568314618" fileName="SelectionKeyboardHandler.java" startLine="27" startPosition="73" endLine="34" endPosition="61" />
+    <scopeInfo nodeId="330549270703026997" fileName="SelectionKeyboardHandler.java" startLine="61" startPosition="88" endLine="68" endPosition="89" />
+    <scopeInfo nodeId="5780564382827422870" fileName="SelectionKeyboardHandler.java" startLine="41" startPosition="0" endLine="49" endPosition="0">
+      <varInfo nodeId="5780564382827422874" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="330549270703245403" fileName="SelectionKeyboardHandler.java" startLine="52" startPosition="0" endLine="60" endPosition="0">
+      <varInfo nodeId="330549270703256475" varName="context" />
+      <varInfo nodeId="330549270703258386" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="5232239503568314610" fileName="SelectionKeyboardHandler.java" startLine="27" startPosition="0" endLine="36" endPosition="0">
+      <varInfo nodeId="5232239503568314614" varName="context" />
+      <varInfo nodeId="5232239503568314616" varName="event" />
+    </scopeInfo>
+    <scopeInfo nodeId="330549270703026993" fileName="SelectionKeyboardHandler.java" startLine="61" startPosition="0" endLine="70" endPosition="0">
+      <varInfo nodeId="330549270703099144" varName="editorContext" />
+      <varInfo nodeId="330549270703035633" varName="keyEvent" />
+    </scopeInfo>
+    <unitInfo nodeId="5232239503568314559" fileName="SelectionKeyboardHandler.java" startLine="10" startPosition="0" endLine="71" endPosition="0" unitName="de.slisson.mps.editor.multiline.cells.SelectionKeyboardHandler" />
   </root>
   <root nodeRef="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)/5696298824709649530">
     <nodeInfo nodeId="5696298824709649552" fileName="WordCellInitializer.java" startLine="7" startPosition="0" endLine="8" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initialize#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />

@@ -34,12 +34,14 @@ public class MultilineSelection extends AbstractSelection {
   private static final Logger LOG = Logger.getLogger(MultilineSelection.class);
   private static final String PROPERTY_SELECTION_START = "selectionStart";
   private static final String PROPERTY_SELECTION_END = "selectionEnd";
+
   private EditorCell_Multiline myMultilineCell;
   private int mySelectionStart;
   /**
    * can be lower than mySelectionStart
    */
   private int mySelectionEnd;
+
 
   public MultilineSelection(EditorComponent editorComponent, Map<String, String> properties, CellInfo cellInfo) throws SelectionStoreException, SelectionRestoreException {
     super(editorComponent);
@@ -109,10 +111,14 @@ public class MultilineSelection extends AbstractSelection {
   }
 
   public void activate() {
-    ((jetbrains.mps.nodeEditor.EditorComponent) getEditorComponent()).repaint();
+    jetbrains.mps.nodeEditor.EditorComponent component = (jetbrains.mps.nodeEditor.EditorComponent) getEditorComponent();
+    component.pushKeyboardHandler(new SelectionKeyboardHandler(this, component.peekKeyboardHandler()));
+    component.repaint();
   }
 
   public void deactivate() {
+    jetbrains.mps.nodeEditor.EditorComponent component = (jetbrains.mps.nodeEditor.EditorComponent) getEditorComponent();
+    component.popKeyboardHandler();
     updateVisibleSelection(0, 0);
   }
 
@@ -188,11 +194,14 @@ public class MultilineSelection extends AbstractSelection {
   }
 
   public void pasteClipboardText() {
+    replaceSelectedText(ClipboardUtils.getClipboardText());
+  }
+
+  public void replaceSelectedText(final String text) {
     getEditorComponent().getEditorContext().executeCommand(new Runnable() {
       public void run() {
         deleteSelectedText();
-        String textToInsert = ClipboardUtils.getClipboardText();
-        myMultilineCell.insertText(textToInsert);
+        myMultilineCell.insertText(text);
       }
     });
   }
