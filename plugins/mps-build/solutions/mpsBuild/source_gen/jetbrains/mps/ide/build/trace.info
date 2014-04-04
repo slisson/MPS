@@ -58,7 +58,7 @@
     <unitInfo nodeId="7401958389406848608" fileName="mpsJava.xml" startLine="1" startPosition="0" endLine="199" endPosition="10" unitName="jetbrains.mps.ide.build.mpsJava" />
   </root>
   <root nodeRef="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/7926701909975931624">
-    <unitInfo nodeId="7926701909975931624" fileName="mpsBootstrapCore.xml" startLine="1" startPosition="0" endLine="9233" endPosition="10" unitName="jetbrains.mps.ide.build.mpsBootstrapCore" />
+    <unitInfo nodeId="7926701909975931624" fileName="mpsBootstrapCore.xml" startLine="1" startPosition="0" endLine="9036" endPosition="10" unitName="jetbrains.mps.ide.build.mpsBootstrapCore" />
   </root>
   <root nodeRef="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8227093612176368028">
     <unitInfo nodeId="8227093612176368028" fileName="mpsBuildUI.xml" startLine="1" startPosition="0" endLine="387" endPosition="10" unitName="jetbrains.mps.ide.build.mpsBuildUI" />
