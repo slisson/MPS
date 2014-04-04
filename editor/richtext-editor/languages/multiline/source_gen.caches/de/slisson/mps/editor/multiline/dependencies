@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="de.slisson.mps.editor.multiline.Language" file="Language.java">
-    <classNode dependClassName="de.slisson.mps.editor.multiline.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
