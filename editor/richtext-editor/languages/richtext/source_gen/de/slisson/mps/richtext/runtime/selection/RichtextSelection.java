@@ -7,9 +7,6 @@ import jetbrains.mps.logging.Logger;
 import jetbrains.mps.nodeEditor.cells.EditorCell;
 import java.util.List;
 import jetbrains.mps.openapi.editor.selection.Selection;
-import java.awt.event.KeyListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import jetbrains.mps.openapi.editor.EditorComponent;
 import java.util.Map;
 import jetbrains.mps.nodeEditor.cells.CellInfo;
@@ -70,12 +67,6 @@ public class RichtextSelection extends AbstractSelection {
   private int myEndTextPos = 0;
   private boolean myLeftToRight;
   private List<Selection> subSelections;
-  private KeyListener keyListener = new KeyAdapter() {
-    @Override
-    public void keyTyped(KeyEvent event) {
-      processKeyTyped(event);
-    }
-  };
 
 
   public RichtextSelection(EditorComponent editorComponent, Map<String, String> properties, CellInfo cellInfo) throws SelectionStoreException, SelectionRestoreException {
@@ -130,7 +121,8 @@ public class RichtextSelection extends AbstractSelection {
   }
 
   public void activate() {
-    installKeyboardListener();
+    jetbrains.mps.nodeEditor.EditorComponent component = (jetbrains.mps.nodeEditor.EditorComponent) getEditorComponent();
+    component.pushKeyboardHandler(new SelectionKeyboardHandler(this, component.peekKeyboardHandler()));
     for (Selection selection : ListSequence.fromList(subSelections)) {
       selection.activate();
     }
@@ -138,28 +130,12 @@ public class RichtextSelection extends AbstractSelection {
   }
 
   public void deactivate() {
-    deinstallKeybordListener();
+    jetbrains.mps.nodeEditor.EditorComponent component = (jetbrains.mps.nodeEditor.EditorComponent) getEditorComponent();
+    component.popKeyboardHandler();
     for (Selection selection : ListSequence.fromList(subSelections)) {
       selection.deactivate();
     }
   }
-
-
-
-  public void installKeyboardListener() {
-    jetbrains.mps.nodeEditor.EditorComponent editorComponent = (jetbrains.mps.nodeEditor.EditorComponent) myStartCell.getEditorComponent();
-    editorComponent.addKeyListener(keyListener);
-    LOG.info("installed");
-  }
-
-
-
-  public void deinstallKeybordListener() {
-    jetbrains.mps.nodeEditor.EditorComponent editorComponent = (jetbrains.mps.nodeEditor.EditorComponent) myStartCell.getEditorComponent();
-    editorComponent.removeKeyListener(keyListener);
-    LOG.info("deinstalled");
-  }
-
 
 
 
@@ -313,7 +289,7 @@ public class RichtextSelection extends AbstractSelection {
     SNode textNode = SNodeOperations.getAncestor(ListSequence.fromList(getSelectedNodes()).first(), "de.slisson.mps.richtext.structure.Text", false, false);
     jetbrains.mps.openapi.editor.cells.EditorCell firstCell = getEditorComponent().findNodeCell(ListSequence.fromList(SLinkOperations.getTargets(textNode, "words", true)).first());
     jetbrains.mps.openapi.editor.cells.EditorCell lastCell = getEditorComponent().findNodeCell(ListSequence.fromList(SLinkOperations.getTargets(textNode, "words", true)).last());
-    Integer endTextPos = check_irpwvl_a0j0eb(as_irpwvl_a0a0j0eb(lastCell, EditorCell_Multiline.class));
+    Integer endTextPos = check_irpwvl_a0j0y(as_irpwvl_a0a0j0y(lastCell, EditorCell_Multiline.class));
     if (endTextPos == null) {
       endTextPos = 0;
     }
@@ -545,7 +521,7 @@ public class RichtextSelection extends AbstractSelection {
     } else {
       String plainText = IterableUtils.join(ListSequence.fromList(words).select(new ISelector<SNode, String>() {
         public String select(SNode it) {
-          return StringUtils.defaultString(check_irpwvl_a0a0a0a0a0a0b0qb(SNodeOperations.as(it, "de.slisson.mps.richtext.structure.IWord")));
+          return StringUtils.defaultString(check_irpwvl_a0a0a0a0a0a0b0kb(SNodeOperations.as(it, "de.slisson.mps.richtext.structure.IWord")));
         }
       }), "");
       CopyPasteUtil.copyNodesAndTextToClipboard(words, plainText);
@@ -667,7 +643,7 @@ public class RichtextSelection extends AbstractSelection {
 
   public void paintSelection(Graphics2D d) {
     for (Selection selection : ListSequence.fromList(subSelections)) {
-      check_irpwvl_a0a0a15(as_irpwvl_a0a0a0a15(selection, SelectionInternal.class), d);
+      check_irpwvl_a0a0a54(as_irpwvl_a0a0a0a54(selection, SelectionInternal.class), d);
     }
   }
 
@@ -713,7 +689,7 @@ public class RichtextSelection extends AbstractSelection {
   }
 
   public static RichtextSelection create(EditorCellLabelSelection selection) {
-    EditorCell_Word wordCell = as_irpwvl_a0a0a45(check_irpwvl_a0a0a45(selection), EditorCell_Word.class);
+    EditorCell_Word wordCell = as_irpwvl_a0a0a84(check_irpwvl_a0a0a84(selection), EditorCell_Word.class);
     if (wordCell == null) {
       return null;
     }
@@ -786,79 +762,76 @@ public class RichtextSelection extends AbstractSelection {
   }
 
   public static SNode getFirstCommonParentNode(jetbrains.mps.openapi.editor.cells.EditorCell child1, jetbrains.mps.openapi.editor.cells.EditorCell child2) {
-    return check_irpwvl_a0a16(getFirstCommonParent(child1, child2));
+    return check_irpwvl_a0a55(getFirstCommonParent(child1, child2));
   }
 
 
 
-  protected boolean processKeyTyped(final KeyEvent event) {
-    LOG.info("char: " + event.getKeyChar() + " / event: " + event);
-    if (event.getKeyChar() == '\0') {
-      return false;
-    }
+  public void replaceSelectedText(final String text) {
     final TextPosition[] pos = new TextPosition[1];
     ModelAccess.instance().runWriteActionInCommand(new Computable<SNode>() {
       public SNode compute() {
         pos[0] = deleteSelected();
-        Word_Behavior.call_insertTextAt_5745648783531951228(pos[0].getWord(), "" + event.getKeyChar(), pos[0].getRelativePos());
+        Word_Behavior.call_insertTextAt_5745648783531951228(pos[0].getWord(), text, pos[0].getRelativePos());
         return pos[0].getWord();
       }
     }, myStartCell.getContext().getOperationContext().getProject());
-    EditorCell_Multiline mlCell = as_irpwvl_a0a4a36(myStartCell.getEditorComponent().findNodeCell(pos[0].getWord()), EditorCell_Multiline.class);
+    EditorCell_Multiline mlCell = as_irpwvl_a0a2a75(myStartCell.getEditorComponent().findNodeCell(pos[0].getWord()), EditorCell_Multiline.class);
     if (mlCell != null) {
       mlCell.setCaretPosition(pos[0].getRelativePos() + 1, true);
     }
-    return true;
   }
 
-  private static int check_irpwvl_a0j0eb(EditorCell_Multiline checkedDotOperand) {
+
+
+  private static int check_irpwvl_a0j0y(EditorCell_Multiline checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getTextLength();
     }
     return 0;
   }
 
-  private static String check_irpwvl_a0a0a0a0a0a0b0qb(SNode checkedDotOperand) {
+  private static String check_irpwvl_a0a0a0a0a0a0b0kb(SNode checkedDotOperand) {
     if (null != checkedDotOperand) {
       return BehaviorReflection.invokeVirtual(String.class, checkedDotOperand, "virtual_toTextString_4433012599261204765", new Object[]{});
     }
     return null;
   }
 
-  private static void check_irpwvl_a0a0a15(SelectionInternal checkedDotOperand, Graphics2D d) {
+  private static void check_irpwvl_a0a0a54(SelectionInternal checkedDotOperand, Graphics2D d) {
     if (null != checkedDotOperand) {
       checkedDotOperand.paintSelection(d);
     }
 
   }
 
-  private static jetbrains.mps.openapi.editor.cells.EditorCell_Label check_irpwvl_a0a0a45(EditorCellLabelSelection checkedDotOperand) {
+  private static jetbrains.mps.openapi.editor.cells.EditorCell_Label check_irpwvl_a0a0a84(EditorCellLabelSelection checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getEditorCellLabel();
     }
     return null;
   }
 
-  private static SNode check_irpwvl_a0a16(jetbrains.mps.openapi.editor.cells.EditorCell checkedDotOperand) {
+  private static SNode check_irpwvl_a0a55(jetbrains.mps.openapi.editor.cells.EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getSNode();
     }
     return null;
   }
 
-  private static <T> T as_irpwvl_a0a0j0eb(Object o, Class<T> type) {
+  private static <T> T as_irpwvl_a0a0j0y(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 
-  private static <T> T as_irpwvl_a0a0a0a15(Object o, Class<T> type) {
+  private static <T> T as_irpwvl_a0a0a0a54(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 
-  private static <T> T as_irpwvl_a0a0a45(Object o, Class<T> type) {
+  private static <T> T as_irpwvl_a0a0a84(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 
-  private static <T> T as_irpwvl_a0a4a36(Object o, Class<T> type) {
+  private static <T> T as_irpwvl_a0a2a75(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 }

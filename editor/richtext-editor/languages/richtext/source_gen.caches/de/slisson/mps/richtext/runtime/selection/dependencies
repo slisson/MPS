@@ -50,20 +50,17 @@
     <classNode dependClassName="de.slisson.mps.richtext.behavior.Text_Behavior" />
     <classNode dependClassName="de.slisson.mps.richtext.behavior.Word_Behavior" />
     <classNode dependClassName="de.slisson.mps.richtext.runtime.selection.CaretPosition" />
+    <classNode dependClassName="de.slisson.mps.richtext.runtime.selection.SelectionKeyboardHandler" />
     <classNode dependClassName="de.slisson.mps.richtext.runtime.selection.TextPosition" />
     <classNode dependClassName="de.slisson.mps.richtext.runtime.selection._Adapters" />
     <classNode dependClassName="de.slisson.mps.richtext.util.SelectionUtils" />
     <classNode dependClassName="java.awt.Graphics2D" />
-    <classNode dependClassName="java.awt.event.KeyAdapter" />
-    <classNode dependClassName="java.awt.event.KeyEvent" />
-    <classNode dependClassName="java.awt.event.KeyListener" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Math" />
     <classNode dependClassName="java.lang.Object" />
-    <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -113,6 +110,13 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.selection.AbstractSelection" />
+  </dependency>
+  <dependency className="de.slisson.mps.richtext.runtime.selection.SelectionKeyboardHandler" file="SelectionKeyboardHandler.java">
+    <classNode dependClassName="de.slisson.mps.richtext.runtime.selection.RichtextSelection" />
+    <classNode dependClassName="java.awt.event.KeyEvent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.KeyboardHandler" />
   </dependency>
   <dependency className="de.slisson.mps.richtext.runtime.selection.ShiftSelector" file="ShiftSelector.java">
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
