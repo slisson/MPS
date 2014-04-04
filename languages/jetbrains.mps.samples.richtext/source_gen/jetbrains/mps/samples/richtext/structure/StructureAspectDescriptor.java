@@ -14,13 +14,15 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.Document").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"paragraph"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.Document").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"paragraph", "richtext"}, new boolean[]{true, false}).create();
       case 1:
+        return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.EmbeddedCode").super_("jetbrains.mps.baseLanguage.structure.StatementList").parents("jetbrains.mps.baseLanguage.structure.StatementList", "de.slisson.mps.richtext.structure.IWord").alias("<code>", "").create();
+      case 2:
         return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.Paragraph").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("text").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.samples.richtext.structure.Document", "jetbrains.mps.samples.richtext.structure.Paragraph"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.samples.richtext.structure.Document", "jetbrains.mps.samples.richtext.structure.EmbeddedCode", "jetbrains.mps.samples.richtext.structure.Paragraph"};
 }
