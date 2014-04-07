@@ -112,7 +112,7 @@ public class DiffEditorsGroup {
       myViewportSetInProgress = true;
       ListSequence.fromList(myDiffEditors).visitAll(new IVisitor<DiffEditor>() {
         public void visit(DiffEditor other) {
-          synchronizeViewWithOther(myDiffEditor.getMainEditor(), other.getMainEditor());
+          DiffEditorsGroup.synchronizeViewWithOther(myDiffEditor.getMainEditor(), other.getMainEditor());
         }
       });
       myViewportSetInProgress = false;
