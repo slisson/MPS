@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.samples.richtext.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="30" endPosition="0" unitName="jetbrains.mps.samples.richtext.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="Document_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="jetbrains.mps.samples.richtext.behavior.Document_BehaviorDescriptor" />
   <unitInfo fileName="EmbeddedCode_BehaviorDescriptor.java" startLine="11" startPosition="0" endLine="28" endPosition="0" unitName="jetbrains.mps.samples.richtext.behavior.EmbeddedCode_BehaviorDescriptor" />
+  <unitInfo fileName="MultilineString_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.samples.richtext.behavior.MultilineString_BehaviorDescriptor" />
   <unitInfo fileName="Paragraph_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.samples.richtext.behavior.Paragraph_BehaviorDescriptor" />
 </debugInfo>
 

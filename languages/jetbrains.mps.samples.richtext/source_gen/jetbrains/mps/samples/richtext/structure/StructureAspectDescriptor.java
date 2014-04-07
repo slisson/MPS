@@ -18,11 +18,13 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 1:
         return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.EmbeddedCode").super_("jetbrains.mps.baseLanguage.structure.StatementList").parents("jetbrains.mps.baseLanguage.structure.StatementList", "de.slisson.mps.richtext.structure.IWord").alias("<code>", "").create();
       case 2:
+        return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.MultilineString").super_("jetbrains.mps.baseLanguage.structure.Expression").parents("jetbrains.mps.baseLanguage.structure.Expression").properties("text").alias("'''", "").create();
+      case 3:
         return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.Paragraph").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("text").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.samples.richtext.structure.Document", "jetbrains.mps.samples.richtext.structure.EmbeddedCode", "jetbrains.mps.samples.richtext.structure.Paragraph"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"jetbrains.mps.samples.richtext.structure.Document", "jetbrains.mps.samples.richtext.structure.EmbeddedCode", "jetbrains.mps.samples.richtext.structure.MultilineString", "jetbrains.mps.samples.richtext.structure.Paragraph"};
 }

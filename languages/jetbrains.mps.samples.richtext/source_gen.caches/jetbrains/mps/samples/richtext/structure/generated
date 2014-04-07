@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="bwa72ba9xu7evtczzeh7poxrbqlnzb1">
+<dependencies version="2" modelHash="-ddq2f0kwudppqlmynkmzx5koeqzizwv">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="-2hubvwh7bwismm0eld02cqmdefvj5by" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-18rci04s2u92vopawqedkce2noitsf3" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="5ltxe3l1xoyos2nn156ma6fyky147o3" />
@@ -12,6 +12,7 @@
     <dep root="2988247428751464015" />
     <dep root="5232239503568939837" />
     <dep root="5232239503568939899" />
+    <dep root="9038729075800511894" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -25,5 +26,6 @@
   <source id="5232239503568939837" name="Document" hash="-4tusqtq61p2nzqojsiv0w3em1gad8xb" />
   <source id="5232239503568939899" name="Paragraph" hash="9zsmbi44r52b67pl8qyp47zgr2p936z" />
   <source id="2988247428751464015" name="EmbeddedCode" hash="-ay949dvtzjf0dr60ak68j0v87v5sjyt" />
+  <source id="9038729075800511894" name="MultilineString" hash="-bwht13pp0j5dcab9k8p0azkhx17go6k" />
 </dependencies>
 

@@ -5,6 +5,7 @@
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="jetbrains.mps.samples.richtext.behavior.Document_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.samples.richtext.behavior.EmbeddedCode_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.samples.richtext.behavior.MultilineString_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.samples.richtext.behavior.Paragraph_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
@@ -30,6 +31,12 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="jetbrains.mps.samples.richtext.behavior.MultilineString_BehaviorDescriptor" file="MultilineString_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Expression_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.samples.richtext.behavior.Paragraph_BehaviorDescriptor" file="Paragraph_BehaviorDescriptor.java">

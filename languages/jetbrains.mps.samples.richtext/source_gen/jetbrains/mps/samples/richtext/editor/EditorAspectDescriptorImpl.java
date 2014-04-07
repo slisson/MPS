@@ -19,6 +19,8 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 1:
         return Collections.<ConceptEditor>singletonList(new EmbeddedCode_Editor());
       case 2:
+        return Collections.<ConceptEditor>singletonList(new MultilineString_Editor());
+      case 3:
         return Collections.<ConceptEditor>singletonList(new Paragraph_Editor());
       default:
     }
@@ -36,5 +38,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"jetbrains.mps.samples.richtext.structure.Document", "jetbrains.mps.samples.richtext.structure.EmbeddedCode", "jetbrains.mps.samples.richtext.structure.Paragraph"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"jetbrains.mps.samples.richtext.structure.Document", "jetbrains.mps.samples.richtext.structure.EmbeddedCode", "jetbrains.mps.samples.richtext.structure.MultilineString", "jetbrains.mps.samples.richtext.structure.Paragraph"};
 }
