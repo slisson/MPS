@@ -4,7 +4,6 @@ package de.slisson.mps.richtext.runtime.selection;
 
 import java.awt.event.MouseListener;
 import jetbrains.mps.openapi.editor.selection.SelectionListener;
-import org.apache.log4j.Logger;
 import java.util.WeakHashMap;
 import jetbrains.mps.nodeEditor.EditorComponent;
 import jetbrains.mps.openapi.editor.selection.Selection;
@@ -16,8 +15,6 @@ import jetbrains.mps.openapi.editor.selection.SingularSelection;
 import de.slisson.mps.editor.multiline.cells.MultilineSelection;
 
 public class ShiftSelector implements MouseListener, SelectionListener {
-  private static Logger LOG = Logger.getLogger(ShiftSelector.class);
-
   private static final WeakHashMap<EditorComponent, ShiftSelector> INSTANCES = new WeakHashMap<EditorComponent, ShiftSelector>();
 
 
@@ -53,7 +50,6 @@ public class ShiftSelector implements MouseListener, SelectionListener {
       }
       EditorCell from = getSelectedCell(myOldSelection);
       EditorCell to = getSelectedCell(myCurrentSelection);
-      LOG.info(check_bvifcg_a0a0a3a1a31(from) + " -> " + check_bvifcg_a0a0d0b0n(to));
       if (from == null || to == null) {
         return;
       }
@@ -105,19 +101,5 @@ public class ShiftSelector implements MouseListener, SelectionListener {
       return null;
     }
 
-  }
-
-  private static Class<?> check_bvifcg_a0a0d0b0n(EditorCell checkedDotOperand) {
-    if (null != checkedDotOperand) {
-      return checkedDotOperand.getClass();
-    }
-    return null;
-  }
-
-  private static Class<?> check_bvifcg_a0a0a3a1a31(EditorCell checkedDotOperand) {
-    if (null != checkedDotOperand) {
-      return checkedDotOperand.getClass();
-    }
-    return null;
   }
 }

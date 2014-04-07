@@ -122,7 +122,6 @@
     <classNode dependClassName="de.slisson.mps.editor.multiline.cells.MultilineSelection" />
     <classNode dependClassName="de.slisson.mps.richtext.runtime.selection.RichtextSelection" />
     <classNode dependClassName="java.awt.event.MouseEvent" />
-    <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.util.WeakHashMap" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorComponent" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection" />
@@ -131,7 +130,6 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell_Label" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.selection.Selection" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SingularSelection" />
-    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode extendsClassName="java.awt.event.MouseListener" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.selection.SelectionListener" />
   </dependency>

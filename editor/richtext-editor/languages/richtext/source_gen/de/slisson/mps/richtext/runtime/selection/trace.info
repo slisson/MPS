@@ -1066,142 +1066,122 @@
     <unitInfo nodeId="2983918873756936849" fileName="RichtextSelection.java" startLine="58" startPosition="0" endLine="838" endPosition="0" unitName="de.slisson.mps.richtext.runtime.selection.RichtextSelection" />
   </root>
   <root nodeRef="r:3e994831-9e2b-4a2c-a757-02d48f0caeb5(de.slisson.mps.richtext.runtime.selection)/5001285572247678730">
-    <nodeInfo nodeId="266461257707007301" fileName="ShiftSelector.java" startLine="19" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
-    <nodeInfo nodeId="5001285572247741173" fileName="ShiftSelector.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="INSTANCES" />
-    <nodeInfo nodeId="5001285572247822576" fileName="ShiftSelector.java" startLine="24" startPosition="63" endLine="25" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5001285572247852775" fileName="ShiftSelector.java" startLine="26" startPosition="27" endLine="27" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572247985112" fileName="ShiftSelector.java" startLine="27" startPosition="52" endLine="28" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572248000424" fileName="ShiftSelector.java" startLine="28" startPosition="47" endLine="29" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572248013153" fileName="ShiftSelector.java" startLine="29" startPosition="49" endLine="30" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572247861169" fileName="ShiftSelector.java" startLine="35" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myEditorComponent" />
-    <nodeInfo nodeId="2118076846287987767" fileName="ShiftSelector.java" startLine="36" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myOldOldSelection" />
-    <nodeInfo nodeId="5001285572248027991" fileName="ShiftSelector.java" startLine="37" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myOldSelection" />
-    <nodeInfo nodeId="5001285572248032632" fileName="ShiftSelector.java" startLine="38" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myCurrentSelection" />
-    <nodeInfo nodeId="5001285572247982257" fileName="ShiftSelector.java" startLine="41" startPosition="86" endLine="42" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572248498551" fileName="ShiftSelector.java" startLine="48" startPosition="46" endLine="49" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="5001285572248514470" fileName="ShiftSelector.java" startLine="51" startPosition="65" endLine="52" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5001285572248514761" fileName="ShiftSelector.java" startLine="53" startPosition="7" endLine="54" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5001285572248576717" fileName="ShiftSelector.java" startLine="54" startPosition="56" endLine="55" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="266461257707014623" fileName="ShiftSelector.java" startLine="55" startPosition="58" endLine="56" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572248578083" fileName="ShiftSelector.java" startLine="57" startPosition="39" endLine="58" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1076000027770309310" fileName="ShiftSelector.java" startLine="61" startPosition="127" endLine="62" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1076000027770877267" fileName="ShiftSelector.java" startLine="62" startPosition="99" endLine="63" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1076000027782522433" fileName="ShiftSelector.java" startLine="63" startPosition="103" endLine="64" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1076000027782921543" fileName="ShiftSelector.java" startLine="64" startPosition="60" endLine="65" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1076000027783564242" fileName="ShiftSelector.java" startLine="65" startPosition="56" endLine="66" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4308681954277586953" fileName="ShiftSelector.java" startLine="69" startPosition="9" endLine="70" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="266461257706526153" fileName="ShiftSelector.java" startLine="71" startPosition="7" endLine="72" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="5001285572248579807" fileName="ShiftSelector.java" startLine="72" startPosition="0" endLine="73" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5001285572248589952" fileName="ShiftSelector.java" startLine="74" startPosition="25" endLine="75" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5001285572248583453" fileName="ShiftSelector.java" startLine="76" startPosition="7" endLine="77" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2118076846287992966" fileName="ShiftSelector.java" startLine="90" startPosition="136" endLine="91" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572248042671" fileName="ShiftSelector.java" startLine="91" startPosition="39" endLine="92" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572248043012" fileName="ShiftSelector.java" startLine="92" startPosition="34" endLine="93" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572248570127" fileName="ShiftSelector.java" startLine="99" startPosition="49" endLine="100" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5001285572249268769" fileName="ShiftSelector.java" startLine="101" startPosition="57" endLine="102" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="5001285572249248257" fileName="ShiftSelector.java" startLine="102" startPosition="77" endLine="103" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5001285572248570566" fileName="ShiftSelector.java" startLine="104" startPosition="12" endLine="105" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5001285572248570336" fileName="ShiftSelector.java" startLine="106" startPosition="5" endLine="107" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="266461257707247782" fileName="ShiftSelector.java" startLine="111" startPosition="36" endLine="112" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="266461257707247782" fileName="ShiftSelector.java" startLine="113" startPosition="5" endLine="114" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="266461257707249794" fileName="ShiftSelector.java" startLine="118" startPosition="36" endLine="119" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="266461257707249794" fileName="ShiftSelector.java" startLine="120" startPosition="5" endLine="121" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5001285572247740436" fileName="ShiftSelector.java" startLine="45" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mouseClicked#(Ljava/awt/event/MouseEvent;)V" />
-    <nodeInfo nodeId="266461257707340746" fileName="ShiftSelector.java" startLine="67" startPosition="9" endLine="69" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5001285572247740450" fileName="ShiftSelector.java" startLine="81" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mouseReleased#(Ljava/awt/event/MouseEvent;)V" />
-    <nodeInfo nodeId="5001285572247740457" fileName="ShiftSelector.java" startLine="84" startPosition="0" endLine="86" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mouseEntered#(Ljava/awt/event/MouseEvent;)V" />
-    <nodeInfo nodeId="5001285572247740464" fileName="ShiftSelector.java" startLine="87" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mouseExited#(Ljava/awt/event/MouseEvent;)V" />
-    <nodeInfo nodeId="5001285572248570457" fileName="ShiftSelector.java" startLine="104" startPosition="10" endLine="106" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="5001285572247980511" fileName="ShiftSelector.java" startLine="41" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ShiftSelector#(Ljetbrains/mps/openapi/editor/EditorComponent;)V" />
-    <nodeInfo nodeId="5001285572248513561" fileName="ShiftSelector.java" startLine="50" startPosition="73" endLine="53" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5001285572248577342" fileName="ShiftSelector.java" startLine="56" startPosition="85" endLine="59" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5001285572248588394" fileName="ShiftSelector.java" startLine="73" startPosition="66" endLine="76" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="266461257707247782" fileName="ShiftSelector.java" startLine="110" startPosition="80" endLine="113" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="266461257707249794" fileName="ShiftSelector.java" startLine="117" startPosition="82" endLine="120" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5001285572247740471" fileName="ShiftSelector.java" startLine="90" startPosition="0" endLine="95" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="selectionChanged#(Ljetbrains/mps/openapi/editor/EditorComponent;Ljetbrains/mps/openapi/editor/selection/Selection;Ljetbrains/mps/openapi/editor/selection/Selection;)V" />
-    <nodeInfo nodeId="5001285572247851397" fileName="ShiftSelector.java" startLine="25" startPosition="60" endLine="31" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="266461257707247782" fileName="ShiftSelector.java" startLine="110" startPosition="0" endLine="116" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_bvifcg_a0a0d0b0n#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Ljava/lang/Class;" />
-    <nodeInfo nodeId="266461257707249794" fileName="ShiftSelector.java" startLine="117" startPosition="0" endLine="123" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="check_bvifcg_a0a0a3a1a31#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Ljava/lang/Class;" />
-    <nodeInfo nodeId="1076000027766746052" fileName="ShiftSelector.java" startLine="60" startPosition="23" endLine="67" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5001285572248546261" fileName="ShiftSelector.java" startLine="98" startPosition="65" endLine="106" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5001285572247856948" fileName="ShiftSelector.java" startLine="24" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="install#(Ljetbrains/mps/nodeEditor/EditorComponent;)V" />
-    <nodeInfo nodeId="5001285572248571186" fileName="ShiftSelector.java" startLine="98" startPosition="0" endLine="109" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getSelectedCell#(Ljetbrains/mps/openapi/editor/selection/Selection;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="4308681954277585609" fileName="ShiftSelector.java" startLine="59" startPosition="7" endLine="71" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5001285572248043370" fileName="ShiftSelector.java" startLine="49" startPosition="42" endLine="78" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5001285572247740443" fileName="ShiftSelector.java" startLine="48" startPosition="0" endLine="80" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mousePressed#(Ljava/awt/event/MouseEvent;)V" />
-    <scopeInfo nodeId="5001285572247740442" fileName="ShiftSelector.java" startLine="45" startPosition="46" endLine="45" endPosition="46" />
-    <scopeInfo nodeId="266461257707340749" fileName="ShiftSelector.java" startLine="68" startPosition="47" endLine="68" endPosition="47" />
-    <scopeInfo nodeId="5001285572247740456" fileName="ShiftSelector.java" startLine="81" startPosition="47" endLine="81" endPosition="47" />
-    <scopeInfo nodeId="5001285572247740463" fileName="ShiftSelector.java" startLine="84" startPosition="46" endLine="84" endPosition="46" />
-    <scopeInfo nodeId="5001285572247740470" fileName="ShiftSelector.java" startLine="87" startPosition="45" endLine="87" endPosition="45" />
-    <scopeInfo nodeId="5001285572247980515" fileName="ShiftSelector.java" startLine="41" startPosition="86" endLine="42" endPosition="40" />
-    <scopeInfo nodeId="5001285572248513562" fileName="ShiftSelector.java" startLine="51" startPosition="65" endLine="52" endPosition="15" />
-    <scopeInfo nodeId="5001285572248577345" fileName="ShiftSelector.java" startLine="57" startPosition="39" endLine="58" endPosition="15" />
-    <scopeInfo nodeId="5001285572248588397" fileName="ShiftSelector.java" startLine="74" startPosition="25" endLine="75" endPosition="15" />
-    <scopeInfo nodeId="5001285572248546262" fileName="ShiftSelector.java" startLine="99" startPosition="49" endLine="100" endPosition="61" />
-    <scopeInfo nodeId="5001285572248570458" fileName="ShiftSelector.java" startLine="104" startPosition="12" endLine="105" endPosition="18" />
-    <scopeInfo nodeId="266461257707247782" fileName="ShiftSelector.java" startLine="111" startPosition="36" endLine="112" endPosition="42" />
-    <scopeInfo nodeId="266461257707249794" fileName="ShiftSelector.java" startLine="118" startPosition="36" endLine="119" endPosition="42" />
-    <scopeInfo nodeId="5001285572247740436" fileName="ShiftSelector.java" startLine="45" startPosition="0" endLine="47" endPosition="0">
+    <nodeInfo nodeId="5001285572247741173" fileName="ShiftSelector.java" startLine="18" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="INSTANCES" />
+    <nodeInfo nodeId="5001285572247822576" fileName="ShiftSelector.java" startLine="21" startPosition="63" endLine="22" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5001285572247852775" fileName="ShiftSelector.java" startLine="23" startPosition="27" endLine="24" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572247985112" fileName="ShiftSelector.java" startLine="24" startPosition="52" endLine="25" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572248000424" fileName="ShiftSelector.java" startLine="25" startPosition="47" endLine="26" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572248013153" fileName="ShiftSelector.java" startLine="26" startPosition="49" endLine="27" endPosition="75" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572247861169" fileName="ShiftSelector.java" startLine="32" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myEditorComponent" />
+    <nodeInfo nodeId="2118076846287987767" fileName="ShiftSelector.java" startLine="33" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myOldOldSelection" />
+    <nodeInfo nodeId="5001285572248027991" fileName="ShiftSelector.java" startLine="34" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myOldSelection" />
+    <nodeInfo nodeId="5001285572248032632" fileName="ShiftSelector.java" startLine="35" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myCurrentSelection" />
+    <nodeInfo nodeId="5001285572247982257" fileName="ShiftSelector.java" startLine="38" startPosition="86" endLine="39" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572248498551" fileName="ShiftSelector.java" startLine="45" startPosition="46" endLine="46" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="5001285572248514470" fileName="ShiftSelector.java" startLine="48" startPosition="65" endLine="49" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5001285572248514761" fileName="ShiftSelector.java" startLine="50" startPosition="7" endLine="51" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5001285572248576717" fileName="ShiftSelector.java" startLine="51" startPosition="56" endLine="52" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5001285572248578083" fileName="ShiftSelector.java" startLine="53" startPosition="39" endLine="54" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1076000027770309310" fileName="ShiftSelector.java" startLine="57" startPosition="127" endLine="58" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1076000027770877267" fileName="ShiftSelector.java" startLine="58" startPosition="99" endLine="59" endPosition="103" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1076000027782522433" fileName="ShiftSelector.java" startLine="59" startPosition="103" endLine="60" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1076000027782921543" fileName="ShiftSelector.java" startLine="60" startPosition="60" endLine="61" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1076000027783564242" fileName="ShiftSelector.java" startLine="61" startPosition="56" endLine="62" endPosition="120" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4308681954277586953" fileName="ShiftSelector.java" startLine="65" startPosition="9" endLine="66" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="266461257706526153" fileName="ShiftSelector.java" startLine="67" startPosition="7" endLine="68" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="5001285572248579807" fileName="ShiftSelector.java" startLine="68" startPosition="0" endLine="69" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5001285572248589952" fileName="ShiftSelector.java" startLine="70" startPosition="25" endLine="71" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5001285572248583453" fileName="ShiftSelector.java" startLine="72" startPosition="7" endLine="73" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2118076846287992966" fileName="ShiftSelector.java" startLine="86" startPosition="136" endLine="87" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572248042671" fileName="ShiftSelector.java" startLine="87" startPosition="39" endLine="88" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572248043012" fileName="ShiftSelector.java" startLine="88" startPosition="34" endLine="89" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572248570127" fileName="ShiftSelector.java" startLine="95" startPosition="49" endLine="96" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5001285572249268769" fileName="ShiftSelector.java" startLine="97" startPosition="57" endLine="98" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5001285572249248257" fileName="ShiftSelector.java" startLine="98" startPosition="77" endLine="99" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5001285572248570566" fileName="ShiftSelector.java" startLine="100" startPosition="12" endLine="101" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5001285572248570336" fileName="ShiftSelector.java" startLine="102" startPosition="5" endLine="103" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="5001285572247740436" fileName="ShiftSelector.java" startLine="42" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mouseClicked#(Ljava/awt/event/MouseEvent;)V" />
+    <nodeInfo nodeId="266461257707340746" fileName="ShiftSelector.java" startLine="63" startPosition="9" endLine="65" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5001285572247740450" fileName="ShiftSelector.java" startLine="77" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mouseReleased#(Ljava/awt/event/MouseEvent;)V" />
+    <nodeInfo nodeId="5001285572247740457" fileName="ShiftSelector.java" startLine="80" startPosition="0" endLine="82" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mouseEntered#(Ljava/awt/event/MouseEvent;)V" />
+    <nodeInfo nodeId="5001285572247740464" fileName="ShiftSelector.java" startLine="83" startPosition="0" endLine="85" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mouseExited#(Ljava/awt/event/MouseEvent;)V" />
+    <nodeInfo nodeId="5001285572248570457" fileName="ShiftSelector.java" startLine="100" startPosition="10" endLine="102" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="5001285572247980511" fileName="ShiftSelector.java" startLine="38" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ShiftSelector#(Ljetbrains/mps/openapi/editor/EditorComponent;)V" />
+    <nodeInfo nodeId="5001285572248513561" fileName="ShiftSelector.java" startLine="47" startPosition="73" endLine="50" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5001285572248577342" fileName="ShiftSelector.java" startLine="52" startPosition="58" endLine="55" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5001285572248588394" fileName="ShiftSelector.java" startLine="69" startPosition="66" endLine="72" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5001285572247740471" fileName="ShiftSelector.java" startLine="86" startPosition="0" endLine="91" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="selectionChanged#(Ljetbrains/mps/openapi/editor/EditorComponent;Ljetbrains/mps/openapi/editor/selection/Selection;Ljetbrains/mps/openapi/editor/selection/Selection;)V" />
+    <nodeInfo nodeId="5001285572247851397" fileName="ShiftSelector.java" startLine="22" startPosition="60" endLine="28" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1076000027766746052" fileName="ShiftSelector.java" startLine="56" startPosition="23" endLine="63" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5001285572248546261" fileName="ShiftSelector.java" startLine="94" startPosition="65" endLine="102" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5001285572247856948" fileName="ShiftSelector.java" startLine="21" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="install#(Ljetbrains/mps/nodeEditor/EditorComponent;)V" />
+    <nodeInfo nodeId="5001285572248571186" fileName="ShiftSelector.java" startLine="94" startPosition="0" endLine="105" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getSelectedCell#(Ljetbrains/mps/openapi/editor/selection/Selection;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="4308681954277585609" fileName="ShiftSelector.java" startLine="55" startPosition="7" endLine="67" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5001285572248043370" fileName="ShiftSelector.java" startLine="46" startPosition="42" endLine="74" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5001285572247740443" fileName="ShiftSelector.java" startLine="45" startPosition="0" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="mousePressed#(Ljava/awt/event/MouseEvent;)V" />
+    <scopeInfo nodeId="5001285572247740442" fileName="ShiftSelector.java" startLine="42" startPosition="46" endLine="42" endPosition="46" />
+    <scopeInfo nodeId="266461257707340749" fileName="ShiftSelector.java" startLine="64" startPosition="47" endLine="64" endPosition="47" />
+    <scopeInfo nodeId="5001285572247740456" fileName="ShiftSelector.java" startLine="77" startPosition="47" endLine="77" endPosition="47" />
+    <scopeInfo nodeId="5001285572247740463" fileName="ShiftSelector.java" startLine="80" startPosition="46" endLine="80" endPosition="46" />
+    <scopeInfo nodeId="5001285572247740470" fileName="ShiftSelector.java" startLine="83" startPosition="45" endLine="83" endPosition="45" />
+    <scopeInfo nodeId="5001285572247980515" fileName="ShiftSelector.java" startLine="38" startPosition="86" endLine="39" endPosition="40" />
+    <scopeInfo nodeId="5001285572248513562" fileName="ShiftSelector.java" startLine="48" startPosition="65" endLine="49" endPosition="15" />
+    <scopeInfo nodeId="5001285572248577345" fileName="ShiftSelector.java" startLine="53" startPosition="39" endLine="54" endPosition="15" />
+    <scopeInfo nodeId="5001285572248588397" fileName="ShiftSelector.java" startLine="70" startPosition="25" endLine="71" endPosition="15" />
+    <scopeInfo nodeId="5001285572248546262" fileName="ShiftSelector.java" startLine="95" startPosition="49" endLine="96" endPosition="61" />
+    <scopeInfo nodeId="5001285572248570458" fileName="ShiftSelector.java" startLine="100" startPosition="12" endLine="101" endPosition="18" />
+    <scopeInfo nodeId="5001285572247740436" fileName="ShiftSelector.java" startLine="42" startPosition="0" endLine="44" endPosition="0">
       <varInfo nodeId="5001285572247740440" varName="event" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572247740450" fileName="ShiftSelector.java" startLine="81" startPosition="0" endLine="83" endPosition="0">
+    <scopeInfo nodeId="5001285572247740450" fileName="ShiftSelector.java" startLine="77" startPosition="0" endLine="79" endPosition="0">
       <varInfo nodeId="5001285572247740454" varName="event" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572247740457" fileName="ShiftSelector.java" startLine="84" startPosition="0" endLine="86" endPosition="0">
+    <scopeInfo nodeId="5001285572247740457" fileName="ShiftSelector.java" startLine="80" startPosition="0" endLine="82" endPosition="0">
       <varInfo nodeId="5001285572247740461" varName="event" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572247740464" fileName="ShiftSelector.java" startLine="87" startPosition="0" endLine="89" endPosition="0">
+    <scopeInfo nodeId="5001285572247740464" fileName="ShiftSelector.java" startLine="83" startPosition="0" endLine="85" endPosition="0">
       <varInfo nodeId="5001285572247740468" varName="event" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572249246752" fileName="ShiftSelector.java" startLine="101" startPosition="57" endLine="103" endPosition="57">
+    <scopeInfo nodeId="5001285572249246752" fileName="ShiftSelector.java" startLine="97" startPosition="57" endLine="99" endPosition="57">
       <varInfo nodeId="5001285572249268770" varName="multilineSelection" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572247980511" fileName="ShiftSelector.java" startLine="41" startPosition="0" endLine="44" endPosition="0">
+    <scopeInfo nodeId="5001285572247980511" fileName="ShiftSelector.java" startLine="38" startPosition="0" endLine="41" endPosition="0">
       <varInfo nodeId="5001285572247982111" varName="editorComponent" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572247740482" fileName="ShiftSelector.java" startLine="90" startPosition="136" endLine="93" endPosition="38" />
-    <scopeInfo nodeId="5001285572247851400" fileName="ShiftSelector.java" startLine="26" startPosition="27" endLine="30" endPosition="75" />
-    <scopeInfo nodeId="266461257707247782" fileName="ShiftSelector.java" startLine="110" startPosition="80" endLine="114" endPosition="16" />
-    <scopeInfo nodeId="266461257707249794" fileName="ShiftSelector.java" startLine="117" startPosition="82" endLine="121" endPosition="16" />
-    <scopeInfo nodeId="1076000027766746055" fileName="ShiftSelector.java" startLine="61" startPosition="127" endLine="66" endPosition="120">
+    <scopeInfo nodeId="5001285572247740482" fileName="ShiftSelector.java" startLine="86" startPosition="136" endLine="89" endPosition="38" />
+    <scopeInfo nodeId="5001285572247851400" fileName="ShiftSelector.java" startLine="23" startPosition="27" endLine="27" endPosition="75" />
+    <scopeInfo nodeId="1076000027766746055" fileName="ShiftSelector.java" startLine="57" startPosition="127" endLine="62" endPosition="120">
       <varInfo nodeId="1076000027782921546" varName="end" />
       <varInfo nodeId="1076000027770877268" varName="newLabelSelection" />
       <varInfo nodeId="1076000027770309311" varName="oldLabelSelection" />
       <varInfo nodeId="1076000027782522436" varName="start" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572247740471" fileName="ShiftSelector.java" startLine="90" startPosition="0" endLine="95" endPosition="0">
+    <scopeInfo nodeId="5001285572247740471" fileName="ShiftSelector.java" startLine="86" startPosition="0" endLine="91" endPosition="0">
       <varInfo nodeId="5001285572247740475" varName="component" />
       <varInfo nodeId="5001285572247740479" varName="newSelection" />
       <varInfo nodeId="5001285572247740477" varName="oldSelection" />
     </scopeInfo>
-    <scopeInfo nodeId="266461257707247782" fileName="ShiftSelector.java" startLine="110" startPosition="0" endLine="116" endPosition="0">
-      <varInfo nodeId="266461257707247782" varName="checkedDotOperand" />
-    </scopeInfo>
-    <scopeInfo nodeId="266461257707249794" fileName="ShiftSelector.java" startLine="117" startPosition="0" endLine="123" endPosition="0">
-      <varInfo nodeId="266461257707249794" varName="checkedDotOperand" />
-    </scopeInfo>
-    <scopeInfo nodeId="5001285572247821601" fileName="ShiftSelector.java" startLine="24" startPosition="63" endLine="31" endPosition="5">
+    <scopeInfo nodeId="5001285572247821601" fileName="ShiftSelector.java" startLine="21" startPosition="63" endLine="28" endPosition="5">
       <varInfo nodeId="5001285572247822577" varName="instance" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572247856948" fileName="ShiftSelector.java" startLine="24" startPosition="0" endLine="33" endPosition="0">
+    <scopeInfo nodeId="5001285572247856948" fileName="ShiftSelector.java" startLine="21" startPosition="0" endLine="30" endPosition="0">
       <varInfo nodeId="5001285572247822279" varName="editorComponent" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572248541108" fileName="ShiftSelector.java" startLine="98" startPosition="65" endLine="107" endPosition="0" />
-    <scopeInfo nodeId="4308681954277585612" fileName="ShiftSelector.java" startLine="60" startPosition="23" endLine="70" endPosition="15" />
-    <scopeInfo nodeId="5001285572248571186" fileName="ShiftSelector.java" startLine="98" startPosition="0" endLine="109" endPosition="0">
+    <scopeInfo nodeId="5001285572248541108" fileName="ShiftSelector.java" startLine="94" startPosition="65" endLine="103" endPosition="0" />
+    <scopeInfo nodeId="4308681954277585612" fileName="ShiftSelector.java" startLine="56" startPosition="23" endLine="66" endPosition="15" />
+    <scopeInfo nodeId="5001285572248571186" fileName="ShiftSelector.java" startLine="94" startPosition="0" endLine="105" endPosition="0">
       <varInfo nodeId="5001285572248546185" varName="selection" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572248043371" fileName="ShiftSelector.java" startLine="50" startPosition="73" endLine="77" endPosition="65">
+    <scopeInfo nodeId="5001285572248043371" fileName="ShiftSelector.java" startLine="47" startPosition="73" endLine="73" endPosition="65">
       <varInfo nodeId="5001285572248514762" varName="from" />
       <varInfo nodeId="5001285572248579808" varName="rsel" />
       <varInfo nodeId="5001285572248576718" varName="to" />
     </scopeInfo>
-    <scopeInfo nodeId="5001285572247740449" fileName="ShiftSelector.java" startLine="48" startPosition="46" endLine="78" endPosition="5" />
-    <scopeInfo nodeId="5001285572247740443" fileName="ShiftSelector.java" startLine="48" startPosition="0" endLine="80" endPosition="0">
+    <scopeInfo nodeId="5001285572247740449" fileName="ShiftSelector.java" startLine="45" startPosition="46" endLine="74" endPosition="5" />
+    <scopeInfo nodeId="5001285572247740443" fileName="ShiftSelector.java" startLine="45" startPosition="0" endLine="76" endPosition="0">
       <varInfo nodeId="5001285572247740447" varName="event" />
     </scopeInfo>
-    <unitInfo nodeId="5001285572247678730" fileName="ShiftSelector.java" startLine="18" startPosition="0" endLine="124" endPosition="0" unitName="de.slisson.mps.richtext.runtime.selection.ShiftSelector" />
+    <unitInfo nodeId="5001285572247678730" fileName="ShiftSelector.java" startLine="17" startPosition="0" endLine="106" endPosition="0" unitName="de.slisson.mps.richtext.runtime.selection.ShiftSelector" />
   </root>
   <root nodeRef="r:3e994831-9e2b-4a2c-a757-02d48f0caeb5(de.slisson.mps.richtext.runtime.selection)/5232239503568314559">
     <nodeInfo nodeId="5232239503568315685" fileName="SelectionKeyboardHandler.java" startLine="11" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myOriginalHandler" />
