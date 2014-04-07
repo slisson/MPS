@@ -19,6 +19,7 @@ import jetbrains.mps.nodeEditor.cells.IDiffPaintingCell;
 import jetbrains.mps.vcs.diff.changes.SetPropertyChange;
 import jetbrains.mps.smodel.ModelAccess;
 import jetbrains.mps.util.Computable;
+import jetbrains.mps.vcs.diff.ChangeSetImpl;
 import java.awt.Rectangle;
 import jetbrains.mps.nodeEditor.cells.GeometryUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -105,6 +106,7 @@ public class ChangeEditorMessage extends EditorMessageWithTarget {
       if (change instanceof SetPropertyChange) {
         ModelChange opposite = ModelAccess.instance().runReadAction(new Computable<ModelChange>() {
           public ModelChange compute() {
+            ((ChangeSetImpl) change.getChangeSet()).buildOppositeChangeSet();
             return change.getOppositeChange();
           }
         });
