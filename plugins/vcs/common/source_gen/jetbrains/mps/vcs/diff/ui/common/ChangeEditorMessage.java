@@ -15,6 +15,7 @@ import jetbrains.mps.errors.messageTargets.MessageTargetEnum;
 import jetbrains.mps.openapi.editor.cells.EditorCell_Collection;
 import java.awt.Graphics;
 import jetbrains.mps.nodeEditor.EditorComponent;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.nodeEditor.cells.IDiffPaintingCell;
 import jetbrains.mps.vcs.diff.changes.SetPropertyChange;
 import jetbrains.mps.smodel.ModelAccess;
@@ -27,7 +28,6 @@ import jetbrains.mps.nodeEditor.messageTargets.CellFinder;
 import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.openapi.editor.message.SimpleEditorMessage;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.errors.messageTargets.DeletedNodeMessageTarget;
@@ -100,6 +100,13 @@ public class ChangeEditorMessage extends EditorMessageWithTarget {
       return;
     }
 
+    for (DiffHandler handler : ListSequence.fromList(DiffHandlerRegistry.instance().getHandlers())) {
+      if (handler.canHandle(this)) {
+        handler.paint(graphics, this, cell);
+        return;
+      }
+    }
+
     if (cell instanceof IDiffPaintingCell) {
       IDiffPaintingCell diffPaintingCell = (IDiffPaintingCell) cell;
       final ModelChange change = getChange();
@@ -132,6 +139,12 @@ public class ChangeEditorMessage extends EditorMessageWithTarget {
 
   @Override
   public EditorCell getCell(EditorComponent editor) {
+    for (DiffHandler handler : ListSequence.fromList(DiffHandlerRegistry.instance().getHandlers())) {
+      if (handler.canHandle(this)) {
+        return handler.getCell(this, editor);
+      }
+    }
+
     EditorCell cell = super.getCell(editor);
     if (cell != null && cell.isBig() && !(isDirectCell(cell))) {
       SNode node = getNode();
@@ -144,6 +157,12 @@ public class ChangeEditorMessage extends EditorMessageWithTarget {
 
   @Override
   public boolean acceptCell(EditorCell cell, EditorComponent component) {
+    for (DiffHandler handler : ListSequence.fromList(DiffHandlerRegistry.instance().getHandlers())) {
+      if (handler.canHandle(this)) {
+        return handler.acceptCell(this, component, cell);
+      }
+    }
+
     EditorCell superCell = super.getCell(component);
     return isNameCell(cell) && !(isDirectCell(cell)) && superCell != null && cell.isBig() || super.acceptCell(cell, component);
   }

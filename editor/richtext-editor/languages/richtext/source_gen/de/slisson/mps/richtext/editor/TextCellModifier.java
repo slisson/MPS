@@ -26,6 +26,8 @@ import java.util.ArrayList;
 import de.slisson.mps.richtext.runtime.vcs.DiffPainter;
 
 public class TextCellModifier {
+
+
   public static void modify(EditorCell cell) {
     for (EditorCell iwordCell : Sequence.fromIterable((EditorCell_Collection) cell)) {
       modifyIWordCell(iwordCell);

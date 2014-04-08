@@ -79,7 +79,7 @@ public class VcsRevisionRange extends BaseGroup {
     protected void doUpdate(AnActionEvent event, Map<String, Object> map) {
       String text = (myBefore ? "Show Before..." : "Show After...");
       String description = (myBefore ? "Highlights revisions before or equal to selected" : "Highlights revisions after or equal to selected");
-      event.getPresentation().setText((myRevision == null ? text : String.format("%s (%s)", text, revisionToString(myRevision))));
+      event.getPresentation().setText((myRevision == null ? text : String.format("%s (%s)", text, VcsRevisionRange.revisionToString(myRevision))));
       event.getPresentation().setDescription(description);
       event.getPresentation().setEnabled(ListSequence.fromList(myColumn.getRevisions()).isNotEmpty());
     }

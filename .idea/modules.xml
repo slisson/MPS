@@ -72,6 +72,7 @@
       <module fileurl="file://$PROJECT_DIR$/workbench/uiTests/uiTests.iml" filepath="$PROJECT_DIR$/workbench/uiTests/uiTests.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugins/vcs/vcs.iml" filepath="$PROJECT_DIR$/plugins/vcs/vcs.iml" group="plugins" />
       <module fileurl="file://$PROJECT_DIR$/plugins/vcs-core/vcs-core.iml" filepath="$PROJECT_DIR$/plugins/vcs-core/vcs-core.iml" group="plugins" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/vcs-richtext/vcs-richtext.iml" filepath="$PROJECT_DIR$/plugins/vcs-richtext/vcs-richtext.iml" group="plugins" />
     </modules>
   </component>
 </project>

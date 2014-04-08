@@ -17,7 +17,6 @@ import org.jetbrains.mps.openapi.language.SConceptRepository;
 import jetbrains.mps.util.NameUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.constraints.ModelConstraints;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -56,7 +55,6 @@ public class EnrichmentInfo extends AbstractNodeSubstituteInfo implements Substi
           return true;
         }
         SNode parent = SNodeOperations.getParent(wordNode);
-        IOperationContext opContext = editorContext.getOperationContext();
 
         if (!(ModelConstraints.canBeAncestor(parent, null, conceptNode, null))) {
           return false;

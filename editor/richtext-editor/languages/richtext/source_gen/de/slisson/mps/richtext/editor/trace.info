@@ -2,128 +2,128 @@
 <debugInfo>
   <unitInfo fileName="EditorAspectDescriptorImpl.java" startLine="14" startPosition="0" endLine="39" endPosition="0" unitName="de.slisson.mps.richtext.editor.EditorAspectDescriptorImpl" />
   <root nodeRef="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)/2490242408672352981">
-    <nodeInfo nodeId="2490242408672758200" fileName="TextCellModifier.java" startLine="30" startPosition="86" endLine="31" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5001285572248971706" fileName="TextCellModifier.java" startLine="32" startPosition="5" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="5001285572248976308" fileName="TextCellModifier.java" startLine="33" startPosition="0" endLine="34" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712306" fileName="TextCellModifier.java" startLine="39" startPosition="55" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="2490242408672712307" fileName="TextCellModifier.java" startLine="40" startPosition="0" endLine="41" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="2490242408672712314" fileName="TextCellModifier.java" startLine="42" startPosition="108" endLine="43" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2490242408672712333" fileName="TextCellModifier.java" startLine="46" startPosition="60" endLine="47" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712339" fileName="TextCellModifier.java" startLine="49" startPosition="10" endLine="50" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712345" fileName="TextCellModifier.java" startLine="50" startPosition="68" endLine="51" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712358" fileName="TextCellModifier.java" startLine="53" startPosition="5" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="2490242408672712359" fileName="TextCellModifier.java" startLine="54" startPosition="0" endLine="55" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="2490242408672712363" fileName="TextCellModifier.java" startLine="56" startPosition="50" endLine="57" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2490242408672712368" fileName="TextCellModifier.java" startLine="57" startPosition="66" endLine="58" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2490242408672712375" fileName="TextCellModifier.java" startLine="59" startPosition="30" endLine="60" endPosition="115" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2490242408672712389" fileName="TextCellModifier.java" startLine="60" startPosition="115" endLine="61" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712397" fileName="TextCellModifier.java" startLine="61" startPosition="73" endLine="62" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712410" fileName="TextCellModifier.java" startLine="64" startPosition="29" endLine="65" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2490242408672712424" fileName="TextCellModifier.java" startLine="65" startPosition="113" endLine="66" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712432" fileName="TextCellModifier.java" startLine="66" startPosition="73" endLine="67" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712443" fileName="TextCellModifier.java" startLine="68" startPosition="7" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="2490242408672712465" fileName="TextCellModifier.java" startLine="70" startPosition="5" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="2490242408672712466" fileName="TextCellModifier.java" startLine="71" startPosition="0" endLine="72" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="2490242408672712470" fileName="TextCellModifier.java" startLine="73" startPosition="47" endLine="74" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2490242408672712491" fileName="TextCellModifier.java" startLine="76" startPosition="58" endLine="77" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712499" fileName="TextCellModifier.java" startLine="77" startPosition="86" endLine="78" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="2490242408672712500" fileName="TextCellModifier.java" startLine="78" startPosition="0" endLine="79" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2490242408672712507" fileName="TextCellModifier.java" startLine="79" startPosition="100" endLine="80" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712512" fileName="TextCellModifier.java" startLine="80" startPosition="84" endLine="81" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712517" fileName="TextCellModifier.java" startLine="81" startPosition="85" endLine="82" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712522" fileName="TextCellModifier.java" startLine="82" startPosition="82" endLine="83" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712527" fileName="TextCellModifier.java" startLine="83" startPosition="84" endLine="84" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712532" fileName="TextCellModifier.java" startLine="84" startPosition="88" endLine="85" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5740484903850792526" fileName="TextCellModifier.java" startLine="85" startPosition="84" endLine="86" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5740484903850757350" fileName="TextCellModifier.java" startLine="86" startPosition="90" endLine="87" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5740484903850817633" fileName="TextCellModifier.java" startLine="87" startPosition="89" endLine="88" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5740484903850831559" fileName="TextCellModifier.java" startLine="88" startPosition="84" endLine="89" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712541" fileName="TextCellModifier.java" startLine="90" startPosition="80" endLine="91" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712627" fileName="TextCellModifier.java" startLine="95" startPosition="5" endLine="96" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="2490242408672712628" fileName="TextCellModifier.java" startLine="96" startPosition="0" endLine="97" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="2490242408672712632" fileName="TextCellModifier.java" startLine="98" startPosition="47" endLine="99" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712641" fileName="TextCellModifier.java" startLine="99" startPosition="76" endLine="100" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672910112" fileName="TextCellModifier.java" startLine="101" startPosition="5" endLine="102" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="2490242408672712607" fileName="TextCellModifier.java" startLine="102" startPosition="0" endLine="103" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672918509" fileName="TextCellModifier.java" startLine="103" startPosition="69" endLine="104" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7417350671017029727" fileName="TextCellModifier.java" startLine="104" startPosition="0" endLine="105" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7417350671017141455" fileName="TextCellModifier.java" startLine="108" startPosition="58" endLine="109" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672732812" fileName="TextCellModifier.java" startLine="29" startPosition="46" endLine="32" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="2490242408672712327" fileName="TextCellModifier.java" startLine="46" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-    <nodeInfo nodeId="2490242408672712537" fileName="TextCellModifier.java" startLine="89" startPosition="83" endLine="92" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7417350671017140825" fileName="TextCellModifier.java" startLine="108" startPosition="0" endLine="111" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initialize#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
-    <nodeInfo nodeId="2490242408672712630" fileName="TextCellModifier.java" startLine="97" startPosition="19" endLine="101" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2490242408672712320" fileName="TextCellModifier.java" startLine="44" startPosition="82" endLine="49" endPosition="10" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2490242408672712373" fileName="TextCellModifier.java" startLine="58" startPosition="64" endLine="63" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2490242408672712408" fileName="TextCellModifier.java" startLine="63" startPosition="7" endLine="68" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7417350671017084764" fileName="TextCellModifier.java" startLine="106" startPosition="47" endLine="111" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408671172492" fileName="TextCellModifier.java" startLine="29" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="modify#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
-    <nodeInfo nodeId="7417350671017076916" fileName="TextCellModifier.java" startLine="105" startPosition="50" endLine="112" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2490242408672712318" fileName="TextCellModifier.java" startLine="43" startPosition="52" endLine="52" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2490242408672712309" fileName="TextCellModifier.java" startLine="41" startPosition="52" endLine="53" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="2490242408672712361" fileName="TextCellModifier.java" startLine="55" startPosition="79" endLine="70" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2490242408672712485" fileName="TextCellModifier.java" startLine="76" startPosition="0" endLine="94" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initialize#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
-    <nodeInfo nodeId="2490242408672712477" fileName="TextCellModifier.java" startLine="74" startPosition="66" endLine="94" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2490242408672712468" fileName="TextCellModifier.java" startLine="72" startPosition="96" endLine="95" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2490242408672739573" fileName="TextCellModifier.java" startLine="39" startPosition="0" endLine="114" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="modifyIWordCell#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
-    <scopeInfo nodeId="2490242408672732815" fileName="TextCellModifier.java" startLine="30" startPosition="86" endLine="31" endPosition="33" />
-    <scopeInfo nodeId="2490242408672712332" fileName="TextCellModifier.java" startLine="46" startPosition="60" endLine="47" endPosition="46" />
-    <scopeInfo nodeId="2490242408672712540" fileName="TextCellModifier.java" startLine="90" startPosition="80" endLine="91" endPosition="101" />
-    <scopeInfo nodeId="7417350671017140831" fileName="TextCellModifier.java" startLine="108" startPosition="58" endLine="109" endPosition="47" />
-    <scopeInfo nodeId="2490242408672712631" fileName="TextCellModifier.java" startLine="98" startPosition="47" endLine="100" endPosition="59" />
-    <scopeInfo nodeId="2490242408672732812" fileName="TextCellModifier.java" startLine="29" startPosition="46" endLine="32" endPosition="5">
+    <nodeInfo nodeId="2490242408672758200" fileName="TextCellModifier.java" startLine="32" startPosition="86" endLine="33" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5001285572248971706" fileName="TextCellModifier.java" startLine="34" startPosition="5" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="5001285572248976308" fileName="TextCellModifier.java" startLine="35" startPosition="0" endLine="36" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712306" fileName="TextCellModifier.java" startLine="41" startPosition="55" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2490242408672712307" fileName="TextCellModifier.java" startLine="42" startPosition="0" endLine="43" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2490242408672712314" fileName="TextCellModifier.java" startLine="44" startPosition="108" endLine="45" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2490242408672712333" fileName="TextCellModifier.java" startLine="48" startPosition="60" endLine="49" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712339" fileName="TextCellModifier.java" startLine="51" startPosition="10" endLine="52" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712345" fileName="TextCellModifier.java" startLine="52" startPosition="68" endLine="53" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712358" fileName="TextCellModifier.java" startLine="55" startPosition="5" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2490242408672712359" fileName="TextCellModifier.java" startLine="56" startPosition="0" endLine="57" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2490242408672712363" fileName="TextCellModifier.java" startLine="58" startPosition="50" endLine="59" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2490242408672712368" fileName="TextCellModifier.java" startLine="59" startPosition="66" endLine="60" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2490242408672712375" fileName="TextCellModifier.java" startLine="61" startPosition="30" endLine="62" endPosition="115" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2490242408672712389" fileName="TextCellModifier.java" startLine="62" startPosition="115" endLine="63" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712397" fileName="TextCellModifier.java" startLine="63" startPosition="73" endLine="64" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712410" fileName="TextCellModifier.java" startLine="66" startPosition="29" endLine="67" endPosition="113" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2490242408672712424" fileName="TextCellModifier.java" startLine="67" startPosition="113" endLine="68" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712432" fileName="TextCellModifier.java" startLine="68" startPosition="73" endLine="69" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712443" fileName="TextCellModifier.java" startLine="70" startPosition="7" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2490242408672712465" fileName="TextCellModifier.java" startLine="72" startPosition="5" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2490242408672712466" fileName="TextCellModifier.java" startLine="73" startPosition="0" endLine="74" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2490242408672712470" fileName="TextCellModifier.java" startLine="75" startPosition="47" endLine="76" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2490242408672712491" fileName="TextCellModifier.java" startLine="78" startPosition="58" endLine="79" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712499" fileName="TextCellModifier.java" startLine="79" startPosition="86" endLine="80" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2490242408672712500" fileName="TextCellModifier.java" startLine="80" startPosition="0" endLine="81" endPosition="100" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2490242408672712507" fileName="TextCellModifier.java" startLine="81" startPosition="100" endLine="82" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712512" fileName="TextCellModifier.java" startLine="82" startPosition="84" endLine="83" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712517" fileName="TextCellModifier.java" startLine="83" startPosition="85" endLine="84" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712522" fileName="TextCellModifier.java" startLine="84" startPosition="82" endLine="85" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712527" fileName="TextCellModifier.java" startLine="85" startPosition="84" endLine="86" endPosition="88" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712532" fileName="TextCellModifier.java" startLine="86" startPosition="88" endLine="87" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903850792526" fileName="TextCellModifier.java" startLine="87" startPosition="84" endLine="88" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903850757350" fileName="TextCellModifier.java" startLine="88" startPosition="90" endLine="89" endPosition="89" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903850817633" fileName="TextCellModifier.java" startLine="89" startPosition="89" endLine="90" endPosition="84" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5740484903850831559" fileName="TextCellModifier.java" startLine="90" startPosition="84" endLine="91" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712541" fileName="TextCellModifier.java" startLine="92" startPosition="80" endLine="93" endPosition="101" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712627" fileName="TextCellModifier.java" startLine="97" startPosition="5" endLine="98" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2490242408672712628" fileName="TextCellModifier.java" startLine="98" startPosition="0" endLine="99" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2490242408672712632" fileName="TextCellModifier.java" startLine="100" startPosition="47" endLine="101" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712641" fileName="TextCellModifier.java" startLine="101" startPosition="76" endLine="102" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672910112" fileName="TextCellModifier.java" startLine="103" startPosition="5" endLine="104" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="2490242408672712607" fileName="TextCellModifier.java" startLine="104" startPosition="0" endLine="105" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672918509" fileName="TextCellModifier.java" startLine="105" startPosition="69" endLine="106" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7417350671017029727" fileName="TextCellModifier.java" startLine="106" startPosition="0" endLine="107" endPosition="50" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7417350671017141455" fileName="TextCellModifier.java" startLine="110" startPosition="58" endLine="111" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672732812" fileName="TextCellModifier.java" startLine="31" startPosition="46" endLine="34" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="2490242408672712327" fileName="TextCellModifier.java" startLine="48" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+    <nodeInfo nodeId="2490242408672712537" fileName="TextCellModifier.java" startLine="91" startPosition="83" endLine="94" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7417350671017140825" fileName="TextCellModifier.java" startLine="110" startPosition="0" endLine="113" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initialize#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
+    <nodeInfo nodeId="2490242408672712630" fileName="TextCellModifier.java" startLine="99" startPosition="19" endLine="103" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2490242408672712320" fileName="TextCellModifier.java" startLine="46" startPosition="82" endLine="51" endPosition="10" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2490242408672712373" fileName="TextCellModifier.java" startLine="60" startPosition="64" endLine="65" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2490242408672712408" fileName="TextCellModifier.java" startLine="65" startPosition="7" endLine="70" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7417350671017084764" fileName="TextCellModifier.java" startLine="108" startPosition="47" endLine="113" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408671172492" fileName="TextCellModifier.java" startLine="31" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="modify#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
+    <nodeInfo nodeId="7417350671017076916" fileName="TextCellModifier.java" startLine="107" startPosition="50" endLine="114" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2490242408672712318" fileName="TextCellModifier.java" startLine="45" startPosition="52" endLine="54" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2490242408672712309" fileName="TextCellModifier.java" startLine="43" startPosition="52" endLine="55" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="2490242408672712361" fileName="TextCellModifier.java" startLine="57" startPosition="79" endLine="72" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2490242408672712485" fileName="TextCellModifier.java" startLine="78" startPosition="0" endLine="96" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initialize#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
+    <nodeInfo nodeId="2490242408672712477" fileName="TextCellModifier.java" startLine="76" startPosition="66" endLine="96" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2490242408672712468" fileName="TextCellModifier.java" startLine="74" startPosition="96" endLine="97" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2490242408672739573" fileName="TextCellModifier.java" startLine="41" startPosition="0" endLine="116" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="modifyIWordCell#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
+    <scopeInfo nodeId="2490242408672732815" fileName="TextCellModifier.java" startLine="32" startPosition="86" endLine="33" endPosition="33" />
+    <scopeInfo nodeId="2490242408672712332" fileName="TextCellModifier.java" startLine="48" startPosition="60" endLine="49" endPosition="46" />
+    <scopeInfo nodeId="2490242408672712540" fileName="TextCellModifier.java" startLine="92" startPosition="80" endLine="93" endPosition="101" />
+    <scopeInfo nodeId="7417350671017140831" fileName="TextCellModifier.java" startLine="110" startPosition="58" endLine="111" endPosition="47" />
+    <scopeInfo nodeId="2490242408672712631" fileName="TextCellModifier.java" startLine="100" startPosition="47" endLine="102" endPosition="59" />
+    <scopeInfo nodeId="2490242408672732812" fileName="TextCellModifier.java" startLine="31" startPosition="46" endLine="34" endPosition="5">
       <varInfo nodeId="2490242408672732813" varName="iwordCell" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712327" fileName="TextCellModifier.java" startLine="46" startPosition="0" endLine="49" endPosition="0">
+    <scopeInfo nodeId="2490242408672712327" fileName="TextCellModifier.java" startLine="48" startPosition="0" endLine="51" endPosition="0">
       <varInfo nodeId="2490242408672712330" varName="editorContext" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712374" fileName="TextCellModifier.java" startLine="59" startPosition="30" endLine="62" endPosition="83">
+    <scopeInfo nodeId="2490242408672712374" fileName="TextCellModifier.java" startLine="61" startPosition="30" endLine="64" endPosition="83">
       <varInfo nodeId="2490242408672712376" varName="editable" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712409" fileName="TextCellModifier.java" startLine="64" startPosition="29" endLine="67" endPosition="81">
+    <scopeInfo nodeId="2490242408672712409" fileName="TextCellModifier.java" startLine="66" startPosition="29" endLine="69" endPosition="81">
       <varInfo nodeId="2490242408672712411" varName="editable" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712537" fileName="TextCellModifier.java" startLine="89" startPosition="83" endLine="92" endPosition="11">
+    <scopeInfo nodeId="2490242408672712537" fileName="TextCellModifier.java" startLine="91" startPosition="83" endLine="94" endPosition="11">
       <varInfo nodeId="2490242408672712538" varName="actionType" />
     </scopeInfo>
-    <scopeInfo nodeId="7417350671017140825" fileName="TextCellModifier.java" startLine="108" startPosition="0" endLine="111" endPosition="0">
+    <scopeInfo nodeId="7417350671017140825" fileName="TextCellModifier.java" startLine="110" startPosition="0" endLine="113" endPosition="0">
       <varInfo nodeId="7417350671017140829" varName="wordCell" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408671172495" fileName="TextCellModifier.java" startLine="29" startPosition="46" endLine="34" endPosition="71" />
-    <scopeInfo nodeId="7417350671017076919" fileName="TextCellModifier.java" startLine="106" startPosition="47" endLine="111" endPosition="9" />
-    <scopeInfo nodeId="2490242408671172492" fileName="TextCellModifier.java" startLine="29" startPosition="0" endLine="36" endPosition="0">
+    <scopeInfo nodeId="2490242408671172495" fileName="TextCellModifier.java" startLine="31" startPosition="46" endLine="36" endPosition="71" />
+    <scopeInfo nodeId="7417350671017076919" fileName="TextCellModifier.java" startLine="108" startPosition="47" endLine="113" endPosition="9" />
+    <scopeInfo nodeId="2490242408671172492" fileName="TextCellModifier.java" startLine="31" startPosition="0" endLine="38" endPosition="0">
       <varInfo nodeId="2490242408671172507" varName="cell" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712319" fileName="TextCellModifier.java" startLine="44" startPosition="82" endLine="51" endPosition="72">
+    <scopeInfo nodeId="2490242408672712319" fileName="TextCellModifier.java" startLine="46" startPosition="82" endLine="53" endPosition="72">
       <varInfo nodeId="2490242408672712321" varName="deleteAction" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712313" fileName="TextCellModifier.java" startLine="42" startPosition="108" endLine="52" endPosition="7">
+    <scopeInfo nodeId="2490242408672712313" fileName="TextCellModifier.java" startLine="44" startPosition="108" endLine="54" endPosition="7">
       <varInfo nodeId="2490242408672712315" varName="constantCell_" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712309" fileName="TextCellModifier.java" startLine="41" startPosition="52" endLine="53" endPosition="5">
+    <scopeInfo nodeId="2490242408672712309" fileName="TextCellModifier.java" startLine="43" startPosition="52" endLine="55" endPosition="5">
       <varInfo nodeId="2490242408672712310" varName="constantCell" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712362" fileName="TextCellModifier.java" startLine="56" startPosition="50" endLine="69" endPosition="0">
+    <scopeInfo nodeId="2490242408672712362" fileName="TextCellModifier.java" startLine="58" startPosition="50" endLine="71" endPosition="0">
       <varInfo nodeId="2490242408672712364" varName="firstLeaf" />
       <varInfo nodeId="2490242408672712369" varName="lastLeaf" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712490" fileName="TextCellModifier.java" startLine="76" startPosition="58" endLine="92" endPosition="11">
+    <scopeInfo nodeId="2490242408672712490" fileName="TextCellModifier.java" startLine="78" startPosition="58" endLine="94" endPosition="11">
       <varInfo nodeId="2490242408672712501" varName="actionTypes" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712485" fileName="TextCellModifier.java" startLine="76" startPosition="0" endLine="94" endPosition="0">
+    <scopeInfo nodeId="2490242408672712485" fileName="TextCellModifier.java" startLine="78" startPosition="0" endLine="96" endPosition="0">
       <varInfo nodeId="2490242408672712488" varName="wordCell" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672712469" fileName="TextCellModifier.java" startLine="73" startPosition="47" endLine="94" endPosition="9">
+    <scopeInfo nodeId="2490242408672712469" fileName="TextCellModifier.java" startLine="75" startPosition="47" endLine="96" endPosition="9">
       <varInfo nodeId="2490242408672712471" varName="mlCell" />
     </scopeInfo>
-    <scopeInfo nodeId="2490242408672706795" fileName="TextCellModifier.java" startLine="39" startPosition="55" endLine="112" endPosition="5" />
-    <scopeInfo nodeId="2490242408672739573" fileName="TextCellModifier.java" startLine="39" startPosition="0" endLine="114" endPosition="0">
+    <scopeInfo nodeId="2490242408672706795" fileName="TextCellModifier.java" startLine="41" startPosition="55" endLine="114" endPosition="5" />
+    <scopeInfo nodeId="2490242408672739573" fileName="TextCellModifier.java" startLine="41" startPosition="0" endLine="116" endPosition="0">
       <varInfo nodeId="2490242408672710824" varName="cell" />
     </scopeInfo>
-    <unitInfo nodeId="2490242408672712325" fileName="TextCellModifier.java" startLine="45" startPosition="38" endLine="49" endPosition="9" unitName="de.slisson.mps.richtext.editor.TextCellModifier$1" />
-    <unitInfo nodeId="7417350671017140823" fileName="TextCellModifier.java" startLine="107" startPosition="63" endLine="111" endPosition="7" unitName="de.slisson.mps.richtext.editor.TextCellModifier$3" />
-    <unitInfo nodeId="2490242408672712483" fileName="TextCellModifier.java" startLine="75" startPosition="40" endLine="94" endPosition="7" unitName="de.slisson.mps.richtext.editor.TextCellModifier$2" />
-    <unitInfo nodeId="2490242408672352981" fileName="TextCellModifier.java" startLine="28" startPosition="0" endLine="117" endPosition="0" unitName="de.slisson.mps.richtext.editor.TextCellModifier" />
+    <unitInfo nodeId="2490242408672712325" fileName="TextCellModifier.java" startLine="47" startPosition="38" endLine="51" endPosition="9" unitName="de.slisson.mps.richtext.editor.TextCellModifier$1" />
+    <unitInfo nodeId="7417350671017140823" fileName="TextCellModifier.java" startLine="109" startPosition="63" endLine="113" endPosition="7" unitName="de.slisson.mps.richtext.editor.TextCellModifier$3" />
+    <unitInfo nodeId="2490242408672712483" fileName="TextCellModifier.java" startLine="77" startPosition="40" endLine="96" endPosition="7" unitName="de.slisson.mps.richtext.editor.TextCellModifier$2" />
+    <unitInfo nodeId="2490242408672352981" fileName="TextCellModifier.java" startLine="28" startPosition="0" endLine="119" endPosition="0" unitName="de.slisson.mps.richtext.editor.TextCellModifier" />
   </root>
   <root nodeRef="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)/2557074442922392304">
     <nodeInfo nodeId="2557074442922392304" fileName="Text_Editor.java" startLine="24" startPosition="79" endLine="25" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

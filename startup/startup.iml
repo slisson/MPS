@@ -85,6 +85,8 @@
     <orderEntry type="module" module-name="vcs" scope="PROVIDED" />
     <orderEntry type="module" module-name="vcs-core" scope="PROVIDED" />
     <orderEntry type="module" module-name="make-facets" scope="PROVIDED" />
+    <orderEntry type="module" module-name="richtext-editor" scope="PROVIDED" />
+    <orderEntry type="module" module-name="vcs-richtext" scope="PROVIDED" />
   </component>
 </module>
 

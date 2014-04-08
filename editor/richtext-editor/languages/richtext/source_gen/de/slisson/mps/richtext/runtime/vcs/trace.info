@@ -1,400 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <root nodeRef="r:c4c46e75-b5a7-40d5-8bfd-d711bc589fc1(de.slisson.mps.richtext.runtime.vcs)/3758249303358756634">
-    <nodeInfo nodeId="3758249303358763008" fileName="DiffPainter.java" startLine="32" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
-    <nodeInfo nodeId="7348445255403573682" fileName="DiffPainter.java" startLine="33" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SEPARATOR" />
-    <nodeInfo nodeId="3758249303358780269" fileName="DiffPainter.java" startLine="36" startPosition="9" endLine="37" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358780276" fileName="DiffPainter.java" startLine="38" startPosition="28" endLine="39" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403577183" fileName="DiffPainter.java" startLine="44" startPosition="32" endLine="45" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7348445255403577174" fileName="DiffPainter.java" startLine="46" startPosition="5" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358780151" fileName="DiffPainter.java" startLine="49" startPosition="25" endLine="50" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780158" fileName="DiffPainter.java" startLine="51" startPosition="35" endLine="52" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358780162" fileName="DiffPainter.java" startLine="53" startPosition="9" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358780163" fileName="DiffPainter.java" startLine="54" startPosition="0" endLine="55" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358793103" fileName="DiffPainter.java" startLine="56" startPosition="31" endLine="57" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358780169" fileName="DiffPainter.java" startLine="58" startPosition="9" endLine="59" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358793134" fileName="DiffPainter.java" startLine="60" startPosition="31" endLine="61" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="488223974209950410" fileName="DiffPainter.java" startLine="62" startPosition="9" endLine="63" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="488223974209951453" fileName="DiffPainter.java" startLine="63" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358780182" fileName="DiffPainter.java" startLine="64" startPosition="0" endLine="65" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780189" fileName="DiffPainter.java" startLine="65" startPosition="111" endLine="66" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8918142074887977865" fileName="DiffPainter.java" startLine="66" startPosition="58" endLine="67" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8918142074887015013" fileName="DiffPainter.java" startLine="67" startPosition="47" endLine="68" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780195" fileName="DiffPainter.java" startLine="68" startPosition="65" endLine="69" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780201" fileName="DiffPainter.java" startLine="69" startPosition="106" endLine="70" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780207" fileName="DiffPainter.java" startLine="70" startPosition="35" endLine="71" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780219" fileName="DiffPainter.java" startLine="71" startPosition="135" endLine="72" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780231" fileName="DiffPainter.java" startLine="72" startPosition="135" endLine="73" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780238" fileName="DiffPainter.java" startLine="74" startPosition="42" endLine="75" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358782656" fileName="DiffPainter.java" startLine="75" startPosition="55" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358415104" fileName="DiffPainter.java" startLine="76" startPosition="0" endLine="77" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358486371" fileName="DiffPainter.java" startLine="77" startPosition="59" endLine="78" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358501888" fileName="DiffPainter.java" startLine="78" startPosition="86" endLine="79" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358782668" fileName="DiffPainter.java" startLine="79" startPosition="45" endLine="80" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358782756" fileName="DiffPainter.java" startLine="82" startPosition="45" endLine="83" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358792320" fileName="DiffPainter.java" startLine="85" startPosition="15" endLine="86" endPosition="166" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358792505" fileName="DiffPainter.java" startLine="87" startPosition="40" endLine="88" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
-    <nodeInfo nodeId="3758249303358792489" fileName="DiffPainter.java" startLine="89" startPosition="13" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358782798" fileName="DiffPainter.java" startLine="90" startPosition="0" endLine="91" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358788526" fileName="DiffPainter.java" startLine="91" startPosition="60" endLine="92" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403518534" fileName="DiffPainter.java" startLine="92" startPosition="39" endLine="93" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358788540" fileName="DiffPainter.java" startLine="93" startPosition="37" endLine="94" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358799248" fileName="DiffPainter.java" startLine="95" startPosition="77" endLine="96" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358799305" fileName="DiffPainter.java" startLine="96" startPosition="42" endLine="97" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358799314" fileName="DiffPainter.java" startLine="100" startPosition="47" endLine="101" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358788903" fileName="DiffPainter.java" startLine="101" startPosition="73" endLine="102" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358788950" fileName="DiffPainter.java" startLine="105" startPosition="47" endLine="106" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403510423" fileName="DiffPainter.java" startLine="106" startPosition="38" endLine="107" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
-    <nodeInfo nodeId="3758249303358799307" fileName="DiffPainter.java" startLine="110" startPosition="15" endLine="111" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7348445255403518545" fileName="DiffPainter.java" startLine="114" startPosition="53" endLine="115" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403518579" fileName="DiffPainter.java" startLine="115" startPosition="80" endLine="116" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403518639" fileName="DiffPainter.java" startLine="119" startPosition="128" endLine="120" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403518687" fileName="DiffPainter.java" startLine="122" startPosition="31" endLine="123" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
-    <nodeInfo nodeId="7348445255403573165" fileName="DiffPainter.java" startLine="126" startPosition="13" endLine="127" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="3758249303358792563" fileName="DiffPainter.java" startLine="127" startPosition="22" endLine="128" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519483" fileName="DiffPainter.java" startLine="130" startPosition="9" endLine="131" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7348445255403519549" fileName="DiffPainter.java" startLine="132" startPosition="42" endLine="133" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519554" fileName="DiffPainter.java" startLine="133" startPosition="55" endLine="134" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7348445255403519555" fileName="DiffPainter.java" startLine="134" startPosition="0" endLine="135" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519560" fileName="DiffPainter.java" startLine="135" startPosition="59" endLine="136" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519569" fileName="DiffPainter.java" startLine="136" startPosition="86" endLine="137" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519574" fileName="DiffPainter.java" startLine="137" startPosition="45" endLine="138" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7348445255403519584" fileName="DiffPainter.java" startLine="140" startPosition="45" endLine="141" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7348445255403519592" fileName="DiffPainter.java" startLine="143" startPosition="15" endLine="144" endPosition="166" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519605" fileName="DiffPainter.java" startLine="145" startPosition="40" endLine="146" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
-    <nodeInfo nodeId="7348445255403519609" fileName="DiffPainter.java" startLine="147" startPosition="13" endLine="148" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7348445255403519610" fileName="DiffPainter.java" startLine="148" startPosition="0" endLine="149" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519615" fileName="DiffPainter.java" startLine="149" startPosition="60" endLine="150" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519619" fileName="DiffPainter.java" startLine="150" startPosition="39" endLine="151" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519623" fileName="DiffPainter.java" startLine="151" startPosition="37" endLine="152" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519638" fileName="DiffPainter.java" startLine="153" startPosition="77" endLine="154" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403519644" fileName="DiffPainter.java" startLine="154" startPosition="42" endLine="155" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7348445255403519660" fileName="DiffPainter.java" startLine="158" startPosition="47" endLine="159" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519666" fileName="DiffPainter.java" startLine="159" startPosition="73" endLine="160" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519683" fileName="DiffPainter.java" startLine="163" startPosition="47" endLine="164" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519687" fileName="DiffPainter.java" startLine="164" startPosition="38" endLine="165" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
-    <nodeInfo nodeId="7348445255403519690" fileName="DiffPainter.java" startLine="168" startPosition="15" endLine="169" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7348445255403519701" fileName="DiffPainter.java" startLine="172" startPosition="53" endLine="173" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519707" fileName="DiffPainter.java" startLine="173" startPosition="80" endLine="174" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519724" fileName="DiffPainter.java" startLine="177" startPosition="128" endLine="178" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519742" fileName="DiffPainter.java" startLine="180" startPosition="31" endLine="181" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
-    <nodeInfo nodeId="7348445255403573169" fileName="DiffPainter.java" startLine="184" startPosition="13" endLine="185" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7348445255403519745" fileName="DiffPainter.java" startLine="185" startPosition="22" endLine="186" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403519489" fileName="DiffPainter.java" startLine="187" startPosition="11" endLine="188" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7348445255403577060" fileName="DiffPainter.java" startLine="194" startPosition="48" endLine="195" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403577083" fileName="DiffPainter.java" startLine="197" startPosition="11" endLine="198" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358590708" fileName="DiffPainter.java" startLine="199" startPosition="96" endLine="200" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358591291" fileName="DiffPainter.java" startLine="200" startPosition="78" endLine="201" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358590701" fileName="DiffPainter.java" startLine="201" startPosition="47" endLine="202" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7348445255403577130" fileName="DiffPainter.java" startLine="203" startPosition="28" endLine="204" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4429148503504455761" fileName="DiffPainter.java" startLine="207" startPosition="30" endLine="208" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7348445255403577155" fileName="DiffPainter.java" startLine="210" startPosition="5" endLine="211" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358772078" fileName="DiffPainter.java" startLine="214" startPosition="61" endLine="215" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358772095" fileName="DiffPainter.java" startLine="217" startPosition="52" endLine="218" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358772103" fileName="DiffPainter.java" startLine="221" startPosition="40" endLine="222" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358772149" fileName="DiffPainter.java" startLine="226" startPosition="11" endLine="227" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358772209" fileName="DiffPainter.java" startLine="228" startPosition="23" endLine="229" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358772213" fileName="DiffPainter.java" startLine="230" startPosition="16" endLine="231" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2208658708761486512" fileName="DiffPainter.java" startLine="233" startPosition="30" endLine="234" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358772216" fileName="DiffPainter.java" startLine="236" startPosition="5" endLine="237" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358772218" fileName="DiffPainter.java" startLine="237" startPosition="0" endLine="238" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4429148503504455681" fileName="DiffPainter.java" startLine="242" startPosition="9" endLine="243" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4429148503504464425" fileName="DiffPainter.java" startLine="244" startPosition="94" endLine="245" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358770085" fileName="DiffPainter.java" startLine="245" startPosition="72" endLine="246" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2208658708761895086" fileName="DiffPainter.java" startLine="248" startPosition="28" endLine="249" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358770109" fileName="DiffPainter.java" startLine="250" startPosition="5" endLine="251" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358762965" fileName="DiffPainter.java" startLine="254" startPosition="69" endLine="255" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358762981" fileName="DiffPainter.java" startLine="255" startPosition="99" endLine="256" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358762976" fileName="DiffPainter.java" startLine="256" startPosition="34" endLine="257" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358768982" fileName="DiffPainter.java" startLine="261" startPosition="23" endLine="262" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358762788" fileName="DiffPainter.java" startLine="263" startPosition="5" endLine="264" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358762898" fileName="DiffPainter.java" startLine="264" startPosition="94" endLine="265" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358769945" fileName="DiffPainter.java" startLine="266" startPosition="33" endLine="267" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358762954" fileName="DiffPainter.java" startLine="269" startPosition="68" endLine="270" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358762284" fileName="DiffPainter.java" startLine="274" startPosition="52" endLine="275" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358773027" fileName="DiffPainter.java" startLine="277" startPosition="89" endLine="278" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358762440" fileName="DiffPainter.java" startLine="278" startPosition="83" endLine="279" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358762533" fileName="DiffPainter.java" startLine="280" startPosition="14" endLine="281" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358762293" fileName="DiffPainter.java" startLine="283" startPosition="5" endLine="284" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358761241" fileName="DiffPainter.java" startLine="288" startPosition="28" endLine="289" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358761384" fileName="DiffPainter.java" startLine="291" startPosition="113" endLine="292" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358762223" fileName="DiffPainter.java" startLine="293" startPosition="5" endLine="294" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358792353" fileName="DiffPainter.java" startLine="297" startPosition="79" endLine="298" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7348445255403519595" fileName="DiffPainter.java" startLine="301" startPosition="79" endLine="302" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358762923" fileName="DiffPainter.java" startLine="305" startPosition="66" endLine="306" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358772211" fileName="DiffPainter.java" startLine="230" startPosition="14" endLine="232" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="3758249303358762530" fileName="DiffPainter.java" startLine="280" startPosition="12" endLine="282" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="7348445255403577175" fileName="DiffPainter.java" startLine="43" startPosition="126" endLine="46" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358780156" fileName="DiffPainter.java" startLine="50" startPosition="63" endLine="53" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358793074" fileName="DiffPainter.java" startLine="55" startPosition="62" endLine="58" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358793105" fileName="DiffPainter.java" startLine="59" startPosition="61" endLine="62" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358782751" fileName="DiffPainter.java" startLine="82" startPosition="0" endLine="85" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-    <nodeInfo nodeId="3758249303358792363" fileName="DiffPainter.java" startLine="86" startPosition="166" endLine="89" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403518615" fileName="DiffPainter.java" startLine="118" startPosition="17" endLine="121" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403518679" fileName="DiffPainter.java" startLine="121" startPosition="17" endLine="124" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519582" fileName="DiffPainter.java" startLine="140" startPosition="0" endLine="143" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-    <nodeInfo nodeId="7348445255403519603" fileName="DiffPainter.java" startLine="144" startPosition="166" endLine="147" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519722" fileName="DiffPainter.java" startLine="176" startPosition="17" endLine="179" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519740" fileName="DiffPainter.java" startLine="179" startPosition="17" endLine="182" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403577125" fileName="DiffPainter.java" startLine="202" startPosition="72" endLine="205" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358772093" fileName="DiffPainter.java" startLine="217" startPosition="0" endLine="220" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="select#(Ljetbrains/mps/openapi/editor/message/SimpleEditorMessage;)Ljava/lang/Object;" />
-    <nodeInfo nodeId="3758249303358772101" fileName="DiffPainter.java" startLine="221" startPosition="0" endLine="224" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Ljava/lang/Object;)Z" />
-    <nodeInfo nodeId="3758249303358768953" fileName="DiffPainter.java" startLine="260" startPosition="87" endLine="263" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358769916" fileName="DiffPainter.java" startLine="265" startPosition="95" endLine="268" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358762863" fileName="DiffPainter.java" startLine="268" startPosition="5" endLine="271" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="3758249303358761213" fileName="DiffPainter.java" startLine="287" startPosition="66" endLine="290" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358761319" fileName="DiffPainter.java" startLine="290" startPosition="5" endLine="293" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358792353" fileName="DiffPainter.java" startLine="297" startPosition="0" endLine="300" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="as_ely5eb_a0a0a6a81a0a0a0a2a3#(Ljava/lang/Object;Ljava/lang/Class;)null" />
-    <nodeInfo nodeId="7348445255403519595" fileName="DiffPainter.java" startLine="301" startPosition="0" endLine="304" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="as_ely5eb_a0a0a6a02a0a0a0a2a3#(Ljava/lang/Object;Ljava/lang/Class;)null" />
-    <nodeInfo nodeId="3758249303358762923" fileName="DiffPainter.java" startLine="305" startPosition="0" endLine="308" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="as_ely5eb_a0a2a8#(Ljava/lang/Object;Ljava/lang/Class;)null" />
-    <nodeInfo nodeId="3758249303358788534" fileName="DiffPainter.java" startLine="99" startPosition="73" endLine="103" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358788933" fileName="DiffPainter.java" startLine="104" startPosition="81" endLine="108" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358789043" fileName="DiffPainter.java" startLine="113" startPosition="128" endLine="117" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519654" fileName="DiffPainter.java" startLine="157" startPosition="73" endLine="161" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519677" fileName="DiffPainter.java" startLine="162" startPosition="81" endLine="166" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519695" fileName="DiffPainter.java" startLine="171" startPosition="128" endLine="175" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4429148503504447051" fileName="DiffPainter.java" startLine="243" startPosition="42" endLine="247" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358780261" fileName="DiffPainter.java" startLine="35" startPosition="91" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="3758249303358772204" fileName="DiffPainter.java" startLine="227" startPosition="86" endLine="232" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358762959" fileName="DiffPainter.java" startLine="254" startPosition="0" endLine="259" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectMessages#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Ljava/util/List;" />
-    <nodeInfo nodeId="3758249303358788992" fileName="DiffPainter.java" startLine="112" startPosition="31" endLine="118" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519693" fileName="DiffPainter.java" startLine="170" startPosition="31" endLine="176" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358762386" fileName="DiffPainter.java" startLine="276" startPosition="99" endLine="282" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358756637" fileName="DiffPainter.java" startLine="35" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paint#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;Ljava/awt/Graphics;Ljetbrains/mps/nodeEditor/cells/ParentSettings;)V" />
-    <nodeInfo nodeId="7348445255403577088" fileName="DiffPainter.java" startLine="198" startPosition="44" endLine="206" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358762324" fileName="DiffPainter.java" startLine="275" startPosition="43" endLine="283" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="3758249303358772084" fileName="DiffPainter.java" startLine="215" startPosition="63" endLine="224" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4429148503504455751" fileName="DiffPainter.java" startLine="241" startPosition="59" endLine="250" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="3758249303358756647" fileName="DiffPainter.java" startLine="287" startPosition="0" endLine="296" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="findParentRichtextCell#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="3758249303358772147" fileName="DiffPainter.java" startLine="225" startPosition="35" endLine="235" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="3758249303358788395" fileName="DiffPainter.java" startLine="98" startPosition="34" endLine="109" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519647" fileName="DiffPainter.java" startLine="156" startPosition="34" endLine="167" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358772143" fileName="DiffPainter.java" startLine="224" startPosition="24" endLine="236" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="3758249303358770071" fileName="DiffPainter.java" startLine="241" startPosition="0" endLine="253" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="tryGetChange#(Ljetbrains/mps/openapi/editor/message/SimpleEditorMessage;)Ljava/lang/Object;" />
-    <nodeInfo nodeId="3758249303358762254" fileName="DiffPainter.java" startLine="274" startPosition="0" endLine="286" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="richtextToDiffText#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-    <nodeInfo nodeId="3758249303358799284" fileName="DiffPainter.java" startLine="97" startPosition="0" endLine="110" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519645" fileName="DiffPainter.java" startLine="155" startPosition="0" endLine="168" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403577081" fileName="DiffPainter.java" startLine="196" startPosition="73" endLine="209" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="3758249303358762765" fileName="DiffPainter.java" startLine="260" startPosition="0" endLine="273" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectMessages#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Ljava/util/List;)V" />
-    <nodeInfo nodeId="3758249303358788967" fileName="DiffPainter.java" startLine="111" startPosition="0" endLine="125" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519691" fileName="DiffPainter.java" startLine="169" startPosition="0" endLine="183" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403577112" fileName="DiffPainter.java" startLine="195" startPosition="63" endLine="210" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7348445255403577051" fileName="DiffPainter.java" startLine="194" startPosition="0" endLine="213" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isInDiffView#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Z" />
-    <nodeInfo nodeId="3758249303358772059" fileName="DiffPainter.java" startLine="214" startPosition="0" endLine="240" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getModel#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Z)Lorg/jetbrains/mps/openapi/model/SModel;" />
-    <nodeInfo nodeId="3758249303358788388" fileName="DiffPainter.java" startLine="94" startPosition="82" endLine="126" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7348445255403519634" fileName="DiffPainter.java" startLine="152" startPosition="82" endLine="184" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="3758249303358782687" fileName="DiffPainter.java" startLine="80" startPosition="0" endLine="129" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7348445255403519575" fileName="DiffPainter.java" startLine="138" startPosition="0" endLine="187" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="3758249303358780236" fileName="DiffPainter.java" startLine="73" startPosition="51" endLine="130" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7348445255403519487" fileName="DiffPainter.java" startLine="131" startPosition="0" endLine="189" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="3758249303358780180" fileName="DiffPainter.java" startLine="49" startPosition="0" endLine="191" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
-    <nodeInfo nodeId="3758249303358780176" fileName="DiffPainter.java" startLine="47" startPosition="0" endLine="191" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358773743" fileName="DiffPainter.java" startLine="43" startPosition="0" endLine="193" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paintUnsafe#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;Ljava/awt/Graphics;Ljetbrains/mps/nodeEditor/cells/ParentSettings;)V" />
-    <scopeInfo nodeId="3758249303358780262" fileName="DiffPainter.java" startLine="36" startPosition="9" endLine="37" endPosition="43" />
-    <scopeInfo nodeId="3758249303358780264" fileName="DiffPainter.java" startLine="38" startPosition="0" endLine="39" endPosition="20">
+    <nodeInfo nodeId="3758249303358763008" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="32" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
+    <nodeInfo nodeId="7348445255403573682" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="33" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="SEPARATOR" />
+    <nodeInfo nodeId="3758249303358780269" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="36" startPosition="9" endLine="37" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358780276" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="38" startPosition="28" endLine="39" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7348445255403577183" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="44" startPosition="32" endLine="45" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7348445255403577174" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="46" startPosition="5" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3758249303358780151" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="49" startPosition="25" endLine="50" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780158" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="51" startPosition="35" endLine="52" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358780162" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="53" startPosition="9" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3758249303358780163" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="54" startPosition="0" endLine="55" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358793103" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="56" startPosition="31" endLine="57" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358780169" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="58" startPosition="9" endLine="59" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358793134" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="60" startPosition="31" endLine="61" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="488223974209950410" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="62" startPosition="9" endLine="63" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="488223974209951453" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="63" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3758249303358780182" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="64" startPosition="0" endLine="65" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780189" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="65" startPosition="111" endLine="66" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8918142074887977865" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="66" startPosition="58" endLine="67" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8918142074887015013" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="67" startPosition="47" endLine="68" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780195" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="68" startPosition="65" endLine="69" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780201" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="69" startPosition="106" endLine="70" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780207" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="70" startPosition="35" endLine="71" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780219" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="71" startPosition="135" endLine="72" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780231" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="72" startPosition="135" endLine="73" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780238" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="74" startPosition="73" endLine="75" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358782656" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="75" startPosition="78" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3758249303358415104" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="76" startPosition="0" endLine="77" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358486371" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="77" startPosition="59" endLine="78" endPosition="137" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358501888" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="78" startPosition="137" endLine="79" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358782668" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="79" startPosition="45" endLine="80" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3758249303358782756" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="82" startPosition="45" endLine="83" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358792320" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="85" startPosition="15" endLine="86" endPosition="166" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358792505" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="87" startPosition="40" endLine="88" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+    <nodeInfo nodeId="3758249303358792489" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="89" startPosition="13" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3758249303358782798" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="90" startPosition="0" endLine="91" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358788526" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="91" startPosition="62" endLine="92" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7348445255403518534" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="92" startPosition="39" endLine="93" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358788540" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="93" startPosition="37" endLine="94" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358799248" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="95" startPosition="77" endLine="96" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358799305" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="96" startPosition="42" endLine="97" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3758249303358799314" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="100" startPosition="47" endLine="101" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358788903" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="101" startPosition="73" endLine="102" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358788950" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="105" startPosition="47" endLine="106" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7348445255403510423" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="106" startPosition="38" endLine="107" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+    <nodeInfo nodeId="3758249303358799307" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="110" startPosition="15" endLine="111" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7348445255403518545" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="114" startPosition="53" endLine="115" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7348445255403518579" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="115" startPosition="80" endLine="116" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7348445255403518639" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="119" startPosition="177" endLine="120" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7348445255403518687" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="122" startPosition="31" endLine="123" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+    <nodeInfo nodeId="3758249303358792563" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="127" startPosition="25" endLine="128" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="455325956878138598" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="129" startPosition="20" endLine="130" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7348445255403519483" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="133" startPosition="9" endLine="134" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7348445255403577060" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="139" startPosition="48" endLine="140" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7348445255403577083" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="142" startPosition="11" endLine="143" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358590708" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="144" startPosition="96" endLine="145" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358591291" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="145" startPosition="78" endLine="146" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358590701" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="146" startPosition="47" endLine="147" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7348445255403577130" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="148" startPosition="28" endLine="149" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4429148503504455761" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="152" startPosition="30" endLine="153" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7348445255403577155" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="155" startPosition="5" endLine="156" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358772078" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="159" startPosition="61" endLine="160" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358772095" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="162" startPosition="52" endLine="163" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358772103" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="166" startPosition="40" endLine="167" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358772149" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="171" startPosition="11" endLine="172" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358772209" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="173" startPosition="23" endLine="174" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358772213" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="175" startPosition="16" endLine="176" endPosition="90" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2208658708761486512" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="178" startPosition="30" endLine="179" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358772216" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="181" startPosition="5" endLine="182" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="3758249303358772218" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="182" startPosition="0" endLine="183" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4429148503504455681" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="187" startPosition="9" endLine="188" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4429148503504464425" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="189" startPosition="94" endLine="190" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358770085" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="190" startPosition="72" endLine="191" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2208658708761895086" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="193" startPosition="28" endLine="194" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358770109" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="195" startPosition="5" endLine="196" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358762965" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="199" startPosition="69" endLine="200" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358762981" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="200" startPosition="99" endLine="201" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358762976" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="201" startPosition="34" endLine="202" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358768982" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="206" startPosition="23" endLine="207" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358762788" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="208" startPosition="5" endLine="209" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358762898" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="209" startPosition="94" endLine="210" endPosition="95" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358769945" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="211" startPosition="33" endLine="212" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358762954" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="214" startPosition="68" endLine="215" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358762284" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="219" startPosition="52" endLine="220" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358773027" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="222" startPosition="89" endLine="223" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358762440" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="223" startPosition="83" endLine="224" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358762533" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="225" startPosition="14" endLine="226" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358762293" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="228" startPosition="5" endLine="229" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358761241" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="233" startPosition="28" endLine="234" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358761384" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="236" startPosition="113" endLine="237" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358762223" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="238" startPosition="5" endLine="239" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358792353" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="242" startPosition="79" endLine="243" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358762923" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="246" startPosition="66" endLine="247" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="455325956878130054" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="129" startPosition="18" endLine="131" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3758249303358772211" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="175" startPosition="14" endLine="177" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3758249303358762530" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="225" startPosition="12" endLine="227" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7348445255403577175" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="43" startPosition="126" endLine="46" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358780156" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="50" startPosition="63" endLine="53" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358793074" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="55" startPosition="62" endLine="58" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358793105" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="59" startPosition="61" endLine="62" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358782751" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="82" startPosition="0" endLine="85" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+    <nodeInfo nodeId="3758249303358792363" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="86" startPosition="166" endLine="89" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7348445255403518615" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="118" startPosition="17" endLine="121" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7348445255403518679" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="121" startPosition="17" endLine="124" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7348445255403577125" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="147" startPosition="72" endLine="150" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358772093" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="162" startPosition="0" endLine="165" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="select#(Ljetbrains/mps/openapi/editor/message/SimpleEditorMessage;)Ljava/lang/Object;" />
+    <nodeInfo nodeId="3758249303358772101" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="166" startPosition="0" endLine="169" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="3758249303358768953" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="205" startPosition="87" endLine="208" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358769916" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="210" startPosition="95" endLine="213" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358762863" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="213" startPosition="5" endLine="216" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="3758249303358761213" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="232" startPosition="66" endLine="235" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358761319" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="235" startPosition="5" endLine="238" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358792353" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="242" startPosition="0" endLine="245" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="as_ely5eb_a0a0a6a81a0a0a0a2a3#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+    <nodeInfo nodeId="3758249303358762923" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="246" startPosition="0" endLine="249" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="as_ely5eb_a0a2a8#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+    <nodeInfo nodeId="3758249303358788534" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="99" startPosition="73" endLine="103" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358788933" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="104" startPosition="130" endLine="108" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358789043" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="113" startPosition="177" endLine="117" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4429148503504447051" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="188" startPosition="42" endLine="192" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358780261" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="35" startPosition="91" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="455325956878096885" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="126" startPosition="13" endLine="131" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358772204" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="172" startPosition="86" endLine="177" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358762959" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="199" startPosition="0" endLine="204" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectMessages#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Ljava/util/List;" />
+    <nodeInfo nodeId="3758249303358788992" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="112" startPosition="31" endLine="118" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358762386" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="221" startPosition="99" endLine="227" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358756637" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="35" startPosition="0" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paint#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;Ljava/awt/Graphics;Ljetbrains/mps/nodeEditor/cells/ParentSettings;)V" />
+    <nodeInfo nodeId="7348445255403577088" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="143" startPosition="44" endLine="151" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358762324" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="220" startPosition="43" endLine="228" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="3758249303358772084" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="160" startPosition="63" endLine="169" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4429148503504455751" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="186" startPosition="59" endLine="195" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="3758249303358756647" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="232" startPosition="0" endLine="241" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="findParentRichtextCell#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="3758249303358772147" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="170" startPosition="35" endLine="180" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="3758249303358788395" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="98" startPosition="34" endLine="109" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358772143" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="169" startPosition="24" endLine="181" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="3758249303358770071" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="186" startPosition="0" endLine="198" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="tryGetChange#(Ljetbrains/mps/openapi/editor/message/SimpleEditorMessage;)Ljava/lang/Object;" />
+    <nodeInfo nodeId="3758249303358762254" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="219" startPosition="0" endLine="231" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="richtextToDiffText#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <nodeInfo nodeId="3758249303358799284" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="97" startPosition="0" endLine="110" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7348445255403577081" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="141" startPosition="73" endLine="154" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="3758249303358762765" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="205" startPosition="0" endLine="218" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="collectMessages#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Ljava/util/List;)V" />
+    <nodeInfo nodeId="3758249303358788967" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="111" startPosition="0" endLine="125" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7348445255403577112" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="140" startPosition="63" endLine="155" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7348445255403577051" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="139" startPosition="0" endLine="158" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isInDiffView#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Z" />
+    <nodeInfo nodeId="3758249303358772059" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="159" startPosition="0" endLine="185" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getModel#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Z)Lorg/jetbrains/mps/openapi/model/SModel;" />
+    <nodeInfo nodeId="3758249303358788388" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="94" startPosition="82" endLine="126" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="3758249303358782687" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="80" startPosition="0" endLine="132" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="3758249303358780236" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="73" startPosition="51" endLine="133" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3758249303358780180" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="49" startPosition="0" endLine="136" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <nodeInfo nodeId="3758249303358780176" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="47" startPosition="0" endLine="136" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358773743" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="43" startPosition="0" endLine="138" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paintUnsafe#(Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;Ljava/awt/Graphics;Ljetbrains/mps/nodeEditor/cells/ParentSettings;)V" />
+    <scopeInfo nodeId="3758249303358780262" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="36" startPosition="9" endLine="37" endPosition="43" />
+    <scopeInfo nodeId="3758249303358780264" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="38" startPosition="0" endLine="39" endPosition="20">
       <varInfo nodeId="3758249303358780265" varName="ex" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358780267" fileName="DiffPainter.java" startLine="38" startPosition="28" endLine="39" endPosition="20" />
-    <scopeInfo nodeId="7348445255403577176" fileName="DiffPainter.java" startLine="44" startPosition="32" endLine="45" endPosition="13" />
-    <scopeInfo nodeId="3758249303358780157" fileName="DiffPainter.java" startLine="51" startPosition="35" endLine="52" endPosition="17" />
-    <scopeInfo nodeId="3758249303358793075" fileName="DiffPainter.java" startLine="56" startPosition="31" endLine="57" endPosition="17" />
-    <scopeInfo nodeId="3758249303358793106" fileName="DiffPainter.java" startLine="60" startPosition="31" endLine="61" endPosition="17" />
-    <scopeInfo nodeId="3758249303358782752" fileName="DiffPainter.java" startLine="82" startPosition="45" endLine="83" endPosition="96" />
-    <scopeInfo nodeId="3758249303358792364" fileName="DiffPainter.java" startLine="87" startPosition="40" endLine="88" endPosition="23" />
-    <scopeInfo nodeId="7348445255403518616" fileName="DiffPainter.java" startLine="119" startPosition="128" endLine="120" endPosition="47" />
-    <scopeInfo nodeId="7348445255403518680" fileName="DiffPainter.java" startLine="122" startPosition="31" endLine="123" endPosition="24" />
-    <scopeInfo nodeId="7348445255403519583" fileName="DiffPainter.java" startLine="140" startPosition="45" endLine="141" endPosition="96" />
-    <scopeInfo nodeId="7348445255403519604" fileName="DiffPainter.java" startLine="145" startPosition="40" endLine="146" endPosition="23" />
-    <scopeInfo nodeId="7348445255403519723" fileName="DiffPainter.java" startLine="177" startPosition="128" endLine="178" endPosition="47" />
-    <scopeInfo nodeId="7348445255403519741" fileName="DiffPainter.java" startLine="180" startPosition="31" endLine="181" endPosition="24" />
-    <scopeInfo nodeId="7348445255403577126" fileName="DiffPainter.java" startLine="203" startPosition="28" endLine="204" endPosition="24" />
-    <scopeInfo nodeId="7348445255403577105" fileName="DiffPainter.java" startLine="207" startPosition="0" endLine="208" endPosition="22">
+    <scopeInfo nodeId="3758249303358780267" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="38" startPosition="28" endLine="39" endPosition="20" />
+    <scopeInfo nodeId="7348445255403577176" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="44" startPosition="32" endLine="45" endPosition="13" />
+    <scopeInfo nodeId="3758249303358780157" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="51" startPosition="35" endLine="52" endPosition="17" />
+    <scopeInfo nodeId="3758249303358793075" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="56" startPosition="31" endLine="57" endPosition="17" />
+    <scopeInfo nodeId="3758249303358793106" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="60" startPosition="31" endLine="61" endPosition="17" />
+    <scopeInfo nodeId="3758249303358782752" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="82" startPosition="45" endLine="83" endPosition="96" />
+    <scopeInfo nodeId="3758249303358792364" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="87" startPosition="40" endLine="88" endPosition="23" />
+    <scopeInfo nodeId="7348445255403518616" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="119" startPosition="177" endLine="120" endPosition="49" />
+    <scopeInfo nodeId="7348445255403518680" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="122" startPosition="31" endLine="123" endPosition="24" />
+    <scopeInfo nodeId="455325956878096888" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="127" startPosition="25" endLine="128" endPosition="81" />
+    <scopeInfo nodeId="455325956878130055" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="129" startPosition="20" endLine="130" endPosition="81" />
+    <scopeInfo nodeId="7348445255403577126" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="148" startPosition="28" endLine="149" endPosition="24" />
+    <scopeInfo nodeId="7348445255403577105" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="152" startPosition="0" endLine="153" endPosition="22">
       <varInfo nodeId="7348445255403577106" varName="ex" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403577108" fileName="DiffPainter.java" startLine="207" startPosition="30" endLine="208" endPosition="22" />
-    <scopeInfo nodeId="3758249303358772094" fileName="DiffPainter.java" startLine="217" startPosition="52" endLine="218" endPosition="32" />
-    <scopeInfo nodeId="3758249303358772102" fileName="DiffPainter.java" startLine="221" startPosition="40" endLine="222" endPosition="26" />
-    <scopeInfo nodeId="3758249303358772205" fileName="DiffPainter.java" startLine="228" startPosition="23" endLine="229" endPosition="90" />
-    <scopeInfo nodeId="3758249303358772212" fileName="DiffPainter.java" startLine="230" startPosition="16" endLine="231" endPosition="90" />
-    <scopeInfo nodeId="3758249303358772199" fileName="DiffPainter.java" startLine="233" startPosition="0" endLine="234" endPosition="22">
+    <scopeInfo nodeId="7348445255403577108" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="152" startPosition="30" endLine="153" endPosition="22" />
+    <scopeInfo nodeId="3758249303358772094" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="162" startPosition="52" endLine="163" endPosition="32" />
+    <scopeInfo nodeId="3758249303358772102" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="166" startPosition="40" endLine="167" endPosition="26" />
+    <scopeInfo nodeId="3758249303358772205" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="173" startPosition="23" endLine="174" endPosition="90" />
+    <scopeInfo nodeId="3758249303358772212" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="175" startPosition="16" endLine="176" endPosition="90" />
+    <scopeInfo nodeId="3758249303358772199" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="178" startPosition="0" endLine="179" endPosition="22">
       <varInfo nodeId="3758249303358772200" varName="ex" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358772202" fileName="DiffPainter.java" startLine="233" startPosition="30" endLine="234" endPosition="22" />
-    <scopeInfo nodeId="4429148503504455754" fileName="DiffPainter.java" startLine="248" startPosition="0" endLine="249" endPosition="20">
+    <scopeInfo nodeId="3758249303358772202" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="178" startPosition="30" endLine="179" endPosition="22" />
+    <scopeInfo nodeId="4429148503504455754" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="193" startPosition="0" endLine="194" endPosition="20">
       <varInfo nodeId="4429148503504455755" varName="ex" />
     </scopeInfo>
-    <scopeInfo nodeId="4429148503504455757" fileName="DiffPainter.java" startLine="248" startPosition="28" endLine="249" endPosition="20" />
-    <scopeInfo nodeId="3758249303358768954" fileName="DiffPainter.java" startLine="261" startPosition="23" endLine="262" endPosition="13" />
-    <scopeInfo nodeId="3758249303358769917" fileName="DiffPainter.java" startLine="266" startPosition="33" endLine="267" endPosition="13" />
-    <scopeInfo nodeId="3758249303358762866" fileName="DiffPainter.java" startLine="269" startPosition="68" endLine="270" endPosition="42" />
-    <scopeInfo nodeId="3758249303358762531" fileName="DiffPainter.java" startLine="280" startPosition="14" endLine="281" endPosition="83" />
-    <scopeInfo nodeId="3758249303358761215" fileName="DiffPainter.java" startLine="288" startPosition="28" endLine="289" endPosition="18" />
-    <scopeInfo nodeId="3758249303358761320" fileName="DiffPainter.java" startLine="291" startPosition="113" endLine="292" endPosition="23" />
-    <scopeInfo nodeId="3758249303358792353" fileName="DiffPainter.java" startLine="297" startPosition="79" endLine="298" endPosition="47" />
-    <scopeInfo nodeId="7348445255403519595" fileName="DiffPainter.java" startLine="301" startPosition="79" endLine="302" endPosition="47" />
-    <scopeInfo nodeId="3758249303358762923" fileName="DiffPainter.java" startLine="305" startPosition="66" endLine="306" endPosition="47" />
-    <scopeInfo nodeId="3758249303358788536" fileName="DiffPainter.java" startLine="100" startPosition="47" endLine="102" endPosition="38" />
-    <scopeInfo nodeId="3758249303358788940" fileName="DiffPainter.java" startLine="105" startPosition="47" endLine="107" endPosition="29" />
-    <scopeInfo nodeId="3758249303358789045" fileName="DiffPainter.java" startLine="114" startPosition="53" endLine="116" endPosition="36" />
-    <scopeInfo nodeId="7348445255403519659" fileName="DiffPainter.java" startLine="158" startPosition="47" endLine="160" endPosition="38" />
-    <scopeInfo nodeId="7348445255403519682" fileName="DiffPainter.java" startLine="163" startPosition="47" endLine="165" endPosition="29" />
-    <scopeInfo nodeId="7348445255403519700" fileName="DiffPainter.java" startLine="172" startPosition="53" endLine="174" endPosition="36" />
-    <scopeInfo nodeId="4429148503504447052" fileName="DiffPainter.java" startLine="244" startPosition="94" endLine="246" endPosition="22">
+    <scopeInfo nodeId="4429148503504455757" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="193" startPosition="28" endLine="194" endPosition="20" />
+    <scopeInfo nodeId="3758249303358768954" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="206" startPosition="23" endLine="207" endPosition="13" />
+    <scopeInfo nodeId="3758249303358769917" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="211" startPosition="33" endLine="212" endPosition="13" />
+    <scopeInfo nodeId="3758249303358762866" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="214" startPosition="68" endLine="215" endPosition="42" />
+    <scopeInfo nodeId="3758249303358762531" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="225" startPosition="14" endLine="226" endPosition="83" />
+    <scopeInfo nodeId="3758249303358761215" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="233" startPosition="28" endLine="234" endPosition="18" />
+    <scopeInfo nodeId="3758249303358761320" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="236" startPosition="113" endLine="237" endPosition="23" />
+    <scopeInfo nodeId="3758249303358792353" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="242" startPosition="79" endLine="243" endPosition="47" />
+    <scopeInfo nodeId="3758249303358762923" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="246" startPosition="66" endLine="247" endPosition="47" />
+    <scopeInfo nodeId="3758249303358788536" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="100" startPosition="47" endLine="102" endPosition="38" />
+    <scopeInfo nodeId="3758249303358788940" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="105" startPosition="47" endLine="107" endPosition="29" />
+    <scopeInfo nodeId="3758249303358789045" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="114" startPosition="53" endLine="116" endPosition="36" />
+    <scopeInfo nodeId="4429148503504447052" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="189" startPosition="94" endLine="191" endPosition="22">
       <varInfo nodeId="4429148503504464426" varName="change" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358762387" fileName="DiffPainter.java" startLine="277" startPosition="89" endLine="279" endPosition="135" />
-    <scopeInfo nodeId="3758249303358782751" fileName="DiffPainter.java" startLine="82" startPosition="0" endLine="85" endPosition="0">
+    <scopeInfo nodeId="3758249303358762387" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="222" startPosition="89" endLine="224" endPosition="135" />
+    <scopeInfo nodeId="3758249303358782751" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="82" startPosition="0" endLine="85" endPosition="0">
       <varInfo nodeId="3758249303358782751" varName="it" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403519582" fileName="DiffPainter.java" startLine="140" startPosition="0" endLine="143" endPosition="0">
-      <varInfo nodeId="7348445255403519582" varName="it" />
-    </scopeInfo>
-    <scopeInfo nodeId="3758249303358772093" fileName="DiffPainter.java" startLine="217" startPosition="0" endLine="220" endPosition="0">
+    <scopeInfo nodeId="3758249303358772093" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="162" startPosition="0" endLine="165" endPosition="0">
       <varInfo nodeId="3758249303358772093" varName="it" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358772101" fileName="DiffPainter.java" startLine="221" startPosition="0" endLine="224" endPosition="0">
+    <scopeInfo nodeId="3758249303358772101" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="166" startPosition="0" endLine="169" endPosition="0">
       <varInfo nodeId="3758249303358772101" varName="it" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358762962" fileName="DiffPainter.java" startLine="254" startPosition="69" endLine="257" endPosition="18">
+    <scopeInfo nodeId="3758249303358762962" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="199" startPosition="69" endLine="202" endPosition="18">
       <varInfo nodeId="3758249303358762966" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358762863" fileName="DiffPainter.java" startLine="268" startPosition="5" endLine="271" endPosition="5">
+    <scopeInfo nodeId="3758249303358762863" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="213" startPosition="5" endLine="216" endPosition="5">
       <varInfo nodeId="3758249303358762864" varName="child" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358792353" fileName="DiffPainter.java" startLine="297" startPosition="0" endLine="300" endPosition="0">
+    <scopeInfo nodeId="3758249303358792353" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="242" startPosition="0" endLine="245" endPosition="0">
       <varInfo nodeId="3758249303358792353" varName="o" />
       <varInfo nodeId="3758249303358792353" varName="type" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403519595" fileName="DiffPainter.java" startLine="301" startPosition="0" endLine="304" endPosition="0">
-      <varInfo nodeId="7348445255403519595" varName="o" />
-      <varInfo nodeId="7348445255403519595" varName="type" />
-    </scopeInfo>
-    <scopeInfo nodeId="3758249303358762923" fileName="DiffPainter.java" startLine="305" startPosition="0" endLine="308" endPosition="0">
+    <scopeInfo nodeId="3758249303358762923" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="246" startPosition="0" endLine="249" endPosition="0">
       <varInfo nodeId="3758249303358762923" varName="o" />
       <varInfo nodeId="3758249303358762923" varName="type" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358788397" fileName="DiffPainter.java" startLine="99" startPosition="73" endLine="103" endPosition="19" />
-    <scopeInfo nodeId="3758249303358788462" fileName="DiffPainter.java" startLine="104" startPosition="81" endLine="108" endPosition="19" />
-    <scopeInfo nodeId="3758249303358788994" fileName="DiffPainter.java" startLine="113" startPosition="128" endLine="117" endPosition="19" />
-    <scopeInfo nodeId="7348445255403519653" fileName="DiffPainter.java" startLine="157" startPosition="73" endLine="161" endPosition="19" />
-    <scopeInfo nodeId="7348445255403519676" fileName="DiffPainter.java" startLine="162" startPosition="81" endLine="166" endPosition="19" />
-    <scopeInfo nodeId="7348445255403519694" fileName="DiffPainter.java" startLine="171" startPosition="128" endLine="175" endPosition="19" />
-    <scopeInfo nodeId="3758249303358756646" fileName="DiffPainter.java" startLine="35" startPosition="91" endLine="40" endPosition="5" />
-    <scopeInfo nodeId="4429148503504455752" fileName="DiffPainter.java" startLine="242" startPosition="9" endLine="247" endPosition="7">
+    <scopeInfo nodeId="3758249303358788397" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="99" startPosition="73" endLine="103" endPosition="19" />
+    <scopeInfo nodeId="3758249303358788462" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="104" startPosition="130" endLine="108" endPosition="19" />
+    <scopeInfo nodeId="3758249303358788994" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="113" startPosition="177" endLine="117" endPosition="19" />
+    <scopeInfo nodeId="3758249303358756646" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="35" startPosition="91" endLine="40" endPosition="5" />
+    <scopeInfo nodeId="4429148503504455752" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="187" startPosition="9" endLine="192" endPosition="7">
       <varInfo nodeId="4429148503504455682" varName="msgClass" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358762959" fileName="DiffPainter.java" startLine="254" startPosition="0" endLine="259" endPosition="0">
+    <scopeInfo nodeId="3758249303358762959" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="199" startPosition="0" endLine="204" endPosition="0">
       <varInfo nodeId="3758249303358762963" varName="cell" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403577089" fileName="DiffPainter.java" startLine="199" startPosition="96" endLine="205" endPosition="11">
+    <scopeInfo nodeId="7348445255403577089" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="144" startPosition="96" endLine="150" endPosition="11">
       <varInfo nodeId="3758249303358590702" varName="highlighted" />
       <varInfo nodeId="3758249303358590709" varName="highlightedField" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358772148" fileName="DiffPainter.java" startLine="226" startPosition="11" endLine="232" endPosition="9">
+    <scopeInfo nodeId="3758249303358772148" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="171" startPosition="11" endLine="177" endPosition="9">
       <varInfo nodeId="3758249303358772150" varName="changeSet" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358762327" fileName="DiffPainter.java" startLine="276" startPosition="99" endLine="282" endPosition="7" />
-    <scopeInfo nodeId="3758249303358756637" fileName="DiffPainter.java" startLine="35" startPosition="0" endLine="42" endPosition="0">
+    <scopeInfo nodeId="3758249303358762327" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="221" startPosition="99" endLine="227" endPosition="7" />
+    <scopeInfo nodeId="3758249303358756637" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="35" startPosition="0" endLine="42" endPosition="0">
       <varInfo nodeId="3758249303358756640" varName="cell" />
       <varInfo nodeId="3758249303358756642" varName="g" />
       <varInfo nodeId="3758249303358756644" varName="parentSettings" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358756650" fileName="DiffPainter.java" startLine="287" startPosition="66" endLine="294" endPosition="57" />
-    <scopeInfo nodeId="3758249303358762324" fileName="DiffPainter.java" startLine="275" startPosition="43" endLine="283" endPosition="5">
+    <scopeInfo nodeId="3758249303358756650" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="232" startPosition="66" endLine="239" endPosition="57" />
+    <scopeInfo nodeId="3758249303358762324" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="220" startPosition="43" endLine="228" endPosition="5">
       <varInfo nodeId="3758249303358762325" varName="word" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403577082" fileName="DiffPainter.java" startLine="197" startPosition="11" endLine="206" endPosition="9">
+    <scopeInfo nodeId="7348445255403577082" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="142" startPosition="11" endLine="151" endPosition="9">
       <varInfo nodeId="7348445255403577084" varName="msgClass" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358756647" fileName="DiffPainter.java" startLine="287" startPosition="0" endLine="296" endPosition="0">
+    <scopeInfo nodeId="3758249303358756647" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="232" startPosition="0" endLine="241" endPosition="0">
       <varInfo nodeId="3758249303358761179" varName="childCell" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358772146" fileName="DiffPainter.java" startLine="225" startPosition="35" endLine="235" endPosition="7" />
-    <scopeInfo nodeId="3758249303358770074" fileName="DiffPainter.java" startLine="241" startPosition="59" endLine="251" endPosition="16" />
-    <scopeInfo nodeId="3758249303358762257" fileName="DiffPainter.java" startLine="274" startPosition="52" endLine="284" endPosition="25">
+    <scopeInfo nodeId="3758249303358772146" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="170" startPosition="35" endLine="180" endPosition="7" />
+    <scopeInfo nodeId="3758249303358770074" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="186" startPosition="59" endLine="196" endPosition="16" />
+    <scopeInfo nodeId="3758249303358762257" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="219" startPosition="52" endLine="229" endPosition="25">
       <varInfo nodeId="3758249303358762285" varName="sb" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358799285" fileName="DiffPainter.java" startLine="98" startPosition="34" endLine="109" endPosition="17" />
-    <scopeInfo nodeId="7348445255403519646" fileName="DiffPainter.java" startLine="156" startPosition="34" endLine="167" endPosition="17" />
-    <scopeInfo nodeId="3758249303358762768" fileName="DiffPainter.java" startLine="260" startPosition="87" endLine="271" endPosition="5">
+    <scopeInfo nodeId="3758249303358799285" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="98" startPosition="34" endLine="109" endPosition="17" />
+    <scopeInfo nodeId="3758249303358762768" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="205" startPosition="87" endLine="216" endPosition="5">
       <varInfo nodeId="3758249303358762899" varName="collectionCell" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358788968" fileName="DiffPainter.java" startLine="112" startPosition="31" endLine="124" endPosition="17" />
-    <scopeInfo nodeId="7348445255403519692" fileName="DiffPainter.java" startLine="170" startPosition="31" endLine="182" endPosition="17" />
-    <scopeInfo nodeId="3758249303358772143" fileName="DiffPainter.java" startLine="224" startPosition="24" endLine="236" endPosition="5">
+    <scopeInfo nodeId="3758249303358788968" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="112" startPosition="31" endLine="124" endPosition="17" />
+    <scopeInfo nodeId="3758249303358772143" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="169" startPosition="24" endLine="181" endPosition="5">
       <varInfo nodeId="3758249303358772144" varName="change" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358770071" fileName="DiffPainter.java" startLine="241" startPosition="0" endLine="253" endPosition="0">
+    <scopeInfo nodeId="3758249303358770071" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="186" startPosition="0" endLine="198" endPosition="0">
       <varInfo nodeId="3758249303358770076" varName="message" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358762254" fileName="DiffPainter.java" startLine="274" startPosition="0" endLine="286" endPosition="0">
+    <scopeInfo nodeId="3758249303358762254" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="219" startPosition="0" endLine="231" endPosition="0">
       <varInfo nodeId="3758249303358762265" varName="textNode" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403577115" fileName="DiffPainter.java" startLine="196" startPosition="73" endLine="209" endPosition="7" />
-    <scopeInfo nodeId="3758249303358762765" fileName="DiffPainter.java" startLine="260" startPosition="0" endLine="273" endPosition="0">
+    <scopeInfo nodeId="7348445255403577115" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="141" startPosition="73" endLine="154" endPosition="7" />
+    <scopeInfo nodeId="3758249303358762765" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="205" startPosition="0" endLine="218" endPosition="0">
       <varInfo nodeId="3758249303358762852" varName="accumulator" />
       <varInfo nodeId="3758249303358762786" varName="cell" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403577112" fileName="DiffPainter.java" startLine="195" startPosition="63" endLine="210" endPosition="5">
+    <scopeInfo nodeId="7348445255403577112" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="140" startPosition="63" endLine="155" endPosition="5">
       <varInfo nodeId="7348445255403577113" varName="message" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403577054" fileName="DiffPainter.java" startLine="194" startPosition="48" endLine="211" endPosition="17">
+    <scopeInfo nodeId="7348445255403577054" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="139" startPosition="48" endLine="156" endPosition="17">
       <varInfo nodeId="7348445255403577061" varName="messages" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403577051" fileName="DiffPainter.java" startLine="194" startPosition="0" endLine="213" endPosition="0">
+    <scopeInfo nodeId="7348445255403577051" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="139" startPosition="0" endLine="158" endPosition="0">
       <varInfo nodeId="7348445255403577071" varName="cell" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358772062" fileName="DiffPainter.java" startLine="214" startPosition="61" endLine="238" endPosition="16">
+    <scopeInfo nodeId="3758249303358772062" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="159" startPosition="61" endLine="183" endPosition="16">
       <varInfo nodeId="3758249303358772085" varName="changes" />
       <varInfo nodeId="3758249303358772079" varName="messages" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358772059" fileName="DiffPainter.java" startLine="214" startPosition="0" endLine="240" endPosition="0">
+    <scopeInfo nodeId="3758249303358772059" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="159" startPosition="0" endLine="185" endPosition="0">
       <varInfo nodeId="3758249303358772068" varName="cell" />
       <varInfo nodeId="3758249303358772072" varName="newModel" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358788391" fileName="DiffPainter.java" startLine="95" startPosition="77" endLine="125" endPosition="15">
+    <scopeInfo nodeId="3758249303358788391" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="95" startPosition="77" endLine="125" endPosition="15">
       <varInfo nodeId="3758249303358799249" varName="diffText" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403519637" fileName="DiffPainter.java" startLine="153" startPosition="77" endLine="183" endPosition="15">
-      <varInfo nodeId="7348445255403519639" varName="diffText" />
-    </scopeInfo>
-    <scopeInfo nodeId="3758249303358788388" fileName="DiffPainter.java" startLine="94" startPosition="82" endLine="126" endPosition="13">
+    <scopeInfo nodeId="3758249303358788388" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="94" startPosition="82" endLine="126" endPosition="13">
       <varInfo nodeId="3758249303358788389" varName="diff" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403519634" fileName="DiffPainter.java" startLine="152" startPosition="82" endLine="184" endPosition="13">
-      <varInfo nodeId="7348445255403519635" varName="diff" />
-    </scopeInfo>
-    <scopeInfo nodeId="3758249303358782690" fileName="DiffPainter.java" startLine="85" startPosition="15" endLine="128" endPosition="77">
+    <scopeInfo nodeId="3758249303358782690" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="85" startPosition="15" endLine="131" endPosition="13">
       <varInfo nodeId="7348445255403518535" varName="endFound" />
       <varInfo nodeId="3758249303358788541" varName="key" />
-      <varInfo nodeId="3758249303358782799" varName="oldWordText" />
+      <varInfo nodeId="3758249303358782799" varName="otherWordText" />
       <varInfo nodeId="3758249303358788527" varName="startFound" />
       <varInfo nodeId="3758249303358792321" varName="wordChildCell" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403519591" fileName="DiffPainter.java" startLine="143" startPosition="15" endLine="186" endPosition="76">
-      <varInfo nodeId="7348445255403519620" varName="endFound" />
-      <varInfo nodeId="7348445255403519624" varName="key" />
-      <varInfo nodeId="7348445255403519611" varName="newWordText" />
-      <varInfo nodeId="7348445255403519616" varName="startFound" />
-      <varInfo nodeId="7348445255403519593" varName="wordChildCell" />
-    </scopeInfo>
-    <scopeInfo nodeId="3758249303358782687" fileName="DiffPainter.java" startLine="80" startPosition="0" endLine="129" endPosition="11">
+    <scopeInfo nodeId="3758249303358782687" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="80" startPosition="0" endLine="132" endPosition="11">
       <varInfo nodeId="3758249303358782688" varName="wordChild" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403519575" fileName="DiffPainter.java" startLine="138" startPosition="0" endLine="187" endPosition="11">
-      <varInfo nodeId="7348445255403519576" varName="wordChild" />
-    </scopeInfo>
-    <scopeInfo nodeId="3758249303358780237" fileName="DiffPainter.java" startLine="74" startPosition="42" endLine="129" endPosition="11">
+    <scopeInfo nodeId="3758249303358780237" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="74" startPosition="73" endLine="132" endPosition="11">
       <varInfo nodeId="3758249303358415105" varName="differ" />
       <varInfo nodeId="3758249303358486372" varName="diffs" />
-      <varInfo nodeId="3758249303358780239" varName="oldText" />
+      <varInfo nodeId="3758249303358780239" varName="otherText" />
     </scopeInfo>
-    <scopeInfo nodeId="7348445255403519488" fileName="DiffPainter.java" startLine="132" startPosition="42" endLine="188" endPosition="0">
-      <varInfo nodeId="7348445255403519556" varName="differ" />
-      <varInfo nodeId="7348445255403519561" varName="diffs" />
-      <varInfo nodeId="7348445255403519550" varName="newText" />
-    </scopeInfo>
-    <scopeInfo nodeId="3758249303358780181" fileName="DiffPainter.java" startLine="49" startPosition="25" endLine="189" endPosition="9">
+    <scopeInfo nodeId="3758249303358780181" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="49" startPosition="25" endLine="134" endPosition="0">
       <varInfo nodeId="3758249303358780202" varName="iAmNew" />
       <varInfo nodeId="3758249303358780196" varName="iAmOld" />
       <varInfo nodeId="3758249303358780190" varName="myModel" />
@@ -408,19 +327,18 @@
       <varInfo nodeId="3758249303358780208" varName="oldNode" />
       <varInfo nodeId="3758249303358780152" varName="richtextCell" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358780180" fileName="DiffPainter.java" startLine="49" startPosition="0" endLine="191" endPosition="0" />
-    <scopeInfo nodeId="3758249303358773746" fileName="DiffPainter.java" startLine="43" startPosition="126" endLine="191" endPosition="7" />
-    <scopeInfo nodeId="3758249303358773743" fileName="DiffPainter.java" startLine="43" startPosition="0" endLine="193" endPosition="0">
+    <scopeInfo nodeId="3758249303358780180" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="49" startPosition="0" endLine="136" endPosition="0" />
+    <scopeInfo nodeId="3758249303358773746" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="43" startPosition="126" endLine="136" endPosition="7" />
+    <scopeInfo nodeId="3758249303358773743" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="43" startPosition="0" endLine="138" endPosition="0">
       <varInfo nodeId="3758249303358780139" varName="cell" />
       <varInfo nodeId="3758249303358780141" varName="g" />
       <varInfo nodeId="3758249303358780143" varName="parentSettings" />
     </scopeInfo>
-    <unitInfo nodeId="3758249303358782751" fileName="DiffPainter.java" startLine="81" startPosition="116" endLine="85" endPosition="11" unitName="de.slisson.mps.richtext.runtime.vcs.DiffPainter$2" />
-    <unitInfo nodeId="7348445255403519582" fileName="DiffPainter.java" startLine="139" startPosition="116" endLine="143" endPosition="11" unitName="de.slisson.mps.richtext.runtime.vcs.DiffPainter$2" />
-    <unitInfo nodeId="3758249303358772093" fileName="DiffPainter.java" startLine="216" startPosition="70" endLine="220" endPosition="5" unitName="de.slisson.mps.richtext.runtime.vcs.DiffPainter$2" />
-    <unitInfo nodeId="3758249303358772101" fileName="DiffPainter.java" startLine="220" startPosition="17" endLine="224" endPosition="5" unitName="de.slisson.mps.richtext.runtime.vcs.DiffPainter$3" />
-    <unitInfo nodeId="3758249303358780180" fileName="DiffPainter.java" startLine="48" startPosition="43" endLine="191" endPosition="5" unitName="de.slisson.mps.richtext.runtime.vcs.DiffPainter$1" />
-    <unitInfo nodeId="3758249303358756634" fileName="DiffPainter.java" startLine="31" startPosition="0" endLine="309" endPosition="0" unitName="de.slisson.mps.richtext.runtime.vcs.DiffPainter" />
+    <unitInfo nodeId="3758249303358782751" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="81" startPosition="116" endLine="85" endPosition="11" unitName="de.slisson.mps.richtext.runtime.vcs.de.slisson.mps.richtext.vcshandler.DiffPainter$2" />
+    <unitInfo nodeId="3758249303358772093" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="161" startPosition="70" endLine="165" endPosition="5" unitName="de.slisson.mps.richtext.runtime.vcs.de.slisson.mps.richtext.vcshandler.DiffPainter$2" />
+    <unitInfo nodeId="3758249303358772101" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="165" startPosition="17" endLine="169" endPosition="5" unitName="de.slisson.mps.richtext.runtime.vcs.de.slisson.mps.richtext.vcshandler.DiffPainter$3" />
+    <unitInfo nodeId="3758249303358780180" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="48" startPosition="43" endLine="136" endPosition="5" unitName="de.slisson.mps.richtext.runtime.vcs.de.slisson.mps.richtext.vcshandler.DiffPainter$1" />
+    <unitInfo nodeId="3758249303358756634" fileName="de.slisson.mps.richtext.vcshandler.DiffPainter.java" startLine="31" startPosition="0" endLine="250" endPosition="0" unitName="de.slisson.mps.richtext.runtime.vcs.de.slisson.mps.richtext.vcshandler.DiffPainter" />
   </root>
 </debugInfo>
 

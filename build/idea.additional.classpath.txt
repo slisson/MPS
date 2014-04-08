@@ -24,6 +24,7 @@ editor/actions-runtime/classes
 editor/intentions-runtime/classes
 editor/typesystemIntegration/classes
 workbench/mps-editor/classes
+editor/richtext-editor/classes
 :platform
 workbench/mps-platform/classes
 workbench/mps-debugger/classes

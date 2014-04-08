@@ -111,6 +111,8 @@
     <classNode dependClassName="jetbrains.mps.vcs.diff.changes.SetPropertyChange" />
     <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.Bounds" />
     <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.ChangeColors" />
+    <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.DiffHandler" />
+    <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.DiffHandlerRegistry" />
     <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common._Adapters" />
     <classNode dependClassName="org.apache.log4j.LogManager" />
     <classNode dependClassName="org.apache.log4j.Logger" />
@@ -336,6 +338,20 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode extendsClassName="com.intellij.openapi.fileEditor.DocumentsEditor" />
+  </dependency>
+  <dependency className="jetbrains.mps.vcs.diff.ui.common.DiffHandler" file="DiffHandler.java">
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorComponent" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorComponent" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.Bounds" />
+    <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.ChangeEditorMessage" />
+  </dependency>
+  <dependency className="jetbrains.mps.vcs.diff.ui.common.DiffHandlerRegistry" file="DiffHandlerRegistry.java">
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.DiffHandler" />
   </dependency>
   <dependency className="jetbrains.mps.vcs.diff.ui.common.DiffModelTree" file="DiffModelTree.java">
     <classNode dependClassName="com.intellij.openapi.actionSystem.ActionPlaces" />

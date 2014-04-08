@@ -1,89 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <root nodeRef="r:276d01ed-a8f1-4a68-9983-8032b091d2b0(de.slisson.mps.richtext.runtime)/6426831142960210376">
-    <nodeInfo nodeId="6426831142960236797" fileName="EnrichmentInfo.java" startLine="26" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="editorContext" />
-    <nodeInfo nodeId="6426831142960236801" fileName="EnrichmentInfo.java" startLine="27" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="wordNode" />
-    <nodeInfo nodeId="6426831142960334557" fileName="EnrichmentInfo.java" startLine="28" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="start" />
-    <nodeInfo nodeId="6426831142960334561" fileName="EnrichmentInfo.java" startLine="29" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="end" />
-    <nodeInfo nodeId="6426831142960333875" fileName="EnrichmentInfo.java" startLine="31" startPosition="108" endLine="32" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="6426831142960236814" fileName="EnrichmentInfo.java" startLine="32" startPosition="25" endLine="33" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6426831142960334566" fileName="EnrichmentInfo.java" startLine="33" startPosition="39" endLine="34" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6426831142960334619" fileName="EnrichmentInfo.java" startLine="34" startPosition="32" endLine="35" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6426831142960236860" fileName="EnrichmentInfo.java" startLine="35" startPosition="28" endLine="36" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="793221525401555991" fileName="EnrichmentInfo.java" startLine="39" startPosition="52" endLine="40" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6426831142960263213" fileName="EnrichmentInfo.java" startLine="42" startPosition="263" endLine="43" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6426831142960263311" fileName="EnrichmentInfo.java" startLine="43" startPosition="134" endLine="44" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4326967711042774242" fileName="EnrichmentInfo.java" startLine="46" startPosition="85" endLine="47" endPosition="170" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="793221525401554323" fileName="EnrichmentInfo.java" startLine="49" startPosition="5" endLine="50" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="793221525401555324" fileName="EnrichmentInfo.java" startLine="50" startPosition="0" endLine="51" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="793221525401554516" fileName="EnrichmentInfo.java" startLine="53" startPosition="54" endLine="54" endPosition="137" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="793221525401556694" fileName="EnrichmentInfo.java" startLine="55" startPosition="34" endLine="56" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="793221525401555327" fileName="EnrichmentInfo.java" startLine="57" startPosition="9" endLine="58" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="793221525401556106" fileName="EnrichmentInfo.java" startLine="58" startPosition="59" endLine="59" endPosition="74" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="793221525401556215" fileName="EnrichmentInfo.java" startLine="59" startPosition="74" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="793221525401556061" fileName="EnrichmentInfo.java" startLine="61" startPosition="81" endLine="62" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="793221525401556214" fileName="EnrichmentInfo.java" startLine="63" startPosition="9" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="793221525401556113" fileName="EnrichmentInfo.java" startLine="64" startPosition="0" endLine="65" endPosition="200" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="793221525401556211" fileName="EnrichmentInfo.java" startLine="66" startPosition="96" endLine="67" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="793221525401556408" fileName="EnrichmentInfo.java" startLine="69" startPosition="204" endLine="70" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="793221525401556217" fileName="EnrichmentInfo.java" startLine="71" startPosition="9" endLine="72" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="793221525401556058" fileName="EnrichmentInfo.java" startLine="72" startPosition="0" endLine="73" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="793221525401554325" fileName="EnrichmentInfo.java" startLine="75" startPosition="24" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="6426831142960263306" fileName="EnrichmentInfo.java" startLine="76" startPosition="0" endLine="77" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4326967711042774138" fileName="EnrichmentInfo.java" startLine="80" startPosition="55" endLine="81" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4326967711042763877" fileName="EnrichmentInfo.java" startLine="45" startPosition="7" endLine="48" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="793221525401554547" fileName="EnrichmentInfo.java" startLine="54" startPosition="137" endLine="57" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="793221525401554576" fileName="EnrichmentInfo.java" startLine="60" startPosition="0" endLine="63" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="793221525401556177" fileName="EnrichmentInfo.java" startLine="65" startPosition="200" endLine="68" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="793221525401556219" fileName="EnrichmentInfo.java" startLine="68" startPosition="9" endLine="71" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4326967711042774138" fileName="EnrichmentInfo.java" startLine="80" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="isNotEmptyString#(Ljava/lang/String;)Z" />
-    <nodeInfo nodeId="257181264606035647" fileName="EnrichmentInfo.java" startLine="41" startPosition="126" endLine="45" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="6426831142960236805" fileName="EnrichmentInfo.java" startLine="31" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EnrichmentInfo#(Lorg/jetbrains/mps/openapi/model/SNode;IILjetbrains/mps/openapi/editor/EditorContext;)V" />
-    <nodeInfo nodeId="6426831142960236762" fileName="EnrichmentInfo.java" startLine="40" startPosition="93" endLine="49" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="793221525401556052" fileName="EnrichmentInfo.java" startLine="53" startPosition="0" endLine="75" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Ljetbrains/mps/openapi/editor/cells/SubstituteAction;)Z" />
-    <nodeInfo nodeId="793221525401556003" fileName="EnrichmentInfo.java" startLine="51" startPosition="37" endLine="75" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6426831142960333877" fileName="EnrichmentInfo.java" startLine="39" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createActions#()Ljava/util/List;" />
-    <scopeInfo nodeId="4326967711042763880" fileName="EnrichmentInfo.java" startLine="46" startPosition="85" endLine="47" endPosition="170" />
-    <scopeInfo nodeId="793221525401554548" fileName="EnrichmentInfo.java" startLine="55" startPosition="34" endLine="56" endPosition="22" />
-    <scopeInfo nodeId="793221525401554577" fileName="EnrichmentInfo.java" startLine="61" startPosition="81" endLine="62" endPosition="23" />
-    <scopeInfo nodeId="793221525401556178" fileName="EnrichmentInfo.java" startLine="66" startPosition="96" endLine="67" endPosition="23" />
-    <scopeInfo nodeId="793221525401556220" fileName="EnrichmentInfo.java" startLine="69" startPosition="204" endLine="70" endPosition="23" />
-    <scopeInfo nodeId="4326967711042774138" fileName="EnrichmentInfo.java" startLine="80" startPosition="55" endLine="81" endPosition="43" />
-    <scopeInfo nodeId="257181264606035650" fileName="EnrichmentInfo.java" startLine="42" startPosition="263" endLine="44" endPosition="67">
+    <nodeInfo nodeId="6426831142960236797" fileName="EnrichmentInfo.java" startLine="25" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="editorContext" />
+    <nodeInfo nodeId="6426831142960236801" fileName="EnrichmentInfo.java" startLine="26" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="wordNode" />
+    <nodeInfo nodeId="6426831142960334557" fileName="EnrichmentInfo.java" startLine="27" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="start" />
+    <nodeInfo nodeId="6426831142960334561" fileName="EnrichmentInfo.java" startLine="28" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="end" />
+    <nodeInfo nodeId="6426831142960333875" fileName="EnrichmentInfo.java" startLine="30" startPosition="108" endLine="31" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+    <nodeInfo nodeId="6426831142960236814" fileName="EnrichmentInfo.java" startLine="31" startPosition="25" endLine="32" endPosition="39" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6426831142960334566" fileName="EnrichmentInfo.java" startLine="32" startPosition="39" endLine="33" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6426831142960334619" fileName="EnrichmentInfo.java" startLine="33" startPosition="32" endLine="34" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6426831142960236860" fileName="EnrichmentInfo.java" startLine="34" startPosition="28" endLine="35" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="793221525401555991" fileName="EnrichmentInfo.java" startLine="38" startPosition="52" endLine="39" endPosition="93" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6426831142960263213" fileName="EnrichmentInfo.java" startLine="41" startPosition="263" endLine="42" endPosition="134" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="6426831142960263311" fileName="EnrichmentInfo.java" startLine="42" startPosition="134" endLine="43" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4326967711042774242" fileName="EnrichmentInfo.java" startLine="45" startPosition="85" endLine="46" endPosition="170" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="793221525401554323" fileName="EnrichmentInfo.java" startLine="48" startPosition="5" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="793221525401555324" fileName="EnrichmentInfo.java" startLine="49" startPosition="0" endLine="50" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="793221525401554516" fileName="EnrichmentInfo.java" startLine="52" startPosition="54" endLine="53" endPosition="137" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="793221525401556694" fileName="EnrichmentInfo.java" startLine="54" startPosition="34" endLine="55" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="793221525401555327" fileName="EnrichmentInfo.java" startLine="56" startPosition="9" endLine="57" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="793221525401556215" fileName="EnrichmentInfo.java" startLine="57" startPosition="59" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="793221525401556061" fileName="EnrichmentInfo.java" startLine="59" startPosition="81" endLine="60" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="793221525401556214" fileName="EnrichmentInfo.java" startLine="61" startPosition="9" endLine="62" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="793221525401556113" fileName="EnrichmentInfo.java" startLine="62" startPosition="0" endLine="63" endPosition="200" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="793221525401556211" fileName="EnrichmentInfo.java" startLine="64" startPosition="96" endLine="65" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="793221525401556408" fileName="EnrichmentInfo.java" startLine="67" startPosition="204" endLine="68" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="793221525401556217" fileName="EnrichmentInfo.java" startLine="69" startPosition="9" endLine="70" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="793221525401556058" fileName="EnrichmentInfo.java" startLine="70" startPosition="0" endLine="71" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="793221525401554325" fileName="EnrichmentInfo.java" startLine="73" startPosition="24" endLine="74" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="6426831142960263306" fileName="EnrichmentInfo.java" startLine="74" startPosition="0" endLine="75" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4326967711042774138" fileName="EnrichmentInfo.java" startLine="78" startPosition="55" endLine="79" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4326967711042763877" fileName="EnrichmentInfo.java" startLine="44" startPosition="7" endLine="47" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="793221525401554547" fileName="EnrichmentInfo.java" startLine="53" startPosition="137" endLine="56" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="793221525401554576" fileName="EnrichmentInfo.java" startLine="58" startPosition="0" endLine="61" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="793221525401556177" fileName="EnrichmentInfo.java" startLine="63" startPosition="200" endLine="66" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="793221525401556219" fileName="EnrichmentInfo.java" startLine="66" startPosition="9" endLine="69" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4326967711042774138" fileName="EnrichmentInfo.java" startLine="78" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="isNotEmptyString#(Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="257181264606035647" fileName="EnrichmentInfo.java" startLine="40" startPosition="126" endLine="44" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6426831142960236805" fileName="EnrichmentInfo.java" startLine="30" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="EnrichmentInfo#(Lorg/jetbrains/mps/openapi/model/SNode;IILjetbrains/mps/openapi/editor/EditorContext;)V" />
+    <nodeInfo nodeId="6426831142960236762" fileName="EnrichmentInfo.java" startLine="39" startPosition="93" endLine="48" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="793221525401556052" fileName="EnrichmentInfo.java" startLine="52" startPosition="0" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="accept#(Ljetbrains/mps/openapi/editor/cells/SubstituteAction;)Z" />
+    <nodeInfo nodeId="793221525401556003" fileName="EnrichmentInfo.java" startLine="50" startPosition="37" endLine="73" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6426831142960333877" fileName="EnrichmentInfo.java" startLine="38" startPosition="0" endLine="77" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createActions#()Ljava/util/List;" />
+    <scopeInfo nodeId="4326967711042763880" fileName="EnrichmentInfo.java" startLine="45" startPosition="85" endLine="46" endPosition="170" />
+    <scopeInfo nodeId="793221525401554548" fileName="EnrichmentInfo.java" startLine="54" startPosition="34" endLine="55" endPosition="22" />
+    <scopeInfo nodeId="793221525401554577" fileName="EnrichmentInfo.java" startLine="59" startPosition="81" endLine="60" endPosition="23" />
+    <scopeInfo nodeId="793221525401556178" fileName="EnrichmentInfo.java" startLine="64" startPosition="96" endLine="65" endPosition="23" />
+    <scopeInfo nodeId="793221525401556220" fileName="EnrichmentInfo.java" startLine="67" startPosition="204" endLine="68" endPosition="23" />
+    <scopeInfo nodeId="4326967711042774138" fileName="EnrichmentInfo.java" startLine="78" startPosition="55" endLine="79" endPosition="43" />
+    <scopeInfo nodeId="257181264606035650" fileName="EnrichmentInfo.java" startLine="41" startPosition="263" endLine="43" endPosition="67">
       <varInfo nodeId="6426831142960263214" varName="enrichmentAction" />
     </scopeInfo>
-    <scopeInfo nodeId="4326967711042774138" fileName="EnrichmentInfo.java" startLine="80" startPosition="0" endLine="83" endPosition="0">
+    <scopeInfo nodeId="4326967711042774138" fileName="EnrichmentInfo.java" startLine="78" startPosition="0" endLine="81" endPosition="0">
       <varInfo nodeId="4326967711042774138" varName="str" />
     </scopeInfo>
-    <scopeInfo nodeId="257181264606035647" fileName="EnrichmentInfo.java" startLine="41" startPosition="126" endLine="45" endPosition="7">
+    <scopeInfo nodeId="257181264606035647" fileName="EnrichmentInfo.java" startLine="40" startPosition="126" endLine="44" endPosition="7">
       <varInfo nodeId="257181264606035648" varName="transformKey" />
     </scopeInfo>
-    <scopeInfo nodeId="6426831142960236808" fileName="EnrichmentInfo.java" startLine="31" startPosition="108" endLine="36" endPosition="29" />
-    <scopeInfo nodeId="6426831142960236805" fileName="EnrichmentInfo.java" startLine="31" startPosition="0" endLine="38" endPosition="0">
+    <scopeInfo nodeId="6426831142960236808" fileName="EnrichmentInfo.java" startLine="30" startPosition="108" endLine="35" endPosition="29" />
+    <scopeInfo nodeId="6426831142960236805" fileName="EnrichmentInfo.java" startLine="30" startPosition="0" endLine="37" endPosition="0">
       <varInfo nodeId="6426831142960236809" varName="editorContext" />
       <varInfo nodeId="6426831142960334194" varName="plainTextEnd" />
       <varInfo nodeId="6426831142960334191" varName="plainTextStart" />
       <varInfo nodeId="6426831142960236811" varName="wordNode" />
     </scopeInfo>
-    <scopeInfo nodeId="6426831142960236765" fileName="EnrichmentInfo.java" startLine="41" startPosition="126" endLine="48" endPosition="7" />
-    <scopeInfo nodeId="6426831142960236762" fileName="EnrichmentInfo.java" startLine="40" startPosition="93" endLine="49" endPosition="5">
+    <scopeInfo nodeId="6426831142960236765" fileName="EnrichmentInfo.java" startLine="40" startPosition="126" endLine="47" endPosition="7" />
+    <scopeInfo nodeId="6426831142960236762" fileName="EnrichmentInfo.java" startLine="39" startPosition="93" endLine="48" endPosition="5">
       <varInfo nodeId="6426831142960236763" varName="concept" />
     </scopeInfo>
-    <scopeInfo nodeId="793221525401556053" fileName="EnrichmentInfo.java" startLine="53" startPosition="54" endLine="73" endPosition="20">
+    <scopeInfo nodeId="793221525401556053" fileName="EnrichmentInfo.java" startLine="52" startPosition="54" endLine="71" endPosition="20">
       <varInfo nodeId="793221525401554517" varName="conceptNode" />
       <varInfo nodeId="793221525401556114" varName="linkDeclaration" />
-      <varInfo nodeId="793221525401556107" varName="opContext" />
       <varInfo nodeId="793221525401555328" varName="parent" />
     </scopeInfo>
-    <scopeInfo nodeId="793221525401556052" fileName="EnrichmentInfo.java" startLine="53" startPosition="0" endLine="75" endPosition="0">
+    <scopeInfo nodeId="793221525401556052" fileName="EnrichmentInfo.java" startLine="52" startPosition="0" endLine="73" endPosition="0">
       <varInfo nodeId="793221525401556052" varName="action" />
     </scopeInfo>
-    <scopeInfo nodeId="6426831142960333881" fileName="EnrichmentInfo.java" startLine="39" startPosition="52" endLine="77" endPosition="18">
+    <scopeInfo nodeId="6426831142960333881" fileName="EnrichmentInfo.java" startLine="38" startPosition="52" endLine="75" endPosition="18">
       <varInfo nodeId="793221525401555992" varName="result" />
     </scopeInfo>
-    <scopeInfo nodeId="6426831142960333877" fileName="EnrichmentInfo.java" startLine="39" startPosition="0" endLine="79" endPosition="0" />
-    <unitInfo nodeId="793221525401556052" fileName="EnrichmentInfo.java" startLine="52" startPosition="53" endLine="75" endPosition="5" unitName="de.slisson.mps.richtext.runtime.EnrichmentInfo$1" />
-    <unitInfo nodeId="6426831142960210376" fileName="EnrichmentInfo.java" startLine="25" startPosition="0" endLine="84" endPosition="0" unitName="de.slisson.mps.richtext.runtime.EnrichmentInfo" />
+    <scopeInfo nodeId="6426831142960333877" fileName="EnrichmentInfo.java" startLine="38" startPosition="0" endLine="77" endPosition="0" />
+    <unitInfo nodeId="793221525401556052" fileName="EnrichmentInfo.java" startLine="51" startPosition="53" endLine="73" endPosition="5" unitName="de.slisson.mps.richtext.runtime.EnrichmentInfo$1" />
+    <unitInfo nodeId="6426831142960210376" fileName="EnrichmentInfo.java" startLine="24" startPosition="0" endLine="82" endPosition="0" unitName="de.slisson.mps.richtext.runtime.EnrichmentInfo" />
   </root>
   <root nodeRef="r:276d01ed-a8f1-4a68-9983-8032b091d2b0(de.slisson.mps.richtext.runtime)/6426831142960333889">
     <nodeInfo nodeId="6426831142960333915" fileName="TransformKeyEnrichmentAction.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="key" />
