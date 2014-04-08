@@ -23,7 +23,6 @@ import de.slisson.mps.editor.multiline.cells.EditorCell_Word;
 import de.slisson.mps.richtext.runtime.selection.RichtextPasteAction;
 import java.util.List;
 import java.util.ArrayList;
-import de.slisson.mps.richtext.runtime.vcs.DiffPainter;
 
 public class TextCellModifier {
 
@@ -98,7 +97,6 @@ public class TextCellModifier {
 
     // VCS support 
     if (cell instanceof EditorCell_Multiline) {
-      ((EditorCell_Multiline) cell).addBackgroundPainter(new DiffPainter());
       ((EditorCell_Multiline) cell).disabledDiffPainting();
     }
 

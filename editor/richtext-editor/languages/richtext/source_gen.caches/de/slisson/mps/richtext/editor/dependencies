@@ -30,7 +30,6 @@
     <classNode dependClassName="de.slisson.mps.richtext.editor.MultilineWordCell_SelectAction" />
     <classNode dependClassName="de.slisson.mps.richtext.runtime.selection.RichtextPasteAction" />
     <classNode dependClassName="de.slisson.mps.richtext.runtime.selection.ShiftSelector" />
-    <classNode dependClassName="de.slisson.mps.richtext.runtime.vcs.DiffPainter" />
     <classNode dependClassName="de.slisson.mps.richtext.util.RichtextUtil" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
