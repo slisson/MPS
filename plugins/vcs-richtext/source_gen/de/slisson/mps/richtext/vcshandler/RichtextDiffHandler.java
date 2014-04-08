@@ -7,6 +7,8 @@ import jetbrains.mps.vcs.diff.ui.common.ChangeEditorMessage;
 import jetbrains.mps.vcs.diff.changes.ModelChange;
 import jetbrains.mps.vcs.diff.changes.SetPropertyChange;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.smodel.ModelAccess;
+import jetbrains.mps.util.Computable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.vcs.diff.ui.common.Bounds;
@@ -27,8 +29,13 @@ public class RichtextDiffHandler implements DiffHandler {
     // text changed 
     if (change instanceof SetPropertyChange) {
       SetPropertyChange setPropChange = (SetPropertyChange) change;
-      SNode affectedNode = setPropChange.getChangeSet().getNewModel().getNode(setPropChange.getAffectedNodeId());
-      if (SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(affectedNode), "de.slisson.mps.richtext.structure.Word") && SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(SNodeOperations.getParent(affectedNode)), "de.slisson.mps.richtext.structure.Text")) {
+      final SNode affectedNode = message.getNode();
+      boolean isWordInText = ModelAccess.instance().requireRead(new Computable<Boolean>() {
+        public Boolean compute() {
+          return SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(affectedNode), "de.slisson.mps.richtext.structure.Word") && SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(SNodeOperations.getParent(affectedNode)), "de.slisson.mps.richtext.structure.Text");
+        }
+      });
+      if (isWordInText) {
         return true;
       }
     }
@@ -46,9 +53,9 @@ public class RichtextDiffHandler implements DiffHandler {
     // text changed 
     if (change instanceof SetPropertyChange) {
       final SetPropertyChange setPropChange = (SetPropertyChange) change;
-      SNode affectedNode = setPropChange.getChangeSet().getNewModel().getNode(setPropChange.getAffectedNodeId());
-
+      SNode affectedNode = message.getNode();
       EditorCell nodeCell = editor.findNodeCell(affectedNode);
+
       if (nodeCell != null) {
         EditorCell_Multiline multiline = (EditorCell_Multiline) CellFinderUtil.findChildByCondition(nodeCell, new Condition<EditorCell>() {
           public boolean met(EditorCell cell) {
@@ -59,7 +66,7 @@ public class RichtextDiffHandler implements DiffHandler {
             }
             return false;
           }
-        }, true);
+        }, true, true);
         return multiline;
       }
     }

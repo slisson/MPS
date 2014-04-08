@@ -23,7 +23,7 @@
     </node>
     <node role="richtext" roleId="vydj.2988247428751020914" type="87nw.Text" typeId="87nw.2557074442922380897" id="2988247428751463963" nodeInfo="ng">
       <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2988247428751463964" nodeInfo="ng">
-        <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is plain def text with some\n" />
+        <property name="escapedValue" nameId="87nw.2557074442922438158" value="This is plain ab\ncvd def text with some\n" />
       </node>
       <node role="words" roleId="87nw.2557074442922392302" type="vydj.EmbeddedCode" typeId="vydj.2988247428751464015" id="2988247428751541877" nodeInfo="sg">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2988247428751541903" nodeInfo="nn">
@@ -99,7 +99,7 @@
         </node>
       </node>
       <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="455325956876986307" nodeInfo="ng">
-        <property name="escapedValue" nameId="87nw.2557074442922438158" value="a\n\nembedded code.\n" />
+        <property name="escapedValue" nameId="87nw.2557074442922438158" value="ab\ndsfdhfh\nembedded code.\n" />
       </node>
     </node>
   </root>
