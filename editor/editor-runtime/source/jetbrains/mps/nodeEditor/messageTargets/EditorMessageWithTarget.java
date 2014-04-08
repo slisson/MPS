@@ -19,7 +19,6 @@ import jetbrains.mps.errors.MessageStatus;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.nodeEditor.DefaultEditorMessage;
 import jetbrains.mps.nodeEditor.EditorComponent;
-import jetbrains.mps.nodeEditor.cells.IPropertyCell;
 import jetbrains.mps.openapi.editor.message.EditorMessageOwner;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
@@ -58,11 +57,14 @@ public class EditorMessageWithTarget extends DefaultEditorMessage {
           return cell.isBig() && getCell(editor) == cell;
         }
       case PROPERTY:
-        if (!(cell instanceof IPropertyCell)) {
+        if (!(cell instanceof EditorCell_Property)) {
           return cell.isBig() && getCell(editor) == cell;
         }
-        IPropertyCell propertyCell = (IPropertyCell) cell;
-        return myMessageTarget.getRole().equals(propertyCell.getPropertyName()) && getNode() == propertyCell.getSNode();
+        EditorCell_Property propertyCell = (EditorCell_Property) cell;
+        ModelAccessor modelAccessor = propertyCell.getModelAccessor();
+        if (modelAccessor instanceof PropertyAccessor) {
+          return myMessageTarget.getRole().equals(((PropertyAccessor) modelAccessor).getPropertyName()) && getNode() == propertyCell.getSNode();
+        }
       case DELETED_CHILD:
         return getCell(editor) == cell;
       default:

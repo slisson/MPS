@@ -16,11 +16,6 @@ import jetbrains.mps.openapi.editor.cells.EditorCell_Collection;
 import java.awt.Graphics;
 import jetbrains.mps.nodeEditor.EditorComponent;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.nodeEditor.cells.IDiffPaintingCell;
-import jetbrains.mps.vcs.diff.changes.SetPropertyChange;
-import jetbrains.mps.smodel.ModelAccess;
-import jetbrains.mps.util.Computable;
-import jetbrains.mps.vcs.diff.ChangeSetImpl;
 import java.awt.Rectangle;
 import jetbrains.mps.nodeEditor.cells.GeometryUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -33,11 +28,13 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.errors.messageTargets.DeletedNodeMessageTarget;
 import jetbrains.mps.ide.util.ColorAndGraphicsUtil;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import jetbrains.mps.smodel.ModelAccess;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.nodeEditor.inspector.InspectorEditorComponent;
 import java.util.Iterator;
 import jetbrains.mps.baseLanguage.closures.runtime.YieldingIterator;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.util.Computable;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import org.jetbrains.annotations.NotNull;
@@ -107,23 +104,7 @@ public class ChangeEditorMessage extends EditorMessageWithTarget {
       }
     }
 
-    if (cell instanceof IDiffPaintingCell) {
-      IDiffPaintingCell diffPaintingCell = (IDiffPaintingCell) cell;
-      final ModelChange change = getChange();
-      if (change instanceof SetPropertyChange) {
-        ModelChange opposite = ModelAccess.instance().runReadAction(new Computable<ModelChange>() {
-          public ModelChange compute() {
-            ((ChangeSetImpl) change.getChangeSet()).buildOppositeChangeSet();
-            return change.getOppositeChange();
-          }
-        });
-        SetPropertyChange setPropChange = (SetPropertyChange) change;
-        SetPropertyChange oppositeSetProp = (SetPropertyChange) opposite;
-        String oldValue = oppositeSetProp.getNewValue();
-        String newValue = setPropChange.getNewValue();
-        diffPaintingCell.paintPropertyChange(graphics, setPropChange.getPropertyName(), oldValue, newValue);
-      }
-    } else if (isDirectCell(cell)) {
+    if (isDirectCell(cell)) {
       cell.paintSelection(graphics, getColor(), false);
       repaintConflictedMessages(graphics, cell);
     } else {

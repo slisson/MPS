@@ -30,7 +30,7 @@ import org.jetbrains.mps.openapi.model.SNodeReference;
  * Author: Sergey Dmitriev
  * Created Sep 14, 2003
  */
-public class EditorCell_Property extends EditorCell_Label implements IPropertyCell {
+public class EditorCell_Property extends EditorCell_Label {
   private ModelAccessor myModelAccessor;
   private boolean myCommitInProgress;
   private boolean myCommitInCommand = true;
@@ -159,15 +159,6 @@ public class EditorCell_Property extends EditorCell_Label implements IPropertyCe
 
   public void setCommitInCommand(boolean commit) {
     myCommitInCommand = commit;
-  }
-
-  @Override
-  public String getPropertyName() {
-    ModelAccessor accessor = getModelAccessor();
-    if (accessor instanceof PropertyAccessor) {
-      return ((PropertyAccessor)accessor).getPropertyName();
-    }
-    return null;
   }
 
 
