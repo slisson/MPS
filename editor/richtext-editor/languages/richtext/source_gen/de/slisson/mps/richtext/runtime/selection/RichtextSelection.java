@@ -67,6 +67,7 @@ public class RichtextSelection extends AbstractSelection {
   private int myEndTextPos = 0;
   private boolean myLeftToRight;
   private List<Selection> subSelections;
+  private SelectionKeyboardHandler myLastKeyboardHandler;
 
 
   public RichtextSelection(EditorComponent editorComponent, Map<String, String> properties, CellInfo cellInfo) throws SelectionStoreException, SelectionRestoreException {
@@ -121,17 +122,30 @@ public class RichtextSelection extends AbstractSelection {
   }
 
   public void activate() {
-    jetbrains.mps.nodeEditor.EditorComponent component = (jetbrains.mps.nodeEditor.EditorComponent) getEditorComponent();
-    component.pushKeyboardHandler(new SelectionKeyboardHandler(this, component.peekKeyboardHandler()));
     for (Selection selection : ListSequence.fromList(subSelections)) {
       selection.activate();
     }
+
+    jetbrains.mps.nodeEditor.EditorComponent component = (jetbrains.mps.nodeEditor.EditorComponent) getEditorComponent();
+    if (myLastKeyboardHandler != null) {
+      throw new RuntimeException("Richtext Selection Keyboard Handler still active");
+    }
+    myLastKeyboardHandler = new SelectionKeyboardHandler(this, component.peekKeyboardHandler());
+    component.pushKeyboardHandler(new SelectionKeyboardHandler(this, component.peekKeyboardHandler()));
     ensureVisible();
   }
 
   public void deactivate() {
     jetbrains.mps.nodeEditor.EditorComponent component = (jetbrains.mps.nodeEditor.EditorComponent) getEditorComponent();
+    if (myLastKeyboardHandler == null) {
+      throw new RuntimeException("Richtext Selection Keyboard Handler not active");
+    }
+    if (component.peekKeyboardHandler() == myLastKeyboardHandler) {
+      throw new RuntimeException("Active Keyboard Handler is " + component.peekKeyboardHandler() + ", but expected " + myLastKeyboardHandler);
+    }
+    myLastKeyboardHandler = null;
     component.popKeyboardHandler();
+
     for (Selection selection : ListSequence.fromList(subSelections)) {
       selection.deactivate();
     }
@@ -289,7 +303,7 @@ public class RichtextSelection extends AbstractSelection {
     SNode textNode = SNodeOperations.getAncestor(ListSequence.fromList(getSelectedNodes()).first(), "de.slisson.mps.richtext.structure.Text", false, false);
     jetbrains.mps.openapi.editor.cells.EditorCell firstCell = getEditorComponent().findNodeCell(ListSequence.fromList(SLinkOperations.getTargets(textNode, "words", true)).first());
     jetbrains.mps.openapi.editor.cells.EditorCell lastCell = getEditorComponent().findNodeCell(ListSequence.fromList(SLinkOperations.getTargets(textNode, "words", true)).last());
-    Integer endTextPos = check_irpwvl_a0j0y(as_irpwvl_a0a0j0y(lastCell, EditorCell_Multiline.class));
+    Integer endTextPos = check_irpwvl_a0j0z(as_irpwvl_a0a0j0z(lastCell, EditorCell_Multiline.class));
     if (endTextPos == null) {
       endTextPos = 0;
     }
@@ -521,7 +535,7 @@ public class RichtextSelection extends AbstractSelection {
     } else {
       String plainText = IterableUtils.join(ListSequence.fromList(words).select(new ISelector<SNode, String>() {
         public String select(SNode it) {
-          return StringUtils.defaultString(check_irpwvl_a0a0a0a0a0a0b0kb(SNodeOperations.as(it, "de.slisson.mps.richtext.structure.IWord")));
+          return StringUtils.defaultString(check_irpwvl_a0a0a0a0a0a0b0lb(SNodeOperations.as(it, "de.slisson.mps.richtext.structure.IWord")));
         }
       }), "");
       CopyPasteUtil.copyNodesAndTextToClipboard(words, plainText);
@@ -643,7 +657,7 @@ public class RichtextSelection extends AbstractSelection {
 
   public void paintSelection(Graphics2D d) {
     for (Selection selection : ListSequence.fromList(subSelections)) {
-      check_irpwvl_a0a0a54(as_irpwvl_a0a0a0a54(selection, SelectionInternal.class), d);
+      check_irpwvl_a0a0a64(as_irpwvl_a0a0a0a64(selection, SelectionInternal.class), d);
     }
   }
 
@@ -689,7 +703,7 @@ public class RichtextSelection extends AbstractSelection {
   }
 
   public static RichtextSelection create(EditorCellLabelSelection selection) {
-    EditorCell_Word wordCell = as_irpwvl_a0a0a84(check_irpwvl_a0a0a84(selection), EditorCell_Word.class);
+    EditorCell_Word wordCell = as_irpwvl_a0a0a94(check_irpwvl_a0a0a94(selection), EditorCell_Word.class);
     if (wordCell == null) {
       return null;
     }
@@ -762,7 +776,7 @@ public class RichtextSelection extends AbstractSelection {
   }
 
   public static SNode getFirstCommonParentNode(jetbrains.mps.openapi.editor.cells.EditorCell child1, jetbrains.mps.openapi.editor.cells.EditorCell child2) {
-    return check_irpwvl_a0a55(getFirstCommonParent(child1, child2));
+    return check_irpwvl_a0a65(getFirstCommonParent(child1, child2));
   }
 
 
@@ -776,7 +790,7 @@ public class RichtextSelection extends AbstractSelection {
         return pos[0].getWord();
       }
     }, myStartCell.getContext().getOperationContext().getProject());
-    EditorCell_Multiline mlCell = as_irpwvl_a0a2a75(myStartCell.getEditorComponent().findNodeCell(pos[0].getWord()), EditorCell_Multiline.class);
+    EditorCell_Multiline mlCell = as_irpwvl_a0a2a85(myStartCell.getEditorComponent().findNodeCell(pos[0].getWord()), EditorCell_Multiline.class);
     if (mlCell != null) {
       mlCell.setCaretPosition(pos[0].getRelativePos() + 1, true);
     }
@@ -784,54 +798,54 @@ public class RichtextSelection extends AbstractSelection {
 
 
 
-  private static int check_irpwvl_a0j0y(EditorCell_Multiline checkedDotOperand) {
+  private static int check_irpwvl_a0j0z(EditorCell_Multiline checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getTextLength();
     }
     return 0;
   }
 
-  private static String check_irpwvl_a0a0a0a0a0a0b0kb(SNode checkedDotOperand) {
+  private static String check_irpwvl_a0a0a0a0a0a0b0lb(SNode checkedDotOperand) {
     if (null != checkedDotOperand) {
       return BehaviorReflection.invokeVirtual(String.class, checkedDotOperand, "virtual_toTextString_4433012599261204765", new Object[]{});
     }
     return null;
   }
 
-  private static void check_irpwvl_a0a0a54(SelectionInternal checkedDotOperand, Graphics2D d) {
+  private static void check_irpwvl_a0a0a64(SelectionInternal checkedDotOperand, Graphics2D d) {
     if (null != checkedDotOperand) {
       checkedDotOperand.paintSelection(d);
     }
 
   }
 
-  private static jetbrains.mps.openapi.editor.cells.EditorCell_Label check_irpwvl_a0a0a84(EditorCellLabelSelection checkedDotOperand) {
+  private static jetbrains.mps.openapi.editor.cells.EditorCell_Label check_irpwvl_a0a0a94(EditorCellLabelSelection checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getEditorCellLabel();
     }
     return null;
   }
 
-  private static SNode check_irpwvl_a0a55(jetbrains.mps.openapi.editor.cells.EditorCell checkedDotOperand) {
+  private static SNode check_irpwvl_a0a65(jetbrains.mps.openapi.editor.cells.EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getSNode();
     }
     return null;
   }
 
-  private static <T> T as_irpwvl_a0a0j0y(Object o, Class<T> type) {
+  private static <T> T as_irpwvl_a0a0j0z(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 
-  private static <T> T as_irpwvl_a0a0a0a54(Object o, Class<T> type) {
+  private static <T> T as_irpwvl_a0a0a0a64(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 
-  private static <T> T as_irpwvl_a0a0a84(Object o, Class<T> type) {
+  private static <T> T as_irpwvl_a0a0a94(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 
-  private static <T> T as_irpwvl_a0a2a75(Object o, Class<T> type) {
+  private static <T> T as_irpwvl_a0a2a85(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 }
