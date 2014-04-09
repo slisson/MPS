@@ -339,7 +339,7 @@
   <dependency className="jetbrains.mps.vcs.diff.ui.common.DiffHandler" file="DiffHandler.java">
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorComponent" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorComponent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.Bounds" />
     <classNode dependClassName="jetbrains.mps.vcs.diff.ui.common.ChangeEditorMessage" />

@@ -7,9 +7,9 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import java.awt.Graphics;
 
 public interface DiffHandler {
-  public boolean canHandle(ChangeEditorMessage message);
-  public Bounds getBounds(EditorComponent component, ChangeEditorMessage message);
-  public EditorCell getCell(ChangeEditorMessage message, jetbrains.mps.openapi.editor.EditorComponent editor);
-  public boolean acceptCell(ChangeEditorMessage message, jetbrains.mps.openapi.editor.EditorComponent editor, EditorCell cell);
-  public void paint(Graphics g, ChangeEditorMessage messages, EditorCell cell);
+  public boolean canHandle(ChangeEditorMessage message, EditorComponent editor);
+  public Bounds getBounds(ChangeEditorMessage message, EditorComponent editor);
+  public EditorCell getCell(ChangeEditorMessage message, EditorComponent editor);
+  public boolean acceptCell(ChangeEditorMessage message, EditorComponent editor, jetbrains.mps.nodeEditor.cells.EditorCell cell);
+  public void paint(Graphics g, ChangeEditorMessage message, EditorComponent editor, jetbrains.mps.nodeEditor.cells.EditorCell cell);
 }

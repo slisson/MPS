@@ -4,6 +4,7 @@ package de.slisson.mps.richtext.vcshandler;
 
 import jetbrains.mps.vcs.diff.ui.common.DiffHandler;
 import jetbrains.mps.vcs.diff.ui.common.ChangeEditorMessage;
+import jetbrains.mps.nodeEditor.EditorComponent;
 import jetbrains.mps.vcs.diff.changes.ModelChange;
 import jetbrains.mps.vcs.diff.changes.SetPropertyChange;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -12,18 +13,16 @@ import jetbrains.mps.util.Computable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.vcs.diff.ui.common.Bounds;
-import jetbrains.mps.nodeEditor.EditorComponent;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
-import de.slisson.mps.editor.multiline.cells.EditorCell_Multiline;
-import jetbrains.mps.nodeEditor.cells.CellFinderUtil;
-import org.jetbrains.mps.util.Condition;
 import java.awt.Graphics;
+import de.slisson.mps.editor.multiline.cells.EditorCell_Multiline;
 import jetbrains.mps.nodeEditor.cells.ParentSettings;
 
 public class RichtextDiffHandler implements DiffHandler {
 
 
-  public boolean canHandle(ChangeEditorMessage message) {
+  @Override
+  public boolean canHandle(ChangeEditorMessage message, EditorComponent component) {
     ModelChange change = message.getChange();
 
     // text changed 
@@ -43,47 +42,25 @@ public class RichtextDiffHandler implements DiffHandler {
     return false;
   }
 
-  public Bounds getBounds(EditorComponent component, ChangeEditorMessage message) {
+  @Override
+  public Bounds getBounds(ChangeEditorMessage message, EditorComponent editor) {
     return null;
   }
 
-  public EditorCell getCell(ChangeEditorMessage message, jetbrains.mps.openapi.editor.EditorComponent editor) {
-    ModelChange change = message.getChange();
-
-    // text changed 
-    if (change instanceof SetPropertyChange) {
-      final SetPropertyChange setPropChange = (SetPropertyChange) change;
-      SNode affectedNode = message.getNode();
-      EditorCell nodeCell = editor.findNodeCell(affectedNode);
-
-      if (nodeCell != null) {
-        EditorCell_Multiline multiline = (EditorCell_Multiline) CellFinderUtil.findChildByCondition(nodeCell, new Condition<EditorCell>() {
-          public boolean met(EditorCell cell) {
-            if (cell instanceof EditorCell_Multiline) {
-              if (eq_7fjiz2_a0a0a0a0a1a0a0a4a3a3(((EditorCell_Multiline) cell).getPropertyName(), setPropChange.getPropertyName())) {
-                return true;
-              }
-            }
-            return false;
-          }
-        }, true, true);
-        return multiline;
-      }
-    }
-    return null;
+  @Override
+  public EditorCell getCell(ChangeEditorMessage message, EditorComponent editor) {
+    return MultilineDiffHandler.getMultilineCell(message, editor);
   }
 
-  public boolean acceptCell(ChangeEditorMessage message, jetbrains.mps.openapi.editor.EditorComponent editor, EditorCell cell) {
+  @Override
+  public boolean acceptCell(ChangeEditorMessage message, EditorComponent editor, jetbrains.mps.nodeEditor.cells.EditorCell cell) {
     return getCell(message, editor) == cell;
   }
 
-  public void paint(Graphics g, ChangeEditorMessage messages, EditorCell cell) {
+  @Override
+  public void paint(Graphics g, ChangeEditorMessage messages, EditorComponent editor, jetbrains.mps.nodeEditor.cells.EditorCell cell) {
     new DiffPainter().paint((EditorCell_Multiline) cell, g, ParentSettings.createDefaultSetting());
   }
 
 
-
-  private static boolean eq_7fjiz2_a0a0a0a0a1a0a0a4a3a3(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
 }

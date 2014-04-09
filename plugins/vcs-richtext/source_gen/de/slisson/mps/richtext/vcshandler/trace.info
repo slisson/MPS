@@ -1,106 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <root nodeRef="r:88ebdb9e-3736-4a4b-b03c-53e44522a657(de.slisson.mps.richtext.vcshandler)/270560076320569103">
-    <nodeInfo nodeId="8253902831902564370" fileName="RichtextDiffHandler.java" startLine="26" startPosition="57" endLine="27" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8253902831902929594" fileName="RichtextDiffHandler.java" startLine="27" startPosition="45" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="8253902831902930535" fileName="RichtextDiffHandler.java" startLine="28" startPosition="0" endLine="29" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="8253902831902564400" fileName="RichtextDiffHandler.java" startLine="30" startPosition="46" endLine="31" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8253902831902709002" fileName="RichtextDiffHandler.java" startLine="31" startPosition="67" endLine="32" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1698754832089296471" fileName="RichtextDiffHandler.java" startLine="34" startPosition="34" endLine="35" endPosition="295" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1698754832089307094" fileName="RichtextDiffHandler.java" startLine="38" startPosition="25" endLine="39" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8253902831902923177" fileName="RichtextDiffHandler.java" startLine="41" startPosition="5" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="8253902831902919535" fileName="RichtextDiffHandler.java" startLine="42" startPosition="0" endLine="43" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="270560076320996503" fileName="RichtextDiffHandler.java" startLine="46" startPosition="83" endLine="47" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8253902831903270164" fileName="RichtextDiffHandler.java" startLine="50" startPosition="111" endLine="51" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8253902831903270170" fileName="RichtextDiffHandler.java" startLine="51" startPosition="45" endLine="52" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="8253902831903270171" fileName="RichtextDiffHandler.java" startLine="52" startPosition="0" endLine="53" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="8253902831903270178" fileName="RichtextDiffHandler.java" startLine="54" startPosition="46" endLine="55" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8253902831903270184" fileName="RichtextDiffHandler.java" startLine="55" startPosition="73" endLine="56" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="4421161480336495612" fileName="RichtextDiffHandler.java" startLine="56" startPosition="45" endLine="57" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="765696580912931167" fileName="RichtextDiffHandler.java" startLine="57" startPosition="62" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="8253902831903491567" fileName="RichtextDiffHandler.java" startLine="63" startPosition="133" endLine="64" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8253902831903495780" fileName="RichtextDiffHandler.java" startLine="66" startPosition="13" endLine="67" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8253902831903507831" fileName="RichtextDiffHandler.java" startLine="69" startPosition="23" endLine="70" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8253902831903512651" fileName="RichtextDiffHandler.java" startLine="72" startPosition="5" endLine="73" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8253902831903522777" fileName="RichtextDiffHandler.java" startLine="76" startPosition="128" endLine="77" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8253902831902938265" fileName="RichtextDiffHandler.java" startLine="80" startPosition="80" endLine="81" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8253902831903488953" fileName="RichtextDiffHandler.java" startLine="86" startPosition="77" endLine="87" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1698754832089266636" fileName="RichtextDiffHandler.java" startLine="34" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="compute#()Ljava/lang/Boolean;" />
-    <nodeInfo nodeId="1698754832089304154" fileName="RichtextDiffHandler.java" startLine="37" startPosition="9" endLine="40" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="270560076320996493" fileName="RichtextDiffHandler.java" startLine="46" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBounds#(Ljetbrains/mps/nodeEditor/EditorComponent;Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;)Ljetbrains/mps/vcs/diff/ui/common/Bounds;" />
-    <nodeInfo nodeId="8253902831903479149" fileName="RichtextDiffHandler.java" startLine="62" startPosition="55" endLine="65" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="270560076320996515" fileName="RichtextDiffHandler.java" startLine="76" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="acceptCell#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/openapi/editor/EditorComponent;Ljetbrains/mps/openapi/editor/cells/EditorCell;)Z" />
-    <nodeInfo nodeId="270560076320996528" fileName="RichtextDiffHandler.java" startLine="80" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paint#(Ljava/awt/Graphics;Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/openapi/editor/cells/EditorCell;)V" />
-    <nodeInfo nodeId="8253902831903488953" fileName="RichtextDiffHandler.java" startLine="86" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="eq_7fjiz2_a0a0a0a0a1a0a0a4a3a3#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-    <nodeInfo nodeId="1698754832089294199" fileName="RichtextDiffHandler.java" startLine="32" startPosition="51" endLine="37" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8253902831903478666" fileName="RichtextDiffHandler.java" startLine="61" startPosition="47" endLine="66" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="8253902831903473249" fileName="RichtextDiffHandler.java" startLine="61" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="met#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Z" />
-    <nodeInfo nodeId="8253902831903317074" fileName="RichtextDiffHandler.java" startLine="59" startPosition="29" endLine="69" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8253902831902564374" fileName="RichtextDiffHandler.java" startLine="29" startPosition="20" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4421161480336506201" fileName="RichtextDiffHandler.java" startLine="58" startPosition="0" endLine="71" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="270560076320996484" fileName="RichtextDiffHandler.java" startLine="26" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canHandle#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;)Z" />
-    <nodeInfo nodeId="8253902831903270173" fileName="RichtextDiffHandler.java" startLine="53" startPosition="20" endLine="72" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="270560076320996504" fileName="RichtextDiffHandler.java" startLine="50" startPosition="0" endLine="75" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCell#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/openapi/editor/EditorComponent;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <scopeInfo nodeId="1698754832089266637" fileName="RichtextDiffHandler.java" startLine="34" startPosition="34" endLine="35" endPosition="295" />
-    <scopeInfo nodeId="1698754832089304157" fileName="RichtextDiffHandler.java" startLine="38" startPosition="25" endLine="39" endPosition="20" />
-    <scopeInfo nodeId="270560076320996501" fileName="RichtextDiffHandler.java" startLine="46" startPosition="83" endLine="47" endPosition="16" />
-    <scopeInfo nodeId="8253902831903479150" fileName="RichtextDiffHandler.java" startLine="63" startPosition="133" endLine="64" endPosition="28" />
-    <scopeInfo nodeId="270560076320996525" fileName="RichtextDiffHandler.java" startLine="76" startPosition="128" endLine="77" endPosition="44" />
-    <scopeInfo nodeId="270560076320996538" fileName="RichtextDiffHandler.java" startLine="80" startPosition="80" endLine="81" endPosition="99" />
-    <scopeInfo nodeId="8253902831903488953" fileName="RichtextDiffHandler.java" startLine="86" startPosition="77" endLine="87" endPosition="46" />
-    <scopeInfo nodeId="1698754832089266636" fileName="RichtextDiffHandler.java" startLine="34" startPosition="0" endLine="37" endPosition="0" />
-    <scopeInfo nodeId="270560076320996493" fileName="RichtextDiffHandler.java" startLine="46" startPosition="0" endLine="49" endPosition="0">
-      <varInfo nodeId="270560076320996497" varName="component" />
+    <nodeInfo nodeId="8253902831902564370" fileName="RichtextDiffHandler.java" startLine="25" startPosition="84" endLine="26" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8253902831902929594" fileName="RichtextDiffHandler.java" startLine="26" startPosition="45" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="8253902831902930535" fileName="RichtextDiffHandler.java" startLine="27" startPosition="0" endLine="28" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="8253902831902564400" fileName="RichtextDiffHandler.java" startLine="29" startPosition="46" endLine="30" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8253902831902709002" fileName="RichtextDiffHandler.java" startLine="30" startPosition="67" endLine="31" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1698754832089296471" fileName="RichtextDiffHandler.java" startLine="33" startPosition="34" endLine="34" endPosition="295" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1698754832089307094" fileName="RichtextDiffHandler.java" startLine="37" startPosition="25" endLine="38" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8253902831902923177" fileName="RichtextDiffHandler.java" startLine="40" startPosition="5" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="8253902831902919535" fileName="RichtextDiffHandler.java" startLine="41" startPosition="0" endLine="42" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3375677823956026922" fileName="RichtextDiffHandler.java" startLine="46" startPosition="80" endLine="47" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366943282" fileName="RichtextDiffHandler.java" startLine="51" startPosition="82" endLine="52" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8253902831903522777" fileName="RichtextDiffHandler.java" startLine="56" startPosition="130" endLine="57" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8253902831902938265" fileName="RichtextDiffHandler.java" startLine="61" startPosition="135" endLine="62" endPosition="99" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1698754832089266636" fileName="RichtextDiffHandler.java" startLine="33" startPosition="0" endLine="36" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="compute#()Ljava/lang/Boolean;" />
+    <nodeInfo nodeId="1698754832089304154" fileName="RichtextDiffHandler.java" startLine="36" startPosition="9" endLine="39" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="270560076320996493" fileName="RichtextDiffHandler.java" startLine="45" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBounds#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;)Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_0;" />
+    <nodeInfo nodeId="270560076320996504" fileName="RichtextDiffHandler.java" startLine="50" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCell#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="270560076320996515" fileName="RichtextDiffHandler.java" startLine="55" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="acceptCell#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;Ljetbrains/mps/nodeEditor/cells/EditorCell;)Z" />
+    <nodeInfo nodeId="270560076320996528" fileName="RichtextDiffHandler.java" startLine="60" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paint#(Ljava/awt/Graphics;Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;Ljetbrains/mps/nodeEditor/cells/EditorCell;)V" />
+    <nodeInfo nodeId="1698754832089294199" fileName="RichtextDiffHandler.java" startLine="31" startPosition="51" endLine="36" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8253902831902564374" fileName="RichtextDiffHandler.java" startLine="28" startPosition="20" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="270560076320996484" fileName="RichtextDiffHandler.java" startLine="24" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canHandle#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;)Z" />
+    <scopeInfo nodeId="1698754832089266637" fileName="RichtextDiffHandler.java" startLine="33" startPosition="34" endLine="34" endPosition="295" />
+    <scopeInfo nodeId="1698754832089304157" fileName="RichtextDiffHandler.java" startLine="37" startPosition="25" endLine="38" endPosition="20" />
+    <scopeInfo nodeId="270560076320996501" fileName="RichtextDiffHandler.java" startLine="46" startPosition="80" endLine="47" endPosition="16" />
+    <scopeInfo nodeId="270560076320996512" fileName="RichtextDiffHandler.java" startLine="51" startPosition="82" endLine="52" endPosition="66" />
+    <scopeInfo nodeId="270560076320996525" fileName="RichtextDiffHandler.java" startLine="56" startPosition="130" endLine="57" endPosition="44" />
+    <scopeInfo nodeId="270560076320996538" fileName="RichtextDiffHandler.java" startLine="61" startPosition="135" endLine="62" endPosition="99" />
+    <scopeInfo nodeId="1698754832089266636" fileName="RichtextDiffHandler.java" startLine="33" startPosition="0" endLine="36" endPosition="0" />
+    <scopeInfo nodeId="270560076320996493" fileName="RichtextDiffHandler.java" startLine="45" startPosition="0" endLine="49" endPosition="0">
+      <varInfo nodeId="4397451415366950222" varName="editor" />
       <varInfo nodeId="270560076320996499" varName="message" />
     </scopeInfo>
-    <scopeInfo nodeId="8253902831903478667" fileName="RichtextDiffHandler.java" startLine="62" startPosition="55" endLine="65" endPosition="15" />
-    <scopeInfo nodeId="270560076320996515" fileName="RichtextDiffHandler.java" startLine="76" startPosition="0" endLine="79" endPosition="0">
+    <scopeInfo nodeId="270560076320996504" fileName="RichtextDiffHandler.java" startLine="50" startPosition="0" endLine="54" endPosition="0">
+      <varInfo nodeId="270560076320996510" varName="editor" />
+      <varInfo nodeId="270560076320996508" varName="message" />
+    </scopeInfo>
+    <scopeInfo nodeId="270560076320996515" fileName="RichtextDiffHandler.java" startLine="55" startPosition="0" endLine="59" endPosition="0">
       <varInfo nodeId="270560076320996523" varName="cell" />
       <varInfo nodeId="270560076320996521" varName="editor" />
       <varInfo nodeId="270560076320996519" varName="message" />
     </scopeInfo>
-    <scopeInfo nodeId="270560076320996528" fileName="RichtextDiffHandler.java" startLine="80" startPosition="0" endLine="83" endPosition="0">
+    <scopeInfo nodeId="270560076320996528" fileName="RichtextDiffHandler.java" startLine="60" startPosition="0" endLine="64" endPosition="0">
       <varInfo nodeId="270560076320996536" varName="cell" />
+      <varInfo nodeId="4397451415366954257" varName="editor" />
       <varInfo nodeId="270560076320996532" varName="g" />
       <varInfo nodeId="270560076320996534" varName="messages" />
     </scopeInfo>
-    <scopeInfo nodeId="8253902831903488953" fileName="RichtextDiffHandler.java" startLine="86" startPosition="0" endLine="89" endPosition="0">
-      <varInfo nodeId="8253902831903488953" varName="a" />
-      <varInfo nodeId="8253902831903488953" varName="b" />
-    </scopeInfo>
-    <scopeInfo nodeId="8253902831903473255" fileName="RichtextDiffHandler.java" startLine="61" startPosition="47" endLine="67" endPosition="25" />
-    <scopeInfo nodeId="8253902831903473249" fileName="RichtextDiffHandler.java" startLine="61" startPosition="0" endLine="69" endPosition="0">
-      <varInfo nodeId="8253902831903473253" varName="cell" />
-    </scopeInfo>
-    <scopeInfo nodeId="8253902831902564378" fileName="RichtextDiffHandler.java" startLine="30" startPosition="46" endLine="40" endPosition="7">
+    <scopeInfo nodeId="8253902831902564378" fileName="RichtextDiffHandler.java" startLine="29" startPosition="46" endLine="39" endPosition="7">
       <varInfo nodeId="8253902831902709005" varName="affectedNode" />
       <varInfo nodeId="1698754832089294202" varName="isWordInText" />
       <varInfo nodeId="8253902831902564401" varName="setPropChange" />
     </scopeInfo>
-    <scopeInfo nodeId="4421161480336506204" fileName="RichtextDiffHandler.java" startLine="59" startPosition="29" endLine="70" endPosition="25">
-      <varInfo nodeId="8253902831903317075" varName="multiline" />
-    </scopeInfo>
-    <scopeInfo nodeId="270560076320996490" fileName="RichtextDiffHandler.java" startLine="26" startPosition="57" endLine="43" endPosition="17">
+    <scopeInfo nodeId="270560076320996490" fileName="RichtextDiffHandler.java" startLine="25" startPosition="84" endLine="42" endPosition="17">
       <varInfo nodeId="8253902831902564371" varName="change" />
     </scopeInfo>
-    <scopeInfo nodeId="8253902831903270177" fileName="RichtextDiffHandler.java" startLine="54" startPosition="46" endLine="71" endPosition="7">
-      <varInfo nodeId="8253902831903270185" varName="affectedNode" />
-      <varInfo nodeId="4421161480336495613" varName="nodeCell" />
-      <varInfo nodeId="8253902831903270179" varName="setPropChange" />
-    </scopeInfo>
-    <scopeInfo nodeId="270560076320996484" fileName="RichtextDiffHandler.java" startLine="26" startPosition="0" endLine="45" endPosition="0">
+    <scopeInfo nodeId="270560076320996484" fileName="RichtextDiffHandler.java" startLine="24" startPosition="0" endLine="44" endPosition="0">
+      <varInfo nodeId="4397451415366951192" varName="component" />
       <varInfo nodeId="270560076320996488" varName="message" />
     </scopeInfo>
-    <scopeInfo nodeId="270560076320996512" fileName="RichtextDiffHandler.java" startLine="50" startPosition="111" endLine="73" endPosition="16">
-      <varInfo nodeId="8253902831903270165" varName="change" />
-    </scopeInfo>
-    <scopeInfo nodeId="270560076320996504" fileName="RichtextDiffHandler.java" startLine="50" startPosition="0" endLine="75" endPosition="0">
-      <varInfo nodeId="270560076320996510" varName="editor" />
-      <varInfo nodeId="270560076320996508" varName="message" />
-    </scopeInfo>
-    <unitInfo nodeId="1698754832089266636" fileName="RichtextDiffHandler.java" startLine="33" startPosition="68" endLine="37" endPosition="7" unitName="de.slisson.mps.richtext.vcshandler.RichtextDiffHandler$1" />
-    <unitInfo nodeId="8253902831903473247" fileName="RichtextDiffHandler.java" startLine="60" startPosition="114" endLine="69" endPosition="9" unitName="de.slisson.mps.richtext.vcshandler.RichtextDiffHandler$2" />
-    <unitInfo nodeId="270560076320569103" fileName="RichtextDiffHandler.java" startLine="23" startPosition="0" endLine="90" endPosition="0" unitName="de.slisson.mps.richtext.vcshandler.RichtextDiffHandler" />
+    <unitInfo nodeId="1698754832089266636" fileName="RichtextDiffHandler.java" startLine="32" startPosition="68" endLine="36" endPosition="7" unitName="de.slisson.mps.richtext.vcshandler.RichtextDiffHandler$1" />
+    <unitInfo nodeId="270560076320569103" fileName="RichtextDiffHandler.java" startLine="21" startPosition="0" endLine="67" endPosition="0" unitName="de.slisson.mps.richtext.vcshandler.RichtextDiffHandler" />
   </root>
   <root nodeRef="r:88ebdb9e-3736-4a4b-b03c-53e44522a657(de.slisson.mps.richtext.vcshandler)/3758249303358756634">
     <nodeInfo nodeId="3758249303358763008" fileName="DiffPainter.java" startLine="32" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="LOG" />
@@ -442,21 +404,132 @@
     <unitInfo nodeId="3758249303358780180" fileName="DiffPainter.java" startLine="48" startPosition="43" endLine="136" endPosition="5" unitName="de.slisson.mps.richtext.vcshandler.DiffPainter$1" />
     <unitInfo nodeId="3758249303358756634" fileName="DiffPainter.java" startLine="31" startPosition="0" endLine="250" endPosition="0" unitName="de.slisson.mps.richtext.vcshandler.DiffPainter" />
   </root>
+  <root nodeRef="r:88ebdb9e-3736-4a4b-b03c-53e44522a657(de.slisson.mps.richtext.vcshandler)/4397451415366340994">
+    <nodeInfo nodeId="4397451415366675398" fileName="MultilineDiffHandler.java" startLine="22" startPosition="81" endLine="23" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3375677823956018815" fileName="MultilineDiffHandler.java" startLine="27" startPosition="80" endLine="28" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366680154" fileName="MultilineDiffHandler.java" startLine="32" startPosition="82" endLine="33" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366681808" fileName="MultilineDiffHandler.java" startLine="37" startPosition="130" endLine="38" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366683281" fileName="MultilineDiffHandler.java" startLine="43" startPosition="47" endLine="44" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366799053" fileName="MultilineDiffHandler.java" startLine="45" startPosition="61" endLine="46" endPosition="83" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366802761" fileName="MultilineDiffHandler.java" startLine="46" startPosition="83" endLine="47" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366812383" fileName="MultilineDiffHandler.java" startLine="49" startPosition="29" endLine="50" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4397451415366803819" fileName="MultilineDiffHandler.java" startLine="52" startPosition="11" endLine="53" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366821759" fileName="MultilineDiffHandler.java" startLine="53" startPosition="86" endLine="54" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366824004" fileName="MultilineDiffHandler.java" startLine="54" startPosition="48" endLine="55" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4397451415366660021" fileName="MultilineDiffHandler.java" startLine="62" startPosition="108" endLine="63" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366656164" fileName="MultilineDiffHandler.java" startLine="64" startPosition="46" endLine="65" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366656170" fileName="MultilineDiffHandler.java" startLine="65" startPosition="73" endLine="66" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366656176" fileName="MultilineDiffHandler.java" startLine="66" startPosition="45" endLine="67" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366656183" fileName="MultilineDiffHandler.java" startLine="67" startPosition="62" endLine="68" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4397451415366656207" fileName="MultilineDiffHandler.java" startLine="73" startPosition="133" endLine="74" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366656222" fileName="MultilineDiffHandler.java" startLine="76" startPosition="13" endLine="77" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366656227" fileName="MultilineDiffHandler.java" startLine="79" startPosition="23" endLine="80" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366665598" fileName="MultilineDiffHandler.java" startLine="82" startPosition="5" endLine="83" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366656209" fileName="MultilineDiffHandler.java" startLine="86" startPosition="77" endLine="87" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4397451415366811997" fileName="MultilineDiffHandler.java" startLine="49" startPosition="0" endLine="52" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="run#()V" />
+    <nodeInfo nodeId="4397451415366656205" fileName="MultilineDiffHandler.java" startLine="72" startPosition="55" endLine="75" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4397451415366656209" fileName="MultilineDiffHandler.java" startLine="86" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="eq_hi761o_a0a0a0a0a1a0a0a4a1a6#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="4397451415366371068" fileName="MultilineDiffHandler.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canHandle#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;)Z" />
+    <nodeInfo nodeId="4397451415366371077" fileName="MultilineDiffHandler.java" startLine="26" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getBounds#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;)Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_0;" />
+    <nodeInfo nodeId="4397451415366371088" fileName="MultilineDiffHandler.java" startLine="31" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCell#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="4397451415366371099" fileName="MultilineDiffHandler.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="acceptCell#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;Ljetbrains/mps/nodeEditor/cells/EditorCell;)Z" />
+    <nodeInfo nodeId="4397451415366810647" fileName="MultilineDiffHandler.java" startLine="47" startPosition="48" endLine="52" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4397451415366656203" fileName="MultilineDiffHandler.java" startLine="71" startPosition="47" endLine="76" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4397451415366656197" fileName="MultilineDiffHandler.java" startLine="71" startPosition="0" endLine="79" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="met#(Ljetbrains/mps/openapi/editor/cells/EditorCell;)Z" />
+    <nodeInfo nodeId="4397451415366656186" fileName="MultilineDiffHandler.java" startLine="69" startPosition="29" endLine="79" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4397451415366796718" fileName="MultilineDiffHandler.java" startLine="44" startPosition="66" endLine="56" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4397451415366656184" fileName="MultilineDiffHandler.java" startLine="68" startPosition="0" endLine="81" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4397451415366683830" fileName="MultilineDiffHandler.java" startLine="42" startPosition="134" endLine="57" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4397451415366371112" fileName="MultilineDiffHandler.java" startLine="41" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="paint#(Ljava/awt/Graphics;Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;Ljetbrains/mps/nodeEditor/cells/EditorCell;)V" />
+    <nodeInfo nodeId="4397451415366656159" fileName="MultilineDiffHandler.java" startLine="63" startPosition="45" endLine="82" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="4397451415366653369" fileName="MultilineDiffHandler.java" startLine="62" startPosition="0" endLine="85" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="getMultilineCell#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;)Lde/slisson/mps/editor/multiline/cells/EditorCell_Multiline;" />
+    <scopeInfo nodeId="4397451415366371074" fileName="MultilineDiffHandler.java" startLine="22" startPosition="81" endLine="23" endPosition="53" />
+    <scopeInfo nodeId="4397451415366371085" fileName="MultilineDiffHandler.java" startLine="27" startPosition="80" endLine="28" endPosition="16" />
+    <scopeInfo nodeId="4397451415366371096" fileName="MultilineDiffHandler.java" startLine="32" startPosition="82" endLine="33" endPosition="45" />
+    <scopeInfo nodeId="4397451415366371109" fileName="MultilineDiffHandler.java" startLine="37" startPosition="130" endLine="38" endPosition="44" />
+    <scopeInfo nodeId="4397451415366811998" fileName="MultilineDiffHandler.java" startLine="49" startPosition="29" endLine="50" endPosition="79" />
+    <scopeInfo nodeId="4397451415366656206" fileName="MultilineDiffHandler.java" startLine="73" startPosition="133" endLine="74" endPosition="28" />
+    <scopeInfo nodeId="4397451415366656209" fileName="MultilineDiffHandler.java" startLine="86" startPosition="77" endLine="87" endPosition="46" />
+    <scopeInfo nodeId="4397451415366811997" fileName="MultilineDiffHandler.java" startLine="49" startPosition="0" endLine="52" endPosition="0" />
+    <scopeInfo nodeId="4397451415366656204" fileName="MultilineDiffHandler.java" startLine="72" startPosition="55" endLine="75" endPosition="15" />
+    <scopeInfo nodeId="4397451415366656209" fileName="MultilineDiffHandler.java" startLine="86" startPosition="0" endLine="89" endPosition="0">
+      <varInfo nodeId="4397451415366656209" varName="a" />
+      <varInfo nodeId="4397451415366656209" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366371068" fileName="MultilineDiffHandler.java" startLine="21" startPosition="0" endLine="25" endPosition="0">
+      <varInfo nodeId="4397451415366631426" varName="editor" />
+      <varInfo nodeId="4397451415366371072" varName="message" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366371077" fileName="MultilineDiffHandler.java" startLine="26" startPosition="0" endLine="30" endPosition="0">
+      <varInfo nodeId="4397451415366371081" varName="editor" />
+      <varInfo nodeId="4397451415366371083" varName="message" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366371088" fileName="MultilineDiffHandler.java" startLine="31" startPosition="0" endLine="35" endPosition="0">
+      <varInfo nodeId="4397451415366371094" varName="editor" />
+      <varInfo nodeId="4397451415366371092" varName="message" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366371099" fileName="MultilineDiffHandler.java" startLine="36" startPosition="0" endLine="40" endPosition="0">
+      <varInfo nodeId="4397451415366371107" varName="cell" />
+      <varInfo nodeId="4397451415366371105" varName="editor" />
+      <varInfo nodeId="4397451415366371103" varName="message" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366656202" fileName="MultilineDiffHandler.java" startLine="71" startPosition="47" endLine="77" endPosition="25" />
+    <scopeInfo nodeId="4397451415366656197" fileName="MultilineDiffHandler.java" startLine="71" startPosition="0" endLine="79" endPosition="0">
+      <varInfo nodeId="4397451415366656200" varName="cell" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366796721" fileName="MultilineDiffHandler.java" startLine="45" startPosition="61" endLine="55" endPosition="53">
+      <varInfo nodeId="4397451415366802764" varName="newText" />
+      <varInfo nodeId="4397451415366821762" varName="oldText" />
+      <varInfo nodeId="4397451415366803820" varName="opposite" />
+      <varInfo nodeId="4397451415366799054" varName="spChange" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366656185" fileName="MultilineDiffHandler.java" startLine="69" startPosition="29" endLine="80" endPosition="25">
+      <varInfo nodeId="4397451415366656187" varName="multiline" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366683833" fileName="MultilineDiffHandler.java" startLine="43" startPosition="47" endLine="56" endPosition="7">
+      <varInfo nodeId="4397451415366683282" varName="mlCell" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366371122" fileName="MultilineDiffHandler.java" startLine="42" startPosition="134" endLine="57" endPosition="5" />
+    <scopeInfo nodeId="4397451415366656163" fileName="MultilineDiffHandler.java" startLine="64" startPosition="46" endLine="81" endPosition="7">
+      <varInfo nodeId="4397451415366656171" varName="affectedNode" />
+      <varInfo nodeId="4397451415366656177" varName="nodeCell" />
+      <varInfo nodeId="4397451415366656165" varName="setPropChange" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366371112" fileName="MultilineDiffHandler.java" startLine="41" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="4397451415366371120" varName="cell" />
+      <varInfo nodeId="4397451415366730722" varName="editor" />
+      <varInfo nodeId="4397451415366371116" varName="g" />
+      <varInfo nodeId="4397451415366371118" varName="message" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366652837" fileName="MultilineDiffHandler.java" startLine="62" startPosition="108" endLine="83" endPosition="16">
+      <varInfo nodeId="4397451415366660022" varName="change" />
+    </scopeInfo>
+    <scopeInfo nodeId="4397451415366653369" fileName="MultilineDiffHandler.java" startLine="62" startPosition="0" endLine="85" endPosition="0">
+      <varInfo nodeId="4397451415366655278" varName="editor" />
+      <varInfo nodeId="4397451415366654602" varName="message" />
+    </scopeInfo>
+    <unitInfo nodeId="4397451415366811997" fileName="MultilineDiffHandler.java" startLine="48" startPosition="47" endLine="52" endPosition="9" unitName="de.slisson.mps.richtext.vcshandler.MultilineDiffHandler$1" />
+    <unitInfo nodeId="4397451415366656195" fileName="MultilineDiffHandler.java" startLine="70" startPosition="114" endLine="79" endPosition="9" unitName="de.slisson.mps.richtext.vcshandler.MultilineDiffHandler$2" />
+    <unitInfo nodeId="4397451415366340994" fileName="MultilineDiffHandler.java" startLine="20" startPosition="0" endLine="90" endPosition="0" unitName="de.slisson.mps.richtext.vcshandler.MultilineDiffHandler" />
+  </root>
   <root nodeRef="r:88ebdb9e-3736-4a4b-b03c-53e44522a657(de.slisson.mps.richtext.vcshandler)/722514874354606763">
-    <nodeInfo nodeId="722514874354606767" fileName="RichtextVcsComponent.java" startLine="9" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myDiffHandler" />
-    <nodeInfo nodeId="722514874354606775" fileName="RichtextVcsComponent.java" startLine="12" startPosition="31" endLine="13" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="722514874354606785" fileName="RichtextVcsComponent.java" startLine="17" startPosition="34" endLine="18" endPosition="61" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="722514874354606795" fileName="RichtextVcsComponent.java" startLine="22" startPosition="36" endLine="23" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="722514874354606772" fileName="RichtextVcsComponent.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initComponent#()V" />
-    <nodeInfo nodeId="722514874354606782" fileName="RichtextVcsComponent.java" startLine="16" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="disposeComponent#()V" />
-    <nodeInfo nodeId="722514874354606792" fileName="RichtextVcsComponent.java" startLine="21" startPosition="0" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getComponentName#()Ljava/lang/String;" />
-    <scopeInfo nodeId="722514874354606774" fileName="RichtextVcsComponent.java" startLine="12" startPosition="31" endLine="13" endPosition="59" />
-    <scopeInfo nodeId="722514874354606784" fileName="RichtextVcsComponent.java" startLine="17" startPosition="34" endLine="18" endPosition="61" />
-    <scopeInfo nodeId="722514874354606794" fileName="RichtextVcsComponent.java" startLine="22" startPosition="36" endLine="23" endPosition="34" />
-    <scopeInfo nodeId="722514874354606772" fileName="RichtextVcsComponent.java" startLine="11" startPosition="0" endLine="15" endPosition="0" />
-    <scopeInfo nodeId="722514874354606782" fileName="RichtextVcsComponent.java" startLine="16" startPosition="0" endLine="20" endPosition="0" />
-    <scopeInfo nodeId="722514874354606792" fileName="RichtextVcsComponent.java" startLine="21" startPosition="0" endLine="25" endPosition="0" />
-    <unitInfo nodeId="722514874354606763" fileName="RichtextVcsComponent.java" startLine="8" startPosition="0" endLine="26" endPosition="0" unitName="de.slisson.mps.richtext.vcshandler.RichtextVcsComponent" />
+    <nodeInfo nodeId="722514874354606767" fileName="RichtextVcsComponent.java" startLine="9" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myRichtextDiffHandler" />
+    <nodeInfo nodeId="4397451415366840455" fileName="RichtextVcsComponent.java" startLine="10" startPosition="0" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myMultilineDiffHandler" />
+    <nodeInfo nodeId="722514874354606775" fileName="RichtextVcsComponent.java" startLine="13" startPosition="31" endLine="14" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4397451415366871978" fileName="RichtextVcsComponent.java" startLine="14" startPosition="67" endLine="15" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="722514874354606785" fileName="RichtextVcsComponent.java" startLine="19" startPosition="34" endLine="20" endPosition="69" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4397451415366872950" fileName="RichtextVcsComponent.java" startLine="20" startPosition="69" endLine="21" endPosition="70" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="722514874354606795" fileName="RichtextVcsComponent.java" startLine="25" startPosition="36" endLine="26" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="722514874354606792" fileName="RichtextVcsComponent.java" startLine="24" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getComponentName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="722514874354606772" fileName="RichtextVcsComponent.java" startLine="12" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="initComponent#()V" />
+    <nodeInfo nodeId="722514874354606782" fileName="RichtextVcsComponent.java" startLine="18" startPosition="0" endLine="23" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="disposeComponent#()V" />
+    <scopeInfo nodeId="722514874354606794" fileName="RichtextVcsComponent.java" startLine="25" startPosition="36" endLine="26" endPosition="34" />
+    <scopeInfo nodeId="722514874354606774" fileName="RichtextVcsComponent.java" startLine="13" startPosition="31" endLine="15" endPosition="68" />
+    <scopeInfo nodeId="722514874354606784" fileName="RichtextVcsComponent.java" startLine="19" startPosition="34" endLine="21" endPosition="70" />
+    <scopeInfo nodeId="722514874354606792" fileName="RichtextVcsComponent.java" startLine="24" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="722514874354606772" fileName="RichtextVcsComponent.java" startLine="12" startPosition="0" endLine="17" endPosition="0" />
+    <scopeInfo nodeId="722514874354606782" fileName="RichtextVcsComponent.java" startLine="18" startPosition="0" endLine="23" endPosition="0" />
+    <unitInfo nodeId="722514874354606763" fileName="RichtextVcsComponent.java" startLine="8" startPosition="0" endLine="29" endPosition="0" unitName="de.slisson.mps.richtext.vcshandler.RichtextVcsComponent" />
   </root>
 </debugInfo>
 

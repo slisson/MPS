@@ -6,16 +6,19 @@ import com.intellij.openapi.components.ApplicationComponent;
 import jetbrains.mps.vcs.diff.ui.common.DiffHandlerRegistry;
 
 public class RichtextVcsComponent implements ApplicationComponent {
-  private RichtextDiffHandler myDiffHandler = new RichtextDiffHandler();
+  private RichtextDiffHandler myRichtextDiffHandler = new RichtextDiffHandler();
+  private MultilineDiffHandler myMultilineDiffHandler = new MultilineDiffHandler();
 
   @Override
   public void initComponent() {
-    DiffHandlerRegistry.instance().register(myDiffHandler);
+    DiffHandlerRegistry.instance().register(myRichtextDiffHandler);
+    DiffHandlerRegistry.instance().register(myMultilineDiffHandler);
   }
 
   @Override
   public void disposeComponent() {
-    DiffHandlerRegistry.instance().unregister(myDiffHandler);
+    DiffHandlerRegistry.instance().unregister(myRichtextDiffHandler);
+    DiffHandlerRegistry.instance().unregister(myMultilineDiffHandler);
   }
 
   @Override

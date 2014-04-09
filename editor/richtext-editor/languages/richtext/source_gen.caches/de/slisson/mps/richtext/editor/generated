@@ -24,7 +24,7 @@
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="4kxpf1lk5w1iq2wecgk9bz505rq9vzu" />
   <dep model="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" hash="4fc4xcfvdl6zkiyo6vqwwk7ylv9epoy" />
   <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" hash="51rta3hijy0r8oqn8xwzw6fztfi6a8p" />
-  <dep model="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)" hash="7r1sx8eqtqa92yo0bigrdzh3bw0e285" />
+  <dep model="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)" hash="-1nl8z3vq5xhel1b5qq8k0bec9bbarzk" />
   <dep model="r:ebe120ba-74f3-4913-8ba8-dc7299e610f9(de.slisson.mps.richtext.util)" hash="-8gf8l8rqyjg5z4sq97c8kxn197tpjxh" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="6gsgv1p6bkd8kmlifl0ddbzjugbmbxl" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-9ul2n83hssy8wjb8faorbs0k0av9cuy" />

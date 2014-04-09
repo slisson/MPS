@@ -35,6 +35,7 @@
     </orderEntry>
     <orderEntry type="library" name="commons-lang3-3.1" level="project" />
     <orderEntry type="module" module-name="Closures-runtime" />
+    <orderEntry type="module" module-name="mps-platform" />
   </component>
 </module>
 

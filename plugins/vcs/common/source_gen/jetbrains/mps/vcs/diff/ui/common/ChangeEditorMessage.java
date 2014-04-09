@@ -98,8 +98,8 @@ public class ChangeEditorMessage extends EditorMessageWithTarget {
     }
 
     for (DiffHandler handler : ListSequence.fromList(DiffHandlerRegistry.instance().getHandlers())) {
-      if (handler.canHandle(this)) {
-        handler.paint(graphics, this, cell);
+      if (handler.canHandle(this, editor)) {
+        handler.paint(graphics, this, editor, cell);
         return;
       }
     }
@@ -121,7 +121,7 @@ public class ChangeEditorMessage extends EditorMessageWithTarget {
   @Override
   public EditorCell getCell(EditorComponent editor) {
     for (DiffHandler handler : ListSequence.fromList(DiffHandlerRegistry.instance().getHandlers())) {
-      if (handler.canHandle(this)) {
+      if (handler.canHandle(this, editor)) {
         return handler.getCell(this, editor);
       }
     }
@@ -139,8 +139,8 @@ public class ChangeEditorMessage extends EditorMessageWithTarget {
   @Override
   public boolean acceptCell(EditorCell cell, EditorComponent component) {
     for (DiffHandler handler : ListSequence.fromList(DiffHandlerRegistry.instance().getHandlers())) {
-      if (handler.canHandle(this)) {
-        return handler.acceptCell(this, component, cell);
+      if (handler.canHandle(this, component)) {
+        return handler.acceptCell(this, component, (jetbrains.mps.nodeEditor.cells.EditorCell) cell);
       }
     }
 
@@ -328,6 +328,15 @@ __switch__:
   }
 
   public Bounds getBounds(final EditorComponent editor) {
+    for (DiffHandler handler : ListSequence.fromList(DiffHandlerRegistry.instance().getHandlers())) {
+      if (handler.canHandle(this, editor)) {
+        Bounds bounds = handler.getBounds(this, editor);
+        if (bounds != null) {
+          return bounds;
+        }
+      }
+    }
+
     if (myMessageTarget.getTarget() != MessageTargetEnum.DELETED_CHILD) {
       if (isIndirectRoot(editor)) {
         Rectangle r = getFirstPseudoLineBounds(editor);
