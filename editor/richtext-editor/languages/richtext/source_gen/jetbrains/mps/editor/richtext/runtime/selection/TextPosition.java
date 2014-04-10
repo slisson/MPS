@@ -4,7 +4,7 @@ package jetbrains.mps.editor.richtext.runtime.selection;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.EditorComponent;
-import de.slisson.mps.editor.multiline.cells.EditorCell_Multiline;
+import jetbrains.mps.editor.multiline.cells.EditorCell_Multiline;
 
 public class TextPosition {
   public TextPosition() {

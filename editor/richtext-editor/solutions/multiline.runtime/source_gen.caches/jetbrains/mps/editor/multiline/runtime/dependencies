@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="jetbrains.mps.editor.multiline.runtime.CellUtils" file="CellUtils.java">
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorComponent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+  </dependency>
+  <dependency className="jetbrains.mps.editor.multiline.runtime.ClipboardUtils" file="ClipboardUtils.java">
+    <classNode dependClassName="com.intellij.ide.CopyPasteManagerEx" />
+    <classNode dependClassName="java.awt.datatransfer.DataFlavor" />
+    <classNode dependClassName="java.awt.datatransfer.StringSelection" />
+    <classNode dependClassName="java.awt.datatransfer.Transferable" />
+    <classNode dependClassName="java.awt.datatransfer.UnsupportedFlavorException" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="jetbrains.mps.editor.multiline.runtime.MultilineUtil" file="MultilineUtil.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.apache.commons.lang3.StringEscapeUtils" />
+    <classNode dependClassName="org.apache.commons.lang3.StringUtils" />
+  </dependency>
+</dependenciesRoot>
+

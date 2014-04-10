@@ -283,7 +283,7 @@
       <modulePath path="$PROJECT_DIR$/plugins/newLanguageDesign/solutions/jetbrains.mps.core.util/util.msd" folder="newLanguageDesign" />
       <modulePath path="$PROJECT_DIR$/plugins/newLanguageDesign/solutions/mpscore.sandbox/mpscore.sandbox.msd" folder="newLanguageDesign" />
       <modulePath path="$PROJECT_DIR$/plugins/vcs-core/core/jetbrains.mps.ide.vcs.core.msd" folder="platform.vcs" />
-      <modulePath path="$PROJECT_DIR$/plugins/vcs-richtext/de.slisson.mps.richtext.vcs.msd" folder="editor.richtext" />
+      <modulePath path="$PROJECT_DIR$/plugins/vcs-richtext/richtext.vcs.msd" folder="editor.richtext" />
       <modulePath path="$PROJECT_DIR$/plugins/vcs/common/jetbrains.mps.ide.vcs.platform.msd" folder="platform.vcs" />
       <modulePath path="$PROJECT_DIR$/plugins/vcs/jetbrains.mps.ide.vcs.msd" folder="platform.vcs" />
       <modulePath path="$PROJECT_DIR$/plugins/vcs/languages/modelmetadata/jetbrains.mps.ide.vcs.modelmetadata.mpl" folder="platform.vcs" />

@@ -18,7 +18,7 @@
   <import index="qe67" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.style(MPS.Editor/jetbrains.mps.openapi.editor.style@java_stub)" version="-1" />
   <import index="ec5l" modelUID="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" version="-1" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" />
-  <import index="7qm6" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#de.slisson.mps.editor.multiline.cells(MPS.Editor/de.slisson.mps.editor.multiline.cells@java_stub)" version="-1" />
+  <import index="30zk" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.editor.multiline.cells(MPS.Editor/jetbrains.mps.editor.multiline.cells@java_stub)" version="-1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -38,17 +38,17 @@
             <property name="value" nameId="tpc2.7656031417253359015" value="0" />
           </node>
         </node>
-        <node role="factoryMethod" roleId="5mdd.2490242408670937967" type="5mdd.QueryFunction_Cell" typeId="5mdd.1176749715029" id="917258312815016995" nodeInfo="ng">
+        <node role="factoryMethod" roleId="5mdd.2490242408670937967" type="5mdd.QueryFunction_Cell" typeId="5mdd.1176749715029" id="917258312815016995" nodeInfo="nn">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="917258312815016996" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="917258312815146705" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="917258312815146771" nodeInfo="nn">
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2490242408672352981" resolveInfo="TextCellModifier" />
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2490242408671172492" resolveInfo="modify" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="5mdd.ConceptFunctionParameter_cell" typeId="5mdd.1161622981231" id="917258312815146934" nodeInfo="ng" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="5mdd.ConceptFunctionParameter_cell" typeId="5mdd.1161622981231" id="917258312815146934" nodeInfo="nn" />
               </node>
             </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="917258312815147291" nodeInfo="nn">
-              <node role="expression" roleId="tpee.1068581517676" type="5mdd.ConceptFunctionParameter_cell" typeId="5mdd.1161622981231" id="917258312815147471" nodeInfo="ng" />
+              <node role="expression" roleId="tpee.1068581517676" type="5mdd.ConceptFunctionParameter_cell" typeId="5mdd.1161622981231" id="917258312815147471" nodeInfo="nn" />
             </node>
           </node>
         </node>
@@ -102,8 +102,8 @@
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="399625975977790587" nodeInfo="igu">
       <property name="name" nameId="tpck.1169194664001" value="myWordCell" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="399625975977790588" nodeInfo="nn" />
-      <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245492006" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Word" resolveInfo="EditorCell_Word" />
+      <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3731715710035729459" nodeInfo="in">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Word" resolveInfo="EditorCell_Word" />
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="399625975977790568" nodeInfo="igu">
@@ -116,7 +116,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="399625975977790571" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="wordCell" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245492008" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Word" resolveInfo="EditorCell_Word" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Word" resolveInfo="EditorCell_Word" />
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="399625975977790573" nodeInfo="in" />
@@ -295,14 +295,14 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="399625975977790646" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="mlCell" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245497235" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="399625975977790648" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="399625975977790649" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="399625975977790587" resolveInfo="myWordCell" />
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="399625975977790650" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7qm6.~EditorCell_Word%dgetParent()%cde%dslisson%dmps%deditor%dmultiline%dcells%dEditorCell_Multiline" resolveInfo="getParent" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="30zk.~EditorCell_Word%dgetParent()%cjetbrains%dmps%deditor%dmultiline%dcells%dEditorCell_Multiline" resolveInfo="getParent" />
               </node>
             </node>
           </node>
@@ -318,11 +318,11 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="399625975977790587" resolveInfo="myWordCell" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="399625975977790667" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7qm6.~EditorCell_Word%dgetParent()%cde%dslisson%dmps%deditor%dmultiline%dcells%dEditorCell_Multiline" resolveInfo="getParent" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="30zk.~EditorCell_Word%dgetParent()%cjetbrains%dmps%deditor%dmultiline%dcells%dEditorCell_Multiline" resolveInfo="getParent" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="399625975977790668" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7qm6.~EditorCell_Multiline%dgetTextBefore(de%dslisson%dmps%deditor%dmultiline%dcells%dEditorCell_Word,int)%cjava%dlang%dString" resolveInfo="getTextBefore" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="30zk.~EditorCell_Multiline%dgetTextBefore(jetbrains%dmps%deditor%dmultiline%dcells%dEditorCell_Word,int)%cjava%dlang%dString" resolveInfo="getTextBefore" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.LocalInstanceFieldReference" typeId="tpee.7785501532031639928" id="399625975977790669" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="399625975977790587" resolveInfo="myWordCell" />
                   </node>
@@ -967,7 +967,7 @@
           <node role="condition" roleId="tpee.1068580123160" type="tpee.NotExpression" typeId="tpee.1081516740877" id="2490242408672712456" nodeInfo="nn">
             <node role="expression" roleId="tpee.1081516765348" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="2490242408672712457" nodeInfo="nn">
               <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245509063" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
               </node>
               <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2490242408672712459" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2490242408672710824" resolveInfo="cell" />
@@ -987,12 +987,12 @@
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2490242408672712471" nodeInfo="nr">
                 <property name="name" nameId="tpck.1169194664001" value="mlCell" />
                 <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245512617" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
                 </node>
                 <node role="initializer" roleId="tpee.1068431790190" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2490242408672712473" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2490242408672712474" nodeInfo="nn">
                     <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245509139" nodeInfo="in">
-                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
                     </node>
                     <node role="expression" roleId="tpee.1070534934092" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2490242408672712476" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2490242408672710824" resolveInfo="cell" />
@@ -1007,13 +1007,13 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2490242408672712471" resolveInfo="mlCell" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2490242408672712480" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7qm6.~EditorCell_Multiline%daddWordCellInitializer(de%dslisson%dmps%deditor%dmultiline%dcells%dWordCellInitializer)%cvoid" resolveInfo="addWordCellInitializer" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="30zk.~EditorCell_Multiline%daddWordCellInitializer(jetbrains%dmps%deditor%dmultiline%dcells%dWordCellInitializer)%cvoid" resolveInfo="addWordCellInitializer" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2490242408672712481" nodeInfo="nn">
                     <node role="creator" roleId="tpee.1145553007750" type="tpee.AnonymousClassCreator" typeId="tpee.1182160077978" id="2490242408672712482" nodeInfo="nn">
                       <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="2490242408672712483" nodeInfo="ig">
                         <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
-                        <link role="classifier" roleId="tpee.1170346070688" targetNodeId="7qm6.~WordCellInitializer" resolveInfo="WordCellInitializer" />
+                        <link role="classifier" roleId="tpee.1170346070688" targetNodeId="30zk.~WordCellInitializer" resolveInfo="WordCellInitializer" />
                         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2490242408672712484" nodeInfo="nn" />
                         <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="2490242408672712485" nodeInfo="igu">
                           <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
@@ -1023,7 +1023,7 @@
                           <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="2490242408672712488" nodeInfo="ir">
                             <property name="name" nameId="tpck.1169194664001" value="wordCell" />
                             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245515162" nodeInfo="in">
-                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Word" resolveInfo="EditorCell_Word" />
+                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Word" resolveInfo="EditorCell_Word" />
                             </node>
                           </node>
                           <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2490242408672712490" nodeInfo="sn">
@@ -1242,7 +1242,7 @@
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="2490242408672712550" nodeInfo="nn">
             <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245509137" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
             </node>
             <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2490242408672712552" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2490242408672710824" resolveInfo="cell" />
@@ -1262,7 +1262,7 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="2490242408672712643" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="2490242408672712644" nodeInfo="nn">
                     <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245516607" nodeInfo="in">
-                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
                     </node>
                     <node role="expression" roleId="tpee.1070534934092" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2490242408672712646" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2490242408672710824" resolveInfo="cell" />
@@ -1270,14 +1270,14 @@
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2490242408672712647" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7qm6.~EditorCell_Multiline%ddisabledDiffPainting()%cvoid" resolveInfo="disabledDiffPainting" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="30zk.~EditorCell_Multiline%ddisabledDiffPainting()%cvoid" resolveInfo="disabledDiffPainting" />
                 </node>
               </node>
             </node>
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="2490242408672712648" nodeInfo="nn">
             <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245516605" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
             </node>
             <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.VariableReference" typeId="tpee.1068498886296" id="2490242408672712650" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2490242408672710824" resolveInfo="cell" />
@@ -1320,7 +1320,7 @@
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="7417350671017084760" nodeInfo="nn">
                   <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="7417350671017084757" nodeInfo="nn">
                     <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245517901" nodeInfo="in">
-                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+                      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
                     </node>
                     <node role="expression" roleId="tpee.1070534934092" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7417350671017084763" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2490242408672710824" resolveInfo="cell" />
@@ -1328,13 +1328,13 @@
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7417350671017092022" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7qm6.~EditorCell_Multiline%daddWordCellInitializer(de%dslisson%dmps%deditor%dmultiline%dcells%dWordCellInitializer)%cvoid" resolveInfo="addWordCellInitializer" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="30zk.~EditorCell_Multiline%daddWordCellInitializer(jetbrains%dmps%deditor%dmultiline%dcells%dWordCellInitializer)%cvoid" resolveInfo="addWordCellInitializer" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7417350671017092086" nodeInfo="nn">
                     <node role="creator" roleId="tpee.1145553007750" type="tpee.AnonymousClassCreator" typeId="tpee.1182160077978" id="7417350671017140820" nodeInfo="nn">
                       <node role="cls" roleId="tpee.1182160096073" type="tpee.AnonymousClass" typeId="tpee.1170345865475" id="7417350671017140823" nodeInfo="ig">
                         <property name="nonStatic" nameId="tpee.521412098689998745" value="true" />
                         <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~Object%d&lt;init&gt;()" resolveInfo="Object" />
-                        <link role="classifier" roleId="tpee.1170346070688" targetNodeId="7qm6.~WordCellInitializer" resolveInfo="WordCellInitializer" />
+                        <link role="classifier" roleId="tpee.1170346070688" targetNodeId="30zk.~WordCellInitializer" resolveInfo="WordCellInitializer" />
                         <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7417350671017140824" nodeInfo="nn" />
                         <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="7417350671017140825" nodeInfo="igu">
                           <property name="isAbstract" nameId="tpee.1178608670077" value="false" />
@@ -1344,7 +1344,7 @@
                           <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="7417350671017140829" nodeInfo="ir">
                             <property name="name" nameId="tpck.1169194664001" value="wordCell" />
                             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245518509" nodeInfo="in">
-                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Word" resolveInfo="EditorCell_Word" />
+                              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Word" resolveInfo="EditorCell_Word" />
                             </node>
                           </node>
                           <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7417350671017140831" nodeInfo="sn">
@@ -1354,7 +1354,7 @@
                                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7417350671017140829" resolveInfo="wordCell" />
                                 </node>
                                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7417350671017143418" nodeInfo="nn">
-                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7qm6.~EditorCell_Word%ddisableShiftSelection(boolean)%cvoid" resolveInfo="disableShiftSelection" />
+                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="30zk.~EditorCell_Word%ddisableShiftSelection(boolean)%cvoid" resolveInfo="disableShiftSelection" />
                                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="7417350671017143481" nodeInfo="nn">
                                     <property name="value" nameId="tpee.1068580123138" value="true" />
                                   </node>
@@ -1372,7 +1372,7 @@
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.InstanceOfExpression" typeId="tpee.1081256982272" id="7417350671017082281" nodeInfo="nn">
             <node role="classType" roleId="tpee.1081256993305" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8013731330245517777" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7qm6.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="30zk.~EditorCell_Multiline" resolveInfo="EditorCell_Multiline" />
             </node>
             <node role="leftExpression" roleId="tpee.1081256993304" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7417350671017079768" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2490242408672710824" resolveInfo="cell" />

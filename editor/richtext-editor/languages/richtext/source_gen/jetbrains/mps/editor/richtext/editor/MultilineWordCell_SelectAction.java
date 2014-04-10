@@ -4,10 +4,10 @@ package jetbrains.mps.editor.richtext.editor;
 
 import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
-import de.slisson.mps.editor.multiline.cells.EditorCell_Word;
+import jetbrains.mps.editor.multiline.cells.EditorCell_Word;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
-import de.slisson.mps.editor.multiline.cells.EditorCell_Multiline;
+import jetbrains.mps.editor.multiline.cells.EditorCell_Multiline;
 import jetbrains.mps.editor.richtext.runtime.selection.RichtextSelection;
 
 public class MultilineWordCell_SelectAction extends AbstractCellAction {

@@ -59,12 +59,12 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="jetbrains.mps.editor.richtext.behavior.Word_Behavior" file="Word_Behavior.java">
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
-    <classNode dependClassName="de.slisson.mps.editor.multiline.runtime.MultilineUtil" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.editor.multiline.cells.EditorCell_Word" />
+    <classNode dependClassName="jetbrains.mps.editor.multiline.runtime.MultilineUtil" />
     <classNode dependClassName="jetbrains.mps.editor.richtext.behavior.Text_Behavior" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />

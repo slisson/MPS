@@ -23,7 +23,7 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.util.JavaNameUtil;
 import jetbrains.mps.classloading.ClassLoaderManager;
 import jetbrains.mps.openapi.editor.EditorContext;
-import de.slisson.mps.editor.multiline.cells.EditorCell_Word;
+import jetbrains.mps.editor.multiline.cells.EditorCell_Word;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import org.jetbrains.mps.openapi.language.SConceptRepository;

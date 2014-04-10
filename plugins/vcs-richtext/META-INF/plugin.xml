@@ -26,7 +26,7 @@
 
   <application-components>
     <component>
-      <implementation-class>de.slisson.mps.richtext.vcshandler.RichtextVcsComponent</implementation-class>
+      <implementation-class>jetbrains.mps.editor.richtext.vcshandler.RichtextVcsComponent</implementation-class>
     </component>
   </application-components>
 </idea-plugin>

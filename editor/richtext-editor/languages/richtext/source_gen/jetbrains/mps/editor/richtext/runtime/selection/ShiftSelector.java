@@ -12,7 +12,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection;
 import jetbrains.mps.openapi.editor.cells.EditorCell_Label;
 import jetbrains.mps.openapi.editor.selection.SingularSelection;
-import de.slisson.mps.editor.multiline.cells.MultilineSelection;
+import jetbrains.mps.editor.multiline.cells.MultilineSelection;
 
 public class ShiftSelector implements MouseListener, SelectionListener {
   private static final WeakHashMap<EditorComponent, ShiftSelector> INSTANCES = new WeakHashMap<EditorComponent, ShiftSelector>();

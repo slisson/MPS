@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-671x0gtq0rwmv0vpy5zh10opj83yql0">
+<dependencies version="2" modelHash="-7fptgeldj3fvh7gk7knn5mxgxpzzom1">
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/jetbrains.mps.nodeEditor.cellLayout@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
@@ -16,12 +16,12 @@
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="-7hpmrwjimsa7c7rzbkyz2ehryyj1c7y" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-d9u6qtqn8byb7xpic4iy13w48uff524" />
   <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" hash="-6uvjnnh5pg3m2y3yxg3fkezz903fdo8" />
-  <dep model="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(de.slisson.mps.editor.multiline.generator.template.main@generator)" hash="-1wc8e5mi5hrncwglth7j2hxshls0zvi" />
-  <dep model="r:a2505671-3b45-40ec-8073-270e36976c54(jetbrains.mps.samples.richtext.structure)" hash="-ddq2f0kwudppqlmynkmzx5koeqzizwv" />
+  <dep model="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(jetbrains.mps.editor.multiline.generator.template.main@generator)" hash="3x9f5zoe75c90x37kcty0bdnjq3ycvi" />
+  <dep model="r:a2505671-3b45-40ec-8073-270e36976c54(jetbrains.mps.samples.richtext.structure)" hash="-1os49acj246auz6mo399brn3ww7iz49" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="4kxpf1lk5w1iq2wecgk9bz505rq9vzu" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="2t346zimpb9pgz6suemh13r33bppt1x" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="6gsgv1p6bkd8kmlifl0ddbzjugbmbxl" />
-  <common hash="-407zxxxmjbdws741fkdm3l3wxxu4ig5" dependsOnNodes="true">
+  <common hash="-ak3clx4qz04tvj0d1zkzvu9c09bpgdf" dependsOnNodes="true">
     <dep root="2988247428751486486" />
     <dep root="5232239503568939909" />
     <dep root="5232239503569033533" />
@@ -49,7 +49,7 @@
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
-    <dep model="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(de.slisson.mps.editor.multiline.generator.template.main@generator)" />
+    <dep model="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(jetbrains.mps.editor.multiline.generator.template.main@generator)" />
     <dep model="r:a2505671-3b45-40ec-8073-270e36976c54(jetbrains.mps.samples.richtext.structure)" />
     <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <file name="Paragraph_Editor.java" />
@@ -81,7 +81,7 @@
     <dep model="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />
-    <dep model="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(de.slisson.mps.editor.multiline.generator.template.main@generator)" />
+    <dep model="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(jetbrains.mps.editor.multiline.generator.template.main@generator)" />
     <dep model="r:a2505671-3b45-40ec-8073-270e36976c54(jetbrains.mps.samples.richtext.structure)" />
     <file name="MultilineString_Editor.java" />
   </source>

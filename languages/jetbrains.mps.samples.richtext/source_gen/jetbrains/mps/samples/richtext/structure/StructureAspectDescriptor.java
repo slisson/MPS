@@ -16,7 +16,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 0:
         return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.Document").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"paragraph", "richtext"}, new boolean[]{true, false}).create();
       case 1:
-        return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.EmbeddedCode").super_("jetbrains.mps.baseLanguage.structure.StatementList").parents("jetbrains.mps.baseLanguage.structure.StatementList", "de.slisson.mps.richtext.structure.IWord").alias("<code>", "").create();
+        return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.EmbeddedCode").super_("jetbrains.mps.baseLanguage.structure.StatementList").parents("jetbrains.mps.baseLanguage.structure.StatementList", "jetbrains.mps.editor.richtext.structure.IWord").alias("<code>", "").create();
       case 2:
         return new ConceptDescriptorBuilder("jetbrains.mps.samples.richtext.structure.MultilineString").super_("jetbrains.mps.baseLanguage.structure.Expression").parents("jetbrains.mps.baseLanguage.structure.Expression").properties("text").alias("'''", "").create();
       case 3:

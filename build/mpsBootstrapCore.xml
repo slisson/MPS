@@ -1987,7 +1987,7 @@
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
-        <sources jar="jetbrains.mps.editor.richtext.customcell-src.jar" descriptor="de.slisson.richtext.customcell.mpl" />
+        <sources jar="jetbrains.mps.editor.richtext.customcell-src.jar" descriptor="richtext.customcell.mpl" />
       </module>
     </echoxml>
     <jar destfile="${build.layout}/languages/richtext/jetbrains.mps.editor.richtext.customcell.jar">
@@ -2007,7 +2007,7 @@
     <jar destfile="${build.layout}/languages/richtext/jetbrains.mps.editor.richtext.customcell-src.jar">
       <fileset dir="${mps_home}/editor/richtext-editor/languages/customcell/generator/source_gen" includes="**/*.java" />
       <fileset dir="${mps_home}/editor/richtext-editor/languages/customcell/source_gen" includes="**/*.java" />
-      <zipfileset file="${mps_home}/editor/richtext-editor/languages/customcell/de.slisson.richtext.customcell.mpl" prefix="module" />
+      <zipfileset file="${mps_home}/editor/richtext-editor/languages/customcell/richtext.customcell.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-customcell-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/editor-richtext-editor-languages-customcell-languageModels" prefix="module/languageModels" />
     </jar>
@@ -3085,7 +3085,7 @@
         <module file="${mps_home}/languages/baseLanguage/unitTest/jetbrains.mps.baseLanguage.unitTest.libs.msd" />
         <module file="${mps_home}/editor/richtext-editor/languages/multiline/multiline.mpl" />
         <module file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/runtime.msd" />
-        <module file="${mps_home}/editor/richtext-editor/languages/customcell/de.slisson.richtext.customcell.mpl" />
+        <module file="${mps_home}/editor/richtext-editor/languages/customcell/richtext.customcell.mpl" />
         <module file="${mps_home}/languages/util/execution/util/jetbrains.mps.execution.util.mpl" />
         <module file="${mps_home}/workbench/mps-ui/jetbrains.mps.ide.ui.msd" />
         <module file="${mps_home}/core/kernel/patternRuntime/jetbrains.mps.lang.pattern.runtime.msd" />

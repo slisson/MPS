@@ -10817,7 +10817,7 @@
                 <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808032186098166713" nodeInfo="nn">
                   <property name="head" nameId="3ior.8618885170173601779" value="customcell" />
                   <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3808032186098166719" nodeInfo="nn">
-                    <property name="head" nameId="3ior.8618885170173601779" value="de.slisson.richtext.customcell.mpl" />
+                    <property name="head" nameId="3ior.8618885170173601779" value="richtext.customcell.mpl" />
                   </node>
                 </node>
               </node>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="jetbrains.mps.editor.richtext.util.RichtextUtil" file="RichtextUtil.java">
-    <classNode dependClassName="de.slisson.mps.editor.multiline.cells.EditorCell_Word" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
@@ -11,6 +10,7 @@
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.classloading.ClassLoaderManager" />
+    <classNode dependClassName="jetbrains.mps.editor.multiline.cells.EditorCell_Word" />
     <classNode dependClassName="jetbrains.mps.editor.richtext.behavior.Text_Behavior" />
     <classNode dependClassName="jetbrains.mps.editor.richtext.behavior.Word_Behavior" />
     <classNode dependClassName="jetbrains.mps.editor.richtext.runtime.EnrichmentInfo" />
