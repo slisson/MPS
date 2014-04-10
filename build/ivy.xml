@@ -490,6 +490,9 @@
     <dependency org="lib" name="jgoodies-common-1.2.1.jar" rev="1.2.1">
       <artifact name="jgoodies-common-1.2.1.jar" ext="jar"/>
     </dependency>
+    <dependency org="lib" name="commons-lang3-3.1" rev="3.1">
+      <artifact name="commons-lang3-3.1.jar" ext="jar" url="http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+    </dependency>
 
     <!--
     lib
