@@ -8,7 +8,6 @@ import de.slisson.mps.editor.multiline.cells.EditorCell_Word;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import de.slisson.mps.editor.multiline.cells.EditorCell_Multiline;
-import jetbrains.mps.internal.collections.runtime.Sequence;
 import de.slisson.mps.richtext.runtime.selection.RichtextSelection;
 
 public class MultilineWordCell_SelectAction extends AbstractCellAction {
@@ -32,7 +31,6 @@ public class MultilineWordCell_SelectAction extends AbstractCellAction {
 
     SelectionManager selectionManager = context.getEditorComponent().getSelectionManager();
     EditorCell_Multiline mlCell = myWordCell.getParent();
-    int index = Sequence.fromIterable(mlCell.getWordCells()).indexOf(myWordCell);
     int wordStart = myWordCell.getParent().getTextBefore(myWordCell, 0).length();
     int selectionStart = ((isRightToLeft() ? myWordCell.getSelectionEnd() : myWordCell.getSelectionStart())) + wordStart;
     int selectionEnd = ((isRightToLeft() ? myWordCell.getSelectionStart() : myWordCell.getSelectionEnd())) + wordStart;

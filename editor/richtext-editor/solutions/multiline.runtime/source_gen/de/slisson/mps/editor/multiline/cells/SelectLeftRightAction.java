@@ -6,7 +6,7 @@ import jetbrains.mps.openapi.editor.cells.CellAction;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.nodeEditor.EditorComponent;
-import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 
 public class SelectLeftRightAction implements CellAction {
   private boolean myLeft;
@@ -39,7 +39,7 @@ public class SelectLeftRightAction implements CellAction {
 
     SelectionManager selectionManager = ((EditorComponent) context.getEditorComponent()).getSelectionManager();
     EditorCell_Multiline parent = myWordCell.getParent();
-    int index = Sequence.fromIterable(parent.getWordCells()).indexOf(myWordCell);
+    int index = ListSequence.fromList(parent.getWordCells()).indexOf(myWordCell);
     int wordStart = myWordCell.getParent().getTextBefore(myWordCell, 0).length();
     int selectionStart = ((myLeft ? myWordCell.getSelectionEnd() : myWordCell.getSelectionStart())) + wordStart;
     int selectionEnd = ((myLeft ? myWordCell.getSelectionStart() - 1 : myWordCell.getSelectionEnd() + 1)) + wordStart;

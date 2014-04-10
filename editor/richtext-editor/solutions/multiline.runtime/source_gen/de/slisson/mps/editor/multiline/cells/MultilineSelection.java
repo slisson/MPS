@@ -10,7 +10,7 @@ import jetbrains.mps.openapi.editor.selection.SelectionStoreException;
 import jetbrains.mps.nodeEditor.selection.SelectionRestoreException;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.selection.SelectionInfoImpl;
-import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import de.slisson.mps.editor.multiline.runtime.ClipboardUtils;
 import jetbrains.mps.nodeEditor.cells.CellConditions;
@@ -96,7 +96,7 @@ public class MultilineSelection extends AbstractSelection {
       selEnd = temp;
     }
     int wordStart = 0;
-    for (EditorCell_Word wordCell : Sequence.fromIterable(myMultilineCell.getWordCells())) {
+    for (EditorCell_Word wordCell : ListSequence.fromList(myMultilineCell.getWordCells())) {
       int wordLength = wordCell.getText().length();
       int wordEnd = wordStart + wordLength;
       if (wordStart <= caretPos && caretPos <= wordEnd && selEnd != selStart) {

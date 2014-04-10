@@ -1672,7 +1672,7 @@
     <nodeInfo nodeId="4702832764623275739" fileName="EditorCell_Multiline.java" startLine="146" startPosition="72" endLine="151" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="1264234391953225673" fileName="EditorCell_Multiline.java" startLine="219" startPosition="0" endLine="224" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="insertText#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="4702832764623253551" fileName="EditorCell_Multiline.java" startLine="228" startPosition="58" endLine="233" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4702832764623253366" fileName="EditorCell_Multiline.java" startLine="265" startPosition="51" endLine="270" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4702832764623253366" fileName="EditorCell_Multiline.java" startLine="265" startPosition="47" endLine="270" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="6159071989902512923" fileName="EditorCell_Multiline.java" startLine="277" startPosition="0" endLine="282" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setText#(Ljava/lang/String;)V" />
     <nodeInfo nodeId="4887533856260828694" fileName="EditorCell_Multiline.java" startLine="392" startPosition="54" endLine="397" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="2748325995411844314" fileName="EditorCell_Multiline.java" startLine="64" startPosition="14" endLine="70" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
@@ -1690,7 +1690,7 @@
     <nodeInfo nodeId="4950521006212364765" fileName="EditorCell_Multiline.java" startLine="186" startPosition="27" endLine="193" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
     <nodeInfo nodeId="3283337187210300269" fileName="EditorCell_Multiline.java" startLine="207" startPosition="48" endLine="214" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="4702832764623253549" fileName="EditorCell_Multiline.java" startLine="227" startPosition="69" endLine="234" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="4702832764623253349" fileName="EditorCell_Multiline.java" startLine="265" startPosition="0" endLine="272" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getWordCells#()Ljava/lang/Iterable;" />
+    <nodeInfo nodeId="4702832764623253349" fileName="EditorCell_Multiline.java" startLine="265" startPosition="0" endLine="272" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getWordCells#()Ljava/util/List;" />
     <nodeInfo nodeId="6159071989902572038" fileName="EditorCell_Multiline.java" startLine="287" startPosition="0" endLine="294" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="newWordCell#(I)Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;" />
     <nodeInfo nodeId="3758249303358503799" fileName="EditorCell_Multiline.java" startLine="328" startPosition="0" endLine="335" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCharacterBounds#(I)Ljava/awt/Rectangle;" />
     <nodeInfo nodeId="3749677589240810867" fileName="EditorCell_Multiline.java" startLine="426" startPosition="25" endLine="433" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
@@ -1899,7 +1899,7 @@
       <varInfo nodeId="1264234391953225691" varName="text" />
     </scopeInfo>
     <scopeInfo nodeId="4702832764623253550" fileName="EditorCell_Multiline.java" startLine="228" startPosition="58" endLine="233" endPosition="15" />
-    <scopeInfo nodeId="4702832764623253352" fileName="EditorCell_Multiline.java" startLine="265" startPosition="51" endLine="270" endPosition="7" />
+    <scopeInfo nodeId="4702832764623253352" fileName="EditorCell_Multiline.java" startLine="265" startPosition="47" endLine="270" endPosition="24" />
     <scopeInfo nodeId="6159071989902512923" fileName="EditorCell_Multiline.java" startLine="277" startPosition="0" endLine="282" endPosition="0">
       <varInfo nodeId="6159071989902512927" varName="newText" />
     </scopeInfo>

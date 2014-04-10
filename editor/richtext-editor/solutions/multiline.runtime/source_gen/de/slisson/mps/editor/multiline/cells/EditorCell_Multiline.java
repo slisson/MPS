@@ -104,7 +104,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
       }
     });
     setNumberOfWordCells(totalWords);
-    List<EditorCell_Word> wordCells = Sequence.fromIterable(getWordCells()).toListSequence();
+    List<EditorCell_Word> wordCells = ListSequence.fromList(getWordCells()).toListSequence();
     int wordNum = -1;
     for (String[] line : lines) {
       for (String word : line) {
@@ -184,14 +184,14 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
   public EditorCell_Word getWordCellContainingPos(int pos) {
     int remainingPos = pos;
-    for (EditorCell_Word wordCell : Sequence.fromIterable(getWordCells())) {
+    for (EditorCell_Word wordCell : ListSequence.fromList(getWordCells())) {
       int textLen = wordCell.getText().length();
       if (remainingPos <= textLen) {
         return wordCell;
       }
       remainingPos -= textLen + 1;
     }
-    return Sequence.fromIterable(getWordCells()).last();
+    return ListSequence.fromList(getWordCells()).last();
   }
 
   public void setCaretPosition(int pos, boolean enforceSelection) {
@@ -203,7 +203,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
   private void setCaretPosition_(int pos, boolean enforceSelection) {
     int remainingPos = pos;
-    for (EditorCell_Word wordCell : Sequence.fromIterable(getWordCells())) {
+    for (EditorCell_Word wordCell : ListSequence.fromList(getWordCells())) {
       int textLen = wordCell.getText().length();
       if (remainingPos <= textLen) {
         if (enforceSelection || ArrayUtils.contains(getCells(), getContext().getSelectedCell())) {
@@ -249,7 +249,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     List<EditorCell_Word> result = ListSequence.fromList(new ArrayList<EditorCell_Word>());
     int cellNum = getCellNumber(cell);
     if (cellNum >= 0) {
-      ListSequence.fromList(result).addSequence(Sequence.fromIterable(getWordCells()).take(cellNum));
+      ListSequence.fromList(result).addSequence(ListSequence.fromList(getWordCells()).take(cellNum));
     }
     return result;
   }
@@ -262,12 +262,12 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return myMultilineText.getText().substring(getCaretPosition());
   }
 
-  public Iterable<EditorCell_Word> getWordCells() {
+  public List<EditorCell_Word> getWordCells() {
     return Sequence.fromIterable(Sequence.fromArray(getCells())).select(new ISelector<jetbrains.mps.nodeEditor.cells.EditorCell, EditorCell_Word>() {
       public EditorCell_Word select(jetbrains.mps.nodeEditor.cells.EditorCell it) {
         return (EditorCell_Word) it;
       }
-    });
+    }).toListSequence();
   }
 
   public String getText() {
@@ -312,7 +312,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
   public void addWordCellInitializer(WordCellInitializer initializer) {
     myWordCellInitializers.add(initializer);
-    for (EditorCell_Word wordCell : Sequence.fromIterable(getWordCells())) {
+    for (EditorCell_Word wordCell : ListSequence.fromList(getWordCells())) {
       initializer.initialize(wordCell);
     }
   }
@@ -424,7 +424,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     Shape originalClip = g.getClip();
     g.setClip(rect);
     int wordStartPos = 0;
-    for (EditorCell_Word word : Sequence.fromIterable(getWordCells())) {
+    for (EditorCell_Word word : ListSequence.fromList(getWordCells())) {
       int wordEndPos = wordStartPos + word.getTextLengthIncludingSeparator();
       if (wordEndPos >= start && wordStartPos <= end) {
         word.paint(g, ParentSettings.createSelectedSetting(true));
@@ -438,7 +438,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
   public SortedSet<Integer> findAllLineEnds() {
     SortedSet<Integer> result = SortedSetSequence.fromSet(new TreeSet<Integer>());
-    List<EditorCell_Word> wordCells = Sequence.fromIterable(getWordCells()).toListSequence();
+    List<EditorCell_Word> wordCells = ListSequence.fromList(getWordCells()).toListSequence();
     int start = 0;
     for (int i = 0; i < ListSequence.fromList(wordCells).count(); i++) {
       EditorCell_Word cell = ListSequence.fromList(wordCells).getElement(i);

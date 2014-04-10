@@ -353,55 +353,53 @@
     <unitInfo nodeId="2557074442922449380" fileName="kmWord.java" startLine="16" startPosition="0" endLine="66" endPosition="0" unitName="de.slisson.mps.richtext.editor.kmWord" />
   </root>
   <root nodeRef="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)/399625975977790567">
-    <nodeInfo nodeId="399625975977790727" fileName="MultilineWordCell_SelectAction.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myActionType" />
-    <nodeInfo nodeId="399625975977790587" fileName="MultilineWordCell_SelectAction.java" startLine="16" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myWordCell" />
-    <nodeInfo nodeId="399625975977790733" fileName="MultilineWordCell_SelectAction.java" startLine="18" startPosition="94" endLine="19" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="399625975977790580" fileName="MultilineWordCell_SelectAction.java" startLine="19" startPosition="30" endLine="20" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="399625975977790598" fileName="MultilineWordCell_SelectAction.java" startLine="24" startPosition="100" endLine="25" endPosition="143" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="399625975977790615" fileName="MultilineWordCell_SelectAction.java" startLine="26" startPosition="59" endLine="27" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="399625975977790627" fileName="MultilineWordCell_SelectAction.java" startLine="27" startPosition="55" endLine="28" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="399625975977790631" fileName="MultilineWordCell_SelectAction.java" startLine="28" startPosition="40" endLine="29" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="399625975977790636" fileName="MultilineWordCell_SelectAction.java" startLine="31" startPosition="5" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="399625975977790637" fileName="MultilineWordCell_SelectAction.java" startLine="32" startPosition="0" endLine="33" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="399625975977790645" fileName="MultilineWordCell_SelectAction.java" startLine="33" startPosition="91" endLine="34" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="399625975977790651" fileName="MultilineWordCell_SelectAction.java" startLine="34" startPosition="57" endLine="35" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="399625975977790660" fileName="MultilineWordCell_SelectAction.java" startLine="35" startPosition="81" endLine="36" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="399625975977790672" fileName="MultilineWordCell_SelectAction.java" startLine="36" startPosition="81" endLine="37" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="399625975977790686" fileName="MultilineWordCell_SelectAction.java" startLine="37" startPosition="121" endLine="38" endPosition="119" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="399625975977790700" fileName="MultilineWordCell_SelectAction.java" startLine="38" startPosition="119" endLine="39" endPosition="138" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="399625975977790714" fileName="MultilineWordCell_SelectAction.java" startLine="39" startPosition="138" endLine="40" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="399625975977790719" fileName="MultilineWordCell_SelectAction.java" startLine="40" startPosition="46" endLine="41" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="399625975977816475" fileName="MultilineWordCell_SelectAction.java" startLine="44" startPosition="34" endLine="45" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="399625975977816457" fileName="MultilineWordCell_SelectAction.java" startLine="54" startPosition="21" endLine="55" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="399625975977816460" fileName="MultilineWordCell_SelectAction.java" startLine="56" startPosition="14" endLine="57" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="399625975977816471" fileName="MultilineWordCell_SelectAction.java" startLine="44" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isLeftToRight#()Z" />
-    <nodeInfo nodeId="399625975977790568" fileName="MultilineWordCell_SelectAction.java" startLine="18" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MultilineWordCell_SelectAction#(Ljetbrains/mps/openapi/editor/cells/CellActionType;Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
-    <nodeInfo nodeId="399625975977790613" fileName="MultilineWordCell_SelectAction.java" startLine="25" startPosition="143" endLine="30" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="399625975977790762" fileName="MultilineWordCell_SelectAction.java" startLine="23" startPosition="46" endLine="31" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="399625975977790860" fileName="MultilineWordCell_SelectAction.java" startLine="48" startPosition="34" endLine="58" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.SwitchStatement" />
-    <nodeInfo nodeId="399625975977790855" fileName="MultilineWordCell_SelectAction.java" startLine="48" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isRightToLeft#()Z" />
-    <nodeInfo nodeId="399625975977790592" fileName="MultilineWordCell_SelectAction.java" startLine="23" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-    <scopeInfo nodeId="399625975977816443" fileName="MultilineWordCell_SelectAction.java" startLine="50" startPosition="23" endLine="50" endPosition="23" />
-    <scopeInfo nodeId="399625975977816449" fileName="MultilineWordCell_SelectAction.java" startLine="51" startPosition="27" endLine="51" endPosition="27" />
-    <scopeInfo nodeId="5740484903853862859" fileName="MultilineWordCell_SelectAction.java" startLine="52" startPosition="29" endLine="52" endPosition="29" />
-    <scopeInfo nodeId="5740484903853882960" fileName="MultilineWordCell_SelectAction.java" startLine="53" startPosition="23" endLine="53" endPosition="23" />
-    <scopeInfo nodeId="399625975977816474" fileName="MultilineWordCell_SelectAction.java" startLine="44" startPosition="34" endLine="45" endPosition="30" />
-    <scopeInfo nodeId="399625975977816454" fileName="MultilineWordCell_SelectAction.java" startLine="54" startPosition="21" endLine="55" endPosition="20" />
-    <scopeInfo nodeId="399625975977790862" fileName="MultilineWordCell_SelectAction.java" startLine="56" startPosition="14" endLine="57" endPosition="21" />
-    <scopeInfo nodeId="399625975977790575" fileName="MultilineWordCell_SelectAction.java" startLine="18" startPosition="94" endLine="20" endPosition="26" />
-    <scopeInfo nodeId="399625975977790614" fileName="MultilineWordCell_SelectAction.java" startLine="26" startPosition="59" endLine="29" endPosition="15" />
-    <scopeInfo nodeId="399625975977816471" fileName="MultilineWordCell_SelectAction.java" startLine="44" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="399625975977790568" fileName="MultilineWordCell_SelectAction.java" startLine="18" startPosition="0" endLine="22" endPosition="0">
+    <nodeInfo nodeId="399625975977790727" fileName="MultilineWordCell_SelectAction.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myActionType" />
+    <nodeInfo nodeId="399625975977790587" fileName="MultilineWordCell_SelectAction.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myWordCell" />
+    <nodeInfo nodeId="399625975977790733" fileName="MultilineWordCell_SelectAction.java" startLine="17" startPosition="94" endLine="18" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="399625975977790580" fileName="MultilineWordCell_SelectAction.java" startLine="18" startPosition="30" endLine="19" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="399625975977790598" fileName="MultilineWordCell_SelectAction.java" startLine="23" startPosition="100" endLine="24" endPosition="143" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="399625975977790615" fileName="MultilineWordCell_SelectAction.java" startLine="25" startPosition="59" endLine="26" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="399625975977790627" fileName="MultilineWordCell_SelectAction.java" startLine="26" startPosition="55" endLine="27" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="399625975977790631" fileName="MultilineWordCell_SelectAction.java" startLine="27" startPosition="40" endLine="28" endPosition="15" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="399625975977790636" fileName="MultilineWordCell_SelectAction.java" startLine="30" startPosition="5" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="399625975977790637" fileName="MultilineWordCell_SelectAction.java" startLine="31" startPosition="0" endLine="32" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="399625975977790645" fileName="MultilineWordCell_SelectAction.java" startLine="32" startPosition="91" endLine="33" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="399625975977790660" fileName="MultilineWordCell_SelectAction.java" startLine="33" startPosition="57" endLine="34" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="399625975977790672" fileName="MultilineWordCell_SelectAction.java" startLine="34" startPosition="81" endLine="35" endPosition="121" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="399625975977790686" fileName="MultilineWordCell_SelectAction.java" startLine="35" startPosition="121" endLine="36" endPosition="119" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="399625975977790700" fileName="MultilineWordCell_SelectAction.java" startLine="36" startPosition="119" endLine="37" endPosition="138" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="399625975977790714" fileName="MultilineWordCell_SelectAction.java" startLine="37" startPosition="138" endLine="38" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="399625975977790719" fileName="MultilineWordCell_SelectAction.java" startLine="38" startPosition="46" endLine="39" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="399625975977816475" fileName="MultilineWordCell_SelectAction.java" startLine="42" startPosition="34" endLine="43" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="399625975977816457" fileName="MultilineWordCell_SelectAction.java" startLine="52" startPosition="21" endLine="53" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="399625975977816460" fileName="MultilineWordCell_SelectAction.java" startLine="54" startPosition="14" endLine="55" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="399625975977816471" fileName="MultilineWordCell_SelectAction.java" startLine="42" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isLeftToRight#()Z" />
+    <nodeInfo nodeId="399625975977790568" fileName="MultilineWordCell_SelectAction.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="MultilineWordCell_SelectAction#(Ljetbrains/mps/openapi/editor/cells/CellActionType;Lde/slisson/mps/editor/multiline/cells/EditorCell_Word;)V" />
+    <nodeInfo nodeId="399625975977790613" fileName="MultilineWordCell_SelectAction.java" startLine="24" startPosition="143" endLine="29" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="399625975977790762" fileName="MultilineWordCell_SelectAction.java" startLine="22" startPosition="46" endLine="30" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="399625975977790860" fileName="MultilineWordCell_SelectAction.java" startLine="46" startPosition="34" endLine="56" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+    <nodeInfo nodeId="399625975977790855" fileName="MultilineWordCell_SelectAction.java" startLine="46" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isRightToLeft#()Z" />
+    <nodeInfo nodeId="399625975977790592" fileName="MultilineWordCell_SelectAction.java" startLine="22" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+    <scopeInfo nodeId="399625975977816443" fileName="MultilineWordCell_SelectAction.java" startLine="48" startPosition="23" endLine="48" endPosition="23" />
+    <scopeInfo nodeId="399625975977816449" fileName="MultilineWordCell_SelectAction.java" startLine="49" startPosition="27" endLine="49" endPosition="27" />
+    <scopeInfo nodeId="5740484903853862859" fileName="MultilineWordCell_SelectAction.java" startLine="50" startPosition="29" endLine="50" endPosition="29" />
+    <scopeInfo nodeId="5740484903853882960" fileName="MultilineWordCell_SelectAction.java" startLine="51" startPosition="23" endLine="51" endPosition="23" />
+    <scopeInfo nodeId="399625975977816474" fileName="MultilineWordCell_SelectAction.java" startLine="42" startPosition="34" endLine="43" endPosition="30" />
+    <scopeInfo nodeId="399625975977816454" fileName="MultilineWordCell_SelectAction.java" startLine="52" startPosition="21" endLine="53" endPosition="20" />
+    <scopeInfo nodeId="399625975977790862" fileName="MultilineWordCell_SelectAction.java" startLine="54" startPosition="14" endLine="55" endPosition="21" />
+    <scopeInfo nodeId="399625975977790575" fileName="MultilineWordCell_SelectAction.java" startLine="17" startPosition="94" endLine="19" endPosition="26" />
+    <scopeInfo nodeId="399625975977790614" fileName="MultilineWordCell_SelectAction.java" startLine="25" startPosition="59" endLine="28" endPosition="15" />
+    <scopeInfo nodeId="399625975977816471" fileName="MultilineWordCell_SelectAction.java" startLine="42" startPosition="0" endLine="45" endPosition="0" />
+    <scopeInfo nodeId="399625975977790568" fileName="MultilineWordCell_SelectAction.java" startLine="17" startPosition="0" endLine="21" endPosition="0">
       <varInfo nodeId="399625975977790569" varName="actionType" />
       <varInfo nodeId="399625975977790571" varName="wordCell" />
     </scopeInfo>
-    <scopeInfo nodeId="399625975977790763" fileName="MultilineWordCell_SelectAction.java" startLine="24" startPosition="100" endLine="30" endPosition="7">
+    <scopeInfo nodeId="399625975977790763" fileName="MultilineWordCell_SelectAction.java" startLine="23" startPosition="100" endLine="29" endPosition="7">
       <varInfo nodeId="399625975977790599" varName="newPosition" />
     </scopeInfo>
-    <scopeInfo nodeId="399625975977790858" fileName="MultilineWordCell_SelectAction.java" startLine="48" startPosition="34" endLine="58" endPosition="5" />
-    <scopeInfo nodeId="399625975977790855" fileName="MultilineWordCell_SelectAction.java" startLine="48" startPosition="0" endLine="60" endPosition="0" />
-    <scopeInfo nodeId="399625975977790597" fileName="MultilineWordCell_SelectAction.java" startLine="23" startPosition="46" endLine="41" endPosition="42">
-      <varInfo nodeId="399625975977790652" varName="index" />
+    <scopeInfo nodeId="399625975977790858" fileName="MultilineWordCell_SelectAction.java" startLine="46" startPosition="34" endLine="56" endPosition="5" />
+    <scopeInfo nodeId="399625975977790855" fileName="MultilineWordCell_SelectAction.java" startLine="46" startPosition="0" endLine="58" endPosition="0" />
+    <scopeInfo nodeId="399625975977790597" fileName="MultilineWordCell_SelectAction.java" startLine="22" startPosition="46" endLine="39" endPosition="42">
       <varInfo nodeId="399625975977790646" varName="mlCell" />
       <varInfo nodeId="399625975977790701" varName="selection" />
       <varInfo nodeId="399625975977790687" varName="selectionEnd" />
@@ -409,10 +407,10 @@
       <varInfo nodeId="399625975977790673" varName="selectionStart" />
       <varInfo nodeId="399625975977790661" varName="wordStart" />
     </scopeInfo>
-    <scopeInfo nodeId="399625975977790592" fileName="MultilineWordCell_SelectAction.java" startLine="23" startPosition="0" endLine="43" endPosition="0">
+    <scopeInfo nodeId="399625975977790592" fileName="MultilineWordCell_SelectAction.java" startLine="22" startPosition="0" endLine="41" endPosition="0">
       <varInfo nodeId="399625975977790595" varName="context" />
     </scopeInfo>
-    <unitInfo nodeId="399625975977790567" fileName="MultilineWordCell_SelectAction.java" startLine="14" startPosition="0" endLine="61" endPosition="0" unitName="de.slisson.mps.richtext.editor.MultilineWordCell_SelectAction" />
+    <unitInfo nodeId="399625975977790567" fileName="MultilineWordCell_SelectAction.java" startLine="13" startPosition="0" endLine="59" endPosition="0" unitName="de.slisson.mps.richtext.editor.MultilineWordCell_SelectAction" />
   </root>
   <root nodeRef="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)/5745648783537068349">
     <nodeInfo nodeId="5745648783537068349" fileName="amText.java" startLine="15" startPosition="95" endLine="16" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />

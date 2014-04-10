@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-dnbwbwz0i78laopib5eaz6fm6c0419c">
+<dependencies version="2" modelHash="58qtme9il48fsihn7l41ic6u88hifir">
+  <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#de.slisson.mps.editor.multiline.runtime(MPS.Editor/de.slisson.mps.editor.multiline.runtime@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang.reflect(JDK/java.lang.reflect@java_stub)" />
@@ -23,9 +24,8 @@
   <dep model="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" hash="4fc4xcfvdl6zkiyo6vqwwk7ylv9epoy" />
   <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" hash="51rta3hijy0r8oqn8xwzw6fztfi6a8p" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="6gsgv1p6bkd8kmlifl0ddbzjugbmbxl" />
-  <dep model="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(de.slisson.mps.editor.multiline.runtime)" hash="bjkkkhv875xv3y823w8xv03n0noz1o5" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-9ul2n83hssy8wjb8faorbs0k0av9cuy" />
-  <common hash="-1rg88huopk9acr9avkkmrg9nx505nul" dependsOnNodes="true">
+  <common hash="-aefkgxdmegbe6m0scmq01r5y3mgkhbw" dependsOnNodes="true">
     <dep root="2557074442922675269" />
     <dep root="4433012599261204762" />
     <dep root="5500395430674470425" />
@@ -43,9 +43,10 @@
     <file name="Text_BehaviorDescriptor.java" />
     <file name="Word_BehaviorDescriptor.java" />
   </common>
-  <source id="2557074442922675269" name="Word_Behavior" hash="aqbykbznv6g4esygt42nu3kf70rggdf">
+  <source id="2557074442922675269" name="Word_Behavior" hash="9uvbxx0evhrbij5lb4llzk1jvliypai">
     <dep root="4433012599261204762" />
     <dep root="5500395430674470425" />
+    <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#de.slisson.mps.editor.multiline.runtime(MPS.Editor/de.slisson.mps.editor.multiline.runtime@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -61,7 +62,6 @@
     <dep model="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-    <dep model="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(de.slisson.mps.editor.multiline.runtime)" />
     <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <file name="Word_Behavior.java" />
   </source>
