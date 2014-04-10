@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="i229" modelUID="r:5bc73af6-c6d4-48cc-b01f-6c9bdce33350(de.slisson.mps.editor.multiline.constraints)" version="-1" />
+      <model index="wap1" modelUID="r:9aa85a40-e98d-42a5-a8fd-9f607a4dc9a0(de.slisson.mps.editor.multiline.structure)" version="-1" />
+      <model index="61n" modelUID="r:2e3bedda-d2c6-42ea-8f39-83cfe0a4ed64(de.slisson.mps.editor.multiline.typesystem)" version="-1" />
+      <model index="l42e" modelUID="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(de.slisson.mps.editor.multiline.generator.template.main@generator)" version="-1" />
+      <model index="psb5" modelUID="r:c28b9bb1-a62c-4771-abc6-3b0cab74455d(de.slisson.mps.editor.multiline.behavior)" version="-1" />
+      <model index="jef7" modelUID="r:b34afbb0-553b-4e3b-8562-859e6864b1d6(de.slisson.mps.editor.multiline.editor)" version="-1" />
+    </dependencies>
+    <RenameModel oldModel="r:b34afbb0-553b-4e3b-8562-859e6864b1d6(de.slisson.mps.editor.multiline.editor)" newModel="r:b34afbb0-553b-4e3b-8562-859e6864b1d6(jetbrains.mps.editor.multiline.editor)" />
+    <RenameModel oldModel="r:c28b9bb1-a62c-4771-abc6-3b0cab74455d(de.slisson.mps.editor.multiline.behavior)" newModel="r:c28b9bb1-a62c-4771-abc6-3b0cab74455d(jetbrains.mps.editor.multiline.behavior)" />
+    <RenameModel oldModel="r:9aa85a40-e98d-42a5-a8fd-9f607a4dc9a0(de.slisson.mps.editor.multiline.structure)" newModel="r:9aa85a40-e98d-42a5-a8fd-9f607a4dc9a0(jetbrains.mps.editor.multiline.structure)" />
+    <RenameModel oldModel="r:2e3bedda-d2c6-42ea-8f39-83cfe0a4ed64(de.slisson.mps.editor.multiline.typesystem)" newModel="r:2e3bedda-d2c6-42ea-8f39-83cfe0a4ed64(jetbrains.mps.editor.multiline.typesystem)" />
+    <RenameModel oldModel="r:5bc73af6-c6d4-48cc-b01f-6c9bdce33350(de.slisson.mps.editor.multiline.constraints)" newModel="r:5bc73af6-c6d4-48cc-b01f-6c9bdce33350(jetbrains.mps.editor.multiline.constraints)" />
+    <RenameModel oldModel="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(de.slisson.mps.editor.multiline.generator.template.main@generator)" newModel="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(jetbrains.mps.editor.multiline.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+

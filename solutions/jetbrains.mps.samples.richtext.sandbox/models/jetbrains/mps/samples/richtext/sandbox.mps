@@ -2,13 +2,13 @@
 <model modelUID="r:980a0f80-f33e-4bac-bfd7-8fb4ae24fb97(jetbrains.mps.samples.richtext.sandbox)">
   <persistence version="8" />
   <language namespace="0e10c6eb-2b0f-4150-b681-4e5505d8baaf(jetbrains.mps.samples.richtext)" />
-  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(jetbrains.mps.editor.richtext)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
+  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="vydj" modelUID="r:a2505671-3b45-40ec-8073-270e36976c54(jetbrains.mps.samples.richtext.structure)" version="-1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(jetbrains.mps.editor.richtext.structure)" version="6" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <root type="vydj.Document" typeId="vydj.5232239503568939837" id="5232239503568982138" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="demo document" />

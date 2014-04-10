@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)" version="1">
+<model modelUID="r:7141fd54-a831-41ba-8753-74008b0b9af4(jetbrains.mps.editor.richtext.editor)" version="2">
   <persistence version="8" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
-  <language namespace="31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)" />
-  <language namespace="52733268-be24-4f5f-ab84-a73b7c0c03b0(de.slisson.mps.richtext.customcell)" />
+  <language namespace="31c91def-a131-41a1-9018-102874f49a12(jetbrains.mps.editor.multiline)" />
+  <language namespace="52733268-be24-4f5f-ab84-a73b7c0c03b0(jetbrains.mps.editor.richtext.customcell)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(jetbrains.mps.editor.richtext.structure)" version="6" />
   <import index="9a8" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
   <import index="jsgz" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" version="-1" />
-  <import index="wtuq" modelUID="r:ebe120ba-74f3-4913-8ba8-dc7299e610f9(de.slisson.mps.richtext.util)" version="-1" />
-  <import index="gyv0" modelUID="r:3e994831-9e2b-4a2c-a757-02d48f0caeb5(de.slisson.mps.richtext.runtime.selection)" version="-1" />
+  <import index="wtuq" modelUID="r:ebe120ba-74f3-4913-8ba8-dc7299e610f9(jetbrains.mps.editor.richtext.util)" version="0" />
+  <import index="gyv0" modelUID="r:3e994831-9e2b-4a2c-a757-02d48f0caeb5(jetbrains.mps.editor.richtext.runtime.selection)" version="0" />
   <import index="srng" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" version="-1" />
   <import index="nu8v" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" version="-1" />
   <import index="bzqj" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.editor.runtime.cells(MPS.Editor/jetbrains.mps.editor.runtime.cells@java_stub)" version="-1" />
@@ -24,8 +24,8 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
-  <import index="wap1" modelUID="r:9aa85a40-e98d-42a5-a8fd-9f607a4dc9a0(de.slisson.mps.editor.multiline.structure)" version="-1" implicit="yes" />
-  <import index="5mdd" modelUID="r:f4f3736e-6da2-4bf6-9b34-06696f46bc70(de.slisson.mps.richtext.customcell.structure)" version="0" implicit="yes" />
+  <import index="wap1" modelUID="r:9aa85a40-e98d-42a5-a8fd-9f607a4dc9a0(jetbrains.mps.editor.multiline.structure)" version="0" implicit="yes" />
+  <import index="5mdd" modelUID="r:f4f3736e-6da2-4bf6-9b34-06696f46bc70(jetbrains.mps.editor.richtext.customcell.structure)" version="1" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2557074442922392304" nodeInfo="ng">
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="87nw.2557074442922380897" resolveInfo="Text" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="8824568824314451914" nodeInfo="nn">
@@ -38,17 +38,17 @@
             <property name="value" nameId="tpc2.7656031417253359015" value="0" />
           </node>
         </node>
-        <node role="factoryMethod" roleId="5mdd.2490242408670937967" type="5mdd.QueryFunction_Cell" typeId="5mdd.1176749715029" id="917258312815016995" nodeInfo="nn">
+        <node role="factoryMethod" roleId="5mdd.2490242408670937967" type="5mdd.QueryFunction_Cell" typeId="5mdd.1176749715029" id="917258312815016995" nodeInfo="ng">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="917258312815016996" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="917258312815146705" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068580123156" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="917258312815146771" nodeInfo="nn">
                 <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="2490242408672352981" resolveInfo="TextCellModifier" />
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2490242408671172492" resolveInfo="modify" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="5mdd.ConceptFunctionParameter_cell" typeId="5mdd.1161622981231" id="917258312815146934" nodeInfo="nn" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="5mdd.ConceptFunctionParameter_cell" typeId="5mdd.1161622981231" id="917258312815146934" nodeInfo="ng" />
               </node>
             </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="917258312815147291" nodeInfo="nn">
-              <node role="expression" roleId="tpee.1068581517676" type="5mdd.ConceptFunctionParameter_cell" typeId="5mdd.1161622981231" id="917258312815147471" nodeInfo="nn" />
+              <node role="expression" roleId="tpee.1068581517676" type="5mdd.ConceptFunctionParameter_cell" typeId="5mdd.1161622981231" id="917258312815147471" nodeInfo="ng" />
             </node>
           </node>
         </node>

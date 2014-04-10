@@ -30,7 +30,7 @@
       <modulePath path="$PROJECT_DIR$/editor/actions-runtime/jetbrains.mps.actions.runtime.msd" folder="core.aspects.actions" />
       <modulePath path="$PROJECT_DIR$/editor/editor-runtime/jetbrains.mps.editor.runtime.msd" folder="core.aspects.editor" />
       <modulePath path="$PROJECT_DIR$/editor/editorlang-runtime/jetbrains.mps.editorlang.runtime.msd" folder="core.aspects.editor" />
-      <modulePath path="$PROJECT_DIR$/editor/richtext-editor/languages/customcell/de.slisson.richtext.customcell.mpl" folder="editor.richtext" />
+      <modulePath path="$PROJECT_DIR$/editor/richtext-editor/languages/customcell/richtext.customcell.mpl" folder="editor.richtext" />
       <modulePath path="$PROJECT_DIR$/editor/richtext-editor/languages/multiline/multiline.mpl" folder="editor.richtext" />
       <modulePath path="$PROJECT_DIR$/editor/richtext-editor/languages/richtext/richtext.mpl" folder="editor.richtext" />
       <modulePath path="$PROJECT_DIR$/editor/richtext-editor/solutions/multiline.runtime/runtime.msd" folder="editor.richtext" />

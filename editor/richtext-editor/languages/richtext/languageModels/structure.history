@@ -2,14 +2,14 @@
 <history>
   <StructureModification>
     <dependencies>
+      <model index="q0t8" modelUID="r:64621ea8-86d0-4cf0-889f-9ed7a1311913(de.slisson.mps.wiki.structure)" version="-1" />
       <model index="mlaf" modelUID="r:1101f4ed-841e-4f34-bb3d-17fd9ac26a63(de.slisson.mps.wiki.editor)" version="-1" />
-      <model index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="0" />
-      <model index="62m1" modelUID="r:24ebb472-58a3-4e5e-9778-3dc7bb7e7352(de.slisson.mps.wiki.textGen)" version="-1" />
+      <model index="2ivc" modelUID="r:e570e5e2-e6e7-4a92-a299-1c00d3ac5678(de.slisson.mps.wiki.behavior)" version="-1" />
       <model index="mb0i" modelUID="r:1a7d6571-b994-4c94-b318-fc0a54a71ead(de.slisson.mps.richtext.textGen)" version="0" />
       <model index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="1" />
+      <model index="62m1" modelUID="r:24ebb472-58a3-4e5e-9778-3dc7bb7e7352(de.slisson.mps.wiki.textGen)" version="-1" />
+      <model index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="0" />
       <model index="23h6" modelUID="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)" version="0" />
-      <model index="2ivc" modelUID="r:e570e5e2-e6e7-4a92-a299-1c00d3ac5678(de.slisson.mps.wiki.behavior)" version="-1" />
-      <model index="q0t8" modelUID="r:64621ea8-86d0-4cf0-889f-9ed7a1311913(de.slisson.mps.wiki.structure)" version="-1" />
     </dependencies>
     <move id="87nw.3695793781940163289" to="q0t8.257181264606021597" />
     <move id="87nw.3695793781940163290" to="q0t8.257181264606021598" />
@@ -73,6 +73,34 @@
       <model index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="4" />
     </dependencies>
     <rename id="87nw.2557074442922438158" type="PROPERTY" from="value" to="escapedValue" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="py1r" modelUID="r:fa163aad-8c9b-4361-aa5e-88392679736a(de.slisson.mps.richtext.intentions)" version="0" />
+      <model index="wtuq" modelUID="r:ebe120ba-74f3-4913-8ba8-dc7299e610f9(de.slisson.mps.richtext.util)" version="-1" />
+      <model index="gyv0" modelUID="r:3e994831-9e2b-4a2c-a757-02d48f0caeb5(de.slisson.mps.richtext.runtime.selection)" version="-1" />
+      <model index="mb0i" modelUID="r:1a7d6571-b994-4c94-b318-fc0a54a71ead(de.slisson.mps.richtext.textGen)" version="1" />
+      <model index="k553" modelUID="r:276d01ed-a8f1-4a68-9983-8032b091d2b0(de.slisson.mps.richtext.runtime)" version="-1" />
+      <model index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" />
+      <model index="7e8p" modelUID="r:03892136-2eeb-485b-8f8a-60160e054ca2(de.slisson.mps.richtext.generator.template.main@generator)" version="-1" />
+      <model index="mr8n" modelUID="r:16020d5e-3959-4c19-9a84-8aa9998fe689(de.slisson.mps.richtext.constraints)" version="0" />
+      <model index="9k53" modelUID="r:5b028395-a4f4-4893-9069-339be8fc01aa(de.slisson.mps.richtext.typesystem)" version="0" />
+      <model index="tbr6" modelUID="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" version="1" />
+      <model index="23h6" modelUID="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)" version="1" />
+      <model index="ip27" modelUID="r:679fb3e6-5e0c-4117-b382-6c02f3a1f0ac(de.slisson.mps.richtext.actions)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:ebe120ba-74f3-4913-8ba8-dc7299e610f9(de.slisson.mps.richtext.util)" newModel="r:ebe120ba-74f3-4913-8ba8-dc7299e610f9(jetbrains.mps.editor.richtext.util)" />
+    <RenameModel oldModel="r:276d01ed-a8f1-4a68-9983-8032b091d2b0(de.slisson.mps.richtext.runtime)" newModel="r:276d01ed-a8f1-4a68-9983-8032b091d2b0(jetbrains.mps.editor.richtext.runtime)" />
+    <RenameModel oldModel="r:3e994831-9e2b-4a2c-a757-02d48f0caeb5(de.slisson.mps.richtext.runtime.selection)" newModel="r:3e994831-9e2b-4a2c-a757-02d48f0caeb5(jetbrains.mps.editor.richtext.runtime.selection)" />
+    <RenameModel oldModel="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)" newModel="r:7141fd54-a831-41ba-8753-74008b0b9af4(jetbrains.mps.editor.richtext.editor)" />
+    <RenameModel oldModel="r:679fb3e6-5e0c-4117-b382-6c02f3a1f0ac(de.slisson.mps.richtext.actions)" newModel="r:679fb3e6-5e0c-4117-b382-6c02f3a1f0ac(jetbrains.mps.editor.richtext.actions)" />
+    <RenameModel oldModel="r:1a7d6571-b994-4c94-b318-fc0a54a71ead(de.slisson.mps.richtext.textGen)" newModel="r:1a7d6571-b994-4c94-b318-fc0a54a71ead(jetbrains.mps.editor.richtext.textGen)" />
+    <RenameModel oldModel="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" newModel="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(jetbrains.mps.editor.richtext.behavior)" />
+    <RenameModel oldModel="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" newModel="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(jetbrains.mps.editor.richtext.structure)" />
+    <RenameModel oldModel="r:fa163aad-8c9b-4361-aa5e-88392679736a(de.slisson.mps.richtext.intentions)" newModel="r:fa163aad-8c9b-4361-aa5e-88392679736a(jetbrains.mps.editor.richtext.intentions)" />
+    <RenameModel oldModel="r:5b028395-a4f4-4893-9069-339be8fc01aa(de.slisson.mps.richtext.typesystem)" newModel="r:5b028395-a4f4-4893-9069-339be8fc01aa(jetbrains.mps.editor.richtext.typesystem)" />
+    <RenameModel oldModel="r:16020d5e-3959-4c19-9a84-8aa9998fe689(de.slisson.mps.richtext.constraints)" newModel="r:16020d5e-3959-4c19-9a84-8aa9998fe689(jetbrains.mps.editor.richtext.constraints)" />
+    <RenameModel oldModel="r:03892136-2eeb-485b-8f8a-60160e054ca2(de.slisson.mps.richtext.generator.template.main@generator)" newModel="r:03892136-2eeb-485b-8f8a-60160e054ca2(jetbrains.mps.editor.richtext.generator.template.main@generator)" />
   </StructureModification>
 </history>
 

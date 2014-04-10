@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="de.slisson.mps.editor.multiline" uuid="31c91def-a131-41a1-9018-102874f49a12" generatorOutputPath="${module}/source_gen">
+<language namespace="jetbrains.mps.editor.multiline" uuid="31c91def-a131-41a1-9018-102874f49a12" generatorOutputPath="${module}/source_gen">
   <models>
     <modelRoot contentPath="${module}/languageModels" type="default">
       <sourceRoot location="." />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="de.slisson.mps.editor.multiline#5792856961266375224" uuid="16fd1d11-dff9-4551-9afc-0c6b82a056c5">
+    <generator name="" generatorUID="jetbrains.mps.editor.multiline#5792856961266375224" uuid="16fd1d11-dff9-4551-9afc-0c6b82a056c5">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -34,9 +34,9 @@
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_together">
           <greater-priority-mapping>
-            <generator generatorUID="16fd1d11-dff9-4551-9afc-0c6b82a056c5(de.slisson.mps.editor.multiline#5792856961266375224)" />
+            <generator generatorUID="16fd1d11-dff9-4551-9afc-0c6b82a056c5(jetbrains.mps.editor.multiline#5792856961266375224)" />
             <external-mapping>
-              <mapping-node modelUID="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(de.slisson.mps.editor.multiline.generator.template.main@generator)" nodeID="5792856961266375225" />
+              <mapping-node modelUID="r:97c9f48b-46c3-422c-82ba-6ec3a1417cb2(jetbrains.mps.editor.multiline.generator.template.main@generator)" nodeID="5792856961266375225" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>

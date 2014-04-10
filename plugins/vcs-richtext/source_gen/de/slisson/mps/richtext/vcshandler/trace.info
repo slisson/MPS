@@ -6,7 +6,7 @@
     <nodeInfo nodeId="8253902831902930535" fileName="RichtextDiffHandler.java" startLine="27" startPosition="0" endLine="28" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
     <nodeInfo nodeId="8253902831902564400" fileName="RichtextDiffHandler.java" startLine="29" startPosition="46" endLine="30" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="8253902831902709002" fileName="RichtextDiffHandler.java" startLine="30" startPosition="67" endLine="31" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1698754832089296471" fileName="RichtextDiffHandler.java" startLine="33" startPosition="34" endLine="34" endPosition="295" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1698754832089296471" fileName="RichtextDiffHandler.java" startLine="33" startPosition="34" endLine="34" endPosition="307" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="1698754832089307094" fileName="RichtextDiffHandler.java" startLine="37" startPosition="25" endLine="38" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="8253902831902923177" fileName="RichtextDiffHandler.java" startLine="40" startPosition="5" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="8253902831902919535" fileName="RichtextDiffHandler.java" startLine="41" startPosition="0" endLine="42" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -23,7 +23,7 @@
     <nodeInfo nodeId="1698754832089294199" fileName="RichtextDiffHandler.java" startLine="31" startPosition="51" endLine="36" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="8253902831902564374" fileName="RichtextDiffHandler.java" startLine="28" startPosition="20" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
     <nodeInfo nodeId="270560076320996484" fileName="RichtextDiffHandler.java" startLine="24" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="canHandle#(Ljetbrains/mps/vcs/diff/ui/common/ChangeEditorMessage;Ljetbrains/mps/nodeEditor/EditorComponent;)Z" />
-    <scopeInfo nodeId="1698754832089266637" fileName="RichtextDiffHandler.java" startLine="33" startPosition="34" endLine="34" endPosition="295" />
+    <scopeInfo nodeId="1698754832089266637" fileName="RichtextDiffHandler.java" startLine="33" startPosition="34" endLine="34" endPosition="307" />
     <scopeInfo nodeId="1698754832089304157" fileName="RichtextDiffHandler.java" startLine="37" startPosition="25" endLine="38" endPosition="20" />
     <scopeInfo nodeId="270560076320996501" fileName="RichtextDiffHandler.java" startLine="46" startPosition="80" endLine="47" endPosition="16" />
     <scopeInfo nodeId="270560076320996512" fileName="RichtextDiffHandler.java" startLine="51" startPosition="82" endLine="52" endPosition="66" />
@@ -80,22 +80,22 @@
     <nodeInfo nodeId="3758249303358793134" fileName="DiffPainter.java" startLine="60" startPosition="31" endLine="61" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="488223974209950410" fileName="DiffPainter.java" startLine="62" startPosition="9" endLine="63" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="488223974209951453" fileName="DiffPainter.java" startLine="63" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358780182" fileName="DiffPainter.java" startLine="64" startPosition="0" endLine="65" endPosition="111" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780189" fileName="DiffPainter.java" startLine="65" startPosition="111" endLine="66" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780182" fileName="DiffPainter.java" startLine="64" startPosition="0" endLine="65" endPosition="117" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780189" fileName="DiffPainter.java" startLine="65" startPosition="117" endLine="66" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="8918142074887977865" fileName="DiffPainter.java" startLine="66" startPosition="58" endLine="67" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="8918142074887015013" fileName="DiffPainter.java" startLine="67" startPosition="47" endLine="68" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3758249303358780195" fileName="DiffPainter.java" startLine="68" startPosition="65" endLine="69" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3758249303358780201" fileName="DiffPainter.java" startLine="69" startPosition="106" endLine="70" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780207" fileName="DiffPainter.java" startLine="70" startPosition="35" endLine="71" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780219" fileName="DiffPainter.java" startLine="71" startPosition="135" endLine="72" endPosition="135" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358780231" fileName="DiffPainter.java" startLine="72" startPosition="135" endLine="73" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780207" fileName="DiffPainter.java" startLine="70" startPosition="35" endLine="71" endPosition="141" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780219" fileName="DiffPainter.java" startLine="71" startPosition="141" endLine="72" endPosition="141" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3758249303358780231" fileName="DiffPainter.java" startLine="72" startPosition="141" endLine="73" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3758249303358780238" fileName="DiffPainter.java" startLine="74" startPosition="73" endLine="75" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3758249303358782656" fileName="DiffPainter.java" startLine="75" startPosition="78" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="3758249303358415104" fileName="DiffPainter.java" startLine="76" startPosition="0" endLine="77" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3758249303358486371" fileName="DiffPainter.java" startLine="77" startPosition="59" endLine="78" endPosition="137" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3758249303358501888" fileName="DiffPainter.java" startLine="78" startPosition="137" endLine="79" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3758249303358782668" fileName="DiffPainter.java" startLine="79" startPosition="45" endLine="80" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="3758249303358782756" fileName="DiffPainter.java" startLine="82" startPosition="45" endLine="83" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358782756" fileName="DiffPainter.java" startLine="82" startPosition="45" endLine="83" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3758249303358792320" fileName="DiffPainter.java" startLine="85" startPosition="15" endLine="86" endPosition="166" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="3758249303358792505" fileName="DiffPainter.java" startLine="87" startPosition="40" endLine="88" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ContinueStatement" />
     <nodeInfo nodeId="3758249303358792489" fileName="DiffPainter.java" startLine="89" startPosition="13" endLine="90" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
@@ -148,12 +148,12 @@
     <nodeInfo nodeId="3758249303358769945" fileName="DiffPainter.java" startLine="211" startPosition="33" endLine="212" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3758249303358762954" fileName="DiffPainter.java" startLine="214" startPosition="68" endLine="215" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3758249303358762284" fileName="DiffPainter.java" startLine="219" startPosition="52" endLine="220" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3758249303358773027" fileName="DiffPainter.java" startLine="222" startPosition="89" endLine="223" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3758249303358762440" fileName="DiffPainter.java" startLine="223" startPosition="107" endLine="224" endPosition="232" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358773027" fileName="DiffPainter.java" startLine="222" startPosition="95" endLine="223" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3758249303358762440" fileName="DiffPainter.java" startLine="223" startPosition="107" endLine="224" endPosition="244" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3758249303358762533" fileName="DiffPainter.java" startLine="225" startPosition="14" endLine="226" endPosition="107" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="3758249303358762293" fileName="DiffPainter.java" startLine="228" startPosition="5" endLine="229" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3758249303358761241" fileName="DiffPainter.java" startLine="233" startPosition="28" endLine="234" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3758249303358761384" fileName="DiffPainter.java" startLine="236" startPosition="113" endLine="237" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3758249303358761384" fileName="DiffPainter.java" startLine="236" startPosition="119" endLine="237" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3758249303358762223" fileName="DiffPainter.java" startLine="238" startPosition="5" endLine="239" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3758249303358792353" fileName="DiffPainter.java" startLine="242" startPosition="79" endLine="243" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3758249303358762923" fileName="DiffPainter.java" startLine="246" startPosition="66" endLine="247" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -221,7 +221,7 @@
     <scopeInfo nodeId="3758249303358780157" fileName="DiffPainter.java" startLine="51" startPosition="35" endLine="52" endPosition="17" />
     <scopeInfo nodeId="3758249303358793075" fileName="DiffPainter.java" startLine="56" startPosition="31" endLine="57" endPosition="17" />
     <scopeInfo nodeId="3758249303358793106" fileName="DiffPainter.java" startLine="60" startPosition="31" endLine="61" endPosition="17" />
-    <scopeInfo nodeId="3758249303358782752" fileName="DiffPainter.java" startLine="82" startPosition="45" endLine="83" endPosition="96" />
+    <scopeInfo nodeId="3758249303358782752" fileName="DiffPainter.java" startLine="82" startPosition="45" endLine="83" endPosition="102" />
     <scopeInfo nodeId="3758249303358792364" fileName="DiffPainter.java" startLine="87" startPosition="40" endLine="88" endPosition="23" />
     <scopeInfo nodeId="7348445255403518616" fileName="DiffPainter.java" startLine="119" startPosition="177" endLine="120" endPosition="49" />
     <scopeInfo nodeId="7348445255403518680" fileName="DiffPainter.java" startLine="122" startPosition="31" endLine="123" endPosition="24" />
@@ -249,7 +249,7 @@
     <scopeInfo nodeId="3758249303358762866" fileName="DiffPainter.java" startLine="214" startPosition="68" endLine="215" endPosition="42" />
     <scopeInfo nodeId="3758249303358762531" fileName="DiffPainter.java" startLine="225" startPosition="14" endLine="226" endPosition="107" />
     <scopeInfo nodeId="3758249303358761215" fileName="DiffPainter.java" startLine="233" startPosition="28" endLine="234" endPosition="18" />
-    <scopeInfo nodeId="3758249303358761320" fileName="DiffPainter.java" startLine="236" startPosition="113" endLine="237" endPosition="23" />
+    <scopeInfo nodeId="3758249303358761320" fileName="DiffPainter.java" startLine="236" startPosition="119" endLine="237" endPosition="23" />
     <scopeInfo nodeId="3758249303358792353" fileName="DiffPainter.java" startLine="242" startPosition="79" endLine="243" endPosition="47" />
     <scopeInfo nodeId="3758249303358762923" fileName="DiffPainter.java" startLine="246" startPosition="66" endLine="247" endPosition="47" />
     <scopeInfo nodeId="3758249303358788536" fileName="DiffPainter.java" startLine="100" startPosition="47" endLine="102" endPosition="38" />
@@ -258,7 +258,7 @@
     <scopeInfo nodeId="4429148503504447052" fileName="DiffPainter.java" startLine="189" startPosition="94" endLine="191" endPosition="22">
       <varInfo nodeId="4429148503504464426" varName="change" />
     </scopeInfo>
-    <scopeInfo nodeId="3758249303358762387" fileName="DiffPainter.java" startLine="222" startPosition="89" endLine="224" endPosition="232" />
+    <scopeInfo nodeId="3758249303358762387" fileName="DiffPainter.java" startLine="222" startPosition="95" endLine="224" endPosition="244" />
     <scopeInfo nodeId="3758249303358782751" fileName="DiffPainter.java" startLine="82" startPosition="0" endLine="85" endPosition="0">
       <varInfo nodeId="3758249303358782751" varName="it" />
     </scopeInfo>

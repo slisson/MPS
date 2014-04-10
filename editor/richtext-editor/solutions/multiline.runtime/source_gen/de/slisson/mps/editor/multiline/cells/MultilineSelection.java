@@ -259,7 +259,7 @@ public class MultilineSelection extends AbstractSelection {
   }
 
   public SelectionInfo getSelectionInfo() throws SelectionStoreException {
-    SelectionInfoImpl selectionInfo = new SelectionInfoImpl(this.getClass().getName(), PersistenceFacade.getInstance().createModuleReference("dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)").getModuleName());
+    SelectionInfoImpl selectionInfo = new SelectionInfoImpl(this.getClass().getName(), PersistenceFacade.getInstance().createModuleReference("dc038ceb-b7ea-4fea-ac12-55f7400e97ba(jetbrains.mps.editor.multiline.runtime)").getModuleName());
     selectionInfo.setCellInfo(myMultilineCell.getCellInfo());
     selectionInfo.getPropertiesMap().put(PROPERTY_SELECTION_START, Integer.toString(mySelectionStart));
     selectionInfo.getPropertiesMap().put(PROPERTY_SELECTION_END, Integer.toString(mySelectionEnd));

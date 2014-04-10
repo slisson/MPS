@@ -62,14 +62,14 @@ public class DiffPainter implements MultilineCellBackgroundPainter {
         }
 
 
-        SNode myNode = SNodeOperations.cast(richtextCell.getSNode(), "de.slisson.mps.richtext.structure.Text");
+        SNode myNode = SNodeOperations.cast(richtextCell.getSNode(), "jetbrains.mps.editor.richtext.structure.Text");
         SModel myModel = SNodeOperations.getModel(myNode);
         SModule myModule = myModel.getModule();
         String myModuleClassName = myModule.getClass().getName();
         boolean iAmOld = "jetbrains.mps.vcs.diff.ui.common.DiffTemporaryModule".equals(myModuleClassName);
         boolean iAmNew = !(iAmOld);
-        SNode oldNode = SNodeOperations.cast(((SNode) oldModel.getNode(myNode.getNodeId())), "de.slisson.mps.richtext.structure.Text");
-        SNode newNode = SNodeOperations.cast(((SNode) newModel.getNode(myNode.getNodeId())), "de.slisson.mps.richtext.structure.Text");
+        SNode oldNode = SNodeOperations.cast(((SNode) oldModel.getNode(myNode.getNodeId())), "jetbrains.mps.editor.richtext.structure.Text");
+        SNode newNode = SNodeOperations.cast(((SNode) newModel.getNode(myNode.getNodeId())), "jetbrains.mps.editor.richtext.structure.Text");
         String myText = richtextToDiffText(myNode);
         if (iAmNew && (oldNode != null) || iAmOld && (newNode != null)) {
           String otherText = richtextToDiffText((iAmNew ? oldNode : newNode));
@@ -80,7 +80,7 @@ public class DiffPainter implements MultilineCellBackgroundPainter {
 
           for (SNode wordChild : ListSequence.fromList(SLinkOperations.getTargets(myNode, "words", true)).where(new IWhereFilter<SNode>() {
             public boolean accept(SNode it) {
-              return SNodeOperations.isInstanceOf(it, "de.slisson.mps.richtext.structure.Word");
+              return SNodeOperations.isInstanceOf(it, "jetbrains.mps.editor.richtext.structure.Word");
             }
           })) {
             EditorCell_Multiline wordChildCell = as_ely5eb_a0a0a6a81a0a0a0a2a3(richtextCell.getEditorComponent().findNodeCell(wordChild), EditorCell_Multiline.class);
@@ -219,9 +219,9 @@ public class DiffPainter implements MultilineCellBackgroundPainter {
   public String richtextToDiffText(SNode textNode) {
     StringBuilder sb = new StringBuilder();
     for (SNode word : ListSequence.fromList(SLinkOperations.getTargets(textNode, "words", true))) {
-      if (SNodeOperations.isInstanceOf(word, "de.slisson.mps.richtext.structure.Word")) {
+      if (SNodeOperations.isInstanceOf(word, "jetbrains.mps.editor.richtext.structure.Word")) {
         sb.append(DiffPainter.SEPARATOR).append(word.getNodeId().toString()).append(DiffPainter.SEPARATOR);
-        sb.append(BehaviorReflection.invokeNonVirtual(String.class, SNodeOperations.cast(word, "de.slisson.mps.richtext.structure.Word"), "de.slisson.mps.richtext.structure.Word", "call_getText_257181264606026343", new Object[]{}));
+        sb.append(BehaviorReflection.invokeNonVirtual(String.class, SNodeOperations.cast(word, "jetbrains.mps.editor.richtext.structure.Word"), "jetbrains.mps.editor.richtext.structure.Word", "call_getText_257181264606026343", new Object[]{}));
       } else {
         sb.append(DiffPainter.SEPARATOR).append(word.getNodeId().toString()).append(DiffPainter.SEPARATOR);
       }
@@ -233,7 +233,7 @@ public class DiffPainter implements MultilineCellBackgroundPainter {
     if (childCell == null) {
       return null;
     }
-    if (SNodeOperations.isInstanceOf(((SNode) childCell.getSNode()), "de.slisson.mps.richtext.structure.Text")) {
+    if (SNodeOperations.isInstanceOf(((SNode) childCell.getSNode()), "jetbrains.mps.editor.richtext.structure.Text")) {
       return childCell;
     }
     return findParentRichtextCell(childCell.getParent());

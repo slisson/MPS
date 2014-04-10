@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="jetbrains.mps.editor.richtext.actions.QueriesGenerated" file="QueriesGenerated.java">
+    <classNode dependClassName="jetbrains.mps.editor.richtext.behavior.Text_Behavior" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.action.NodeSetupContext" />
+  </dependency>
+</dependenciesRoot>
+

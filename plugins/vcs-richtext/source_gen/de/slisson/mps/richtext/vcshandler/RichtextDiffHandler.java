@@ -31,7 +31,7 @@ public class RichtextDiffHandler implements DiffHandler {
       final SNode affectedNode = message.getNode();
       boolean isWordInText = ModelAccess.instance().requireRead(new Computable<Boolean>() {
         public Boolean compute() {
-          return SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(affectedNode), "de.slisson.mps.richtext.structure.Word") && SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(SNodeOperations.getParent(affectedNode)), "de.slisson.mps.richtext.structure.Text");
+          return SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(affectedNode), "jetbrains.mps.editor.richtext.structure.Word") && SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(SNodeOperations.getParent(affectedNode)), "jetbrains.mps.editor.richtext.structure.Text");
         }
       });
       if (isWordInText) {

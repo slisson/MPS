@@ -1503,7 +1503,7 @@
               </node>
             </node>
             <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_FolderWithSources" typeId="kdzh.2105528055260548241" id="180255418854861690" nodeInfo="ng">
-              <link role="module" roleId="kdzh.1692280246134781713" targetNodeId="5232239503567481541" resolveInfo="de.slisson.mps.editor.multiline.runtime" />
+              <link role="module" roleId="kdzh.1692280246134781713" targetNodeId="5232239503567481541" resolveInfo="jetbrains.mps.editor.multiline.runtime" />
             </node>
           </node>
         </node>
@@ -1544,6 +1544,29 @@
                     <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6785692530321076440" nodeInfo="nn">
                       <property name="head" nameId="3ior.8618885170173601779" value="lib" />
                       <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="6785692530321076441" nodeInfo="nn">
+                        <property name="head" nameId="3ior.8618885170173601779" value="commons-lang3-3.1.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_File" typeId="3ior.9126048691955220717" id="3918547322492261372" nodeInfo="ng">
+          <node role="path" roleId="3ior.9126048691955220762" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3918547322492265547" nodeInfo="ng">
+            <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="1277685309310599419" resolveInfo="mps_home" />
+            <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322492271563" nodeInfo="nn">
+              <property name="head" nameId="3ior.8618885170173601779" value="editor" />
+              <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322492275575" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="richtext-editor" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322492287605" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322492291617" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="richtext" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322492299637" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322492307657" nodeInfo="nn">
                         <property name="head" nameId="3ior.8618885170173601779" value="commons-lang3-3.1.jar" />
                       </node>
                     </node>
@@ -1811,13 +1834,13 @@
             </node>
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="6785692530323028392" nodeInfo="ng">
-            <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="5232239503567455433" resolveInfo="de.slisson.mps.editor.multiline" />
+            <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="5232239503567455433" resolveInfo="jetbrains.mps.editor.multiline" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="5222369261162600691" nodeInfo="ng">
-            <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="3808032186098139227" resolveInfo="de.slisson.mps.richtext.customcell" />
+            <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="3808032186098139227" resolveInfo="jetbrains.mps.editor.richtext.customcell" />
           </node>
           <node role="children" roleId="3ior.7389400916848037006" type="kdzh.BuildMpsLayout_ModuleJars" typeId="kdzh.1265949165890536423" id="5222369261162614638" nodeInfo="ng">
-            <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="3808032186098127224" resolveInfo="de.slisson.mps.richtext" />
+            <link role="module" roleId="kdzh.1265949165890536425" targetNodeId="3808032186098127224" resolveInfo="jetbrains.mps.editor.richtext" />
           </node>
         </node>
         <node role="children" roleId="3ior.7389400916848037006" type="3ior.BuildLayout_Folder" typeId="3ior.7389400916848036984" id="1265949165890610430" nodeInfo="ng">
@@ -10434,7 +10457,7 @@
       <property name="name" nameId="tpck.1169194664001" value="richtext" />
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Solution" typeId="kdzh.3189788309731840247" id="5232239503567481541" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="de.slisson.mps.editor.multiline.runtime" />
+        <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.editor.multiline.runtime" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="dc038ceb-b7ea-4fea-ac12-55f7400e97ba" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="true" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5232239503567485283" nodeInfo="ng">
@@ -10544,7 +10567,7 @@
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="5232239503567455433" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="de.slisson.mps.editor.multiline" />
+        <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.editor.multiline" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="31c91def-a131-41a1-9018-102874f49a12" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="5232239503567459159" nodeInfo="ng">
@@ -10595,7 +10618,7 @@
           </node>
         </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="5232239503567511578" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="de.slisson.mps.editor.multiline#5792856961266375224" />
+          <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.editor.multiline#5792856961266375224" />
           <property name="uuid" nameId="kdzh.322010710375892619" value="16fd1d11-dff9-4551-9afc-0c6b82a056c5" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
           <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="5232239503567511579" nodeInfo="nn">
@@ -10635,7 +10658,7 @@
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="3808032186098127224" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="de.slisson.mps.richtext" />
+        <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.editor.richtext" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="92d2ea16-5a42-4fdf-a676-c7604efe3504" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3808032186098131216" nodeInfo="ng">
@@ -10671,7 +10694,7 @@
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="3808032186098170757" nodeInfo="nn">
           <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyOnModule" typeId="kdzh.5253498789149585690" id="3808032186098170758" nodeInfo="ng">
             <property name="reexport" nameId="kdzh.5253498789149547713" value="false" />
-            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="3808032186098139227" resolveInfo="de.slisson.mps.richtext.customcell" />
+            <link role="module" roleId="kdzh.5253498789149547705" targetNodeId="3808032186098139227" resolveInfo="jetbrains.mps.editor.richtext.customcell" />
           </node>
         </node>
         <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="3808032186098170761" nodeInfo="nn">
@@ -10745,17 +10768,42 @@
           </node>
         </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="3808032186098170788" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="de.slisson.mps.richtext#1212807527450963095" />
+          <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.editor.richtext#1212807527450963095" />
           <property name="uuid" nameId="kdzh.322010710375892619" value="b14c57f5-24bf-4ea0-a408-715a6a32c6a9" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         </node>
         <node role="runtime" roleId="kdzh.3189788309731917348" type="kdzh.BuildMps_ModuleSolutionRuntime" typeId="kdzh.3189788309731981027" id="7555039624069124881" nodeInfo="ng">
           <link role="solution" roleId="kdzh.3189788309731981028" targetNodeId="2182758403694705599" resolveInfo="MPS.Editor" />
         </node>
+        <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="3918547322491778337" nodeInfo="nn">
+          <node role="dependency" roleId="kdzh.7259033139236285167" type="kdzh.BuildMps_ModuleDependencyJar" typeId="kdzh.4278635856200826393" id="3918547322491778338" nodeInfo="ng">
+            <node role="path" roleId="kdzh.4278635856200826394" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3918547322491778323" nodeInfo="ng">
+              <link role="macro" roleId="3ior.7389400916848153130" targetNodeId="1277685309310599419" resolveInfo="mps_home" />
+              <node role="compositePart" roleId="3ior.7321017245477039051" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322491778324" nodeInfo="nn">
+                <property name="head" nameId="3ior.8618885170173601779" value="editor" />
+                <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322491778325" nodeInfo="nn">
+                  <property name="head" nameId="3ior.8618885170173601779" value="richtext-editor" />
+                  <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322491778326" nodeInfo="nn">
+                    <property name="head" nameId="3ior.8618885170173601779" value="languages" />
+                    <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322491778327" nodeInfo="nn">
+                      <property name="head" nameId="3ior.8618885170173601779" value="richtext" />
+                      <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322491778328" nodeInfo="nn">
+                        <property name="head" nameId="3ior.8618885170173601779" value="lib" />
+                        <node role="tail" roleId="3ior.8618885170173601778" type="3ior.BuildCompositePath" typeId="3ior.8618885170173601777" id="3918547322491778329" nodeInfo="nn">
+                          <property name="head" nameId="3ior.8618885170173601779" value="commons-lang3-3.1.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node role="modules" roleId="kdzh.1500819558095907806" type="kdzh.BuildMps_Language" typeId="kdzh.3189788309731840248" id="3808032186098139227" nodeInfo="ng">
         <property name="compact" nameId="kdzh.8369506495128725901" value="true" />
-        <property name="name" nameId="tpck.1169194664001" value="de.slisson.mps.richtext.customcell" />
+        <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.editor.richtext.customcell" />
         <property name="uuid" nameId="kdzh.322010710375892619" value="52733268-be24-4f5f-ab84-a73b7c0c03b0" />
         <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
         <node role="path" roleId="kdzh.322010710375956261" type="3ior.BuildSourceMacroRelativePath" typeId="3ior.7389400916848153117" id="3808032186098147189" nodeInfo="ng">
@@ -10800,7 +10848,7 @@
           </node>
         </node>
         <node role="generator" roleId="kdzh.9200313594498201639" type="kdzh.BuildMps_Generator" typeId="kdzh.5507251971038816436" id="3808032186098166730" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="de.slisson.mps.richtext.customcell#2490242408670609648" />
+          <property name="name" nameId="tpck.1169194664001" value="jetbrains.mps.editor.richtext.customcell#2490242408670609648" />
           <property name="uuid" nameId="kdzh.322010710375892619" value="50eb71c9-46d9-464f-aa49-6eeaad9f8578" />
           <property name="doNotCompile" nameId="kdzh.1500819558096356884" value="false" />
           <node role="dependencies" roleId="kdzh.5253498789149547704" type="kdzh.BuildMps_ExtractedModuleDependency" typeId="kdzh.7259033139236285166" id="3808032186098166731" nodeInfo="nn">

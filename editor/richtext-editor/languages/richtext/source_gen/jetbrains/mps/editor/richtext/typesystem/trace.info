@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <unitInfo fileName="TypesystemDescriptor.java" startLine="8" startPosition="0" endLine="16" endPosition="0" unitName="jetbrains.mps.editor.richtext.typesystem.TypesystemDescriptor" />
+  <root nodeRef="r:5b028395-a4f4-4893-9069-339be8fc01aa(jetbrains.mps.editor.richtext.typesystem)/842294157794126808">
+    <nodeInfo nodeId="5032163920768653445" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="24" startPosition="7" endLine="25" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5032163920768653445" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="25" startPosition="60" endLine="26" endPosition="336" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5032163920768653445" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="27" startPosition="9" endLine="28" endPosition="154" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="5032163920768653445" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="28" startPosition="154" endLine="29" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="35" startPosition="46" endLine="36" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="40" startPosition="5" endLine="41" endPosition="130" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="41" startPosition="130" endLine="42" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="46" startPosition="30" endLine="47" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="check_Text_Normalized_NonTypesystemRule#()V" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="35" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getApplicableConceptFQName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="46" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="overrides#()Z" />
+    <nodeInfo nodeId="5032163920768653445" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="26" startPosition="336" endLine="30" endPosition="9" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="39" startPosition="68" endLine="43" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="39" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+    <nodeInfo nodeId="5032163920768653445" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="23" startPosition="70" endLine="31" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="842294157794126840" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="22" startPosition="117" endLine="32" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="19" startPosition="52" endLine="19" endPosition="52" />
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="35" startPosition="46" endLine="36" endPosition="58" />
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="46" startPosition="30" endLine="47" endPosition="17" />
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="19" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="5032163920768653445" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="27" startPosition="9" endLine="29" endPosition="71">
+      <varInfo nodeId="5032163920768653445" varName="intentionProvider" />
+    </scopeInfo>
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="40" startPosition="5" endLine="42" endPosition="45">
+      <varInfo nodeId="842294157794126808" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="35" startPosition="0" endLine="38" endPosition="0" />
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="46" startPosition="0" endLine="49" endPosition="0" />
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="39" startPosition="68" endLine="43" endPosition="5" />
+    <scopeInfo nodeId="5032163920768653445" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="24" startPosition="7" endLine="30" endPosition="9">
+      <varInfo nodeId="5032163920768653445" varName="_reporter_2309309498" />
+      <varInfo nodeId="5032163920768653445" varName="errorTarget" />
+    </scopeInfo>
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="39" startPosition="0" endLine="45" endPosition="0">
+      <varInfo nodeId="842294157794126808" varName="argument" />
+    </scopeInfo>
+    <scopeInfo nodeId="842294157794126842" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="23" startPosition="70" endLine="31" endPosition="7" />
+    <scopeInfo nodeId="842294157794126809" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="22" startPosition="117" endLine="32" endPosition="5" />
+    <scopeInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="22" startPosition="0" endLine="34" endPosition="0">
+      <varInfo nodeId="842294157794126808" varName="node" />
+      <varInfo nodeId="842294157794126808" varName="status" />
+      <varInfo nodeId="842294157794126808" varName="typeCheckingContext" />
+    </scopeInfo>
+    <unitInfo nodeId="842294157794126808" fileName="check_Text_Normalized_NonTypesystemRule.java" startLine="18" startPosition="0" endLine="50" endPosition="0" unitName="jetbrains.mps.editor.richtext.typesystem.check_Text_Normalized_NonTypesystemRule" />
+  </root>
+  <root nodeRef="r:5b028395-a4f4-4893-9069-339be8fc01aa(jetbrains.mps.editor.richtext.typesystem)/842294157794126884">
+    <nodeInfo nodeId="3868187941957806866" fileName="fix_Text_normalize_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="842294157794126916" fileName="fix_Text_normalize_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="156" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="842294157794126884" fileName="fix_Text_normalize_QuickFix.java" startLine="11" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="fix_Text_normalize_QuickFix#()V" />
+    <nodeInfo nodeId="842294157794126884" fileName="fix_Text_normalize_QuickFix.java" startLine="14" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+    <nodeInfo nodeId="842294157794126884" fileName="fix_Text_normalize_QuickFix.java" startLine="18" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="842294157794126884" fileName="fix_Text_normalize_QuickFix.java" startLine="11" startPosition="40" endLine="11" endPosition="40" />
+    <scopeInfo nodeId="3868187941957806865" fileName="fix_Text_normalize_QuickFix.java" startLine="14" startPosition="44" endLine="15" endPosition="38" />
+    <scopeInfo nodeId="842294157794126886" fileName="fix_Text_normalize_QuickFix.java" startLine="18" startPosition="35" endLine="19" endPosition="156" />
+    <scopeInfo nodeId="842294157794126884" fileName="fix_Text_normalize_QuickFix.java" startLine="11" startPosition="0" endLine="13" endPosition="0" />
+    <scopeInfo nodeId="842294157794126884" fileName="fix_Text_normalize_QuickFix.java" startLine="14" startPosition="0" endLine="17" endPosition="0">
+      <varInfo nodeId="842294157794126884" varName="node" />
+    </scopeInfo>
+    <scopeInfo nodeId="842294157794126884" fileName="fix_Text_normalize_QuickFix.java" startLine="18" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="842294157794126884" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="842294157794126884" fileName="fix_Text_normalize_QuickFix.java" startLine="10" startPosition="0" endLine="22" endPosition="0" unitName="jetbrains.mps.editor.richtext.typesystem.fix_Text_normalize_QuickFix" />
+  </root>
+</debugInfo>
+

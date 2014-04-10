@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="5mdd" modelUID="r:f4f3736e-6da2-4bf6-9b34-06696f46bc70(de.slisson.mps.richtext.customcell.structure)" version="0" />
+      <model index="vk3i" modelUID="r:1e754f7d-d47f-4c2a-bb70-d673383fe75a(de.slisson.mps.richtext.customcell.generator.template.main@generator)" version="0" />
+      <model index="pchl" modelUID="r:b3b64331-ac99-4086-aa02-655ab94f0094(de.slisson.mps.richtext.customcell.behavior)" version="0" />
+      <model index="8b67" modelUID="r:e9a4dd0a-d723-4c7b-b880-02428a6875bc(de.slisson.mps.richtext.customcell.constraints)" version="0" />
+      <model index="8fbz" modelUID="r:d99ec412-0840-4f21-ac72-7cc8c7123c64(de.slisson.mps.richtext.customcell.typesystem)" version="0" />
+      <model index="qlb3" modelUID="r:661dd5e0-782c-4066-89f7-91635bdb83ba(de.slisson.mps.richtext.customcell.editor)" version="0" />
+    </dependencies>
+    <RenameModel oldModel="r:661dd5e0-782c-4066-89f7-91635bdb83ba(de.slisson.mps.richtext.customcell.editor)" newModel="r:661dd5e0-782c-4066-89f7-91635bdb83ba(jetbrains.mps.editor.richtext.customcell.editor)" />
+    <RenameModel oldModel="r:b3b64331-ac99-4086-aa02-655ab94f0094(de.slisson.mps.richtext.customcell.behavior)" newModel="r:b3b64331-ac99-4086-aa02-655ab94f0094(jetbrains.mps.editor.richtext.customcell.behavior)" />
+    <RenameModel oldModel="r:f4f3736e-6da2-4bf6-9b34-06696f46bc70(de.slisson.mps.richtext.customcell.structure)" newModel="r:f4f3736e-6da2-4bf6-9b34-06696f46bc70(jetbrains.mps.editor.richtext.customcell.structure)" />
+    <RenameModel oldModel="r:d99ec412-0840-4f21-ac72-7cc8c7123c64(de.slisson.mps.richtext.customcell.typesystem)" newModel="r:d99ec412-0840-4f21-ac72-7cc8c7123c64(jetbrains.mps.editor.richtext.customcell.typesystem)" />
+    <RenameModel oldModel="r:e9a4dd0a-d723-4c7b-b880-02428a6875bc(de.slisson.mps.richtext.customcell.constraints)" newModel="r:e9a4dd0a-d723-4c7b-b880-02428a6875bc(jetbrains.mps.editor.richtext.customcell.constraints)" />
+    <RenameModel oldModel="r:1e754f7d-d47f-4c2a-bb70-d673383fe75a(de.slisson.mps.richtext.customcell.generator.template.main@generator)" newModel="r:1e754f7d-d47f-4c2a-bb70-d673383fe75a(jetbrains.mps.editor.richtext.customcell.generator.template.main@generator)" />
+  </StructureModification>
+</history>
+
