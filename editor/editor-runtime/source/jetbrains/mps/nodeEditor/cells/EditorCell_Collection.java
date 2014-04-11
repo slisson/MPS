@@ -159,7 +159,7 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
     return myFolded;
   }
 
-  private List<EditorCell> getEditorCells() {
+  protected List<EditorCell> getEditorCells() {
     return myEditorCellsWrapper;
   }
 

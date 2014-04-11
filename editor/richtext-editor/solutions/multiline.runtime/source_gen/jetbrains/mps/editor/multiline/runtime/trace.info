@@ -1,5 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
+  <root nodeRef="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(jetbrains.mps.editor.multiline.runtime)/2583557094406465536">
+    <nodeInfo nodeId="7988977145160930266" fileName="CachedIndexList.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" propertyString="THRESHOLD" />
+    <nodeInfo nodeId="2583557094406465692" fileName="CachedIndexList.java" startLine="16" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myList" />
+    <nodeInfo nodeId="2583557094406465706" fileName="CachedIndexList.java" startLine="21" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myCacheValid" />
+    <nodeInfo nodeId="2583557094406465717" fileName="CachedIndexList.java" startLine="24" startPosition="40" endLine="25" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7988977145161364308" fileName="CachedIndexList.java" startLine="29" startPosition="36" endLine="30" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7988977145161384235" fileName="CachedIndexList.java" startLine="32" startPosition="28" endLine="33" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465724" fileName="CachedIndexList.java" startLine="34" startPosition="14" endLine="35" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465727" fileName="CachedIndexList.java" startLine="36" startPosition="7" endLine="37" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2583557094406465734" fileName="CachedIndexList.java" startLine="38" startPosition="26" endLine="39" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465743" fileName="CachedIndexList.java" startLine="41" startPosition="5" endLine="42" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465752" fileName="CachedIndexList.java" startLine="46" startPosition="21" endLine="47" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465759" fileName="CachedIndexList.java" startLine="51" startPosition="28" endLine="52" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465768" fileName="CachedIndexList.java" startLine="56" startPosition="37" endLine="57" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465777" fileName="CachedIndexList.java" startLine="62" startPosition="33" endLine="63" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465788" fileName="CachedIndexList.java" startLine="68" startPosition="29" endLine="69" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465801" fileName="CachedIndexList.java" startLine="74" startPosition="33" endLine="75" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465812" fileName="CachedIndexList.java" startLine="79" startPosition="27" endLine="80" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465816" fileName="CachedIndexList.java" startLine="80" startPosition="25" endLine="81" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465826" fileName="CachedIndexList.java" startLine="85" startPosition="35" endLine="86" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465830" fileName="CachedIndexList.java" startLine="86" startPosition="25" endLine="87" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465841" fileName="CachedIndexList.java" startLine="91" startPosition="47" endLine="92" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465853" fileName="CachedIndexList.java" startLine="96" startPosition="52" endLine="97" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465857" fileName="CachedIndexList.java" startLine="97" startPosition="25" endLine="98" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465871" fileName="CachedIndexList.java" startLine="102" startPosition="63" endLine="103" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465875" fileName="CachedIndexList.java" startLine="103" startPosition="25" endLine="104" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465887" fileName="CachedIndexList.java" startLine="108" startPosition="45" endLine="109" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465891" fileName="CachedIndexList.java" startLine="109" startPosition="25" endLine="110" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465902" fileName="CachedIndexList.java" startLine="114" startPosition="45" endLine="115" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465906" fileName="CachedIndexList.java" startLine="115" startPosition="25" endLine="116" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465914" fileName="CachedIndexList.java" startLine="120" startPosition="23" endLine="121" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465918" fileName="CachedIndexList.java" startLine="121" startPosition="25" endLine="122" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465927" fileName="CachedIndexList.java" startLine="126" startPosition="27" endLine="127" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465939" fileName="CachedIndexList.java" startLine="131" startPosition="38" endLine="132" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465943" fileName="CachedIndexList.java" startLine="132" startPosition="25" endLine="133" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465956" fileName="CachedIndexList.java" startLine="137" startPosition="41" endLine="138" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465960" fileName="CachedIndexList.java" startLine="138" startPosition="25" endLine="139" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465971" fileName="CachedIndexList.java" startLine="143" startPosition="30" endLine="144" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465975" fileName="CachedIndexList.java" startLine="144" startPosition="25" endLine="145" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465988" fileName="CachedIndexList.java" startLine="150" startPosition="26" endLine="151" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7988977145161638724" fileName="CachedIndexList.java" startLine="153" startPosition="26" endLine="154" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465992" fileName="CachedIndexList.java" startLine="155" startPosition="12" endLine="156" endPosition="37" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2583557094406465996" fileName="CachedIndexList.java" startLine="156" startPosition="37" endLine="157" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406466011" fileName="CachedIndexList.java" startLine="162" startPosition="36" endLine="163" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406466020" fileName="CachedIndexList.java" startLine="168" startPosition="41" endLine="169" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406466031" fileName="CachedIndexList.java" startLine="174" startPosition="50" endLine="175" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406466047" fileName="CachedIndexList.java" startLine="180" startPosition="54" endLine="181" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465546" fileName="CachedIndexList.java" startLine="185" startPosition="0" endLine="186" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myWrappedIterator" />
+    <nodeInfo nodeId="2583557094406465557" fileName="CachedIndexList.java" startLine="187" startPosition="51" endLine="188" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465565" fileName="CachedIndexList.java" startLine="192" startPosition="30" endLine="193" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465572" fileName="CachedIndexList.java" startLine="197" startPosition="21" endLine="198" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465579" fileName="CachedIndexList.java" startLine="202" startPosition="26" endLine="203" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465583" fileName="CachedIndexList.java" startLine="203" startPosition="27" endLine="204" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465593" fileName="CachedIndexList.java" startLine="209" startPosition="0" endLine="210" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myWrappedIterator" />
+    <nodeInfo nodeId="2583557094406465604" fileName="CachedIndexList.java" startLine="211" startPosition="59" endLine="212" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465612" fileName="CachedIndexList.java" startLine="216" startPosition="30" endLine="217" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465619" fileName="CachedIndexList.java" startLine="221" startPosition="21" endLine="222" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465626" fileName="CachedIndexList.java" startLine="226" startPosition="34" endLine="227" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465633" fileName="CachedIndexList.java" startLine="231" startPosition="25" endLine="232" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465640" fileName="CachedIndexList.java" startLine="236" startPosition="28" endLine="237" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465647" fileName="CachedIndexList.java" startLine="241" startPosition="32" endLine="242" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2583557094406465654" fileName="CachedIndexList.java" startLine="246" startPosition="26" endLine="247" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465658" fileName="CachedIndexList.java" startLine="247" startPosition="27" endLine="248" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465667" fileName="CachedIndexList.java" startLine="252" startPosition="26" endLine="253" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465671" fileName="CachedIndexList.java" startLine="253" startPosition="27" endLine="254" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465681" fileName="CachedIndexList.java" startLine="258" startPosition="26" endLine="259" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2583557094406465685" fileName="CachedIndexList.java" startLine="259" startPosition="27" endLine="260" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7988977145161577862" fileName="CachedIndexList.java" startLine="34" startPosition="12" endLine="36" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2583557094406465711" fileName="CachedIndexList.java" startLine="24" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CachedIndexList#(Ljava/util/List;)V" />
+    <nodeInfo nodeId="2583557094406465731" fileName="CachedIndexList.java" startLine="37" startPosition="21" endLine="40" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="2583557094406465985" fileName="CachedIndexList.java" startLine="149" startPosition="32" endLine="152" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7988977145161712949" fileName="CachedIndexList.java" startLine="155" startPosition="10" endLine="158" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2583557094406465551" fileName="CachedIndexList.java" startLine="187" startPosition="0" endLine="190" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="IteratorWrapper#(Ljava/util/Iterator;)V" />
+    <nodeInfo nodeId="2583557094406465598" fileName="CachedIndexList.java" startLine="211" startPosition="0" endLine="214" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ListIteratorWrapper#(Ljava/util/ListIterator;)V" />
+    <nodeInfo nodeId="2583557094406465697" fileName="CachedIndexList.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myCache" />
+    <nodeInfo nodeId="2583557094406465749" fileName="CachedIndexList.java" startLine="45" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="size#()I" />
+    <nodeInfo nodeId="2583557094406465756" fileName="CachedIndexList.java" startLine="50" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isEmpty#()Z" />
+    <nodeInfo nodeId="2583557094406465763" fileName="CachedIndexList.java" startLine="55" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="contains#(Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="2583557094406465835" fileName="CachedIndexList.java" startLine="90" startPosition="0" endLine="94" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="containsAll#(Ljava/util/Collection;)Z" />
+    <nodeInfo nodeId="2583557094406465922" fileName="CachedIndexList.java" startLine="125" startPosition="0" endLine="129" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="get#(I)null" />
+    <nodeInfo nodeId="2583557094406466006" fileName="CachedIndexList.java" startLine="161" startPosition="0" endLine="165" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="lastIndexOf#(Ljava/lang/Object;)I" />
+    <nodeInfo nodeId="2583557094406465562" fileName="CachedIndexList.java" startLine="191" startPosition="0" endLine="195" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasNext#()Z" />
+    <nodeInfo nodeId="2583557094406465569" fileName="CachedIndexList.java" startLine="196" startPosition="0" endLine="200" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="next#()null" />
+    <nodeInfo nodeId="2583557094406465609" fileName="CachedIndexList.java" startLine="215" startPosition="0" endLine="219" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasNext#()Z" />
+    <nodeInfo nodeId="2583557094406465616" fileName="CachedIndexList.java" startLine="220" startPosition="0" endLine="224" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="next#()null" />
+    <nodeInfo nodeId="2583557094406465623" fileName="CachedIndexList.java" startLine="225" startPosition="0" endLine="229" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hasPrevious#()Z" />
+    <nodeInfo nodeId="2583557094406465630" fileName="CachedIndexList.java" startLine="230" startPosition="0" endLine="234" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="previous#()null" />
+    <nodeInfo nodeId="2583557094406465637" fileName="CachedIndexList.java" startLine="235" startPosition="0" endLine="239" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="nextIndex#()I" />
+    <nodeInfo nodeId="2583557094406465644" fileName="CachedIndexList.java" startLine="240" startPosition="0" endLine="244" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="previousIndex#()I" />
+    <nodeInfo nodeId="7988977145161377193" fileName="CachedIndexList.java" startLine="31" startPosition="12" endLine="36" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2583557094406465773" fileName="CachedIndexList.java" startLine="60" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="iterator#()Ljava/util/Iterator;" />
+    <nodeInfo nodeId="2583557094406465784" fileName="CachedIndexList.java" startLine="66" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toArray#()[Ljava/lang/Object;" />
+    <nodeInfo nodeId="2583557094406465793" fileName="CachedIndexList.java" startLine="72" startPosition="0" endLine="77" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toArray#([null)[null" />
+    <nodeInfo nodeId="2583557094406465807" fileName="CachedIndexList.java" startLine="78" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="add#(null)Z" />
+    <nodeInfo nodeId="2583557094406465821" fileName="CachedIndexList.java" startLine="84" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="remove#(Ljava/lang/Object;)Z" />
+    <nodeInfo nodeId="2583557094406465846" fileName="CachedIndexList.java" startLine="95" startPosition="0" endLine="100" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addAll#(Ljava/util/Collection;)Z" />
+    <nodeInfo nodeId="2583557094406465862" fileName="CachedIndexList.java" startLine="101" startPosition="0" endLine="106" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addAll#(ILjava/util/Collection;)Z" />
+    <nodeInfo nodeId="2583557094406465881" fileName="CachedIndexList.java" startLine="107" startPosition="0" endLine="112" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="removeAll#(Ljava/util/Collection;)Z" />
+    <nodeInfo nodeId="2583557094406465896" fileName="CachedIndexList.java" startLine="113" startPosition="0" endLine="118" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="retainAll#(Ljava/util/Collection;)Z" />
+    <nodeInfo nodeId="2583557094406465911" fileName="CachedIndexList.java" startLine="119" startPosition="0" endLine="124" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clear#()V" />
+    <nodeInfo nodeId="2583557094406465932" fileName="CachedIndexList.java" startLine="130" startPosition="0" endLine="135" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="set#(Inull)null" />
+    <nodeInfo nodeId="2583557094406465949" fileName="CachedIndexList.java" startLine="136" startPosition="0" endLine="141" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="add#(Inull)V" />
+    <nodeInfo nodeId="2583557094406465966" fileName="CachedIndexList.java" startLine="142" startPosition="0" endLine="147" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="remove#(I)null" />
+    <nodeInfo nodeId="2583557094406466016" fileName="CachedIndexList.java" startLine="166" startPosition="0" endLine="171" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="listIterator#()Ljava/util/ListIterator;" />
+    <nodeInfo nodeId="2583557094406466025" fileName="CachedIndexList.java" startLine="172" startPosition="0" endLine="177" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="listIterator#(I)Ljava/util/ListIterator;" />
+    <nodeInfo nodeId="2583557094406466039" fileName="CachedIndexList.java" startLine="178" startPosition="0" endLine="183" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="subList#(II)Ljava/util/List;" />
+    <nodeInfo nodeId="2583557094406465576" fileName="CachedIndexList.java" startLine="201" startPosition="0" endLine="206" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="remove#()V" />
+    <nodeInfo nodeId="2583557094406465651" fileName="CachedIndexList.java" startLine="245" startPosition="0" endLine="250" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="remove#()V" />
+    <nodeInfo nodeId="2583557094406465662" fileName="CachedIndexList.java" startLine="251" startPosition="0" endLine="256" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="set#(null)V" />
+    <nodeInfo nodeId="2583557094406465676" fileName="CachedIndexList.java" startLine="257" startPosition="0" endLine="262" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="add#(null)V" />
+    <nodeInfo nodeId="7988977145161611576" fileName="CachedIndexList.java" startLine="152" startPosition="5" endLine="158" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7988977145161365362" fileName="CachedIndexList.java" startLine="31" startPosition="10" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="2583557094406465980" fileName="CachedIndexList.java" startLine="148" startPosition="0" endLine="160" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="indexOf#(Ljava/lang/Object;)I" />
+    <nodeInfo nodeId="7988977145161346677" fileName="CachedIndexList.java" startLine="28" startPosition="32" endLine="41" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2583557094406465722" fileName="CachedIndexList.java" startLine="28" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="updateCache#()V" />
+    <scopeInfo nodeId="2583557094406465716" fileName="CachedIndexList.java" startLine="24" startPosition="40" endLine="25" endPosition="18" />
+    <scopeInfo nodeId="7988977145161346680" fileName="CachedIndexList.java" startLine="29" startPosition="36" endLine="30" endPosition="21" />
+    <scopeInfo nodeId="7988977145161377196" fileName="CachedIndexList.java" startLine="32" startPosition="28" endLine="33" endPosition="44" />
+    <scopeInfo nodeId="7988977145161577863" fileName="CachedIndexList.java" startLine="34" startPosition="14" endLine="35" endPosition="24" />
+    <scopeInfo nodeId="2583557094406465733" fileName="CachedIndexList.java" startLine="38" startPosition="26" endLine="39" endPosition="32" />
+    <scopeInfo nodeId="2583557094406465751" fileName="CachedIndexList.java" startLine="46" startPosition="21" endLine="47" endPosition="25" />
+    <scopeInfo nodeId="2583557094406465758" fileName="CachedIndexList.java" startLine="51" startPosition="28" endLine="52" endPosition="28" />
+    <scopeInfo nodeId="2583557094406465767" fileName="CachedIndexList.java" startLine="56" startPosition="37" endLine="57" endPosition="30" />
+    <scopeInfo nodeId="2583557094406465776" fileName="CachedIndexList.java" startLine="62" startPosition="33" endLine="63" endPosition="66" />
+    <scopeInfo nodeId="2583557094406465787" fileName="CachedIndexList.java" startLine="68" startPosition="29" endLine="69" endPosition="28" />
+    <scopeInfo nodeId="2583557094406465800" fileName="CachedIndexList.java" startLine="74" startPosition="33" endLine="75" endPosition="29" />
+    <scopeInfo nodeId="2583557094406465840" fileName="CachedIndexList.java" startLine="91" startPosition="47" endLine="92" endPosition="33" />
+    <scopeInfo nodeId="2583557094406465926" fileName="CachedIndexList.java" startLine="126" startPosition="27" endLine="127" endPosition="29" />
+    <scopeInfo nodeId="2583557094406465990" fileName="CachedIndexList.java" startLine="150" startPosition="26" endLine="151" endPosition="20" />
+    <scopeInfo nodeId="7988977145161611579" fileName="CachedIndexList.java" startLine="153" startPosition="26" endLine="154" endPosition="31" />
+    <scopeInfo nodeId="2583557094406466010" fileName="CachedIndexList.java" startLine="162" startPosition="36" endLine="163" endPosition="33" />
+    <scopeInfo nodeId="2583557094406466019" fileName="CachedIndexList.java" startLine="168" startPosition="41" endLine="169" endPosition="33" />
+    <scopeInfo nodeId="2583557094406466030" fileName="CachedIndexList.java" startLine="174" startPosition="50" endLine="175" endPosition="79" />
+    <scopeInfo nodeId="2583557094406466046" fileName="CachedIndexList.java" startLine="180" startPosition="54" endLine="181" endPosition="46" />
+    <scopeInfo nodeId="2583557094406465556" fileName="CachedIndexList.java" startLine="187" startPosition="51" endLine="188" endPosition="35" />
+    <scopeInfo nodeId="2583557094406465564" fileName="CachedIndexList.java" startLine="192" startPosition="30" endLine="193" endPosition="41" />
+    <scopeInfo nodeId="2583557094406465571" fileName="CachedIndexList.java" startLine="197" startPosition="21" endLine="198" endPosition="38" />
+    <scopeInfo nodeId="2583557094406465603" fileName="CachedIndexList.java" startLine="211" startPosition="59" endLine="212" endPosition="35" />
+    <scopeInfo nodeId="2583557094406465611" fileName="CachedIndexList.java" startLine="216" startPosition="30" endLine="217" endPosition="41" />
+    <scopeInfo nodeId="2583557094406465618" fileName="CachedIndexList.java" startLine="221" startPosition="21" endLine="222" endPosition="38" />
+    <scopeInfo nodeId="2583557094406465625" fileName="CachedIndexList.java" startLine="226" startPosition="34" endLine="227" endPosition="45" />
+    <scopeInfo nodeId="2583557094406465632" fileName="CachedIndexList.java" startLine="231" startPosition="25" endLine="232" endPosition="42" />
+    <scopeInfo nodeId="2583557094406465639" fileName="CachedIndexList.java" startLine="236" startPosition="28" endLine="237" endPosition="43" />
+    <scopeInfo nodeId="2583557094406465646" fileName="CachedIndexList.java" startLine="241" startPosition="32" endLine="242" endPosition="47" />
+    <scopeInfo nodeId="2583557094406465811" fileName="CachedIndexList.java" startLine="79" startPosition="27" endLine="81" endPosition="25" />
+    <scopeInfo nodeId="2583557094406465825" fileName="CachedIndexList.java" startLine="85" startPosition="35" endLine="87" endPosition="28" />
+    <scopeInfo nodeId="2583557094406465852" fileName="CachedIndexList.java" startLine="96" startPosition="52" endLine="98" endPosition="28" />
+    <scopeInfo nodeId="2583557094406465870" fileName="CachedIndexList.java" startLine="102" startPosition="63" endLine="104" endPosition="35" />
+    <scopeInfo nodeId="2583557094406465886" fileName="CachedIndexList.java" startLine="108" startPosition="45" endLine="110" endPosition="31" />
+    <scopeInfo nodeId="2583557094406465901" fileName="CachedIndexList.java" startLine="114" startPosition="45" endLine="116" endPosition="31" />
+    <scopeInfo nodeId="2583557094406465913" fileName="CachedIndexList.java" startLine="120" startPosition="23" endLine="122" endPosition="19" />
+    <scopeInfo nodeId="2583557094406465938" fileName="CachedIndexList.java" startLine="131" startPosition="38" endLine="133" endPosition="38" />
+    <scopeInfo nodeId="2583557094406465955" fileName="CachedIndexList.java" startLine="137" startPosition="41" endLine="139" endPosition="31" />
+    <scopeInfo nodeId="2583557094406465970" fileName="CachedIndexList.java" startLine="143" startPosition="30" endLine="145" endPosition="32" />
+    <scopeInfo nodeId="7988977145161712950" fileName="CachedIndexList.java" startLine="155" startPosition="12" endLine="157" endPosition="42">
+      <varInfo nodeId="2583557094406465991" varName="index" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465578" fileName="CachedIndexList.java" startLine="202" startPosition="26" endLine="204" endPosition="33" />
+    <scopeInfo nodeId="2583557094406465653" fileName="CachedIndexList.java" startLine="246" startPosition="26" endLine="248" endPosition="33" />
+    <scopeInfo nodeId="2583557094406465666" fileName="CachedIndexList.java" startLine="252" startPosition="26" endLine="254" endPosition="31" />
+    <scopeInfo nodeId="2583557094406465680" fileName="CachedIndexList.java" startLine="258" startPosition="26" endLine="260" endPosition="31" />
+    <scopeInfo nodeId="2583557094406465711" fileName="CachedIndexList.java" startLine="24" startPosition="0" endLine="27" endPosition="0">
+      <varInfo nodeId="2583557094406465713" varName="list" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465731" fileName="CachedIndexList.java" startLine="37" startPosition="21" endLine="40" endPosition="7">
+      <varInfo nodeId="2583557094406465739" varName="e" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465551" fileName="CachedIndexList.java" startLine="187" startPosition="0" endLine="190" endPosition="0">
+      <varInfo nodeId="2583557094406465553" varName="iterator" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465598" fileName="CachedIndexList.java" startLine="211" startPosition="0" endLine="214" endPosition="0">
+      <varInfo nodeId="2583557094406465600" varName="iterator" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465749" fileName="CachedIndexList.java" startLine="45" startPosition="0" endLine="49" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465756" fileName="CachedIndexList.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465763" fileName="CachedIndexList.java" startLine="55" startPosition="0" endLine="59" endPosition="0">
+      <varInfo nodeId="2583557094406465765" varName="o" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465835" fileName="CachedIndexList.java" startLine="90" startPosition="0" endLine="94" endPosition="0">
+      <varInfo nodeId="2583557094406465837" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465922" fileName="CachedIndexList.java" startLine="125" startPosition="0" endLine="129" endPosition="0">
+      <varInfo nodeId="2583557094406465924" varName="index" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406466006" fileName="CachedIndexList.java" startLine="161" startPosition="0" endLine="165" endPosition="0">
+      <varInfo nodeId="2583557094406466008" varName="o" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465562" fileName="CachedIndexList.java" startLine="191" startPosition="0" endLine="195" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465569" fileName="CachedIndexList.java" startLine="196" startPosition="0" endLine="200" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465609" fileName="CachedIndexList.java" startLine="215" startPosition="0" endLine="219" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465616" fileName="CachedIndexList.java" startLine="220" startPosition="0" endLine="224" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465623" fileName="CachedIndexList.java" startLine="225" startPosition="0" endLine="229" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465630" fileName="CachedIndexList.java" startLine="230" startPosition="0" endLine="234" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465637" fileName="CachedIndexList.java" startLine="235" startPosition="0" endLine="239" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465644" fileName="CachedIndexList.java" startLine="240" startPosition="0" endLine="244" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465773" fileName="CachedIndexList.java" startLine="60" startPosition="0" endLine="65" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465784" fileName="CachedIndexList.java" startLine="66" startPosition="0" endLine="71" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465793" fileName="CachedIndexList.java" startLine="72" startPosition="0" endLine="77" endPosition="0">
+      <varInfo nodeId="2583557094406465797" varName="a" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465807" fileName="CachedIndexList.java" startLine="78" startPosition="0" endLine="83" endPosition="0">
+      <varInfo nodeId="2583557094406465809" varName="e" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465821" fileName="CachedIndexList.java" startLine="84" startPosition="0" endLine="89" endPosition="0">
+      <varInfo nodeId="2583557094406465823" varName="o" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465846" fileName="CachedIndexList.java" startLine="95" startPosition="0" endLine="100" endPosition="0">
+      <varInfo nodeId="2583557094406465848" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465862" fileName="CachedIndexList.java" startLine="101" startPosition="0" endLine="106" endPosition="0">
+      <varInfo nodeId="2583557094406465866" varName="c" />
+      <varInfo nodeId="2583557094406465864" varName="index" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465881" fileName="CachedIndexList.java" startLine="107" startPosition="0" endLine="112" endPosition="0">
+      <varInfo nodeId="2583557094406465883" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465896" fileName="CachedIndexList.java" startLine="113" startPosition="0" endLine="118" endPosition="0">
+      <varInfo nodeId="2583557094406465898" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465911" fileName="CachedIndexList.java" startLine="119" startPosition="0" endLine="124" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465932" fileName="CachedIndexList.java" startLine="130" startPosition="0" endLine="135" endPosition="0">
+      <varInfo nodeId="2583557094406465936" varName="element" />
+      <varInfo nodeId="2583557094406465934" varName="index" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465949" fileName="CachedIndexList.java" startLine="136" startPosition="0" endLine="141" endPosition="0">
+      <varInfo nodeId="2583557094406465953" varName="element" />
+      <varInfo nodeId="2583557094406465951" varName="index" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465966" fileName="CachedIndexList.java" startLine="142" startPosition="0" endLine="147" endPosition="0">
+      <varInfo nodeId="2583557094406465968" varName="index" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406466016" fileName="CachedIndexList.java" startLine="166" startPosition="0" endLine="171" endPosition="0" />
+    <scopeInfo nodeId="2583557094406466025" fileName="CachedIndexList.java" startLine="172" startPosition="0" endLine="177" endPosition="0">
+      <varInfo nodeId="2583557094406466028" varName="index" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406466039" fileName="CachedIndexList.java" startLine="178" startPosition="0" endLine="183" endPosition="0">
+      <varInfo nodeId="2583557094406466042" varName="fromIndex" />
+      <varInfo nodeId="2583557094406466044" varName="toIndex" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465576" fileName="CachedIndexList.java" startLine="201" startPosition="0" endLine="206" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465651" fileName="CachedIndexList.java" startLine="245" startPosition="0" endLine="250" endPosition="0" />
+    <scopeInfo nodeId="2583557094406465662" fileName="CachedIndexList.java" startLine="251" startPosition="0" endLine="256" endPosition="0">
+      <varInfo nodeId="2583557094406465664" varName="e" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465676" fileName="CachedIndexList.java" startLine="257" startPosition="0" endLine="262" endPosition="0">
+      <varInfo nodeId="2583557094406465678" varName="e" />
+    </scopeInfo>
+    <scopeInfo nodeId="7988977145161365363" fileName="CachedIndexList.java" startLine="31" startPosition="12" endLine="40" endPosition="7">
+      <varInfo nodeId="2583557094406465726" varName="index" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465984" fileName="CachedIndexList.java" startLine="149" startPosition="32" endLine="158" endPosition="5" />
+    <scopeInfo nodeId="2583557094406465980" fileName="CachedIndexList.java" startLine="148" startPosition="0" endLine="160" endPosition="0">
+      <varInfo nodeId="2583557094406465982" varName="o" />
+    </scopeInfo>
+    <scopeInfo nodeId="2583557094406465723" fileName="CachedIndexList.java" startLine="28" startPosition="32" endLine="42" endPosition="24" />
+    <scopeInfo nodeId="2583557094406465722" fileName="CachedIndexList.java" startLine="28" startPosition="0" endLine="44" endPosition="0" />
+    <unitInfo nodeId="2583557094406465540" fileName="CachedIndexList.java" startLine="184" startPosition="0" endLine="207" endPosition="0" unitName="jetbrains.mps.editor.multiline.runtime.CachedIndexList$IteratorWrapper" />
+    <unitInfo nodeId="2583557094406465587" fileName="CachedIndexList.java" startLine="208" startPosition="0" endLine="263" endPosition="0" unitName="jetbrains.mps.editor.multiline.runtime.CachedIndexList$ListIteratorWrapper" />
+    <unitInfo nodeId="2583557094406465536" fileName="CachedIndexList.java" startLine="13" startPosition="0" endLine="264" endPosition="0" unitName="jetbrains.mps.editor.multiline.runtime.CachedIndexList" />
+  </root>
   <root nodeRef="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(jetbrains.mps.editor.multiline.runtime)/5205698381779290215">
     <nodeInfo nodeId="1264234391953234008" fileName="ClipboardUtils.java" startLine="16" startPosition="43" endLine="17" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
     <nodeInfo nodeId="1264234391953234084" fileName="ClipboardUtils.java" startLine="20" startPosition="13" endLine="21" endPosition="77" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />

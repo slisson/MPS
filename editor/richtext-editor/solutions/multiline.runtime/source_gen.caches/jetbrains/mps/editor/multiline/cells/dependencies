@@ -28,6 +28,7 @@
     <classNode dependClassName="jetbrains.mps.editor.multiline.cells.MultilineText" />
     <classNode dependClassName="jetbrains.mps.editor.multiline.cells.WordCellInitializer" />
     <classNode dependClassName="jetbrains.mps.editor.multiline.cells.WordModelAccessor" />
+    <classNode dependClassName="jetbrains.mps.editor.multiline.runtime.CachedIndexList" />
     <classNode dependClassName="jetbrains.mps.editor.multiline.runtime.CellUtils" />
     <classNode dependClassName="jetbrains.mps.editor.multiline.runtime.MultilineUtil" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
