@@ -24,7 +24,6 @@
     <classNode dependClassName="java.util.TreeSet" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
     <classNode dependClassName="jetbrains.mps.editor.multiline.cells.EditorCell_Word" />
-    <classNode dependClassName="jetbrains.mps.editor.multiline.cells.MultilineCellBackgroundPainter" />
     <classNode dependClassName="jetbrains.mps.editor.multiline.cells.MultilineText" />
     <classNode dependClassName="jetbrains.mps.editor.multiline.cells.WordCellInitializer" />
     <classNode dependClassName="jetbrains.mps.editor.multiline.cells.WordModelAccessor" />
@@ -94,11 +93,6 @@
     <classNode dependClassName="org.apache.commons.lang3.StringUtils" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
-  </dependency>
-  <dependency className="jetbrains.mps.editor.multiline.cells.MultilineCellBackgroundPainter" file="MultilineCellBackgroundPainter.java">
-    <classNode dependClassName="java.awt.Graphics" />
-    <classNode dependClassName="jetbrains.mps.editor.multiline.cells.EditorCell_Multiline" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.ParentSettings" />
   </dependency>
   <dependency className="jetbrains.mps.editor.multiline.cells.MultilineSelection" file="MultilineSelection.java">
     <classNode dependClassName="com.intellij.openapi.editor.colors.EditorColors" />

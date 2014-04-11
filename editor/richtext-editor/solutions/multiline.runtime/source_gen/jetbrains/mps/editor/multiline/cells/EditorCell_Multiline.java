@@ -26,7 +26,6 @@ import org.apache.commons.lang3.ArrayUtils;
 import jetbrains.mps.editor.multiline.runtime.CellUtils;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import java.awt.Rectangle;
-import jetbrains.mps.nodeEditor.cells.ParentSettings;
 import java.awt.Graphics;
 import name.fraser.neil.plaintext.diff_match_patch;
 import java.awt.Color;
@@ -35,6 +34,7 @@ import java.util.SortedSet;
 import jetbrains.mps.internal.collections.runtime.SortedSetSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.awt.Shape;
+import jetbrains.mps.nodeEditor.cells.ParentSettings;
 import java.util.TreeSet;
 import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
 
@@ -42,8 +42,6 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   private ModelAccessor myModelAccessor;
   private MultilineText myMultilineText;
   private List<WordCellInitializer> myWordCellInitializers = new ArrayList<WordCellInitializer>();
-  private List<MultilineCellBackgroundPainter> myBackgroundPainters = new ArrayList<MultilineCellBackgroundPainter>();
-  private boolean diffPaintingDisabled = false;
   private List<Integer> recentCursorPosition = ListSequence.fromList(new LinkedList<Integer>());
   private CachedIndexList<EditorCell> myChilds;
 
@@ -123,7 +121,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
 
   public void textToProperty(String newText) {
     String oldText = myModelAccessor.getText();
-    if (neq_v798xa_a0b0m(oldText, newText)) {
+    if (neq_v798xa_a0b0k(oldText, newText)) {
       myModelAccessor.setText(MultilineUtil.escapeText(newText));
     }
   }
@@ -201,7 +199,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     // If the EditorComponent is rebuild after a model modification, this cell might not be part of the component 
     // anymore. Therefor, we search for the new multiline cell and forward the call to that one. 
     getEditor().flushEvents();
-    check_v798xa_a3a12(((EditorCell_Multiline) getCellInfo().findCell(getEditor())), pos, enforceSelection, this);
+    check_v798xa_a3a91(((EditorCell_Multiline) getCellInfo().findCell(getEditor())), pos, enforceSelection, this);
   }
 
   private void setCaretPosition_(int pos, boolean enforceSelection) {
@@ -278,7 +276,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   }
 
   public void setText(String newText) {
-    newText = check_v798xa_a0a0gb(newText);
+    newText = check_v798xa_a0a0eb(newText);
     myMultilineText.setText(newText);
     modelToView();
   }
@@ -303,7 +301,7 @@ public class EditorCell_Multiline extends EditorCell_Collection {
   @Override
   public void addEditorCellAt(int i, EditorCell cell, boolean b) {
     if (!(cell instanceof EditorCell_Word)) {
-      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0kb(check_v798xa_a0a0a0a0a63(cell)));
+      throw new IllegalArgumentException("Cells of type EditorCell_Word allowed only. Was of type: " + check_v798xa_a0a0a0a0ib(check_v798xa_a0a0a0a0a43(cell)));
 
     }
     super.addEditorCellAt(i, cell, b);
@@ -334,17 +332,6 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     relativeNum = Math.max(relativeNum, 0);
     relativeNum = Math.min(relativeNum, wordCell.getTextLengthIncludingSeparator() - 1);
     return wordCell.getCharacterBounds(relativeNum);
-  }
-
-  @Override
-  public ParentSettings paintBackground(Graphics g, ParentSettings parentSettings) {
-    ParentSettings result = super.paintBackground(g, parentSettings);
-
-    for (MultilineCellBackgroundPainter painter : ListSequence.fromList(myBackgroundPainters)) {
-      painter.paint(this, g, parentSettings);
-    }
-
-    return result;
   }
 
   public void paintDiff(Graphics g, String oldText, String newText, boolean iAmOld) {
@@ -459,14 +446,6 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return result;
   }
 
-  public void addBackgroundPainter(MultilineCellBackgroundPainter painter) {
-    myBackgroundPainters.add(painter);
-  }
-
-  public void disabledDiffPainting() {
-    diffPaintingDisabled = true;
-  }
-
   public void rememberCursorPosition() {
     rememberCursorPosition(getCaretPosition());
   }
@@ -512,35 +491,35 @@ public class EditorCell_Multiline extends EditorCell_Collection {
     return myChilds;
   }
 
-  private static void check_v798xa_a3a12(EditorCell_Multiline checkedDotOperand, int pos, boolean enforceSelection, EditorCell_Multiline checkedDotThisExpression) {
+  private static void check_v798xa_a3a91(EditorCell_Multiline checkedDotOperand, int pos, boolean enforceSelection, EditorCell_Multiline checkedDotThisExpression) {
     if (null != checkedDotOperand) {
       checkedDotOperand.setCaretPosition_(pos, enforceSelection);
     }
 
   }
 
-  private static String check_v798xa_a0a0gb(String checkedDotOperand) {
+  private static String check_v798xa_a0a0eb(String checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.replace("\\n", "\n");
     }
     return null;
   }
 
-  private static String check_v798xa_a0a0a0a0kb(Class<?> checkedDotOperand) {
+  private static String check_v798xa_a0a0a0a0ib(Class<?> checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getName();
     }
     return null;
   }
 
-  private static Class<?> check_v798xa_a0a0a0a0a63(EditorCell checkedDotOperand) {
+  private static Class<?> check_v798xa_a0a0a0a0a43(EditorCell checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getClass();
     }
     return null;
   }
 
-  private static boolean neq_v798xa_a0b0m(Object a, Object b) {
+  private static boolean neq_v798xa_a0b0k(Object a, Object b) {
     return !((a != null ? a.equals(b) : a == b));
   }
 }

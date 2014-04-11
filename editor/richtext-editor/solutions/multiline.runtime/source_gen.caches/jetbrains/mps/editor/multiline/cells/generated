@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="bn0nctteygsqdlcj5kamlcip3faqxb9">
+<dependencies version="2" modelHash="-eg50yg3n2m4m02xchc8ey6w6r4qv6fc">
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.selection(MPS.Editor/jetbrains.mps.nodeEditor.selection@java_stub)" />
@@ -31,13 +31,12 @@
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="4kxpf1lk5w1iq2wecgk9bz505rq9vzu" />
   <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" hash="51rta3hijy0r8oqn8xwzw6fztfi6a8p" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="6gsgv1p6bkd8kmlifl0ddbzjugbmbxl" />
-  <dep model="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(jetbrains.mps.editor.multiline.runtime)" hash="-7cbwj9f10mq4tnbj819exp2xfkg3wmm" />
+  <dep model="r:f19691e5-cdba-471c-b59a-00d5ff7aea1c(jetbrains.mps.editor.multiline.runtime)" hash="-bhlh3sajiz0yv85ihka92cxr2vgws64" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-9ul2n83hssy8wjb8faorbs0k0av9cuy" />
   <common hash="-dqu02yjcupzbqvpvsnwy70se1u1m2vb" dependsOnNodes="true">
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   </common>
-  <source id="8291359990510677541" name="EditorCell_Multiline" hash="ekx4tvi0gk0ubz5f5r45e06g5ib6hpp">
-    <dep root="3758249303358754567" />
+  <source id="8291359990510677541" name="EditorCell_Multiline" hash="9wncj2kbibvrmm1yosogj4swa8qwdgi">
     <dep root="5696298824709649530" />
     <dep root="6159071989902643399" />
     <dep root="6159071989902688620" />
@@ -149,9 +148,6 @@
   </source>
   <source id="5696298824709649530" name="WordCellInitializer" hash="c22v6n02cfxjrjc7th0lvggguoc9173">
     <file name="WordCellInitializer.java" />
-  </source>
-  <source id="3758249303358754567" name="MultilineCellBackgroundPainter" hash="-40vg8sqjrlcb1nj4rvr4czuysmppjev">
-    <file name="MultilineCellBackgroundPainter.java" />
   </source>
   <source id="7453862918668948221" name="TabAction" hash="cnna0v2lasz6w2pnqpqtyyri8slfs6r">
     <dep model="r:00000000-0000-4000-0000-011c8959032f(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.main@generator)" />

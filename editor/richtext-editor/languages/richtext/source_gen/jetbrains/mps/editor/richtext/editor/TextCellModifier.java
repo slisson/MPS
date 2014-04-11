@@ -95,11 +95,6 @@ public class TextCellModifier {
       });
     }
 
-    // VCS support 
-    if (cell instanceof EditorCell_Multiline) {
-      ((EditorCell_Multiline) cell).disabledDiffPainting();
-    }
-
     cell.getStyle().set(StyleAttributes.INDENT_LAYOUT_NO_WRAP, true);
 
     // disable shift+mouse selection of multiline 
