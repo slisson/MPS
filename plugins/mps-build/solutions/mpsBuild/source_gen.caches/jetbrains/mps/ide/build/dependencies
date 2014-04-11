@@ -26,6 +26,7 @@
   <dependency className="jetbrains.mps.ide.build.mpsTesting" file="mpsTesting.xml" />
   <dependency className="jetbrains.mps.ide.build.mpsTroveCollections" file="mpsTroveCollections.xml" />
   <dependency className="jetbrains.mps.ide.build.mpsVcs" file="mpsVcs.xml" />
+  <dependency className="jetbrains.mps.ide.build.mpsVcsRichtext" file="mpsVcsRichtext.xml" />
   <dependency className="jetbrains.mps.ide.build.mpsWorkbench" file="mpsWorkbench.xml" />
 </dependenciesRoot>
 

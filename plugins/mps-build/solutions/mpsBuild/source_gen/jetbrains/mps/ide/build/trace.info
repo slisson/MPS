@@ -9,6 +9,9 @@
   <root nodeRef="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2569834391839970845">
     <unitInfo nodeId="2569834391839970845" fileName="mpsWorkbench.xml" startLine="1" startPosition="0" endLine="721" endPosition="10" unitName="jetbrains.mps.ide.build.mpsWorkbench" />
   </root>
+  <root nodeRef="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/4231780977173601451">
+    <unitInfo nodeId="4231780977173601451" fileName="mpsVcsRichtext.xml" startLine="1" startPosition="0" endLine="137" endPosition="10" unitName="jetbrains.mps.ide.build.mpsVcsRichtext" />
+  </root>
   <root nodeRef="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/4301118715654192646">
     <unitInfo nodeId="4301118715654192646" fileName="mps.xml" startLine="1" startPosition="0" endLine="195" endPosition="10" unitName="jetbrains.mps.ide.build.mps" />
   </root>

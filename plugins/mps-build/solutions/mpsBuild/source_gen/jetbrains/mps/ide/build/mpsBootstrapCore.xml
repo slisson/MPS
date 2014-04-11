@@ -61,11 +61,11 @@
   </path>
   
   <path id="path.java.library.diff_match_patch">
-    <fileset file="${mps_home}/lib/diff_match_patch.jar" />
+    <fileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/lib/diff_match_patch.jar" />
   </path>
   
   <path id="path.java.library.commons-lang3">
-    <fileset file="${mps_home}/lib/commons-lang3-3.1.jar" />
+    <fileset file="${mps_home}/editor/richtext-editor/solutions/multiline.runtime/lib/commons-lang3-3.1.jar" />
   </path>
   
   <path id="path.mps.ant.path">
