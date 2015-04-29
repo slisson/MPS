@@ -122,21 +122,20 @@ public class TemplateGenerator extends AbstractTemplateGenerator {
   private final GenerationTrace myNewTrace;
 
   static final class StepArguments {
-    public final SModel inputModel, outputModel;
     public final DependenciesBuilder dependenciesBuilder;
     public final RuleManager ruleManager;
     public final GenerationTrace genTrace;
-    public StepArguments(RuleManager ruleManager, SModel inputModel, SModel outputModel, DependenciesBuilder dependenciesBuilder, GenerationTrace genTrace) {
-      this.inputModel = inputModel;
-      this.outputModel = outputModel;
+    public final GeneratorMappings mappingLabels;
+    public StepArguments(RuleManager ruleManager, DependenciesBuilder dependenciesBuilder, GenerationTrace genTrace, GeneratorMappings mapLabels) {
       this.dependenciesBuilder = dependenciesBuilder;
       this.ruleManager = ruleManager;
       this.genTrace = genTrace;
+      this.mappingLabels = mapLabels;
     }
   }
 
-  public TemplateGenerator(GenerationSessionContext operationContext, StepArguments stepArgs) {
-    super(operationContext, stepArgs.inputModel, stepArgs.outputModel);
+  public TemplateGenerator(GenerationSessionContext operationContext, SModel inputModel, SModel outputModel, StepArguments stepArgs) {
+    super(operationContext, inputModel, outputModel, stepArgs.mappingLabels);
     myRuleManager = stepArgs.ruleManager;
     GenerationOptions options = operationContext.getGenerationOptions();
     myIsStrict = options.isStrictMode();

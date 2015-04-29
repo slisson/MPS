@@ -521,5 +521,32 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4RJ0ilaVNjd">
+    <property role="TrG5h" value="GenerationContextOp_RegisterLabel" />
+    <property role="R4oN_" value="register mapping label" />
+    <property role="34LRSv" value="label" />
+    <ref role="1TJDcQ" node="hHiwH3j" resolve="GenerationContextOp_Base" />
+    <node concept="1TJgyj" id="4RJ0ilaVRHI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="inputNode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="4RJ0ilaVRHS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outputNode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="4RJ0ilaVRto" role="1TKVEl">
+      <property role="TrG5h" value="labelName_intern" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="4RJ0ilaVRti" role="1TKVEi">
+      <property role="20kJfa" value="label" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpf8:hurT7o6" resolve="MappingLabelDeclaration" />
+    </node>
+  </node>
 </model>
 

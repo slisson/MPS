@@ -92,6 +92,7 @@ class GenerationSession {
   // != null unless session is abandoned/disposed
   private GenerationSessionContext mySessionContext;
   private final IPerformanceTracer ttrace;
+  private StepArguments myStepArguments;
 
   private int myMajorStep = 0;
   private int myMinorStep = -1;
@@ -292,7 +293,7 @@ class GenerationSession {
     mySessionContext = new GenerationSessionContext(mySessionContext);
 
     // -- filter mapping configurations
-    TemplateGenerator templateGenerator = new TemplateGenerator(mySessionContext, new StepArguments(null, inputModel, null, myDependenciesBuilder, myNewTrace));
+    TemplateGenerator templateGenerator = new TemplateGenerator(mySessionContext, inputModel, null, new StepArguments(null, myDependenciesBuilder, myNewTrace, null));
     LinkedList<TemplateMappingConfiguration> drop = new LinkedList<TemplateMappingConfiguration>();
     for (TemplateMappingConfiguration c : mappingConfigurations) {
       if (!c.isApplicable(templateGenerator)) {
@@ -313,17 +314,20 @@ class GenerationSession {
     RuleManager ruleManager = new RuleManager(myGenerationPlan, mappingConfigurations, myLogger);
 
     try {
-      SModel outputModel = executeMajorStepInternal(inputModel, ruleManager, progress);
+      myStepArguments = new StepArguments(ruleManager, myDependenciesBuilder, myNewTrace, new GeneratorMappings(myLogger));
+      SModel outputModel = executeMajorStepInternal(inputModel, progress);
       if (myLogger.getErrorCount() > 0) {
         myLogger.warning("model \"" + inputModel.getReference().getModelName() + "\" has been generated with errors");
       }
+      myStepArguments = null;
       return outputModel;
     } finally {
       recordAccessedTransientModels();
     }
   }
 
-  private SModel executeMajorStepInternal(SModel inputModel, RuleManager ruleManager, ProgressMonitor progress) throws GenerationFailureException, GenerationCanceledException {
+  // precondition: myStepArguments initialized (!= null);
+  private SModel executeMajorStepInternal(SModel inputModel, ProgressMonitor progress) throws GenerationFailureException, GenerationCanceledException {
     SModel currentInputModel = inputModel;
     final boolean cloneInputModel = myGenerationOptions.isSaveTransientModels() && myGenerationOptions.applyTransformationsInplace();
 
@@ -331,7 +335,7 @@ class GenerationSession {
     // run pre-processing scripts
     // -----------------------
     ttrace.push("pre-processing", false);
-    currentInputModel = preProcessModel(ruleManager, currentInputModel);
+    currentInputModel = preProcessModel(currentInputModel);
     ttrace.pop();
 
     SModel currentOutputModel = createTransientModel();
@@ -351,7 +355,7 @@ class GenerationSession {
       myNewTrace.nextStep(currentInputModel.getReference(), currentOutputModel.getReference());
 
       final SModel intactInputModelClone = cloneInputModel ? cloneTransientModel(currentInputModel) : null;
-      final TemplateGenerator tg = prepareToApplyRules(currentInputModel, currentOutputModel, ruleManager);
+      final TemplateGenerator tg = prepareToApplyRules(currentInputModel, currentOutputModel);
       boolean somethingHasBeenGenerated = false, applySucceed = false;
       try {
         somethingHasBeenGenerated = applyRules(tg, progress, isPrimary);
@@ -419,7 +423,7 @@ class GenerationSession {
     // run post-processing scripts
     // -----------------------
     ttrace.push("post-processing", false);
-    currentOutputModel = postProcessModel(ruleManager, currentOutputModel);
+    currentOutputModel = postProcessModel(currentOutputModel);
     ttrace.pop();
 
     return currentOutputModel;
@@ -431,12 +435,11 @@ class GenerationSession {
   }
 
   @NotNull
-  private TemplateGenerator prepareToApplyRules(SModel currentInputModel, SModel currentOutputModel, RuleManager ruleManager) {
+  private TemplateGenerator prepareToApplyRules(SModel currentInputModel, SModel currentOutputModel) {
     myDependenciesBuilder.setOutputModel(currentOutputModel, myMajorStep, myMinorStep);
-    StepArguments args = new StepArguments(ruleManager, currentInputModel, currentOutputModel, myDependenciesBuilder, myNewTrace);
     return myGenerationOptions.isGenerateInParallel()
-            ? new ParallelTemplateGenerator(myTaskPoolProvider, mySessionContext, args)
-            : new TemplateGenerator(mySessionContext, args);
+            ? new ParallelTemplateGenerator(myTaskPoolProvider, mySessionContext, currentInputModel, currentOutputModel, myStepArguments)
+            : new TemplateGenerator(mySessionContext, currentInputModel, currentOutputModel, myStepArguments);
   }
 
   private boolean applyRules(TemplateGenerator tg, ProgressMonitor progress, final boolean isPrimary)
@@ -471,7 +474,8 @@ class GenerationSession {
     return hasChanges;
   }
 
-  private SModel preProcessModel(RuleManager ruleManager, SModel currentInputModel) throws GenerationFailureException {
+  private SModel preProcessModel(SModel currentInputModel) throws GenerationFailureException {
+    final RuleManager ruleManager = myStepArguments.ruleManager;
     if (ruleManager.getPreProcessScripts().isEmpty()) {
       return currentInputModel;
     }
@@ -502,8 +506,7 @@ class GenerationSession {
       myNewTrace.nextStep(currentInputModel.getReference(), currentInputModel.getReference());
     }
 
-    TemplateGenerator templateGenerator = new TemplateGenerator(mySessionContext, new StepArguments(ruleManager, currentInputModel,
-        currentInputModel, myDependenciesBuilder, myNewTrace));
+    TemplateGenerator templateGenerator = new TemplateGenerator(mySessionContext, currentInputModel, currentInputModel, myStepArguments);
     for (TemplateMappingScript preMappingScript : ruleManager.getPreProcessScripts().getScripts()) {
       if (myLogger.needsInfo()) {
         myLogger.info(preMappingScript.getScriptNode(), "pre-process " + preMappingScript.getLongName());
@@ -521,7 +524,8 @@ class GenerationSession {
     return currentInputModel;
   }
 
-  private SModel postProcessModel(RuleManager ruleManager, SModel currentModel) throws GenerationFailureException {
+  private SModel postProcessModel(SModel currentModel) throws GenerationFailureException {
+    final RuleManager ruleManager = myStepArguments.ruleManager;
     if (ruleManager.getPostProcessScripts().isEmpty()) {
       return currentModel;
     }
@@ -548,8 +552,7 @@ class GenerationSession {
     }
 
     // FIXME I don't need ruleManager, nor even DependencyManager to execute a script. Refactor QueryExecutionContext
-    TemplateGenerator templateGenerator = new TemplateGenerator(mySessionContext,
-        new StepArguments(ruleManager, currentModel, currentModel, myDependenciesBuilder, myNewTrace));
+    TemplateGenerator templateGenerator = new TemplateGenerator(mySessionContext, currentModel, currentModel, myStepArguments);
 
     for (TemplateMappingScript postMappingScript : ruleManager.getPostProcessScripts().getScripts()) {
       if (myLogger.needsInfo()) {

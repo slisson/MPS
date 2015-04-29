@@ -27,6 +27,7 @@ import jetbrains.mps.generator.template.DefaultQueryExecutionContext;
 import jetbrains.mps.generator.template.QueryExecutionContext;
 import jetbrains.mps.util.Pair;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 
@@ -52,8 +53,8 @@ public class ParallelTemplateGenerator extends TemplateGenerator {
   private Map<SNode, DefaultQueryExecutionContext> myRootContext;
   private final Map<QueryExecutionContext, CompositeGenerationTask> contextToTask = new HashMap<QueryExecutionContext, CompositeGenerationTask>();
 
-  public ParallelTemplateGenerator(ITaskPoolProvider taskPoolProvider, GenerationSessionContext operationContext, StepArguments args) {
-    super(operationContext, args);
+  public ParallelTemplateGenerator(ITaskPoolProvider taskPoolProvider, GenerationSessionContext operationContext, SModel inputModel, SModel outputModel, StepArguments args) {
+    super(operationContext, inputModel, outputModel, args);
     myTasks = new ArrayList<RootGenerationTask>();
     myInputToTask = new ConcurrentHashMap<Pair<SNode, SNodeReference>, RootGenerationTask>();
     myPool = taskPoolProvider.getTaskPool();

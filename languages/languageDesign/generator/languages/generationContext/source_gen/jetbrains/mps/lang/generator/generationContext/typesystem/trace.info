@@ -12,7 +12,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="10,0,126,0" name="jetbrains.mps.lang.generator.generationContext.typesystem.TypesystemDescriptor" />
+      <unit at="10,0,130,0" name="jetbrains.mps.lang.generator.generationContext.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:00000000-0000-4000-0000-011c895902f1(jetbrains.mps.lang.generator.generationContext.typesystem)/1216860931280">
@@ -1070,6 +1070,113 @@
         <var name="typeCheckingContext" id="5403673535105110311" />
       </scope>
       <unit id="5403673535105110311" at="16,0,58,0" name="jetbrains.mps.lang.generator.generationContext.typesystem.typeof_GenerationContextOp_DirtyNode_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:00000000-0000-4000-0000-011c895902f1(jetbrains.mps.lang.generator.generationContext.typesystem)/5615708520036939474">
+    <file name="typeof_GenerationContextOp_RegisterLabel_InferenceRule.java">
+      <node id="5615708520036949856" at="21,5,22,44" concept="5" />
+      <node id="5615708520036949856" at="22,44,23,223" concept="5" />
+      <node id="5615708520036949856" at="23,223,24,300" concept="2" />
+      <node id="5615708520036950066" at="27,7,28,209" concept="5" />
+      <node id="5615708520036950066" at="28,209,29,225" concept="5" />
+      <node id="5615708520036950066" at="29,225,30,638" concept="2" />
+      <node id="5615708520036992735" at="34,7,35,210" concept="5" />
+      <node id="5615708520036992735" at="35,210,36,225" concept="5" />
+      <node id="5615708520036992735" at="36,225,37,638" concept="2" />
+      <node id="5615708520036939474" at="41,46,42,104" concept="6" />
+      <node id="5615708520036939474" at="45,5,46,130" concept="5" />
+      <node id="5615708520036939474" at="46,130,47,45" concept="6" />
+      <node id="5615708520036939474" at="50,30,51,17" concept="6" />
+      <node id="5615708520036949975" at="53,61,54,63" concept="5" />
+      <node id="5615708520036949975" at="54,63,55,30" concept="5" />
+      <node id="5615708520036949975" at="55,30,56,220" concept="0" />
+      <node id="5615708520036949975" at="55,30,56,220" concept="0" />
+      <node id="5615708520036949975" at="55,30,56,220" concept="2" />
+      <node id="5615708520036949975" at="56,220,57,24" concept="6" />
+      <node id="5615708520036997451" at="59,79,60,63" concept="5" />
+      <node id="5615708520036997451" at="60,63,61,30" concept="5" />
+      <node id="5615708520036997451" at="61,30,62,221" concept="2" />
+      <node id="5615708520036997451" at="62,221,63,196" concept="2" />
+      <node id="5615708520036997451" at="63,196,64,24" concept="6" />
+      <node id="5615708520036995395" at="66,79,67,63" concept="5" />
+      <node id="5615708520036995395" at="67,63,68,30" concept="5" />
+      <node id="5615708520036995395" at="68,30,69,221" concept="2" />
+      <node id="5615708520036995395" at="69,221,70,196" concept="2" />
+      <node id="5615708520036995395" at="70,196,71,24" concept="6" />
+      <node id="5615708520036939474" at="18,0,20,0" concept="1" trace="typeof_GenerationContextOp_RegisterLabel_InferenceRule#()V" />
+      <node id="5615708520036997451" at="61,30,63,196" concept="0" />
+      <node id="5615708520036997451" at="61,30,63,196" concept="0" />
+      <node id="5615708520036995395" at="68,30,70,196" concept="0" />
+      <node id="5615708520036995395" at="68,30,70,196" concept="0" />
+      <node id="5615708520036939474" at="41,0,44,0" concept="4" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="5615708520036939474" at="50,0,53,0" concept="4" trace="overrides#()Z" />
+      <node id="5615708520036939474" at="44,68,48,5" concept="0" />
+      <node id="5615708520036949856" at="20,115,25,5" concept="0" />
+      <node id="5615708520036950066" at="26,59,31,7" concept="0" />
+      <node id="5615708520036992735" at="33,59,38,7" concept="0" />
+      <node id="5615708520036939474" at="44,0,50,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5615708520036949975" at="53,0,59,0" concept="8" trace="_quotation_createNode_euhyex_a0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5615708520036950066" at="25,5,32,5" concept="3" />
+      <node id="5615708520036992735" at="32,5,39,5" concept="3" />
+      <node id="5615708520036997451" at="59,0,66,0" concept="8" trace="_quotation_createNode_euhyex_a0b0b#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5615708520036995395" at="66,0,73,0" concept="8" trace="_quotation_createNode_euhyex_a0c0b#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5615708520036939474" at="20,0,41,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5615708520036939474" at="18,67,18,67" />
+      <scope id="5615708520036939474" at="41,46,42,104" />
+      <scope id="5615708520036939474" at="50,30,51,17" />
+      <scope id="5615708520036949975" at="55,30,56,220" />
+      <scope id="5615708520036939474" at="18,0,20,0" />
+      <scope id="5615708520036939474" at="45,5,47,45">
+        <var name="b" id="5615708520036939474" />
+      </scope>
+      <scope id="5615708520036997451" at="61,30,63,196" />
+      <scope id="5615708520036995395" at="68,30,70,196" />
+      <scope id="5615708520036949856" at="21,5,24,300">
+        <var name="_info_12389875345" id="5615708520036949856" />
+        <var name="_nodeToCheck_1029348928467" id="5615708520036949856" />
+      </scope>
+      <scope id="5615708520036950066" at="27,7,30,638">
+        <var name="_info_12389875345" id="5615708520036950066" />
+        <var name="_nodeToCheck_1029348928467" id="5615708520036950066" />
+      </scope>
+      <scope id="5615708520036992735" at="34,7,37,638">
+        <var name="_info_12389875345" id="5615708520036992735" />
+        <var name="_nodeToCheck_1029348928467" id="5615708520036992735" />
+      </scope>
+      <scope id="5615708520036939474" at="41,0,44,0" />
+      <scope id="5615708520036939474" at="50,0,53,0" />
+      <scope id="5615708520036939474" at="44,68,48,5" />
+      <scope id="5615708520036949975" at="53,61,57,24">
+        <var name="facade" id="5615708520036949975" />
+        <var name="quotedNode_1" id="5615708520036949975" />
+      </scope>
+      <scope id="5615708520036950066" at="26,59,31,7" />
+      <scope id="5615708520036992735" at="33,59,38,7" />
+      <scope id="5615708520036997451" at="59,79,64,24">
+        <var name="facade" id="5615708520036997451" />
+        <var name="quotedNode_2" id="5615708520036997451" />
+      </scope>
+      <scope id="5615708520036995395" at="66,79,71,24">
+        <var name="facade" id="5615708520036995395" />
+        <var name="quotedNode_2" id="5615708520036995395" />
+      </scope>
+      <scope id="5615708520036939474" at="44,0,50,0">
+        <var name="argument" id="5615708520036939474" />
+      </scope>
+      <scope id="5615708520036949975" at="53,0,59,0" />
+      <scope id="5615708520036997451" at="59,0,66,0">
+        <var name="parameter_1" id="5615708520036997451" />
+      </scope>
+      <scope id="5615708520036995395" at="66,0,73,0">
+        <var name="parameter_1" id="5615708520036995395" />
+      </scope>
+      <scope id="5615708520036939475" at="20,115,39,5" />
+      <scope id="5615708520036939474" at="20,0,41,0">
+        <var name="op" id="5615708520036939474" />
+        <var name="status" id="5615708520036939474" />
+        <var name="typeCheckingContext" id="5615708520036939474" />
+      </scope>
+      <unit id="5615708520036939474" at="17,0,74,0" name="jetbrains.mps.lang.generator.generationContext.typesystem.typeof_GenerationContextOp_RegisterLabel_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:00000000-0000-4000-0000-011c895902f1(jetbrains.mps.lang.generator.generationContext.typesystem)/654553635094950296">

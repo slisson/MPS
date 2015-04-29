@@ -39740,17 +39740,17 @@
       <property role="13i0iv" value="true" />
       <property role="TrG5h" value="getExpectedRetType" />
       <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="i2fhBND" role="1B3o_S" />
+      <node concept="3Tqbb2" id="i2fhClb" role="3clF45" />
+      <node concept="3clFbS" id="i2fhBNF" role="3clF47" />
+      <node concept="2AHcQZ" id="3Rhnz24pH9f" role="2AJF6D">
+        <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
+      </node>
       <node concept="P$JXv" id="3Rhnz24pH9p" role="lGtFl">
         <node concept="x79VA" id="3Rhnz24pH9R" role="x79VK">
           <property role="x79VB" value="the expected type. null is equivalent to &lt;VoidType&gt;. [note the quotation]" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="3Rhnz24pH9f" role="2AJF6D">
-        <ref role="2AI5Lk" to="as9o:~Nullable" resolve="Nullable" />
-      </node>
-      <node concept="3Tm1VV" id="i2fhBND" role="1B3o_S" />
-      <node concept="3Tqbb2" id="i2fhClb" role="3clF45" />
-      <node concept="3clFbS" id="i2fhBNF" role="3clF47" />
     </node>
     <node concept="13i0hz" id="i2fhS7A" role="13h7CS">
       <property role="TrG5h" value="getLastStatement" />
@@ -45517,6 +45517,7 @@
       <node concept="3Tm1VV" id="7yGNG5q2t80" role="1B3o_S" />
       <node concept="3clFbS" id="7yGNG5q2t81" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="3aZRVfIaADw" role="jymVt" />
     <node concept="2YIFZL" id="7yGNG5q2taz" role="jymVt">
       <property role="TrG5h" value="accept" />
       <node concept="10P_77" id="7yGNG5q2tdO" role="3clF45" />

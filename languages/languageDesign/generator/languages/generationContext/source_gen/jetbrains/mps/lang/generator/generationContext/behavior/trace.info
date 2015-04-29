@@ -8,7 +8,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,82,0" name="jetbrains.mps.lang.generator.generationContext.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,84,0" name="jetbrains.mps.lang.generator.generationContext.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="GenerationContextOp_Base_BehaviorDescriptor.java">
       <unit at="12,0,35,0" name="jetbrains.mps.lang.generator.generationContext.behavior.GenerationContextOp_Base_BehaviorDescriptor" />
@@ -81,6 +81,9 @@
     </file>
     <file name="GenerationContextOp_PropertyPatternRef_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="jetbrains.mps.lang.generator.generationContext.behavior.GenerationContextOp_PropertyPatternRef_BehaviorDescriptor" />
+    </file>
+    <file name="GenerationContextOp_RegisterLabel_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="jetbrains.mps.lang.generator.generationContext.behavior.GenerationContextOp_RegisterLabel_BehaviorDescriptor" />
     </file>
     <file name="GenerationContextOp_SessionObjectAccess_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="jetbrains.mps.lang.generator.generationContext.behavior.GenerationContextOp_SessionObjectAccess_BehaviorDescriptor" />

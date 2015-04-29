@@ -675,5 +675,47 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4RJ0ilaVRw8">
+    <ref role="1XX52x" to="tpf3:4RJ0ilaVNjd" resolve="GenerationContextOp_RegisterLabel" />
+    <node concept="3EZMnI" id="4RJ0ilaVRzm" role="2wV5jI">
+      <property role="3EZMnw" value="false" />
+      <node concept="3F0ifn" id="4RJ0ilaVRzn" role="3EZMnx">
+        <property role="3F0ifm" value="label" />
+        <ref role="1k5W1q" node="hIqudHa" resolve="genContext_operation" />
+      </node>
+      <node concept="3F1sOY" id="4RJ0ilaVSfA" role="3EZMnx">
+        <ref role="1NtTu8" to="tpf3:4RJ0ilaVRHI" />
+      </node>
+      <node concept="3F0ifn" id="4RJ0ilaVSfO" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+        <ref role="1k5W1q" node="hIqudHa" resolve="genContext_operation" />
+        <node concept="VPM3Z" id="4RJ0ilaVSl3" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4RJ0ilaVSg5" role="3EZMnx">
+        <ref role="1NtTu8" to="tpf3:4RJ0ilaVRHS" />
+      </node>
+      <node concept="3F0ifn" id="4RJ0ilaVSgn" role="3EZMnx">
+        <property role="3F0ifm" value="as" />
+        <ref role="1k5W1q" node="hIqudHa" resolve="genContext_operation" />
+        <node concept="VPM3Z" id="4RJ0ilaVSi$" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="4RJ0ilaVRzo" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;choose mapping label&gt;" />
+        <ref role="1k5W1q" to="tpfj:hHcji$G" resolve="mappingLabelReference" />
+        <ref role="1NtTu8" to="tpf3:4RJ0ilaVRti" />
+        <node concept="1sVBvm" id="4RJ0ilaVRzp" role="1sWHZn">
+          <node concept="3F0A7n" id="4RJ0ilaVRzq" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4RJ0ilaVRzr" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

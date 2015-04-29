@@ -95,6 +95,9 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_6048126956897464754(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xd7706f639be2479cL, 0xa3daae92af1e64d5L, 0x6db65d569fb2527L, 0x6b1b6e56cb124be9L, "name_intern"));
   }
+  public static Object propertyMacro_GetPropertyValue_5615708520037052732(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xd7706f639be2479cL, 0xa3daae92af1e64d5L, 0x4def01254aef34cdL, 0x4def01254aef7758L, "labelName_intern"));
+  }
   public static Object referenceMacro_GetReferent_1216862267882(final ReferenceMacroContext _context) {
     // method parameter 
     return "_context";
@@ -304,5 +307,14 @@ public class QueriesGenerated {
   }
   public static SNode sourceNodeQuery_6048126956897521731(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xd7706f639be2479cL, 0xa3daae92af1e64d5L, 0x6db65d569fb2527L, 0x1893693a07c29eb7L, "inputNode"));
+  }
+  public static SNode sourceNodeQuery_5615708520037052712(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SNodeOperations.as(SNodeOperations.getParent(_context.getNode()), MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x116b46a08c4L, "jetbrains.mps.baseLanguage.structure.DotExpression")), MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x116b46a08c4L, 0x116b46a4416L, "operand"));
+  }
+  public static SNode sourceNodeQuery_5615708520037052724(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xd7706f639be2479cL, 0xa3daae92af1e64d5L, 0x4def01254aef34cdL, 0x4def01254aef7b6eL, "inputNode"));
+  }
+  public static SNode sourceNodeQuery_5615708520037058480(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xd7706f639be2479cL, 0xa3daae92af1e64d5L, 0x4def01254aef34cdL, 0x4def01254aef7b78L, "outputNode"));
   }
 }

@@ -42,12 +42,12 @@ public abstract class AbstractTemplateGenerator implements ITemplateGenerator {
   private final RoleValidation myValidation;
   private final GeneratorMappings myMappings;
 
-  protected AbstractTemplateGenerator(GenerationSessionContext operationContext, SModel inputModel, SModel outputModel) {
+  protected AbstractTemplateGenerator(GenerationSessionContext operationContext, SModel inputModel, SModel outputModel, GeneratorMappings mappings) {
     myOperationContext = operationContext;
     myInputModel = inputModel;
     myOutputModel = outputModel;
     myValidation = operationContext.getRoleValidationFacility();
-    myMappings = new GeneratorMappings(operationContext.getLogger());
+    myMappings = mappings;
   }
 
   @Override

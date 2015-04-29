@@ -2717,6 +2717,107 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="4RJ0ilaWhTe" role="3acgRq">
+      <ref role="30HIoZ" to="tpf3:4RJ0ilaVNjd" resolve="GenerationContextOp_RegisterLabel" />
+      <node concept="1Koe21" id="4RJ0ilaWn26" role="1lVwrX">
+        <node concept="3clFb_" id="4RJ0ilaWn4w" role="1Koe22">
+          <property role="TrG5h" value="m" />
+          <node concept="3cqZAl" id="4RJ0ilaWn4x" role="3clF45" />
+          <node concept="3Tm1VV" id="4RJ0ilaWn4y" role="1B3o_S" />
+          <node concept="3clFbS" id="4RJ0ilaWn4z" role="3clF47">
+            <node concept="3clFbF" id="4RJ0ilaWn4$" role="3cqZAp">
+              <node concept="2OqwBi" id="4RJ0ilaWn4_" role="3clFbG">
+                <node concept="37vLTw" id="4RJ0ilaWn4A" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4RJ0ilaWn53" resolve="ctx" />
+                  <node concept="29HgVG" id="4RJ0ilaWn4B" role="lGtFl">
+                    <node concept="3NFfHV" id="4RJ0ilaWn4C" role="3NFExx">
+                      <node concept="3clFbS" id="4RJ0ilaWn4D" role="2VODD2">
+                        <node concept="3clFbF" id="4RJ0ilaWn4E" role="3cqZAp">
+                          <node concept="2OqwBi" id="4RJ0ilaWn4F" role="3clFbG">
+                            <node concept="1PxgMI" id="4RJ0ilaWn4G" role="2Oq$k0">
+                              <property role="1BlNFB" value="true" />
+                              <ref role="1PxNhF" to="tpee:hqOqwz4" resolve="DotExpression" />
+                              <node concept="2OqwBi" id="4RJ0ilaWn4H" role="1PxMeX">
+                                <node concept="30H73N" id="4RJ0ilaWn4I" role="2Oq$k0" />
+                                <node concept="1mfA1w" id="4RJ0ilaWn4J" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="4RJ0ilaWn4K" role="2OqNvi">
+                              <ref role="3Tt5mk" to="tpee:hqOq$gm" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="4RJ0ilaWn4L" role="2OqNvi">
+                  <ref role="37wK5l" to="q383:~TemplateQueryContext.registerMappingLabel(org.jetbrains.mps.openapi.model.SNode,java.lang.String,org.jetbrains.mps.openapi.model.SNode):void" resolve="registerMappingLabel" />
+                  <node concept="10Nm6u" id="4RJ0ilaWn4M" role="37wK5m">
+                    <node concept="29HgVG" id="4RJ0ilaWn4N" role="lGtFl">
+                      <node concept="3NFfHV" id="4RJ0ilaWn4O" role="3NFExx">
+                        <node concept="3clFbS" id="4RJ0ilaWn4P" role="2VODD2">
+                          <node concept="3clFbF" id="4RJ0ilaWn4Q" role="3cqZAp">
+                            <node concept="2OqwBi" id="4RJ0ilaWn4R" role="3clFbG">
+                              <node concept="3TrEf2" id="4DyZtJMdMix" role="2OqNvi">
+                                <ref role="3Tt5mk" to="tpf3:4RJ0ilaVRHI" />
+                              </node>
+                              <node concept="30H73N" id="4RJ0ilaWn4T" role="2Oq$k0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="4RJ0ilaWn4U" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                    <node concept="17Uvod" id="4RJ0ilaWn4V" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <node concept="3zFVjK" id="4RJ0ilaWn4W" role="3zH0cK">
+                        <node concept="3clFbS" id="4RJ0ilaWn4X" role="2VODD2">
+                          <node concept="3clFbF" id="4RJ0ilaWn4Y" role="3cqZAp">
+                            <node concept="2OqwBi" id="4RJ0ilaWn4Z" role="3clFbG">
+                              <node concept="30H73N" id="4RJ0ilaWn50" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="4DyZtJMdL5e" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpf3:4RJ0ilaVRto" resolve="labelName_intern" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="4RJ0ilaWouI" role="37wK5m">
+                    <node concept="29HgVG" id="4RJ0ilaWouJ" role="lGtFl">
+                      <node concept="3NFfHV" id="4RJ0ilaWouK" role="3NFExx">
+                        <node concept="3clFbS" id="4RJ0ilaWouL" role="2VODD2">
+                          <node concept="3clFbF" id="4RJ0ilaWouM" role="3cqZAp">
+                            <node concept="2OqwBi" id="4RJ0ilaWouN" role="3clFbG">
+                              <node concept="3TrEf2" id="4RJ0ilaWp1p" role="2OqNvi">
+                                <ref role="3Tt5mk" to="tpf3:4RJ0ilaVRHS" />
+                              </node>
+                              <node concept="30H73N" id="4RJ0ilaWouP" role="2Oq$k0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="raruj" id="4RJ0ilaWn52" role="lGtFl" />
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTG" id="4RJ0ilaWn53" role="3clF46">
+            <property role="TrG5h" value="ctx" />
+            <node concept="3uibUv" id="4RJ0ilaWn54" role="1tU5fm">
+              <ref role="3uigEE" to="q383:~TemplateQueryContext" resolve="TemplateQueryContext" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
