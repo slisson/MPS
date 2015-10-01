@@ -5,9 +5,9 @@ package jetbrains.mps.editor.runtime.impl.cellActions;
 import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.selection.Selection;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.openapi.editor.selection.SingularSelection;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.EditorCell_Label;
@@ -20,17 +20,15 @@ import jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection;
 
 public class CellAction_Comment extends AbstractCellAction {
   private final SNode myNode;
-  private SNode myParent;
 
   public CellAction_Comment(@NotNull SNode node) {
     this.myNode = node;
-    this.myParent = SNodeOperations.getParent(myNode);
   }
 
   @Override
   public boolean canExecute(EditorContext editorContext) {
     Selection selection = editorContext.getSelectionManager().getSelection();
-    return this.myParent != null && selection != null && selection instanceof SingularSelection && needToComment(editorContext);
+    return SNodeOperations.getParent(myNode) != null && selection != null && selection instanceof SingularSelection && needToComment(editorContext);
   }
 
   public void execute(EditorContext editorContext) {
@@ -50,7 +48,7 @@ public class CellAction_Comment extends AbstractCellAction {
       if (newNodeCell != null) {
         EditorCell cellToSelect = CellFinderUtil.findChildByCondition(newNodeCell, new Condition<EditorCell>() {
           public boolean met(EditorCell cell) {
-            return eq_9lx3n0_a0a0a0a1a0a0b0j0h(cell.getCellId(), cellId);
+            return eq_9lx3n0_a0a0a0a1a0a0b0j0g(cell.getCellId(), cellId);
           }
         }, true, true);
         if (cellToSelect != null) {
@@ -81,7 +79,7 @@ public class CellAction_Comment extends AbstractCellAction {
     }
   }
 
-  private static boolean eq_9lx3n0_a0a0a0a1a0a0b0j0h(Object a, Object b) {
+  private static boolean eq_9lx3n0_a0a0a0a1a0a0b0j0g(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }
