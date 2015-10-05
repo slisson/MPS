@@ -46,12 +46,11 @@ public class CellTraversalUtil {
       return null;
     }
 
-    Iterator<EditorCell> cellIterator = forward ? parent.iterator() : parent.reverseIterator();
-
-    while (cellIterator.hasNext()) {
-      if (cellIterator.next().equals(cell) && cellIterator.hasNext()) {
-        return cellIterator.next();
-      }
+    int index = parent.indexOf(cell);
+    if (index < 0) return null;
+    index = forward ? index + 1 : index - 1;
+    if (0 <= index && index < parent.getCellsCount()) {
+      return parent.getCellAt(index);
     }
 
     return null;
