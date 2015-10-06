@@ -41,6 +41,7 @@
     <import index="etl3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.filechoosers.treefilechooser()" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs()" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
+    <import index="4snq" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.layoutModel(MPS.Editor/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="t552" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.fileGenerator(MPS.Core/)" implicit="true" />
   </imports>
@@ -454,16 +455,31 @@
               <node concept="37vLTw" id="2BHiRxgm8Dt" role="37wK5m">
                 <ref role="3cqZAo" node="7dwhomQPrB6" resolve="g" />
               </node>
-              <node concept="3cpWs3" id="7dwhomQPrBz" role="37wK5m">
-                <node concept="37vLTw" id="3J9H4udwXE$" role="3uHU7w">
-                  <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myGapLeft" resolve="myGapLeft" />
+              <node concept="2OqwBi" id="7qVWkImdOfc" role="37wK5m">
+                <node concept="2OqwBi" id="7qVWkImdO3I" role="2Oq$k0">
+                  <node concept="1rXfSq" id="7qVWkImdO04" role="2Oq$k0">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getLayoutModel():jetbrains.mps.nodeEditor.layoutModel.LayoutModel" resolve="getLayoutModel" />
+                  </node>
+                  <node concept="liA8E" id="7qVWkImdOdY" role="2OqNvi">
+                    <ref role="37wK5l" to="4snq:~LayoutModel.getContentBox():jetbrains.mps.nodeEditor.layoutModel.LayoutBox" resolve="getContentBox" />
+                  </node>
                 </node>
-                <node concept="37vLTw" id="3J9H4udwWW9" role="3uHU7B">
-                  <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myX" resolve="myX" />
+                <node concept="liA8E" id="7qVWkImdOmi" role="2OqNvi">
+                  <ref role="37wK5l" to="4snq:~LayoutBox.getX():int" resolve="getX" />
                 </node>
               </node>
-              <node concept="37vLTw" id="3J9H4udwYyN" role="37wK5m">
-                <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myY" resolve="myY" />
+              <node concept="2OqwBi" id="7qVWkImdOKf" role="37wK5m">
+                <node concept="2OqwBi" id="7qVWkImdOzP" role="2Oq$k0">
+                  <node concept="1rXfSq" id="7qVWkImdOvH" role="2Oq$k0">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getLayoutModel():jetbrains.mps.nodeEditor.layoutModel.LayoutModel" resolve="getLayoutModel" />
+                  </node>
+                  <node concept="liA8E" id="7qVWkImdOFV" role="2OqNvi">
+                    <ref role="37wK5l" to="4snq:~LayoutModel.getContentBox():jetbrains.mps.nodeEditor.layoutModel.LayoutBox" resolve="getContentBox" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7qVWkImdORN" role="2OqNvi">
+                  <ref role="37wK5l" to="4snq:~LayoutBox.getY():int" resolve="getY" />
+                </node>
               </node>
             </node>
           </node>
@@ -621,33 +637,34 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7dwhomQPrCW" role="3cqZAp">
-          <node concept="37vLTI" id="7dwhomQPrCX" role="3clFbG">
-            <node concept="2OqwBi" id="7dwhomQPrCY" role="37vLTx">
-              <node concept="37vLTw" id="3J9H4udxe$h" role="2Oq$k0">
-                <ref role="3cqZAo" node="7dwhomQPrA_" resolve="myTextLine" />
+        <node concept="3clFbF" id="7qVWkImdPjw" role="3cqZAp">
+          <node concept="2OqwBi" id="7qVWkImdP_J" role="3clFbG">
+            <node concept="2OqwBi" id="7qVWkImdPpi" role="2Oq$k0">
+              <node concept="1rXfSq" id="7qVWkImdPju" role="2Oq$k0">
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getLayoutModel():jetbrains.mps.nodeEditor.layoutModel.LayoutModel" resolve="getLayoutModel" />
               </node>
-              <node concept="liA8E" id="7dwhomQPrD2" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~TextLine.getHeight():int" resolve="getHeight" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="3J9H4udxdTr" role="37vLTJ">
-              <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7dwhomQPrD6" role="3cqZAp">
-          <node concept="37vLTI" id="7dwhomQPrD7" role="3clFbG">
-            <node concept="2OqwBi" id="7dwhomQPrD8" role="37vLTx">
-              <node concept="37vLTw" id="3J9H4udxeRa" role="2Oq$k0">
-                <ref role="3cqZAo" node="7dwhomQPrA_" resolve="myTextLine" />
-              </node>
-              <node concept="liA8E" id="7dwhomQPrDc" role="2OqNvi">
-                <ref role="37wK5l" to="g51k:~TextLine.getWidth():int" resolve="getWidth" />
+              <node concept="liA8E" id="7qVWkImdP_2" role="2OqNvi">
+                <ref role="37wK5l" to="4snq:~LayoutModel.getContentBox():jetbrains.mps.nodeEditor.layoutModel.LayoutBox" resolve="getContentBox" />
               </node>
             </node>
-            <node concept="37vLTw" id="3J9H4udxe70" role="37vLTJ">
-              <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myWidth" resolve="myWidth" />
+            <node concept="liA8E" id="7qVWkImdPJ3" role="2OqNvi">
+              <ref role="37wK5l" to="4snq:~LayoutBox.setSize(int,int):void" resolve="setSize" />
+              <node concept="2OqwBi" id="7dwhomQPrCY" role="37wK5m">
+                <node concept="37vLTw" id="3J9H4udxe$h" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7dwhomQPrA_" resolve="myTextLine" />
+                </node>
+                <node concept="liA8E" id="7dwhomQPrD2" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~TextLine.getHeight():int" resolve="getHeight" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7dwhomQPrD8" role="37wK5m">
+                <node concept="37vLTw" id="3J9H4udxeRa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7dwhomQPrA_" resolve="myTextLine" />
+                </node>
+                <node concept="liA8E" id="7dwhomQPrDc" role="2OqNvi">
+                  <ref role="37wK5l" to="g51k:~TextLine.getWidth():int" resolve="getWidth" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

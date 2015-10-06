@@ -58,14 +58,14 @@ public class CellLayout_Vertical extends AbstractCellLayout {
       openingBrace.relayout();
     }
 
-    final int x = usesBraces ? editorCells.getX() + openingBrace.getWidth() : editorCells.getX();
-    final int y = editorCells.getY();
+    final int x = editorCells.getX() + editorCells.getLeftInset() + (usesBraces ? openingBrace.getWidth() : 0);
+    final int y = editorCells.getY() + editorCells.getTopInset();
     int lastCellWidth;
     int braceIndent = 0;
     int width = 0;
     int height = 0;
     for (EditorCell editorCell : cells) {
-      editorCell.moveTo(x, y + height + editorCell.getTopInset());
+      editorCell.moveTo(x, y + height);
       editorCell.relayout();
       int cellHeight = editorCell.getHeight();
       int indent = getBracesIndent(editorCell);
@@ -160,8 +160,8 @@ public class CellLayout_Vertical extends AbstractCellLayout {
       }
       width += openingBrace.getWidth();
     }
-    editorCells.setWidth(width);
-    editorCells.setHeight(height);
+    editorCells.setWidth(width + editorCells.getLeftInset() + editorCells.getRightInset());
+    editorCells.setHeight(height + editorCells.getTopInset() + editorCells.getBottomInset());
   }
 
   private void setX(EditorCell cell, int newX) {

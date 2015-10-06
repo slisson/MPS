@@ -264,7 +264,7 @@ public class CellLayout_Indent extends AbstractCellLayout {
 
     private CellLayouter(EditorCell_Collection cell, int maxWidth, int indentSize) {
       myCell = cell;
-      myX = myCell.getX();
+      myX = myCell.getX() + myCell.getLeftInset();
 
       myWidth = 0;
       myHeight = 0;
@@ -389,10 +389,10 @@ public class CellLayout_Indent extends AbstractCellLayout {
         y1 = Math.max(y1, child.getY() + child.getHeight());
       }
 
-      collection.setX(x0);
-      collection.setY(y0);
-      collection.setWidth(x1 - x0);
-      collection.setHeight(y1 - y0);
+      collection.setX(x0 - collection.getLeftInset());
+      collection.setY(y0 - collection.getTopInset());
+      collection.setWidth(x1 - x0 + collection.getLeftInset() + collection.getRightInset());
+      collection.setHeight(y1 - y0 + collection.getTopInset() + collection.getBottomInset());
 
       //collection is implicitly laid out
       ((EditorCell_Basic) collection).unrequestLayout();

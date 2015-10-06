@@ -71,13 +71,11 @@ public class ModelProblemMessage extends DefaultEditorMessage {
 
   public static void drawWaveUnderCell(Graphics g, Color c, EditorCell cell) {
     if (cell == null) return;
-    int x = cell.getX();
-    int y = cell.getY();
-    int height = cell.getHeight();
-    int leftInternalInset = cell.getLeftInset();
-    int effectiveWidth = cell.getEffectiveWidth();
+    int x1 = cell.getX() + cell.getLeftInset();
+    int x2 = x1 + cell.getWidth() - cell.getLeftInset() - cell.getRightInset();
+    int y = cell.getY() + cell.getHeight() - cell.getBottomInset() - ColorAndGraphicsUtil.WAVE_HEIGHT;
     g.setColor(c);
-    ColorAndGraphicsUtil.drawWave(g, x + leftInternalInset, x + leftInternalInset + effectiveWidth, y + height - ColorAndGraphicsUtil.WAVE_HEIGHT);
+    ColorAndGraphicsUtil.drawWave(g, x1, x2, y);
   }
 
 }

@@ -2174,12 +2174,12 @@ public abstract class EditorComponent extends JComponent implements Scrollable, 
       EditorCell_Label label = (EditorCell_Label) deepestCell;
 
       g.setColor(setting.getCaretRowColor());
-      g.fillRect(0, deepestCell.getY(), getWidth(),
+      g.fillRect(0, deepestCell.getY() + deepestCell.getTopInset(), getWidth(),
           deepestCell.getHeight() - deepestCell.getTopInset() - deepestCell.getBottomInset());
 
       g.setColor(EditorColorsManager.getInstance().getGlobalScheme().getAttributes(EditorColors.IDENTIFIER_UNDER_CARET_ATTRIBUTES).getBackgroundColor());
       g.fillRect(deepestCell.getX() + label.getLeftInset(),
-          deepestCell.getY(),
+          deepestCell.getY() + label.getTopInset(),
           deepestCell.getWidth() - label.getLeftInset() - label.getRightInset(),
           deepestCell.getHeight() - deepestCell.getTopInset() - deepestCell.getBottomInset());
     }

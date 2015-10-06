@@ -29,7 +29,7 @@ public class EditorCell_Empty extends EditorCell_Basic {
   @Override
   protected void paintContent(Graphics g, ParentSettings parentSettings) {
     myTextLine.setShowCaret(myCaretVisible && isWithinSelection() && getEditor().hasFocus());
-    myTextLine.paint(g, myX + myGapLeft, myY);
+    myTextLine.paint(g, getLayoutModel().getContentBox().getX(), getLayoutModel().getContentBox().getY());
   }
 
   @Override
@@ -59,8 +59,7 @@ public class EditorCell_Empty extends EditorCell_Basic {
       getStyle().set(StyleAttributes.PADDING_RIGHT, new Padding(0.0));
     }
     myTextLine.relayout();
-    myHeight = myTextLine.getHeight();
-    myWidth = myTextLine.getWidth();
+    getLayoutModel().getContentBox().setSize(myTextLine.getHeight(), myTextLine.getWidth());
   }
 
   @Override

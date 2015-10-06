@@ -16,6 +16,7 @@
 package jetbrains.mps.nodeEditor.cells;
 
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.layoutModel.LayoutBox;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.project.AbstractModule;
 import jetbrains.mps.project.Solution;
@@ -60,8 +61,6 @@ public class EditorCell_Image extends EditorCell_Basic {
     }
   };
 
-  private int myDescent = -1;
-
   protected EditorCell_Image(EditorContext editorContext, SNode node) {
     super(editorContext, node);
     getStyle().set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -83,14 +82,15 @@ public class EditorCell_Image extends EditorCell_Basic {
   @Override
   protected void paintContent(Graphics g, ParentSettings parentSettings) {
     if (myImage == null) return;
+    LayoutBox contentBox = getLayoutModel().getContentBox();
     switch (myAlignment) {
       case justify: {
-        g.drawImage(myImage, myX, myY, myWidth, myHeight, getEditor());
+        g.drawImage(myImage, contentBox.getX(), contentBox.getY(), contentBox.getWidth(), contentBox.getHeight(), getEditor());
         break;
       }
       case center: {
-        int x = myX + (myWidth - myImage.getWidth(getEditor())) / 2;
-        int y = myY + (myHeight - myImage.getHeight(getEditor())) / 2;
+        int x = contentBox.getX() + (contentBox.getWidth() - myImage.getWidth(getEditor())) / 2;
+        int y = contentBox.getY() + (contentBox.getHeight() - myImage.getHeight(getEditor())) / 2;
         g.drawImage(myImage, x, y, getEditor());
         break;
       }
@@ -106,27 +106,17 @@ public class EditorCell_Image extends EditorCell_Basic {
     if (myAlignment == ImageAlignment.justify) {
       int width = myImage.getWidth(mySizeObserver);
       if (width != -1) {
-        myWidth = width;
+        getLayoutModel().getContentBox().setWidth(width);
       }
       int height = myImage.getHeight(mySizeObserver);
       if (height != -1) {
-        myHeight = height;
+        getLayoutModel().getContentBox().setHeight(height);
       }
     }
   }
 
-  @Override
-  public int getAscent() {
-    return myHeight - getDescent();
-  }
-
-  @Override
-  public int getDescent() {
-    return myDescent >= 0 ? myDescent : 0;
-  }
-
   public void setDescent(int descent) {
-    myDescent = descent;
+    getLayoutModel().getMarginBox().setDescent(descent);
   }
 
   public void setAlignment(ImageAlignment alignment) {

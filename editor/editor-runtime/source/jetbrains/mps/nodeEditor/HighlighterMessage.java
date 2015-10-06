@@ -186,7 +186,7 @@ public class HighlighterMessage extends EditorMessageWithTarget {
     private int myY;
 
     public Region(EditorCell cell) {
-      this(cell.getX(), cell.getY() + cell.getHeight(), cell.getLeftInset(), cell.getEffectiveWidth(), cell.getWidth());
+      this(cell.getX(), cell.getY() + cell.getHeight(), cell.getLeftInset(), cell.getWidth() - cell.getLeftInset() - cell.getRightInset(), cell.getWidth());
     }
 
     private Region(int x, int y, int leftInset, int effectiveWidth, int width) {

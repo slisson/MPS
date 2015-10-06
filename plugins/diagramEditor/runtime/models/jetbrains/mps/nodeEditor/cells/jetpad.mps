@@ -55,6 +55,7 @@
     <import index="mkps" ref="r:5bf72784-5b6b-4f6b-be0c-06a9e6006826(jetbrains.mps.lang.editor.diagram.runtime.jetpad.palette.ui)" />
     <import index="nlpl" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.commands(MPS.Editor/)" />
     <import index="pjrh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter(MPS.Core/)" />
+    <import index="4snq" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.layoutModel(MPS.Editor/)" implicit="true" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -1401,38 +1402,33 @@
             <ref role="37wK5l" to="g51k:~EditorCell_Collection.relayoutImpl():void" resolve="relayoutImpl" />
           </node>
         </node>
-        <node concept="3clFbF" id="75sA8i0jON1" role="3cqZAp">
-          <node concept="1rXfSq" id="75sA8i0jON0" role="3clFbG">
-            <ref role="37wK5l" to="g51k:~EditorCell_Basic.setWidth(int):void" resolve="setWidth" />
-            <node concept="3cpWs3" id="75sA8i0jZoB" role="37wK5m">
-              <node concept="37vLTw" id="75sA8i0k0jM" role="3uHU7w">
-                <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myGapRight" resolve="myGapRight" />
+        <node concept="3clFbF" id="7qVWkIme0Zm" role="3cqZAp">
+          <node concept="2OqwBi" id="7qVWkIme1Tz" role="3clFbG">
+            <node concept="2OqwBi" id="7qVWkIme1nf" role="2Oq$k0">
+              <node concept="1rXfSq" id="7qVWkIme0Zk" role="2Oq$k0">
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getLayoutModel():jetbrains.mps.nodeEditor.layoutModel.LayoutModel" resolve="getLayoutModel" />
               </node>
-              <node concept="3cpWs3" id="75sA8i0jXyF" role="3uHU7B">
-                <node concept="2OqwBi" id="75sA8i0jS7e" role="3uHU7B">
-                  <node concept="1rXfSq" id="75sA8i0loBd" role="2Oq$k0">
-                    <ref role="37wK5l" node="7efWZtHXzWi" resolve="getComponent" />
-                  </node>
-                  <node concept="liA8E" id="75sA8i0jWpB" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JComponent.getWidth():int" resolve="getWidth" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="75sA8i0jXIl" role="3uHU7w">
-                  <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myGapLeft" resolve="myGapLeft" />
-                </node>
+              <node concept="liA8E" id="7qVWkIme1Pu" role="2OqNvi">
+                <ref role="37wK5l" to="4snq:~LayoutModel.getContentBox():jetbrains.mps.nodeEditor.layoutModel.LayoutBox" resolve="getContentBox" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="75sA8i0k1Xq" role="3cqZAp">
-          <node concept="1rXfSq" id="75sA8i0k1Xp" role="3clFbG">
-            <ref role="37wK5l" to="g51k:~EditorCell_Basic.setHeight(int):void" resolve="setHeight" />
-            <node concept="2OqwBi" id="75sA8i0k4Q9" role="37wK5m">
-              <node concept="1rXfSq" id="75sA8i0lpsk" role="2Oq$k0">
-                <ref role="37wK5l" node="7efWZtHXzWi" resolve="getComponent" />
+            <node concept="liA8E" id="7qVWkIme262" role="2OqNvi">
+              <ref role="37wK5l" to="4snq:~LayoutBox.setSize(int,int):void" resolve="setSize" />
+              <node concept="2OqwBi" id="7qVWkIme3db" role="37wK5m">
+                <node concept="1rXfSq" id="7qVWkIme2Vr" role="2Oq$k0">
+                  <ref role="37wK5l" node="7efWZtHXzWi" resolve="getComponent" />
+                </node>
+                <node concept="liA8E" id="7qVWkIme4qL" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~JComponent.getWidth():int" resolve="getWidth" />
+                </node>
               </node>
-              <node concept="liA8E" id="75sA8i0k98y" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JComponent.getHeight():int" resolve="getHeight" />
+              <node concept="2OqwBi" id="7qVWkIme5Tf" role="37wK5m">
+                <node concept="1rXfSq" id="7qVWkIme5kV" role="2Oq$k0">
+                  <ref role="37wK5l" node="7efWZtHXzWi" resolve="getComponent" />
+                </node>
+                <node concept="liA8E" id="7qVWkIme7s_" role="2OqNvi">
+                  <ref role="37wK5l" to="dxuu:~JComponent.getHeight():int" resolve="getHeight" />
+                </node>
               </node>
             </node>
           </node>
@@ -1636,11 +1632,31 @@
             </node>
             <node concept="liA8E" id="75sA8i0iUAJ" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Component.setLocation(int,int):void" resolve="setLocation" />
-              <node concept="37vLTw" id="75sA8i0iUAK" role="37wK5m">
-                <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myX" resolve="myX" />
+              <node concept="2OqwBi" id="7qVWkIme9ki" role="37wK5m">
+                <node concept="2OqwBi" id="7qVWkIme8Mi" role="2Oq$k0">
+                  <node concept="1rXfSq" id="7qVWkIme8rG" role="2Oq$k0">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getLayoutModel():jetbrains.mps.nodeEditor.layoutModel.LayoutModel" resolve="getLayoutModel" />
+                  </node>
+                  <node concept="liA8E" id="7qVWkIme9fL" role="2OqNvi">
+                    <ref role="37wK5l" to="4snq:~LayoutModel.getContentBox():jetbrains.mps.nodeEditor.layoutModel.LayoutBox" resolve="getContentBox" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7qVWkIme9st" role="2OqNvi">
+                  <ref role="37wK5l" to="4snq:~LayoutBox.getX():int" resolve="getX" />
+                </node>
               </node>
-              <node concept="37vLTw" id="75sA8i0iUAL" role="37wK5m">
-                <ref role="3cqZAo" to="g51k:~EditorCell_Basic.myY" resolve="myY" />
+              <node concept="2OqwBi" id="7qVWkImebcy" role="37wK5m">
+                <node concept="2OqwBi" id="7qVWkImeaDZ" role="2Oq$k0">
+                  <node concept="1rXfSq" id="7qVWkImeaiW" role="2Oq$k0">
+                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getLayoutModel():jetbrains.mps.nodeEditor.layoutModel.LayoutModel" resolve="getLayoutModel" />
+                  </node>
+                  <node concept="liA8E" id="7qVWkImeaQ2" role="2OqNvi">
+                    <ref role="37wK5l" to="4snq:~LayoutModel.getContentBox():jetbrains.mps.nodeEditor.layoutModel.LayoutBox" resolve="getContentBox" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7qVWkImeblf" role="2OqNvi">
+                  <ref role="37wK5l" to="4snq:~LayoutBox.getY():int" resolve="getY" />
+                </node>
               </node>
             </node>
           </node>

@@ -128,8 +128,7 @@ public abstract class DiagramCell extends AbstractJetpadCell implements EditorCe
   @Override
   protected void relayoutImpl() {
     super.relayoutImpl();
-    setWidth(getComponent().getWidth() + myGapLeft + myGapRight);
-    setHeight(getComponent().getHeight());
+    getLayoutModel().getContentBox().setSize(getComponent().getWidth(), getComponent().getHeight());
   }
   @Override
   public void onAdd() {
@@ -154,7 +153,7 @@ public abstract class DiagramCell extends AbstractJetpadCell implements EditorCe
   @Override
   public void moveTo(int x, int y) {
     super.moveTo(x, y);
-    getComponent().setLocation(myX, myY);
+    getComponent().setLocation(getLayoutModel().getContentBox().getX(), getLayoutModel().getContentBox().getY());
   }
   /*package*/ void setPatternEditorX(int x) {
     myPatternEditorX = x;

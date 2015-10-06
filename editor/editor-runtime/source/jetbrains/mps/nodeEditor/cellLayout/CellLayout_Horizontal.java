@@ -15,30 +15,32 @@
  */
 package jetbrains.mps.nodeEditor.cellLayout;
 
+import jetbrains.mps.logging.Logger;
 import jetbrains.mps.openapi.editor.TextBuilder;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.EditorCell_Collection;
+import org.apache.log4j.LogManager;
 
 /**
  * User: Sergey Dmitriev
  * Date: Jan 19, 2005
  */
 public class CellLayout_Horizontal extends AbstractCellLayout {
+  private static final Logger LOG = Logger.wrap(LogManager.getLogger(CellLayout_Horizontal.class));
 
   @Override
   public void doLayout(EditorCell_Collection editorCells) {
     int width = 0;
-    final int x = editorCells.getX();
-    final int y = editorCells.getY();
+    final int x = editorCells.getX() + editorCells.getLeftInset();
+    final int y = editorCells.getY() + editorCells.getTopInset();
     int ascent = 0;
     int descent = 0;
-    int topInset = 0;
-    int bottomInset = 0;
 
     boolean isInsideGird = editorCells.getParent() != null && editorCells.getParent().getCellLayout() instanceof CellLayout_Vertical &&
         ((CellLayout_Vertical) editorCells.getParent().getCellLayout()).isGridLayout();
 
     for (EditorCell editorCell : editorCells) {
+      editorCell.relayout();
       PunctuationUtil.addGaps(editorCell, false, false);
       if (isInsideGird) {
         /**
@@ -52,16 +54,22 @@ public class CellLayout_Horizontal extends AbstractCellLayout {
       editorCell.relayout();
       width += editorCell.getWidth();
 
-      ascent = Math.max(ascent, editorCell.getAscent());
-      descent = Math.max(descent, editorCell.getDescent());
-      topInset = Math.max(topInset, editorCell.getTopInset());
-      bottomInset = Math.max(bottomInset, editorCell.getBottomInset());
+      int cellAscent = editorCell.getAscent();
+      int cellDescent = editorCell.getDescent();
+      int cellHeight = editorCell.getHeight();
+      if (cellAscent + cellDescent != cellHeight) {
+        LOG.warning("ascent and descent of " + editorCell.getClass().getName() + " is inconsistent: height = "+cellHeight+", ascent = "+cellAscent+", descent = "+cellDescent+", topInset = "+editorCell.getTopInset()+", bottomInset = " + editorCell.getBottomInset());
+        cellDescent = cellHeight - cellAscent;
+      }
+      ascent = Math.max(ascent, cellAscent);
+      descent = Math.max(descent, cellDescent);
     }
 
-    int baseline = y + ascent + topInset;
+    int baseline = y + ascent;
 
-    editorCells.setWidth(width);
-    editorCells.setHeight(ascent + descent + topInset + bottomInset);
+    editorCells.setWidth(width + editorCells.getLeftInset() + editorCells.getRightInset());
+    editorCells.setHeight(ascent + descent + editorCells.getTopInset() + editorCells.getBottomInset());
+    editorCells.setAscent(ascent + editorCells.getTopInset());
 
     for (EditorCell editorCell : editorCells) {
       editorCell.setBaseline(baseline);

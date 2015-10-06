@@ -111,8 +111,6 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
   private boolean myFolded = false;
   private boolean myCanBeFolded = false;
 
-  private int myAscent = -1;
-  private int myDescent = -1;
   private MouseListener myUnfoldCollectionMouseListener;
   private boolean myCanBeSynchronized;
 
@@ -356,26 +354,6 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
     return myClosingBrace;
   }
 
-  @Override
-  public int getAscent() {
-    return myAscent;
-  }
-
-  @Override
-  public void setAscent(int newAscent) {
-    myAscent = newAscent;
-  }
-
-  @Override
-  public int getDescent() {
-    return myDescent;
-  }
-
-  @Override
-  public void setDescent(int newDescent) {
-    myDescent = newDescent;
-  }
-
   // TODO: not used? Remove?
   public Iterable<EditorCell> contentCells() {
     if (usesBraces()) {
@@ -480,8 +458,8 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
   @Override
   protected void relayoutImpl() {
     myCellLayout.doLayout(this);
-    myAscent = myCellLayout.getAscent(this);
-    myDescent = myCellLayout.getDescent(this);
+    setAscent(myCellLayout.getAscent(this));
+    setDescent(myCellLayout.getDescent(this));
     for (EditorCell childCell : this) {
       if (childCell.wasRelayoutRequested()) {
         LOG.error("Some child cells of " + this + " cell with the layout: " + myCellLayout + " still needs re-layout", new Throwable());
@@ -703,12 +681,12 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
 
   @Override
   public void moveTo(int x, int y) {
-    if (x == myX && y == myY) {
+    if (x == getX() && y == getY()) {
       return;
     }
 
-    int xOld = myX;
-    int yOld = myY;
+    int xOld = getX();
+    int yOld = getY();
     super.moveTo(x, y);
     for (jetbrains.mps.nodeEditor.cells.EditorCell myEditorCell : getCells()) {
       myEditorCell.moveTo(myEditorCell.getX() + x - xOld, myEditorCell.getY() + y - yOld);
@@ -764,7 +742,7 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
 
   @Override
   public jetbrains.mps.nodeEditor.cells.EditorCell findLeaf(int x, int y, Condition<jetbrains.mps.nodeEditor.cells.EditorCell> condition) {
-    if (myX <= x && x < myX + myWidth && myY <= y && y < myY + myHeight) {
+    if (getLayoutModel().getMarginBox().containsPoint(x, y)) {
       for (EditorCell child : getVisibleChildCells()) {
         jetbrains.mps.nodeEditor.cells.EditorCell result = ((jetbrains.mps.nodeEditor.cells.EditorCell) child).findLeaf(x, y, condition);
         if (result != null) {
@@ -1070,11 +1048,11 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
       textLine.setShowCaret(toShowCaret);
 
       if (myIsOpening) {
-        myBraceTextLine.paint(g, myX + textLine.getWidth() - overlapping, myY);
-        textLine.paint(g, myX, myY);
+        myBraceTextLine.paint(g, getX() + textLine.getWidth() - overlapping, getY());
+        textLine.paint(g, getX(), getY());
       } else {
-        myBraceTextLine.paint(g, myX, myY);
-        textLine.paint(g, myX + myBraceTextLine.getWidth() - overlapping, myY);
+        myBraceTextLine.paint(g, getX(), getY());
+        textLine.paint(g, getX() + myBraceTextLine.getWidth() - overlapping, getY());
       }
     }
 
@@ -1082,7 +1060,7 @@ public class EditorCell_Collection extends EditorCell_Basic implements jetbrains
     public void relayoutImpl() {
       super.relayoutImpl();
       myBraceTextLine.relayout();
-      myWidth += myBraceTextLine.getWidth() - getOverlapping();
+      getLayoutModel().getMarginBox().growWidth(myBraceTextLine.getWidth() - getOverlapping());
     }
 
     private int getOverlapping() {

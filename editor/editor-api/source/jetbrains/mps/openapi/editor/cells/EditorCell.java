@@ -70,6 +70,9 @@ public interface EditorCell {
 
   int getDescent();
 
+  // Returns the same as getWidth. From the usages of this method and the comments in EditorCell_Basic.setLeftGap,
+  // you cannot derive a consistent meaning of this method.
+  @Deprecated
   int getEffectiveWidth();
 
   int getLeftInset();

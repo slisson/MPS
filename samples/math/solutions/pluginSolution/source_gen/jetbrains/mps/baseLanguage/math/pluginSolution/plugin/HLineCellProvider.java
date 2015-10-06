@@ -38,8 +38,7 @@ public class HLineCellProvider extends AbstractCellProvider {
       }
       @Override
       public void relayoutImpl() {
-        this.myWidth = 20;
-        this.myHeight = 3;
+        getLayoutModel().getContentBox().setSize(20, 3);
       }
     };
     return result;

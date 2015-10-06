@@ -30,7 +30,7 @@ public abstract class AbstractCellLayout implements CellLayout {
     for (EditorCell cell : editorCells) {
       ascent = Math.max(ascent, cell.getAscent());
     }
-    return ascent;
+    return ascent + editorCells.getTopInset();
   }
 
   @Override

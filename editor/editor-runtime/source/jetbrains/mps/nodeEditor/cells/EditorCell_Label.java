@@ -261,40 +261,8 @@ public abstract class EditorCell_Label extends EditorCell_Basic implements jetbr
     myNullTextLine.setText(text);
   }
 
-  @Override
-  public int getEffectiveWidth() {
-    return getTextLineWidth();
-  }
-
-  @Override
-  public int getLeftInset() {
-    return getRenderedTextLine().getPaddingLeft() + myGapLeft;
-  }
-
-  @Override
-  public int getRightInset() {
-    return getRenderedTextLine().getPaddingRight() + myGapRight;
-  }
-
-  @Override
-  public int getTopInset() {
-    return getRenderedTextLine().getPaddingTop();
-  }
-
-  @Override
-  public int getBottomInset() {
-    return getRenderedTextLine().getPaddingBottom();
-  }
-
   public int getTextLineWidth() {
-    int textLineWidth;
-    if (myNoTextSet && myTextLine.getText().length() == 0) {
-      textLineWidth = myNullTextLine.getEffectiveWidth();
-    } else {
-      textLineWidth = myTextLine.getEffectiveWidth();
-    }
-    if (isDrawBrackets()) textLineWidth += 2 * BRACKET_WIDTH;
-    return textLineWidth;
+    return getLayoutModel().getBracketsBox().getWidth();
   }
 
   public boolean isEditable() {
@@ -326,13 +294,18 @@ public abstract class EditorCell_Label extends EditorCell_Basic implements jetbr
 
     myTextLine.relayout();
     myNullTextLine.relayout();
-    if (myNoTextSet && myTextLine.getText().length() == 0) {
-      myHeight = myNullTextLine.getHeight();
-      myWidth = myNullTextLine.getWidth();
-    } else {
-      myHeight = myTextLine.getHeight();
-      myWidth = myTextLine.getWidth();
-    }
+    TextLine renderedTextLine = getRenderedTextLine();
+
+    getLayoutModel().getPaddingBox().setLeftSize(renderedTextLine.getPaddingLeft());
+    getLayoutModel().getPaddingBox().setRightSize(renderedTextLine.getPaddingRight());
+    getLayoutModel().getPaddingBox().setTopSize(renderedTextLine.getPaddingTop());
+    getLayoutModel().getPaddingBox().setBottomSize(renderedTextLine.getPaddingBottom());
+
+    getLayoutModel().getContentBox().setHeight(renderedTextLine.getHeight());
+    getLayoutModel().getContentBox().setWidth(renderedTextLine.getWidth());
+
+    getLayoutModel().getContentBox().setDescent(renderedTextLine.getDescent());
+
   }
 
   @Override
@@ -353,11 +326,7 @@ public abstract class EditorCell_Label extends EditorCell_Basic implements jetbr
     textLine.setSelected(selected);
     textLine.setShowCaret(toShowCaret);
     Color cellFontColor = getEditor().getAdditionalCellFontColor(this);
-    if (isDrawBrackets()) {
-      textLine.paint(g, myX + myGapLeft + BRACKET_WIDTH, myY, cellFontColor);
-    } else {
-      textLine.paint(g, myX + myGapLeft, myY, cellFontColor);
-    }
+    textLine.paint(g, getLayoutModel().getContentBox().getX(), getLayoutModel().getContentBox().getY(), cellFontColor);
   }
 
   @Override
@@ -398,7 +367,7 @@ public abstract class EditorCell_Label extends EditorCell_Basic implements jetbr
 
   @Override
   public void setCaretX(int x) {
-    myTextLine.setCaretByXCoord(x - myX);
+    myTextLine.setCaretByXCoord(x - getLayoutModel().getContentBox().getX());
     makePositionValid();
   }
 
@@ -415,12 +384,12 @@ public abstract class EditorCell_Label extends EditorCell_Basic implements jetbr
 
   @Override
   public int getCaretX() {
-    return myTextLine.getCaretX(myX + myGapLeft);
+    return myTextLine.getCaretX(getLayoutModel().getContentBox().getX());
   }
 
   @Override
   public boolean processMousePressed(MouseEvent e) {
-    myTextLine.setCaretByXCoord(e.getX() - myX);
+    myTextLine.setCaretByXCoord(e.getX() - getLayoutModel().getContentBox().getX());
     myTextLine.resetSelection();
     makePositionValid();
     getEditor().repaint(this);
@@ -428,7 +397,8 @@ public abstract class EditorCell_Label extends EditorCell_Basic implements jetbr
   }
 
   public void ensureCaretVisible() {
-    getEditor().scrollRectToVisible(new Rectangle(getCaretX() - 2 * myTextLine.charWidth(), myY, 4 * myTextLine.charWidth(), myHeight));
+    getEditor().scrollRectToVisible(new Rectangle(getCaretX() - 2 * myTextLine.charWidth(), getLayoutModel().getContentBox().getY(), 4 * myTextLine.charWidth(),
+        getLayoutModel().getContentBox().getHeight()));
   }
 
   @Override
@@ -580,16 +550,6 @@ public abstract class EditorCell_Label extends EditorCell_Basic implements jetbr
 
   public void setUnderlined(boolean b) {
     getStyle().set(StyleAttributes.UNDERLINED, b);
-  }
-
-  @Override
-  public int getAscent() {
-    return getRenderedTextLine().getAscent();
-  }
-
-  @Override
-  public int getDescent() {
-    return getRenderedTextLine().getDescent();
   }
 
   @Override

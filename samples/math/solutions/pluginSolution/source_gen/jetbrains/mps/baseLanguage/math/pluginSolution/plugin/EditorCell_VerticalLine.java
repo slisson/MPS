@@ -34,7 +34,6 @@ public class EditorCell_VerticalLine extends EditorCell_Basic {
   }
   @Override
   public void relayoutImpl() {
-    this.myWidth = 1;
-    this.myHeight = 1;
+    getLayoutModel().getContentBox().setSize(1, 1);
   }
 }

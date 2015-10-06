@@ -14,6 +14,7 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="4snq" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.layoutModel(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -110,6 +111,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -398,29 +400,24 @@
                     <node concept="3cqZAl" id="4KDfkUwMiBI" role="3clF45" />
                     <node concept="3Tm1VV" id="4KDfkUwMiBJ" role="1B3o_S" />
                     <node concept="3clFbS" id="4KDfkUwMiBK" role="3clF47">
-                      <node concept="3clFbF" id="4KDfkUwMiBL" role="3cqZAp">
-                        <node concept="37vLTI" id="4KDfkUwMiBM" role="3clFbG">
-                          <node concept="3cmrfG" id="4KDfkUwMiBN" role="37vLTx">
-                            <property role="3cmrfH" value="20" />
-                          </node>
-                          <node concept="2OqwBi" id="4KDfkUwMiBO" role="37vLTJ">
-                            <node concept="2OwXpG" id="4KDfkUwMiBP" role="2OqNvi">
-                              <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myWidth" resolve="myWidth" />
+                      <node concept="3clFbF" id="7qVWkImeiRM" role="3cqZAp">
+                        <node concept="2OqwBi" id="7qVWkImej33" role="3clFbG">
+                          <node concept="2OqwBi" id="7qVWkImeiTH" role="2Oq$k0">
+                            <node concept="1rXfSq" id="7qVWkImeiRK" role="2Oq$k0">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.getLayoutModel():jetbrains.mps.nodeEditor.layoutModel.LayoutModel" resolve="getLayoutModel" />
                             </node>
-                            <node concept="Xjq3P" id="4KDfkUwMiBQ" role="2Oq$k0" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="4KDfkUwMiBR" role="3cqZAp">
-                        <node concept="37vLTI" id="4KDfkUwMiBS" role="3clFbG">
-                          <node concept="2OqwBi" id="4KDfkUwMiBT" role="37vLTJ">
-                            <node concept="2OwXpG" id="4KDfkUwMiBU" role="2OqNvi">
-                              <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
+                            <node concept="liA8E" id="7qVWkImej1a" role="2OqNvi">
+                              <ref role="37wK5l" to="4snq:~LayoutModel.getContentBox():jetbrains.mps.nodeEditor.layoutModel.LayoutBox" resolve="getContentBox" />
                             </node>
-                            <node concept="Xjq3P" id="4KDfkUwMiBV" role="2Oq$k0" />
                           </node>
-                          <node concept="3cmrfG" id="4KDfkUwMiBW" role="37vLTx">
-                            <property role="3cmrfH" value="3" />
+                          <node concept="liA8E" id="7qVWkImejbQ" role="2OqNvi">
+                            <ref role="37wK5l" to="4snq:~LayoutBox.setSize(int,int):void" resolve="setSize" />
+                            <node concept="3cmrfG" id="7qVWkImejeL" role="37wK5m">
+                              <property role="3cmrfH" value="20" />
+                            </node>
+                            <node concept="3cmrfG" id="7qVWkImejiu" role="37wK5m">
+                              <property role="3cmrfH" value="3" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -685,29 +682,24 @@
       <node concept="3cqZAl" id="4KDfkUwMiDm" role="3clF45" />
       <node concept="3Tm1VV" id="4KDfkUwMiDn" role="1B3o_S" />
       <node concept="3clFbS" id="4KDfkUwMiDo" role="3clF47">
-        <node concept="3clFbF" id="4KDfkUwMiDp" role="3cqZAp">
-          <node concept="37vLTI" id="4KDfkUwMiDq" role="3clFbG">
-            <node concept="2OqwBi" id="4KDfkUwMiDr" role="37vLTJ">
-              <node concept="2OwXpG" id="4KDfkUwMiDs" role="2OqNvi">
-                <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myWidth" resolve="myWidth" />
+        <node concept="3clFbF" id="7qVWkImehZ_" role="3cqZAp">
+          <node concept="2OqwBi" id="7qVWkImeia6" role="3clFbG">
+            <node concept="2OqwBi" id="7qVWkImei1g" role="2Oq$k0">
+              <node concept="1rXfSq" id="7qVWkImehZz" role="2Oq$k0">
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.getLayoutModel():jetbrains.mps.nodeEditor.layoutModel.LayoutModel" resolve="getLayoutModel" />
               </node>
-              <node concept="Xjq3P" id="4KDfkUwMiDt" role="2Oq$k0" />
-            </node>
-            <node concept="3cmrfG" id="4KDfkUwMiDu" role="37vLTx">
-              <property role="3cmrfH" value="1" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4KDfkUwMiDv" role="3cqZAp">
-          <node concept="37vLTI" id="4KDfkUwMiDw" role="3clFbG">
-            <node concept="2OqwBi" id="4KDfkUwMiDx" role="37vLTJ">
-              <node concept="2OwXpG" id="4KDfkUwMiDy" role="2OqNvi">
-                <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
+              <node concept="liA8E" id="7qVWkImei9p" role="2OqNvi">
+                <ref role="37wK5l" to="4snq:~LayoutModel.getContentBox():jetbrains.mps.nodeEditor.layoutModel.LayoutBox" resolve="getContentBox" />
               </node>
-              <node concept="Xjq3P" id="4KDfkUwMiDz" role="2Oq$k0" />
             </node>
-            <node concept="3cmrfG" id="4KDfkUwMiD$" role="37vLTx">
-              <property role="3cmrfH" value="1" />
+            <node concept="liA8E" id="7qVWkImeiit" role="2OqNvi">
+              <ref role="37wK5l" to="4snq:~LayoutBox.setSize(int,int):void" resolve="setSize" />
+              <node concept="3cmrfG" id="7qVWkImeikx" role="37wK5m">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="3cmrfG" id="7qVWkImeink" role="37wK5m">
+                <property role="3cmrfH" value="1" />
+              </node>
             </node>
           </node>
         </node>

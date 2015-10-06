@@ -59,26 +59,38 @@ public class EditorCell_Component extends EditorCell_Basic implements EditorCell
 
   @Override
   public void setX(int x) {
-    myComponent.setLocation(x, myComponent.getY());
     super.setX(x);
+    updateComponentPosition();
   }
 
   @Override
   public void setY(int y) {
-    myComponent.setLocation(myComponent.getX(), y);
     super.setY(y);
+    updateComponentPosition();
   }
 
   @Override
   public void moveTo(int x, int y) {
     super.moveTo(x, y);
-    myComponent.setLocation(myX, myY);
+    updateComponentPosition();
+  }
+
+  protected void updateComponentPosition() {
+    myComponent.setLocation(getLayoutModel().getContentBox().getX(), getLayoutModel().getContentBox().getY());
   }
 
   @Override
   public void relayoutImpl() {
-    setWidth(myComponent.getWidth() + myGapLeft + myGapRight);
-    setHeight(myComponent.getHeight());
+    getLayoutModel().getContentBox().setWidth(myComponent.getWidth());
+    getLayoutModel().getContentBox().setHeight(myComponent.getHeight());
+
+    FontMetrics metrics = myComponent.getFontMetrics(myComponent.getFont());
+    int ascent = metrics.getAscent();
+    Border border = myComponent.getBorder();
+    if (border != null) {
+      ascent += border.getBorderInsets(myComponent).top;
+    }
+    getLayoutModel().getContentBox().setAscent(ascent);
   }
 
   @Override
@@ -92,21 +104,6 @@ public class EditorCell_Component extends EditorCell_Basic implements EditorCell
 
   @Override
   protected void paintContent(Graphics g, ParentSettings parentSettings) {
-  }
-
-  @Override
-  public int getAscent() {
-    if (myComponent == null) {
-      LOG.errorWithTrace("my component is null");
-      return myHeight;
-    }
-    FontMetrics metrics = myComponent.getFontMetrics(myComponent.getFont());
-    int ascent = metrics.getAscent();
-    Border border = myComponent.getBorder();
-    if (border != null) {
-      ascent += border.getBorderInsets(myComponent).top;
-    }
-    return ascent;
   }
 
   public static EditorCell createComponentCell(EditorContext context, SNode node, JComponent component, String cellId) {

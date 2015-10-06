@@ -28,6 +28,9 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.EditorMessage;
 import jetbrains.mps.nodeEditor.EditorSettings;
 import jetbrains.mps.nodeEditor.cellMenu.NodeSubstitutePatternEditor;
+import jetbrains.mps.nodeEditor.layoutModel.LayoutBoxFrame;
+import jetbrains.mps.nodeEditor.layoutModel.LayoutModel;
+import jetbrains.mps.nodeEditor.layoutModel.DefaultLayoutModel;
 import jetbrains.mps.nodeEditor.sidetransform.EditorCell_STHint;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.TextBuilder;
@@ -83,10 +86,7 @@ public abstract class EditorCell_Basic implements EditorCell {
 
   private Map myUserObjects;
 
-  protected int myX = 0;
-  protected int myY = 0;
-  protected int myWidth = 0;
-  protected int myHeight = 0;
+  private LayoutModel myLayoutModel = new DefaultLayoutModel(this);
   private int myCaretX = 0;
 
   private boolean myErrorState;
@@ -109,8 +109,6 @@ public abstract class EditorCell_Basic implements EditorCell {
   private SNodeReference myLinkDeclarationPointer;
   private boolean myInTree;
   private boolean myIsReferenceCell = false;
-  protected int myGapLeft;
-  protected int myGapRight;
 
   private boolean myIsNeedRelayout = true;
   private boolean myBig;
@@ -237,85 +235,83 @@ public abstract class EditorCell_Basic implements EditorCell {
     return myNodeId;
   }
 
+  public LayoutModel getLayoutModel() {
+    return myLayoutModel;
+  }
+
   @Override
   public int getHeight() {
-    return myHeight;
+    return getLayoutModel().getMarginBox().getHeight();
   }
 
   @Override
   public void setHeight(int height) {
-    myHeight = height;
+    getLayoutModel().getMarginBox().setHeight(height);
   }
 
   @Override
   public int getBottom() {
-    return getY() + getHeight();
+    return getLayoutModel().getMarginBox().getBottom();
   }
 
   @Override
   public int getRight() {
-    return getX() + getWidth();
+    return getLayoutModel().getMarginBox().getRight();
   }
 
   @Override
   public int getEffectiveWidth() {
-    return myWidth;
+    return getLayoutModel().getMarginBox().getWidth();
   }
 
   @Override
   public int getLeftInset() {
-    return 0;
+    return getLayoutModel().getContentBox().getX() - getLayoutModel().getMarginBox().getX();
   }
 
   @Override
   public int getRightInset() {
-    return 0;
+    return getLayoutModel().getMarginBox().getRight() - getLayoutModel().getContentBox().getRight();
   }
 
   @Override
   public int getTopInset() {
-    return 0;
+    return getLayoutModel().getContentBox().getY() - getLayoutModel().getMarginBox().getY();
   }
 
   @Override
   public int getBottomInset() {
-    return 0;
+    return getLayoutModel().getMarginBox().getBottom() - getLayoutModel().getContentBox().getBottom();
   }
 
   @Override
   public int getWidth() {
-    return myWidth;
+    return getLayoutModel().getMarginBox().getWidth();
   }
 
   @Override
   public void setWidth(int width) {
-    myWidth = width;
+    getLayoutModel().getMarginBox().setWidth(width);
   }
 
   @Override
   public int getY() {
-    return myY;
+    return getLayoutModel().getMarginBox().getY();
   }
 
   @Override
   public void setY(int y) {
-    if (myY == y) {
-      return;
-    }
-    myY = y;
+    getLayoutModel().getMarginBox().setY(y);
   }
 
   @Override
   public int getX() {
-    return myX;
+    return getLayoutModel().getMarginBox().getX();
   }
 
   @Override
   public void setX(int x) {
-    if (myX == x) {
-      return;
-    }
-    myX = x;
+    getLayoutModel().getMarginBox().setX(x);
   }
 
   @Override
@@ -382,8 +378,8 @@ public abstract class EditorCell_Basic implements EditorCell {
 
   @Override
   public void moveTo(int x, int y) {
-    myX = x;
-    myY = y;
+    getLayoutModel().getMarginBox().setX(x);
+    getLayoutModel().getMarginBox().setY(y);
   }
 
   @Override
@@ -511,7 +507,7 @@ public abstract class EditorCell_Basic implements EditorCell {
 
   @Override
   public EditorCell findLeaf(int x, int y, Condition<EditorCell> condition) {
-    if (myX <= x && x < myX + myWidth && myY <= y && y < myY + myHeight && condition.met(this)) {
+    if (getLayoutModel().getMarginBox().containsPoint(x, y) && condition.met(this)) {
       return this;
     }
     return null;
@@ -698,28 +694,32 @@ public abstract class EditorCell_Basic implements EditorCell {
   protected abstract void paintContent(Graphics g, ParentSettings parentSettings);
 
   public void paintDecorations(Graphics g) {
-    int effectiveWidth = getEffectiveWidth();
-
     if (isDrawBorder()) {
       // COLORS: Remove hardcoded color
       g.setColor(Color.lightGray);
-      g.drawRect(myX, myY, getWidth(), getHeight());
+      LayoutBoxFrame box = getLayoutModel().getBorderBox();
+      // The previous behavior was to not reserve any space for the border and let the border of neighbor cells overlap.
+      // That's why we have to add 1 to the border width.
+      g.fillRect(box.getX(), box.getY(), box.getLeftSize() + 1, getHeight()); // left
+      g.fillRect(box.getX(), box.getY(), box.getWidth(), box.getTopSize() + 1); // top
+      g.fillRect(box.getRight() - box.getRightSize(), box.getY(), box.getRightSize() + 1, box.getHeight()); // right
+      g.fillRect(box.getX(), box.getBottom() - box.getBottomSize(), box.getWidth(), box.getBottomSize() + 1); // bottom
     }
-
-    int leftInternalInset = getLeftInset();
 
     if (isDrawBrackets()) {
       g.setColor(getBracketsColor());
 
       // opening bracket
-      g.fillRect(myX + leftInternalInset + 2, myY + 3, 2, myHeight - 5);
-      g.fillRect(myX + leftInternalInset + 3, myY + 2, BRACKET_WIDTH - 3, 2);
-      g.fillRect(myX + leftInternalInset + 3, myY + myHeight - 3, BRACKET_WIDTH - 3, 2);
+      LayoutBoxFrame box = getLayoutModel().getBracketsBox();
+      int lineWidth = 2;
+      g.fillRect(box.getX() + 3, box.getY() + 2, box.getLeftSize() - 3, lineWidth); // top
+      g.fillRect(box.getX() + 2, box.getY() + 3, lineWidth, box.getHeight() - 6); // left
+      g.fillRect(box.getX() + 3, box.getBottom() - lineWidth - 2, box.getLeftSize() - 3, lineWidth); // bottom
 
       // closing bracket
-      g.fillRect(myX + effectiveWidth - 3, myY + 3, 2, myHeight - 5);
-      g.fillRect(myX + effectiveWidth - BRACKET_WIDTH + 1, myY + 2, BRACKET_WIDTH - 3, 2);
-      g.fillRect(myX + effectiveWidth - BRACKET_WIDTH + 1, myY + myHeight - 3, BRACKET_WIDTH - 3, 2);
+      g.fillRect(box.getRight() - box.getRightSize(), box.getY() + 2, box.getRightSize() - 3, lineWidth); // top
+      g.fillRect(box.getRight() - lineWidth - 2, box.getY() + 3, lineWidth, box.getHeight() - 6); // right
+      g.fillRect(box.getRight() - box.getRightSize(), box.getBottom() - lineWidth - 2, box.getRightSize() - 3, lineWidth); // bottom
     }
 
     List<EditorMessage> messages = CellMessagesUtil.getMessages(this, EditorMessage.class);
@@ -787,25 +787,32 @@ public abstract class EditorCell_Basic implements EditorCell {
 
   @Override
   public void setBaseline(int y) {
-    int relBaseline = getAscent();
-    moveTo(myX, y - relBaseline);
+    moveTo(getX(), y - getAscent());
   }
 
   @Override
   public int getBaseline() {
-    return myY + getAscent();
+    return getY() + getAscent();
   }
 
   @Override
   public int getAscent() {
-    return myHeight;
+    return getLayoutModel().getMarginBox().getAscent();
   }
 
   @Override
   public int getDescent() {
-    return myHeight - getAscent();
+    return getLayoutModel().getMarginBox().getDescent();
   }
-
+  
+  public void setAscent(int newAscent) {
+    getLayoutModel().getMarginBox().setAscent(newAscent);
+  }
+  
+  public void setDescent(int newDescent) {
+    getLayoutModel().getMarginBox().setDescent(newDescent);
+  }
+  
   @Override
   public void paintSelection(Graphics g, Color c, boolean drawBorder) {
     paintSelection(g, c, drawBorder, ParentSettings.createDefaultSetting());
@@ -831,20 +838,7 @@ public abstract class EditorCell_Basic implements EditorCell {
     if (!myIsNeedRelayout) {
       return;
     }
-    boolean drawBrackets = isDrawBrackets();
-    if (drawBrackets) {
-      myX += BRACKET_WIDTH;
-    }
-    myX += myGapLeft;
-
     relayoutImpl();
-
-    if (drawBrackets) {
-      myX -= BRACKET_WIDTH;
-      myWidth += 2 * BRACKET_WIDTH;
-    }
-    myX -= myGapLeft;
-    myWidth += myGapLeft + myGapRight;
     myIsNeedRelayout = false;
   }
 
@@ -1303,28 +1297,20 @@ public abstract class EditorCell_Basic implements EditorCell {
 
   @Override
   public void setLeftGap(int gap) {
-    // TODO: remove this line and modify getEffectiveWidth() method in order to return
-    // getWidth() + myGapRight + myGapLeft
-    // most of getWidth() usages must be replaced with getEffectiveWidth() then.
-    myWidth = myWidth - myGapLeft + gap;
-    myGapLeft = gap;
+    getLayoutModel().getGapBox().setLeftSize(gap);
   }
 
   public int getLeftGap() {
-    return myGapLeft;
+    return getLayoutModel().getGapBox().getLeftSize();
   }
 
   @Override
   public void setRightGap(int gap) {
-    // TODO: remove this line and modify getEffectiveWidth() method in order to return
-    // getWidth() + myGapRight + myGapLeft
-    // most of getWidth() usages must be replaced with getEffectiveWidth() then.
-    myWidth = myWidth - myGapRight + gap;
-    myGapRight = gap;
+    getLayoutModel().getGapBox().setRightSize(gap);
   }
 
   public int getRightGap() {
-    return myGapRight;
+    return getLayoutModel().getGapBox().getRightSize();
   }
 
   public void requestRelayout() {
