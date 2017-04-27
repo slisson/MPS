@@ -106,6 +106,7 @@ public class ModelCheckpoints {
       myStates.set(i, state);
       return cps;
     }
+    myStates.add(state);
     return null;
   }
 
