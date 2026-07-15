@@ -49,7 +49,8 @@ import org.junit.runners.Suite;
     GetContributionsInLanguagesTest.class,
     CellCompareTests.class,
     CellTreeTraversalTest.class,
-    SModelModificationsCollectorTest.class
+    SModelModificationsCollectorTest.class,
+    jetbrains.mps.nodeEditor.updater.EditorInvalidationMatchingTest.class
 })
 public class EditorTestSuite {
 }
