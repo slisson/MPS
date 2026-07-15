@@ -19,6 +19,7 @@ import jetbrains.mps.ide.ThreadUtils;
 import jetbrains.mps.ide.project.ProjectHelper;
 import jetbrains.mps.logging.Logger;
 import jetbrains.mps.nodeEditor.EditorComponent;
+import jetbrains.mps.nodeEditor.ModelModification;
 import jetbrains.mps.nodeEditor.cells.APICellAdapter;
 import jetbrains.mps.nodeEditor.commands.CommandContextImpl;
 import jetbrains.mps.nodeEditor.commands.CommandContextListener;
@@ -34,6 +35,8 @@ import jetbrains.mps.util.Pair;
 import jetbrains.mps.util.WeakSet;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 
@@ -64,6 +67,13 @@ public class UpdaterImpl implements Updater {
   private Map<SNode, WeakReference<EditorCell>> myBigCellsMap = new WeakHashMap<>();
   private Map<EditorCell, Set<SNode>> myRelatedNodes = new WeakHashMap<>();
   private Map<EditorCell, Set<SNodeReference>> myRelatedRefTargets = new WeakHashMap<>();
+  private Map<EditorCell, Set<Pair<SNode, SContainmentLink>>> myRelatedChildren = new WeakHashMap<>();
+  private Map<EditorCell, Set<Pair<SNode, SReferenceLink>>> myRelatedReferences = new WeakHashMap<>();
+  // Forward indices, cell -> properties it read. myDirtyDependentCells below is the inverse of the first of these; both
+  // directions are needed, as the inverse serves the "single property event in the batch" fast path (requiresUpdate)
+  // while isRelated has a cell in hand and needs to ask what that cell read.
+  private Map<EditorCell, Set<Pair<SNodeReference, String>>> myRelatedDirtyProperties = new WeakHashMap<>();
+  private Map<EditorCell, Set<Pair<SNodeReference, String>>> myRelatedExistenceProperties = new WeakHashMap<>();
   private Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> myCleanDependentCells = new HashMap<>();
   private Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> myDirtyDependentCells = new HashMap<>();
   private Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> myExistenceDependentCells = new HashMap<>();
@@ -255,8 +265,9 @@ public class UpdaterImpl implements Updater {
 
   protected UpdateSessionImpl createUpdateSession(SNode node, List<SModelEvent> events) {
     UpdateSessionImpl result =
-        new UpdateSessionImpl(node, events, this, myBigCellsMap, myRelatedNodes, myRelatedRefTargets, myCleanDependentCells, myDirtyDependentCells,
-                              myExistenceDependentCells, myUpdateInfoIndex);
+        new UpdateSessionImpl(node, events, this, myBigCellsMap, myRelatedNodes, myRelatedRefTargets, myRelatedChildren,
+                              myRelatedReferences, myRelatedDirtyProperties, myRelatedExistenceProperties, myCleanDependentCells,
+                              myDirtyDependentCells, myExistenceDependentCells, myUpdateInfoIndex);
     result.setInitialEditorHints(myInitialHints);
     result.setEditorHintsForNodeMap(myEditorHintsForNodeMap);
 // TODO: clean local state completely & use only info from this UpdateSessionImpl to update the editor after it.
@@ -273,6 +284,10 @@ public class UpdaterImpl implements Updater {
     myBigCellsMap.clear();
     myRelatedNodes.clear();
     myRelatedRefTargets.clear();
+    myRelatedChildren.clear();
+    myRelatedReferences.clear();
+    myRelatedDirtyProperties.clear();
+    myRelatedExistenceProperties.clear();
     myCleanDependentCells.clear();
     myDirtyDependentCells.clear();
     myExistenceDependentCells.clear();
@@ -294,6 +309,10 @@ public class UpdaterImpl implements Updater {
     assert !myDisposed;
     myRelatedNodes.remove(cell);
     myRelatedRefTargets.remove(cell);
+    myRelatedChildren.remove(cell);
+    myRelatedReferences.remove(cell);
+    myRelatedDirtyProperties.remove(cell);
+    myRelatedExistenceProperties.remove(cell);
   }
 
   public Set<SNode> getRelatedNodes(EditorCell cell) {
@@ -314,15 +333,126 @@ public class UpdaterImpl implements Updater {
     return Collections.unmodifiableSet(nodeProxies);
   }
 
-  public boolean isRelated(EditorCell cell, Pair<SNode, SNodeReference> modification) {
+  /**
+   * @return containment links whose contents this cell read, as (node, role) pairs; a null role means children of
+   *         every role were read. Null if nothing was recorded for this cell.
+   */
+  public Set<Pair<SNode, SContainmentLink>> getRelatedChildren(EditorCell cell) {
+    assert !myDisposed;
+    Set<Pair<SNode, SContainmentLink>> children = myRelatedChildren.get(cell);
+    if (children == null) {
+      return null;
+    }
+    return Collections.unmodifiableSet(children);
+  }
+
+  /**
+   * @return reference links this cell resolved, as (source node, link) pairs; null if nothing was recorded for it
+   */
+  public Set<Pair<SNode, SReferenceLink>> getRelatedReferences(EditorCell cell) {
+    assert !myDisposed;
+    Set<Pair<SNode, SReferenceLink>> references = myRelatedReferences.get(cell);
+    if (references == null) {
+      return null;
+    }
+    return Collections.unmodifiableSet(references);
+  }
+
+  /**
+   * @return properties whose values this cell read, null if nothing was recorded for it
+   */
+  public Set<Pair<SNodeReference, String>> getRelatedDirtyProperties(EditorCell cell) {
+    assert !myDisposed;
+    Set<Pair<SNodeReference, String>> properties = myRelatedDirtyProperties.get(cell);
+    if (properties == null) {
+      return null;
+    }
+    return Collections.unmodifiableSet(properties);
+  }
+
+  /**
+   * @return properties whose presence this cell checked, null if nothing was recorded for it
+   */
+  public Set<Pair<SNodeReference, String>> getRelatedExistenceProperties(EditorCell cell) {
+    assert !myDisposed;
+    Set<Pair<SNodeReference, String>> properties = myRelatedExistenceProperties.get(cell);
+    if (properties == null) {
+      return null;
+    }
+    return Collections.unmodifiableSet(properties);
+  }
+
+  public boolean isRelated(EditorCell cell, ModelModification modification) {
     assert !myDisposed;
     Set<SNode> sNodes = myRelatedNodes.get(cell);
-    if (sNodes != null && sNodes.contains(modification.o1)) {
+    if (sNodes != null && sNodes.contains(modification.getNode())) {
       return true;
     }
 
     Set<SNodeReference> refTargets = myRelatedRefTargets.get(cell);
-    return refTargets != null && refTargets.contains(modification.o2);
+    if (refTargets != null && refTargets.contains(modification.getNodeReference())) {
+      return true;
+    }
+
+    return isChildRoleRelated(cell, modification) || isReferenceRelated(cell, modification)
+        || isPropertyRelated(cell, modification);
+  }
+
+  /**
+   * Whether {@code cell} resolved the reference this modification re-pointed. Only reference changes carry a link.
+   */
+  private boolean isReferenceRelated(EditorCell cell, ModelModification modification) {
+    SReferenceLink referenceLink = modification.getReferenceLink();
+    if (referenceLink == null) {
+      return false;
+    }
+    Set<Pair<SNode, SReferenceLink>> relatedReferences = myRelatedReferences.get(cell);
+    return relatedReferences != null && relatedReferences.contains(new Pair<>(modification.getNode(), referenceLink));
+  }
+
+  /**
+   * Whether {@code cell} read the property this modification changed. Only property changes carry a property name, so
+   * child and reference changes never match here.
+   * <p/>
+   * A cell that merely checked whether the property is set is matched only when the property was set or unset, not on
+   * every value change — the same distinction {@link #requiresUpdate} draws for the single-event fast path.
+   */
+  private boolean isPropertyRelated(EditorCell cell, ModelModification modification) {
+    String propertyName = modification.getPropertyName();
+    if (propertyName == null) {
+      return false;
+    }
+    Pair<SNodeReference, String> changed = new Pair<>(modification.getNodeReference(), propertyName);
+
+    Set<Pair<SNodeReference, String>> dirtyProperties = myRelatedDirtyProperties.get(cell);
+    if (dirtyProperties != null && dirtyProperties.contains(changed)) {
+      return true;
+    }
+
+    if (!modification.isPropertyAddedRemoved()) {
+      return false;
+    }
+    Set<Pair<SNodeReference, String>> existenceProperties = myRelatedExistenceProperties.get(cell);
+    return existenceProperties != null && existenceProperties.contains(changed);
+  }
+
+  /**
+   * Whether {@code cell} read the contents of the containment link this modification changed. Only child
+   * additions/removals carry a role, so property and reference changes never match here.
+   */
+  private boolean isChildRoleRelated(EditorCell cell, ModelModification modification) {
+    SContainmentLink childRole = modification.getChildRole();
+    if (childRole == null) {
+      return false;
+    }
+    Set<Pair<SNode, SContainmentLink>> relatedChildren = myRelatedChildren.get(cell);
+    if (relatedChildren == null) {
+      return false;
+    }
+    SNode node = modification.getNode();
+    // A null role in a recorded dependency means "children of every role were read" (getFirstChild/getLastChild are
+    // role-agnostic), so it is matched by a change to any single role.
+    return relatedChildren.contains(new Pair<>(node, childRole)) || relatedChildren.contains(new Pair<>(node, null));
   }
 
   /**

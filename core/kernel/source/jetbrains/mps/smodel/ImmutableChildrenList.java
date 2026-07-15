@@ -122,7 +122,7 @@ final class ImmutableChildrenList extends AbstractSequentialList<SNode> {
     public SNode next() {
       final SNode node = super.next();
       if (node != null) {
-        node.getNodeOwner().fireNodeRead(node, true);
+        node.getNodeOwner().fireIteratedChildRead(node);
       }
       return node;
     }

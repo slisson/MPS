@@ -348,6 +348,8 @@ public class SNode implements org.jetbrains.mps.openapi.model.SNode, SNodeAssoci
   @Override
   public org.jetbrains.mps.openapi.model.SNode getFirstChild() {
     assertCanRead();
+    // Role-agnostic, hence a dependency on children of every role: a child added to any role may become the first.
+    myOwner.fireChildrenRead(this, null);
 
     SNode child = firstChild();
     if (child != null) {
@@ -359,6 +361,8 @@ public class SNode implements org.jetbrains.mps.openapi.model.SNode, SNodeAssoci
   @Override
   public org.jetbrains.mps.openapi.model.SNode getLastChild() {
     assertCanRead();
+    // Role-agnostic, hence a dependency on children of every role: a child added to any role may become the last.
+    myOwner.fireChildrenRead(this, null);
 
     SNode fc = firstChild();
     if (fc == null) {
@@ -915,6 +919,10 @@ public class SNode implements org.jetbrains.mps.openapi.model.SNode, SNodeAssoci
   @Override
   @NotNull
   public List<SNode> getChildren(SContainmentLink role) {
+    // Fired eagerly, before the role is resolved: the reader depends on the contents of the role whether or not it
+    // holds anything, and the returned list notifies per element only once (and if) it is iterated.
+    myOwner.fireChildrenRead(this, role);
+
     SNode firstChild = firstChild();
 
     if (role != null) {

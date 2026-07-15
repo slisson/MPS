@@ -48,7 +48,8 @@ import org.junit.runners.Suite;
     EditorSettingsTest.class,
     GetContributionsInLanguagesTest.class,
     CellCompareTests.class,
-    CellTreeTraversalTest.class
+    CellTreeTraversalTest.class,
+    SModelModificationsCollectorTest.class
 })
 public class EditorTestSuite {
 }

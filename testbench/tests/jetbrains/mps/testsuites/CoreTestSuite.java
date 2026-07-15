@@ -60,6 +60,7 @@ import org.junit.runners.model.RunnerBuilder;
     jetbrains.mps.smodel.ModelImplementationTest.class,
     jetbrains.mps.smodel.ModelListenerTest.class,
     jetbrains.mps.smodel.ModelChangeListenerTest.class,
+    jetbrains.mps.smodel.EditorDependencyRecordingTest.class,
     jetbrains.mps.smodel.ModelUndoTest.class,
     jetbrains.mps.smodel.ModelAccessTest.class,
     jetbrains.mps.persistence.PersistenceUtilTest.class,

@@ -81,6 +81,9 @@ public class ModelListenerTest {
     final TestModelFactory m1f = new TestModelFactory();
     SModel m1 = m1f.createModel(3, 5, 2, 3);
     final int actualNodes = m1f.countModelNodes();
+    // Counted here rather than at the point of use: getRootNodes() dispatches a read per root, which would land on the
+    // listeners under test.
+    final int rootNodes = m1f.countRootNodes();
 
     AccessCountListener1 cl1 = new AccessCountListener1();
     AccessCountListener2 cl2 = new AccessCountListener2();
@@ -129,8 +132,16 @@ public class ModelListenerTest {
     myErrors.checkThat("NodeReadEventsCaster.fireNodeChildReadAccess is never used", cl2.myChildrenRead, equalTo(0));
     //
     // NodeReadAccessCasterInEditor
-    myErrors.checkThat(cl3.myVisitedNodes, equalTo(expectedNodeReadCount));
-    myErrors.checkThat(cl3.myVisitedNodes, equalTo(cl1.myVisitedNodes));
+    //
+    // The editor is not told about a child yielded by iterating a children list; it is told which containment role was
+    // read instead (AttachedNodeOwner.fireIteratedChildRead). So it sees one read fewer per node reached that way,
+    // which is every node but the roots — those come from getRootNodes(), not from a children list.
+    // The other two listeners still get the per-element read and so keep the counts asserted above.
+    final int iteratedChildren = actualNodes - rootNodes;
+    myErrors.checkThat(cl3.myVisitedNodes, equalTo(expectedNodeReadCount - iteratedChildren));
+    myErrors.checkThat(cl3.myVisitedNodes, equalTo(cl1.myVisitedNodes - iteratedChildren));
+    // readTreeNodes() calls getChildren() once per node.
+    myErrors.checkThat(cl3.myChildrenRead, equalTo(actualNodes));
     myErrors.checkThat(cl3.myPropertiesRead, equalTo(actualNodes));
     myErrors.checkThat(cl3.myReferencesRead, equalTo(0));
 
@@ -157,12 +168,17 @@ public class ModelListenerTest {
     // FIXME make sure we've got notification exactly for the node we're interested in (i.e. child of a root)
     myErrors.checkThat(cl1.myVisitedNodes, equalTo(1));
     myErrors.checkThat(cl2.myVisitedNodes, equalTo(1));
-    myErrors.checkThat(cl3.myVisitedNodes, equalTo(1));
+    // The editor is told which role was read rather than which child came back — see AccessCountListener3 and
+    // AttachedNodeOwner.fireIteratedChildRead. The MPS-18766 guarantee this test exists for (the element the iterator
+    // was constructed with must not be skipped) is still asserted for the two listeners that consume per-element reads.
+    myErrors.checkThat(cl3.myVisitedNodes, equalTo(0));
+    myErrors.checkThat(cl3.myChildrenRead, equalTo(1));
     cl1.reset(); cl2.reset(); cl3.reset();
     final SNode n2 = r1.getChildren(ourRole).iterator().next();
     myErrors.checkThat(cl1.myVisitedNodes, equalTo(1));
     myErrors.checkThat(cl2.myVisitedNodes, equalTo(1));
-    myErrors.checkThat(cl3.myVisitedNodes, equalTo(1));
+    myErrors.checkThat(cl3.myVisitedNodes, equalTo(0));
+    myErrors.checkThat(cl3.myChildrenRead, equalTo(1));
     m1f.detachAccessListeners(cl1, cl2, cl3);
     Assert.assertNotNull(n2);
     Assert.assertEquals(n1, n2);
@@ -194,7 +210,10 @@ public class ModelListenerTest {
     // 3 for each node + 2 for doNext(node) calls
     myErrors.checkThat(cl1.myVisitedNodes, equalTo(3));
     myErrors.checkThat(cl2.myVisitedNodes, equalTo(3));
-    myErrors.checkThat(cl3.myVisitedNodes, equalTo(3));
+    // The editor gets no per-element read (AttachedNodeOwner.fireIteratedChildRead), and no role read either: the
+    // getChildren(role) call that would report it happened before the listeners were attached.
+    myErrors.checkThat(cl3.myVisitedNodes, equalTo(0));
+    myErrors.checkThat(cl3.myChildrenRead, equalTo(0));
   }
 
   /**
@@ -283,7 +302,10 @@ public class ModelListenerTest {
     myErrors.checkThat(shouldHave, equalTo(true));
     myErrors.checkThat(cl1.myVisitedNodes, equalTo(0));
     myErrors.checkThat(cl2.myVisitedNodes, equalTo(0));
-    myErrors.checkThat(cl3.myVisitedNodes, equalTo(1)); // cl3.propertyExistenceAccess() dispatches unclassifiedNodeRead
+    // propertyExistenceAccess() used to dispatch unclassifiedNodeRead on top of recording the (node, property) pair,
+    // which subsumed it: checking one property made the reader depend on the whole node. The pair below is the whole
+    // of the dependency now.
+    myErrors.checkThat(cl3.myVisitedNodes, equalTo(0));
     myErrors.checkThat(cl1.myPropertiesRead, equalTo(1));
     myErrors.checkThat(cl2.myPropertiesRead, equalTo(1));
     myErrors.checkThat(cl3.myPropertiesRead, equalTo(0));
@@ -809,10 +831,16 @@ public class ModelListenerTest {
     public int myVisitedNodes;
     public int myPropertiesRead;
     public int myReferencesRead;
+    public int myChildrenRead;
 
     @Override
     public void nodePropertyReadAccess(SNode node, String propertyName, String value) {
       Assert.fail("NodeReadAccessCasterInEditor doesn't call this method from NodeReadAccessInEditorListener");
+    }
+
+    @Override
+    public void childrenReadAccess(SNode node, SContainmentLink role) {
+      myChildrenRead++;
     }
 
     @Override
@@ -831,7 +859,7 @@ public class ModelListenerTest {
     }
 
     public void reset() {
-      myVisitedNodes = myPropertiesRead = myReferencesRead = 0;
+      myVisitedNodes = myPropertiesRead = myReferencesRead = myChildrenRead = 0;
     }
   }
 

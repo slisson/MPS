@@ -25,6 +25,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Error;
 import jetbrains.mps.nodeEditor.cells.SynchronizeableEditorCell;
 import jetbrains.mps.nodeEditor.sidetransform.EditorCell_STHint;
+import jetbrains.mps.nodeEditor.updater.UpdateSessionImpl;
 import jetbrains.mps.nodeEditor.updater.UpdaterImpl;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.CellInfo;
@@ -42,6 +43,8 @@ import jetbrains.mps.util.SNodeOperations;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 
@@ -96,12 +99,20 @@ public class EditorManager {
     return getUpdater().getCurrentUpdateSession();
   }
 
+  /**
+   * Children dependencies are registered through the impl rather than the published {@link UpdateSession} interface —
+   * see {@link UpdateSessionImpl#registerChildrenDependencies}.
+   */
+  private UpdateSessionImpl getUpdateSessionImpl() {
+    return getUpdaterImpl().getCurrentUpdateSession();
+  }
+
   private EditorCellFactory getCellFactory() {
     return getUpdateSession().getCellFactory();
   }
 
   // TODO: make package-local, move to jetbrains.mps.nodeEditor.updater package ?
-  public EditorCell createRootCell(SNode node, List<Pair<SNode, SNodeReference>> modifications, ReferencedNodeContext refContext, boolean isInspectorCell) {
+  public EditorCell createRootCell(SNode node, List<ModelModification> modifications, ReferencedNodeContext refContext, boolean isInspectorCell) {
     try {
       pushTask("Creating " + (isInspectorCell ? "inspector" : "root") + " cell");
       EditorCell rootCell = getEditorContext().getEditorComponent().getRootCell();
@@ -162,11 +173,19 @@ public class EditorManager {
       UpdaterImpl updater = getUpdaterImpl();
       Set<SNode> newAttributeCell_DependOn = new HashSet<>();
       Set<SNodeReference> newAttributeCell_RefTargetsDependsOn = new HashSet<>();
+      Set<Pair<SNode, SContainmentLink>> newAttributeCell_ChildrenDependsOn = new HashSet<>();
+      Set<Pair<SNode, SReferenceLink>> newAttributeCell_ReferencesDependsOn = new HashSet<>();
+      Set<Pair<SNodeReference, String>> newAttributeCell_DirtyPropertiesDependsOn = new HashSet<>();
+      Set<Pair<SNodeReference, String>> newAttributeCell_ExistencePropertiesDependsOn = new HashSet<>();
 
       NodeReadAccessInEditorListener readAccessListener = NodeReadAccessCasterInEditor.getReadAccessListener();
       if (readAccessListener != null) {
         newAttributeCell_DependOn.addAll(readAccessListener.getNodesToDependOn());
         newAttributeCell_RefTargetsDependsOn.addAll(readAccessListener.getRefTargetsToDependOn());
+        newAttributeCell_ChildrenDependsOn.addAll(readAccessListener.getChildrenToDependOn());
+        newAttributeCell_ReferencesDependsOn.addAll(readAccessListener.getReferencesToDependOn());
+        newAttributeCell_DirtyPropertiesDependsOn.addAll(readAccessListener.getDirtilyReadAccessedProperties());
+        newAttributeCell_ExistencePropertiesDependsOn.addAll(readAccessListener.getExistenceReadAccessProperties());
       }
 
       newAttributeCell_DependOn.addAll(emptyIfNull(updater.getRelatedNodes(attributeCell)));
@@ -175,7 +194,23 @@ public class EditorManager {
       newAttributeCell_RefTargetsDependsOn.addAll(emptyIfNull(updater.getRelatedRefTargets(attributeCell)));
       newAttributeCell_RefTargetsDependsOn.addAll(emptyIfNull(updater.getRelatedRefTargets(cellWithRole)));
 
+      newAttributeCell_ChildrenDependsOn.addAll(emptyIfNull(updater.getRelatedChildren(attributeCell)));
+      newAttributeCell_ChildrenDependsOn.addAll(emptyIfNull(updater.getRelatedChildren(cellWithRole)));
+
+      newAttributeCell_ReferencesDependsOn.addAll(emptyIfNull(updater.getRelatedReferences(attributeCell)));
+      newAttributeCell_ReferencesDependsOn.addAll(emptyIfNull(updater.getRelatedReferences(cellWithRole)));
+
+      newAttributeCell_DirtyPropertiesDependsOn.addAll(emptyIfNull(updater.getRelatedDirtyProperties(attributeCell)));
+      newAttributeCell_DirtyPropertiesDependsOn.addAll(emptyIfNull(updater.getRelatedDirtyProperties(cellWithRole)));
+
+      newAttributeCell_ExistencePropertiesDependsOn.addAll(emptyIfNull(updater.getRelatedExistenceProperties(attributeCell)));
+      newAttributeCell_ExistencePropertiesDependsOn.addAll(emptyIfNull(updater.getRelatedExistenceProperties(cellWithRole)));
+
       getUpdateSession().registerDependencies(attributeCell, newAttributeCell_DependOn, newAttributeCell_RefTargetsDependsOn);
+      getUpdateSessionImpl().registerChildrenDependencies(attributeCell, newAttributeCell_ChildrenDependsOn);
+      getUpdateSessionImpl().registerReferenceDependencies(attributeCell, newAttributeCell_ReferencesDependsOn);
+      getUpdateSessionImpl().registerPropertyDependencies(attributeCell, newAttributeCell_DirtyPropertiesDependsOn,
+          newAttributeCell_ExistencePropertiesDependsOn);
     }
 
     return attributeCell;
@@ -187,7 +222,7 @@ public class EditorManager {
    */
   private void propagateDependencies(EditorCell from, EditorCell to) {
     UpdaterImpl updater = getUpdaterImpl();
-    UpdateSession updateSession = updater.getCurrentUpdateSession();
+    UpdateSessionImpl updateSession = updater.getCurrentUpdateSession();
     for (;;) {
       EditorCell parent = from.getParent();
       // Find the next Big parent
@@ -196,6 +231,10 @@ public class EditorManager {
         break;
       }
       updateSession.registerAdditionalDependencies(parent, emptyIfNull(updater.getRelatedNodes(from)), emptyIfNull(updater.getRelatedRefTargets(from)));
+      updateSession.registerAdditionalChildrenDependencies(parent, emptyIfNull(updater.getRelatedChildren(from)));
+      updateSession.registerAdditionalReferenceDependencies(parent, emptyIfNull(updater.getRelatedReferences(from)));
+      updateSession.registerAdditionalPropertyDependencies(parent, emptyIfNull(updater.getRelatedDirtyProperties(from)),
+          emptyIfNull(updater.getRelatedExistenceProperties(from)));
       from = parent;
       if (from == to) {
         break;
@@ -211,7 +250,7 @@ public class EditorManager {
     return !myCreatingInspectedCell;
   }
 
-  private EditorCell createEditorCellWithoutAttributes(List<Pair<SNode, SNodeReference>> modifications, ReferencedNodeContext refContext) {
+  private EditorCell createEditorCellWithoutAttributes(List<ModelModification> modifications, ReferencedNodeContext refContext) {
     pushTask(getMessage(refContext, "?"));
     try {
       UpdaterImpl updater = getUpdaterImpl();
@@ -224,7 +263,13 @@ public class EditorManager {
         if (!nodeChanged) {
           final Set<SNode> nodesOldCellDependsOn = updater.getRelatedNodes(oldCell);
           final Set<SNodeReference> refTargetsOldCellDependsOn = updater.getRelatedRefTargets(oldCell);
-          if (nodesOldCellDependsOn != null || refTargetsOldCellDependsOn != null) {
+          final Set<Pair<SNode, SContainmentLink>> childrenOldCellDependsOn = updater.getRelatedChildren(oldCell);
+          final Set<Pair<SNode, SReferenceLink>> referencesOldCellDependsOn = updater.getRelatedReferences(oldCell);
+          final Set<Pair<SNodeReference, String>> dirtyPropertiesOldCellDependsOn = updater.getRelatedDirtyProperties(oldCell);
+          final Set<Pair<SNodeReference, String>> existencePropertiesOldCellDependsOn = updater.getRelatedExistenceProperties(oldCell);
+          if (nodesOldCellDependsOn != null || refTargetsOldCellDependsOn != null || childrenOldCellDependsOn != null
+              || referencesOldCellDependsOn != null || dirtyPropertiesOldCellDependsOn != null
+              || existencePropertiesOldCellDependsOn != null) {
             // Node was not changed, we have oldCell so it will not be re-created.
             //
             // Now all the dependencies of this (old) Cell should be added to currently active
@@ -239,6 +284,18 @@ public class EditorManager {
               }
               if (refTargetsOldCellDependsOn != null) {
                 parentReadAccessListener.addRefTargetsToDependOn(refTargetsOldCellDependsOn);
+              }
+              if (childrenOldCellDependsOn != null) {
+                parentReadAccessListener.addChildrenToDependOn(childrenOldCellDependsOn);
+              }
+              if (referencesOldCellDependsOn != null) {
+                parentReadAccessListener.addReferencesToDependOn(referencesOldCellDependsOn);
+              }
+              if (dirtyPropertiesOldCellDependsOn != null) {
+                parentReadAccessListener.addDirtilyReadAccessedProperties(dirtyPropertiesOldCellDependsOn);
+              }
+              if (existencePropertiesOldCellDependsOn != null) {
+                parentReadAccessListener.addExistenceReadAccessProperties(existencePropertiesOldCellDependsOn);
               }
             }
           }
@@ -267,7 +324,7 @@ public class EditorManager {
     }
   }
 
-  public EditorCell createEditorCell(List<Pair<SNode, SNodeReference>> modifications, ReferencedNodeContext refContext) {
+  public EditorCell createEditorCell(List<ModelModification> modifications, ReferencedNodeContext refContext) {
     boolean showAttributes = areAttributesShown();
     EditorCell nodeCell = createEditorCellWithoutAttributes(modifications, refContext);
     if (showAttributes) {
@@ -296,13 +353,13 @@ public class EditorManager {
     return !AttributeOperations.hasPropertyAttributes(node) && !AttributeOperations.hasLinkAttributes(node);
   }
 
-  private boolean isNodeChanged(List<Pair<SNode, SNodeReference>> modifications, UpdaterImpl updater, EditorCell oldCell,
+  private boolean isNodeChanged(List<ModelModification> modifications, UpdaterImpl updater, EditorCell oldCell,
       EditorCellContext cellContext) {
     if (oldCell == null || oldCell.getCellContext() == null || cellContext.getHints().size() != oldCell.getCellContext().getHints().size() ||
         !cellContext.getHints().containsAll(oldCell.getCellContext().getHints())) {
       return true;
     }
-    for (Pair<SNode, SNodeReference> modification : modifications) {
+    for (ModelModification modification : modifications) {
       if (updater.isRelated(oldCell, modification)) {
         return true;
       }
@@ -339,22 +396,8 @@ public class EditorManager {
       } finally {
         /**
          * Always adding cell's node to the set of dependencies of the corresponding cell.
-         * It was done because read-access to the cell's node can be not recorded during
-         * editor update process for some specific editors - if cell's node was not required
-         * for the cell creation process.
-         *
-         * E.G.
-         * - node is represented by only constant cells
-         * - node is represented as a list of child nodes and at the moment we create editor
-         * there were no children in model
-         *
-         * "constant-only" cells should be still re-created if node attribute was added.
-         * "pure-child" cell should be re-created if first child was added to a node.
-         *
-         * To handle such situations & trigger editor update process for the corresponding
-         * cell, we are explicitly adding "self" node to the set of cell dependencies here.
+         * No "self" dependency on the cell's node — see createEditorCell_internal() for why.
          */
-        nodeAccessListener.nodeUnclassifiedReadAccess(node);
         NodeReadAccessCasterInEditor.removeCellBuildNodeAccessListener();
         addNodeDependenciesToEditor(result, nodeAccessListener);
         if (!isAttributedCell(result, refContext)) {
@@ -395,23 +438,25 @@ public class EditorManager {
         nodeCell.setCellContext(getCellFactory().getCellContext());
       } finally {
         /**
-         * Always adding cell's node to the set of dependencies of the corresponding cell.
-         * It was done because read-access to the cell's node can be not recorded during
-         * editor update process for some specific editors - if cell's node was not required
-         * for the cell creation process.
+         * No "self" dependency on the cell's node is registered here, and there used to be one.
          *
-         * E.G.
-         * - node is represented by only constant cells
-         * - node is represented as a list of child nodes and at the moment we create editor
-         * there were no children in model
+         * A node carries no information of its own — everything a builder can read is a property, a reference or a
+         * child, and each of those reports itself. Nor can a node change: only the ways to it can, and those are
+         * changes to some other node's role. So a dependency on the node itself could never be the right answer to
+         * "what did this cell read", and in practice it subsumed the precise dependencies recorded beside it: a cell
+         * reading one property was rebuilt by a change to any other.
          *
-         * "constant-only" cells should be still re-created if node attribute was added.
-         * "pure-child" cell should be re-created if first child was added to a node.
+         * The two cases the self dependency existed for are both covered without it, and both are child events:
          *
-         * To handle such situations & trigger editor update process for the corresponding
-         * cell, we are explicitly adding "self" node to the set of cell dependencies here.
+         * - "constant-only cell must be re-created if a node attribute was added". Attributes are children, in the
+         *   smodelAttribute role. createEditorCell() reads them via AttributeOperations.getNodeAttributes() after this
+         *   listener has been popped, so the (node, smodelAttribute) dependency lands on the parent cell, which is
+         *   what re-descends to here. For a root cell there is no listener at all, but createRootCell() re-runs on
+         *   every update, so its attributes are always re-read.
+         *
+         * - "pure-child cell must be re-created if the first child was added". Reading an empty role now reports
+         *   (node, role) — see SNode.getChildren(role) — which is precisely this, and is what the cell depends on.
          */
-        nodeAccessListener.nodeUnclassifiedReadAccess(node);
         NodeReadAccessCasterInEditor.removeCellBuildNodeAccessListener();
         assert nodeCell != null;
         if (!isAttributedCell(nodeCell, refContext)) {
@@ -495,6 +540,10 @@ public class EditorManager {
 
   private void addNodeDependenciesToEditor(EditorCell cell, NodeReadAccessInEditorListener listener) {
     getUpdateSession().registerDependencies(cell, listener.getNodesToDependOn(), listener.getRefTargetsToDependOn());
+    getUpdateSessionImpl().registerChildrenDependencies(cell, listener.getChildrenToDependOn());
+    getUpdateSessionImpl().registerReferenceDependencies(cell, listener.getReferencesToDependOn());
+    getUpdateSessionImpl().registerPropertyDependencies(cell, listener.getDirtilyReadAccessedProperties(),
+        listener.getExistenceReadAccessProperties());
     for (Pair<SNodeReference, String> pair : listener.getDirtilyReadAccessedProperties()) {
       getUpdateSession().registerDirtyDependency(cell, pair);
     }

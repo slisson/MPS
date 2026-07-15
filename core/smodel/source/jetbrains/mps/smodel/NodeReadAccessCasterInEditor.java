@@ -16,6 +16,8 @@
 package jetbrains.mps.smodel;
 
 import jetbrains.mps.util.Computable;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.model.SModelReference;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SNodeId;
@@ -52,11 +54,21 @@ public class NodeReadAccessCasterInEditor {
     }
   }
 
-  public static void fireReferenceTargetReadAccessed(SNode sourceNode, SModelReference targetModelReference,
-      SNodeId targetNodeId) {
+  /**
+   * @param role containment link whose children were read, or {@code null} if children of every role were read
+   */
+  public static void fireChildrenReadAccessed(SNode node, SContainmentLink role) {
     ListenersContainer listenersContainer = ourListenersContainer.get();
     if (listenersContainer != null) {
-      listenersContainer.fireReferenceTargetReadAccessed(sourceNode, targetModelReference, targetNodeId);
+      listenersContainer.fireChildrenReadAccessed(node, role);
+    }
+  }
+
+  public static void fireReferenceTargetReadAccessed(SNode sourceNode, SReferenceLink link,
+      SModelReference targetModelReference, SNodeId targetNodeId) {
+    ListenersContainer listenersContainer = ourListenersContainer.get();
+    if (listenersContainer != null) {
+      listenersContainer.fireReferenceTargetReadAccessed(sourceNode, link, targetModelReference, targetNodeId);
     }
   }
 
@@ -146,6 +158,13 @@ public class NodeReadAccessCasterInEditor {
       if (!myListenersStack.isEmpty()) {
         myListenersStack.peek().addNodesToDependOn(listener.getNodesToDependOn());
         myListenersStack.peek().addRefTargetsToDependOn(listener.getRefTargetsToDependOn());
+        myListenersStack.peek().addChildrenToDependOn(listener.getChildrenToDependOn());
+        myListenersStack.peek().addReferencesToDependOn(listener.getReferencesToDependOn());
+        // Property reads used to reach the parent only as the whole-node dependency propertyDirtyReadAccess added on
+        // the side. With that gone they have to be merged in their own right, or a parent cell would not be rebuilt
+        // when a property one of its child cells rendered changes.
+        myListenersStack.peek().addDirtilyReadAccessedProperties(listener.getDirtilyReadAccessedProperties());
+        myListenersStack.peek().addExistenceReadAccessProperties(listener.getExistenceReadAccessProperties());
       }
     }
 
@@ -196,9 +215,20 @@ public class NodeReadAccessCasterInEditor {
       }
     }
 
-    public void fireReferenceTargetReadAccessed(SNode sourceNode, SModelReference targetModelReference,
-        SNodeId targetNodeId) {
+    public void fireChildrenReadAccessed(SNode node, SContainmentLink role) {
       if (myEventsBlocked || myListenersStack.isEmpty()) return;
+      myListenersStack.peek().childrenReadAccess(node, role);
+    }
+
+    public void fireReferenceTargetReadAccessed(SNode sourceNode, SReferenceLink link,
+        SModelReference targetModelReference, SNodeId targetNodeId) {
+      if (myEventsBlocked || myListenersStack.isEmpty()) return;
+      // Two distinct dependencies, and the first of them used to be missing. Resolving a reference reads the link of
+      // the source node, so re-pointing it must rebuild the reader; that change is reported against the source, and
+      // nothing recorded here matched it — a whole-node dependency on the source, added elsewhere, was covering it.
+      myListenersStack.peek().referenceReadAccess(sourceNode, link);
+      // The target is depended upon in its own right, because deleting it must rebuild the reader too. Still coarse:
+      // any change to the target matches, not just its removal.
       myListenersStack.peek().addRefTargetToDependOn(new jetbrains.mps.smodel.SNodePointer(targetModelReference, targetNodeId));
     }
   }

@@ -18,6 +18,7 @@ package jetbrains.mps.nodeEditor.updater;
 import com.intellij.openapi.project.Project;
 import jetbrains.mps.ide.project.ProjectHelper;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.ModelModification;
 import jetbrains.mps.nodeEditor.ReferencedNodeContext;
 import jetbrains.mps.nodeEditor.SModelModificationsCollector;
 import jetbrains.mps.nodeEditor.cells.EditorCellFactoryImpl;
@@ -37,6 +38,7 @@ import jetbrains.mps.util.Pair;
 import jetbrains.mps.util.WeakSet;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SNodeReference;
@@ -61,12 +63,16 @@ public class UpdateSessionImpl implements UpdateSession {
   @NotNull
   private final UpdaterImpl myUpdater;
   private SNode myNode;
-  private List<Pair<SNode, SNodeReference>> myModelModifications;
+  private List<ModelModification> myModelModifications;
   private String[] myInitialEditorHints = null;
 
   private Map<SNode, WeakReference<EditorCell>> myBigCellsMap;
   private Map<EditorCell, Set<SNode>> myRelatedNodes;
   private Map<EditorCell, Set<SNodeReference>> myRelatedRefTargets;
+  private Map<EditorCell, Set<Pair<SNode, SContainmentLink>>> myRelatedChildren;
+  private Map<EditorCell, Set<Pair<SNode, SReferenceLink>>> myRelatedReferences;
+  private Map<EditorCell, Set<Pair<SNodeReference, String>>> myRelatedDirtyProperties;
+  private Map<EditorCell, Set<Pair<SNodeReference, String>>> myRelatedExistenceProperties;
   private Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> myCleanDependentCells;
   private Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> myDirtyDependentCells;
   private Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> myExistenceDependentCells;
@@ -80,6 +86,10 @@ public class UpdateSessionImpl implements UpdateSession {
 
   protected UpdateSessionImpl(@NotNull SNode node, List<SModelEvent> events, @NotNull UpdaterImpl updater, Map<SNode, WeakReference<EditorCell>> bigCellsMap,
       Map<EditorCell, Set<SNode>> relatedNodes, Map<EditorCell, Set<SNodeReference>> relatedRefTargets,
+      Map<EditorCell, Set<Pair<SNode, SContainmentLink>>> relatedChildren,
+      Map<EditorCell, Set<Pair<SNode, SReferenceLink>>> relatedReferences,
+      Map<EditorCell, Set<Pair<SNodeReference, String>>> relatedDirtyProperties,
+      Map<EditorCell, Set<Pair<SNodeReference, String>>> relatedExistenceProperties,
       Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> cleanDependentCells, Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> dirtyDependentCells,
       Map<Pair<SNodeReference, String>, WeakSet<EditorCell>> existenceDependentCells, UpdateInfoIndex updateInfoIndex) {
     myNode = node;
@@ -88,6 +98,10 @@ public class UpdateSessionImpl implements UpdateSession {
     myBigCellsMap = bigCellsMap;
     myRelatedNodes = relatedNodes;
     myRelatedRefTargets = relatedRefTargets;
+    myRelatedChildren = relatedChildren;
+    myRelatedReferences = relatedReferences;
+    myRelatedDirtyProperties = relatedDirtyProperties;
+    myRelatedExistenceProperties = relatedExistenceProperties;
     myCleanDependentCells = cleanDependentCells;
     myDirtyDependentCells = dirtyDependentCells;
     myExistenceDependentCells = existenceDependentCells;
@@ -123,6 +137,69 @@ public class UpdateSessionImpl implements UpdateSession {
 
     for (SNodeReference nextRefTarget : refTargets) {
       registeredRefTargets.add(nextRefTarget);
+    }
+  }
+
+  /**
+   * Records the containment links whose contents {@code cell} read, as (node, role) pairs; a null role means children
+   * of every role were read. Replaces any previously recorded set, mirroring {@link #registerDependencies}.
+   * <p/>
+   * Not part of {@link UpdateSession}: only {@code EditorManager} registers these, and adding it to the published
+   * interface would break external implementors for no gain.
+   */
+  public void registerChildrenDependencies(EditorCell cell, Iterable<Pair<SNode, SContainmentLink>> children) {
+    Set<Pair<SNode, SContainmentLink>> registered = new HashSet<>();
+    myRelatedChildren.put(cell, registered);
+    for (Pair<SNode, SContainmentLink> next : children) {
+      registered.add(next);
+    }
+  }
+
+  /** As {@link #registerChildrenDependencies}, but adds to rather than replaces what is already recorded. */
+  public void registerAdditionalChildrenDependencies(EditorCell cell, Iterable<Pair<SNode, SContainmentLink>> children) {
+    Set<Pair<SNode, SContainmentLink>> registered = myRelatedChildren.computeIfAbsent(cell, editorCell -> new HashSet<>());
+    for (Pair<SNode, SContainmentLink> next : children) {
+      registered.add(next);
+    }
+  }
+
+  /** Records the reference links {@code cell} resolved, as (source node, link) pairs. */
+  public void registerReferenceDependencies(EditorCell cell, Iterable<Pair<SNode, SReferenceLink>> references) {
+    myRelatedReferences.put(cell, copyOf(references));
+  }
+
+  /** As {@link #registerReferenceDependencies}, but adds to rather than replaces what is already recorded. */
+  public void registerAdditionalReferenceDependencies(EditorCell cell, Iterable<Pair<SNode, SReferenceLink>> references) {
+    addAll(myRelatedReferences.computeIfAbsent(cell, editorCell -> new HashSet<>()), references);
+  }
+
+  /**
+   * Records the properties {@code cell} read, so that {@link UpdaterImpl#isRelated} can ask what a given cell read.
+   * The inverse index, property to cells, is registered separately via {@link #registerDirtyDependency} and
+   * {@link #registerExistenceDependency} and serves the single-property-event fast path.
+   */
+  public void registerPropertyDependencies(EditorCell cell, Iterable<Pair<SNodeReference, String>> dirtyProperties,
+      Iterable<Pair<SNodeReference, String>> existenceProperties) {
+    myRelatedDirtyProperties.put(cell, copyOf(dirtyProperties));
+    myRelatedExistenceProperties.put(cell, copyOf(existenceProperties));
+  }
+
+  /** As {@link #registerPropertyDependencies}, but adds to rather than replaces what is already recorded. */
+  public void registerAdditionalPropertyDependencies(EditorCell cell, Iterable<Pair<SNodeReference, String>> dirtyProperties,
+      Iterable<Pair<SNodeReference, String>> existenceProperties) {
+    addAll(myRelatedDirtyProperties.computeIfAbsent(cell, editorCell -> new HashSet<>()), dirtyProperties);
+    addAll(myRelatedExistenceProperties.computeIfAbsent(cell, editorCell -> new HashSet<>()), existenceProperties);
+  }
+
+  private static <T> Set<T> copyOf(Iterable<T> values) {
+    Set<T> result = new HashSet<>();
+    addAll(result, values);
+    return result;
+  }
+
+  private static <T> void addAll(Set<T> target, Iterable<T> values) {
+    for (T next : values) {
+      target.add(next);
     }
   }
 
@@ -323,7 +400,7 @@ public class UpdateSessionImpl implements UpdateSession {
   }
 
   @Nullable
-  public List<Pair<SNode, SNodeReference>> getModelModifications() {
+  public List<ModelModification> getModelModifications() {
     return myModelModifications;
   }
 

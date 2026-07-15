@@ -76,6 +76,15 @@ abstract class SNodeOwner {
   // CRUD notifications
 
   void fireNodeRead(SNode node, boolean needUnclassified) {}
+  /**
+   * @param role containment link whose children were read, or {@code null} if children of every role were read
+   */
+  void fireChildrenRead(SNode node, SContainmentLink role) {}
+  /**
+   * Read of a child yielded by iterating a children list, as opposed to a read of the node in its own right.
+   * Notifies everyone {@link #fireNodeRead} does except the editor — see the override for why.
+   */
+  void fireIteratedChildRead(SNode node) {}
   void firePropertyRead(SNode node, SProperty p, String value, boolean hasProperty) {}
   void fireReferenceRead(SNode node, SReferenceLink link, SNode target) {}
   void firePropertyChange(SNode node, SProperty property, String oldValue, String newValue) {}

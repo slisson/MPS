@@ -22,12 +22,12 @@ import jetbrains.mps.smodel.event.SModelEventVisitorAdapter;
 import jetbrains.mps.smodel.event.SModelPropertyEvent;
 import jetbrains.mps.smodel.event.SModelReferenceEvent;
 import jetbrains.mps.smodel.event.SModelRootEvent;
-import jetbrains.mps.util.Pair;
 import org.jetbrains.annotations.Nullable;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.model.SModelReference;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SNodeId;
-import org.jetbrains.mps.openapi.model.SNodeReference;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -41,7 +41,7 @@ import java.util.Queue;
  * Date: 12/07/14
  */
 public class SModelModificationsCollector extends SModelEventVisitorAdapter {
-  private Collection<Pair<SNode, SNodeReference>> myModifications = null;
+  private Collection<ModelModification> myModifications = null;
 
   // TODO: move to jetbrains.mps.nodeEditor.updater package, make package-local
   public SModelModificationsCollector(List<SModelEvent> events) {
@@ -54,7 +54,7 @@ public class SModelModificationsCollector extends SModelEventVisitorAdapter {
     }
   }
 
-  public List<Pair<SNode, SNodeReference>> getModifications() {
+  public List<ModelModification> getModifications() {
     return myModifications == null ? null : new ArrayList<>(myModifications);
   }
 
@@ -73,7 +73,9 @@ public class SModelModificationsCollector extends SModelEventVisitorAdapter {
 
   @Override
   public void visitChildEvent(SModelChildEvent event) {
-    addModification(event.getParent(), event);
+    // Only the parent's modification carries the role: it is the parent's role contents that changed. The added or
+    // removed subtree below is reported role-less, matching cells that had read those nodes themselves.
+    addChildModification(event.getParent(), event.getAggregationLink(), event);
     Queue<SNode> nodeQueue = new LinkedList<>();
     nodeQueue.add(event.getChild());
     while (!nodeQueue.isEmpty()) {
@@ -87,16 +89,32 @@ public class SModelModificationsCollector extends SModelEventVisitorAdapter {
 
   @Override
   public void visitReferenceEvent(SModelReferenceEvent event) {
-    addModification(event.getReference().getSourceNode(), event);
+    // Reported against the source node: it is the source's link that now points elsewhere. A cell that resolved that
+    // link depends on (source, link) -- see NodeReadAccessInEditorListener.referenceReadAccess.
+    SNode source = event.getReference().getSourceNode();
+    myModifications.add(newModification(source, null, event.getReference().getLink(), null, false, event));
   }
 
   @Override
   public void visitPropertyEvent(SModelPropertyEvent event) {
-    addModification(event.getNode(), event);
+    boolean addedRemoved = SModelPropertyEvent.isEmptyPropertyValue(event.getOldPropertyValue())
+        != SModelPropertyEvent.isEmptyPropertyValue(event.getNewPropertyValue());
+    myModifications.add(newModification(event.getNode(), null, null, event.getPropertyName(), addedRemoved, event));
   }
 
   private void addModification(SNode node, SModelEvent event) {
-    myModifications.add(new Pair<>(node, new CachingSNodePointer(event.getModel().getReference(), node.getNodeId())));
+    myModifications.add(newModification(node, null, null, null, false, event));
+  }
+
+  private void addChildModification(SNode node, @Nullable SContainmentLink childRole, SModelEvent event) {
+    myModifications.add(newModification(node, childRole, null, null, false, event));
+  }
+
+  private static ModelModification newModification(SNode node, @Nullable SContainmentLink childRole,
+      @Nullable SReferenceLink referenceLink, @Nullable String propertyName, boolean propertyAddedRemoved,
+      SModelEvent event) {
+    return new ModelModification(node, new CachingSNodePointer(event.getModel().getReference(), node.getNodeId()),
+        childRole, referenceLink, propertyName, propertyAddedRemoved);
   }
 
   // TODO: move this logic to SNodePointer? Ask MMuhin.

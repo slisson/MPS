@@ -118,7 +118,7 @@ public final class StaticReference extends SReference {
     AssociationData d = getData();
     SModelReference mr = d instanceof LocalNodePtr ? getSourceNode().getReference().getModelReference() : d.getTargetModel();
     if (mr != null) {
-      NodeReadAccessCasterInEditor.fireReferenceTargetReadAccessed(getSourceNode(), mr, getTargetNodeId());
+      NodeReadAccessCasterInEditor.fireReferenceTargetReadAccessed(getSourceNode(), getLink(), mr, getTargetNodeId());
     }
 
     final SNode immatureTargetNode = d instanceof DirectNode ? ((DirectNode)d).myImmatureTargetNode : null;

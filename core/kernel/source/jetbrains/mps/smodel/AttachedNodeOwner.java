@@ -198,6 +198,46 @@ final class AttachedNodeOwner extends SNodeOwner {
   }
 
   @Override
+  /*package*/ void fireIteratedChildRead(SNode node) {
+    if (myModel.isUpdateMode()) {
+      return;
+    }
+    final ModelEventDispatch md = myEventDispatch;
+    if (md != null) {
+      md.fireNodeRead(node);
+    }
+    if (!myModel.canFireReadEvent()) {
+      return;
+    }
+    // NodeReadAccessCasterInEditor is deliberately NOT notified here, which is the one way this differs from
+    // fireNodeRead(node, true).
+    //
+    // Yielding a child from a children list told the editor only that the list holds this node — a fact now carried
+    // precisely by the (node, role) dependency fireChildrenRead() emits from getChildren(). Reporting the child as a
+    // whole-node dependency on top of that meant iterating a role made the reader depend on every child in it, so a
+    // property change on any one of them rebuilt the cell. Whatever the reader goes on to read *of* the child still
+    // notifies the editor through the usual property/reference/node paths.
+    //
+    // The typesystem and the legacy access listeners have no equivalent of the role dependency and still need the
+    // per-element read, so they keep receiving it.
+    NodeReadEventsCaster.fireNodeUnclassifiedReadAccess(node);
+  }
+
+  @Override
+  /*package*/ void fireChildrenRead(SNode node, SContainmentLink role) {
+    // Single guard on purpose: canFireEvent() already implies !isUpdateMode(), and isUpdateMode() is a lock probe.
+    // fireNodeRead() has to test them separately only because it dispatches to myEventDispatch in between; this
+    // notification has no such intermediate step, and getChildren() is hot enough for the extra probe to show up.
+    if (!myModel.canFireReadEvent()) {
+      return;
+    }
+    // Deliberately notified even when the role holds no children: the reader's outcome depends on the role being
+    // empty, so it has to be invalidated once the role is filled. Unlike node reads, this is not driven off the
+    // children actually returned, which is why it is fired here and not from ImmutableChildrenList's iterator.
+    NodeReadAccessCasterInEditor.fireChildrenReadAccessed(node, role);
+  }
+
+  @Override
   /*package*/ void firePropertyRead(SNode node, SProperty p, String value, boolean hasProperty) {
     // propertyRead();
     if (myModel.isUpdateMode()) {
