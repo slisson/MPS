@@ -324,6 +324,47 @@ public class EditorInvalidationMatchingTest extends BaseEditorTest {
   }
 
   // ---------------------------------------------------------------------------------------------------------------
+  // Models to listen to
+  //
+  // Deciding correctly that a cell must be rebuilt is worth nothing if the change is never delivered, and which
+  // models get a listener is derived from the same dependency sets. This is a second consumer of them, and it was
+  // missed when they were split by kind: it read only the whole-node and reference-target sets, so an editor whose
+  // root cell depended on nothing else stopped listening to its own model entirely.
+  // ---------------------------------------------------------------------------------------------------------------
+
+  /**
+   * Every dependency kind has to contribute its model. A cell that read only a property of a node has no whole-node
+   * dependency to derive a model from, and would otherwise never hear the change.
+   */
+  @Test
+  public void everyDependencyKindContributesItsModelToListenTo() {
+    for (DependencyRecorder reads : List.<DependencyRecorder>of(
+        l -> l.propertyDirtyReadAccess(myOther, "p"),
+        l -> l.propertyExistenceAccess(myOther, "p"),
+        l -> l.childrenReadAccess(myOther, ourRoleA),
+        l -> l.referenceReadAccess(myOther, ourRefX),
+        l -> l.addRefTargetToDependOn(myOther.getReference()),
+        l -> l.nodeUnclassifiedReadAccess(myOther))) {
+      EditorCell cell = cellDependingOn(reads);
+
+      assertTrue("a dependency on a node in this model must make it listened to",
+          updater().collectModelsToListen(cell, myNode).contains(myModel));
+    }
+  }
+
+  /**
+   * The edited node's model is listened to even when the root cell read nothing of it — the editor still has to hear
+   * about the node being replaced or removed. This is what UpdaterModelListenersController.assertListenerAdded
+   * enforces, and it used to fall out of the whole-node self dependency every cell had.
+   */
+  @Test
+  public void theEditedNodesModelIsListenedToEvenWhenNothingWasRead() {
+    EditorCell cell = cellDependingOn(l -> { });
+
+    assertTrue(updater().collectModelsToListen(cell, myNode).contains(myModel));
+  }
+
+  // ---------------------------------------------------------------------------------------------------------------
   // A cell that read nothing
   // ---------------------------------------------------------------------------------------------------------------
 

@@ -17,14 +17,11 @@ package jetbrains.mps.nodeEditor.updater;
 
 import jetbrains.mps.smodel.RepoListenerRegistrar;
 import org.jetbrains.mps.openapi.model.SModel;
-import org.jetbrains.mps.openapi.model.SModelReference;
 import org.jetbrains.mps.openapi.model.SNode;
-import org.jetbrains.mps.openapi.model.SNodeReference;
 import org.jetbrains.mps.openapi.model.SNodeUtil;
 import org.jetbrains.mps.openapi.module.SRepository;
 
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -41,33 +38,18 @@ class UpdaterModelListenersController {
     myUpdater = updater;
   }
 
-  void attachListeners(SNode mainNode, Set<SNode> relatedNodes, Set<SNodeReference> relatedRefTargets) {
+  /**
+   * @param modelsToListen models holding anything the editor depends on, as collected by
+   *                       {@link UpdaterImpl#collectModelsToListen}. Deriving them is the updater's job: it is the one
+   *                       that knows the dependency kinds, and every kind has to contribute a model here or changes
+   *                       from it are never delivered.
+   */
+  void attachListeners(SNode mainNode, Set<SModel> modelsToListen) {
     if (myModelListener == null) {
       myModelListener = new UpdaterModelListener(myUpdater);
     }
 
     final SRepository repository = myUpdater.getEditorContext().getRepository();
-
-    Set<SModel> modelsToListen = new HashSet<>();
-    if (relatedNodes != null) {
-      for (SNode node : relatedNodes) {
-        SModel model = node.getModel();
-        if (model == null) {
-          continue;
-        }
-        modelsToListen.add(model);
-      }
-    }
-
-    if (relatedRefTargets != null) {
-      for (SNodeReference nodeProxy : relatedRefTargets) {
-        final SModelReference modelRef = nodeProxy.getModelReference();
-        SModel model = modelRef == null ? null : modelRef.resolve(repository);
-        if (model != null) {
-          modelsToListen.add(model);
-        }
-      }
-    }
 
     for (SModel nextModelToListen : modelsToListen) {
       if (!myListeningModels.contains(nextModelToListen)) {

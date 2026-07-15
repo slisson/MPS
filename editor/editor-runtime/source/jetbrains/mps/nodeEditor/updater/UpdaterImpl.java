@@ -37,8 +37,11 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.model.SModel;
+import org.jetbrains.mps.openapi.model.SModelReference;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.model.SNodeReference;
+import org.jetbrains.mps.openapi.module.SRepository;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -46,6 +49,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -144,10 +148,81 @@ public class UpdaterImpl implements Updater {
 
       EditorCell rootCell = result.o1;
       myUpdateInfoIndex = result.o2;
-      myModelListenersController.attachListeners(node, getRelatedNodes(rootCell), getRelatedRefTargets(rootCell));
+      myModelListenersController.attachListeners(node, collectModelsToListen(rootCell, node));
       return rootCell;
     } finally {
       myUpdateSession = null;
+    }
+  }
+
+  /**
+   * The models a change has to be heard from for {@code rootCell} to stay correct: those holding anything it depends
+   * on, plus the edited node's own.
+   * <p/>
+   * Every dependency kind has to be walked, not just the whole-node and reference-target ones. A cell that read only a
+   * property of a node in another model depends on that model and on nothing else there; miss it and the change is
+   * never delivered, so the cell is never rebuilt.
+   * <p/>
+   * The edited node's model is included whether or not the root cell read anything of it — the editor still has to
+   * hear about the node being replaced or removed, which is what {@code assertListenerAdded} checks. That used to fall
+   * out of the whole-node self dependency EditorManager gave every cell, and had to become explicit when that went.
+   */
+  @NotNull
+  /*package*/ Set<SModel> collectModelsToListen(@NotNull EditorCell rootCell, @NotNull SNode editedNode) {
+    SRepository repository = getEditorContext().getRepository();
+    Set<SModel> result = new HashSet<>();
+    addModel(result, editedNode.getModel());
+
+    Set<SNode> relatedNodes = getRelatedNodes(rootCell);
+    if (relatedNodes != null) {
+      for (SNode node : relatedNodes) {
+        addModel(result, node.getModel());
+      }
+    }
+    addModelsOfNodes(result, getRelatedChildren(rootCell));
+    addModelsOfNodes(result, getRelatedReferences(rootCell));
+    addModelsOfReferences(result, getRelatedRefTargets(rootCell), repository);
+    addModelsOfPropertyOwners(result, getRelatedDirtyProperties(rootCell), repository);
+    addModelsOfPropertyOwners(result, getRelatedExistenceProperties(rootCell), repository);
+    return result;
+  }
+
+  private static <T> void addModelsOfNodes(Set<SModel> models, Set<Pair<SNode, T>> pairs) {
+    if (pairs == null) {
+      return;
+    }
+    for (Pair<SNode, T> pair : pairs) {
+      addModel(models, pair.o1.getModel());
+    }
+  }
+
+  private static void addModelsOfReferences(Set<SModel> models, Set<SNodeReference> references, SRepository repository) {
+    if (references == null) {
+      return;
+    }
+    for (SNodeReference reference : references) {
+      addModel(models, resolveModel(reference, repository));
+    }
+  }
+
+  private static void addModelsOfPropertyOwners(Set<SModel> models, Set<Pair<SNodeReference, String>> properties,
+      SRepository repository) {
+    if (properties == null) {
+      return;
+    }
+    for (Pair<SNodeReference, String> property : properties) {
+      addModel(models, resolveModel(property.o1, repository));
+    }
+  }
+
+  private static SModel resolveModel(SNodeReference reference, SRepository repository) {
+    SModelReference modelReference = reference.getModelReference();
+    return modelReference == null ? null : modelReference.resolve(repository);
+  }
+
+  private static void addModel(Set<SModel> models, @Nullable SModel model) {
+    if (model != null) {
+      models.add(model);
     }
   }
 
