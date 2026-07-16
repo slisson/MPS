@@ -1,0 +1,144 @@
+# Builds MPS distribution archives (with a PERF version marker) and publishes
+# them as a GitHub Release.
+#
+# Trigger a release by tagging a commit that contains this workflow:
+#   git tag 2025.1.2-PERF.1 && git push <remote> 2025.1.2-PERF.1
+# The tag must be "<base version>-<suffix>" where <base version> matches
+# version.major/minor/bugfixNr in build/mpsBootstrapCore.xml (e.g. 2025.1.2).
+# The suffix (e.g. PERF.1) becomes part of the product version everywhere:
+# "MPS 2025.1.2 PERF.1".
+#
+# A workflow_dispatch run builds the same artifacts but only uploads them as
+# workflow artifacts (no release) — useful for testing the pipeline.
+
+name: Build distribution
+
+on:
+  push:
+    tags:
+      - '20[0-9][0-9].*'
+  workflow_dispatch:
+    inputs:
+      suffix:
+        description: 'Version suffix, e.g. PERF.0'
+        required: true
+        default: 'PERF.0'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc \
+            /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+          df -h /
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Install Ant
+        run: command -v ant || (sudo apt-get update && sudo apt-get install -y --no-install-recommends ant)
+
+      - name: Derive version
+        id: version
+        env:
+          INPUT_SUFFIX: ${{ inputs.suffix }}
+        run: |
+          set -euo pipefail
+          major=$(sed -n 's/.*name="version.major" value="\([^"]*\)".*/\1/p' build/mpsBootstrapCore.xml)
+          minor=$(sed -n 's/.*name="version.minor" value="\([^"]*\)".*/\1/p' build/mpsBootstrapCore.xml)
+          bugfix=$(sed -n 's/.*name="version.bugfixNr" value="\([^"]*\)".*/\1/p' build/mpsBootstrapCore.xml)
+          base="${major}.${minor}${bugfix}"
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            tag="${GITHUB_REF_NAME}"
+            suffix="${tag#"$base"-}"
+            if [[ "$suffix" == "$tag" || -z "$suffix" ]]; then
+              echo "Tag '$tag' does not match '<base>-<suffix>' with base version '$base'" >&2
+              exit 1
+            fi
+          else
+            suffix="$INPUT_SUFFIX"
+          fi
+          # platform prefix, e.g. 251.28774 from build.txt "251.28774.SNAPSHOT"
+          platform=$(cut -d. -f1-2 build.txt)
+          {
+            echo "base=$base"
+            echo "suffix=$suffix"
+            echo "full=$base-$suffix"
+            echo "spaced=$base $suffix"
+            echo "build_number=MPS-$platform.$GITHUB_RUN_NUMBER"
+          } >> "$GITHUB_OUTPUT"
+          echo "Building MPS $base $suffix (build number MPS-$platform.$GITHUB_RUN_NUMBER)"
+
+      - name: Cache dependencies (ivy + JBR)
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.ivy2/cache
+            build/resources/openJDK
+          key: mps-deps-${{ hashFiles('build/version.properties', 'build/lib.properties', 'build/ivy*.xml') }}
+
+      - name: Build MPS distribution
+        env:
+          ANT_OPTS: -Xmx8g
+        run: |
+          set -euo pipefail
+          mkdir -p help
+          ant -f build/build.xml getOpenjdkLinux getOpenjdkMac getOpenjdkMacM1 base \
+            -Dmps_home="$GITHUB_WORKSPACE" \
+            -Dbuild.number="${{ steps.version.outputs.build_number }}" \
+            -Dbuild.vcs.number="$GITHUB_SHA" \
+            -Dteamcity.buildConfName=github-actions \
+            -Dversion.eap=" ${{ steps.version.outputs.suffix }}" \
+            -Dmps.ivy.home="$HOME" \
+            -Ddate="$(date +%Y%m%d)"
+
+      - name: Repackage release files
+        run: |
+          bash .github/scripts/repackage.sh \
+            "${{ steps.version.outputs.build_number }}" \
+            "${{ steps.version.outputs.full }}" \
+            "${{ steps.version.outputs.spaced }}"
+
+      - name: Upload workflow artifacts (manual run)
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: MPS-${{ steps.version.outputs.full }}
+          path: release/*
+          retention-days: 14
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          name: MPS ${{ steps.version.outputs.base }} ${{ steps.version.outputs.suffix }}
+          files: release/*
+          body: |
+            Custom build of [JetBrains MPS](https://www.jetbrains.com/mps/) ${{ steps.version.outputs.base }} with performance improvements, built from commit ${{ github.sha }}.
+
+            | File | Platform |
+            | --- | --- |
+            | `MPS-${{ steps.version.outputs.full }}-windows.zip` | Windows x64 (JBR bundled) |
+            | `MPS-${{ steps.version.outputs.full }}-linux.tar.gz` | Linux x64 (JBR bundled) |
+            | `MPS-${{ steps.version.outputs.full }}-macos.zip` | macOS Intel (JBR bundled) |
+            | `MPS-${{ steps.version.outputs.full }}-macos-aarch64.zip` | macOS Apple Silicon (JBR bundled) |
+            | `MPS-${{ steps.version.outputs.full }}.zip` | Any platform, requires your own JDK (no JBR) |
+
+            **macOS note:** the app is not code-signed. After unzipping, clear the quarantine flag once:
+            ```
+            xattr -dr com.apple.quarantine "MPS ${{ steps.version.outputs.spaced }}.app"
+            ```
+            or right-click the app and choose *Open*.
+
+            Verify downloads with `MPS-${{ steps.version.outputs.full }}-checksums.sha256`.
