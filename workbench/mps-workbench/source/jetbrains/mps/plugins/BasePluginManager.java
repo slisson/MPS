@@ -132,6 +132,7 @@ public abstract class BasePluginManager<T> implements PluginLoader {
 
         if (plugin != null) {
           plugins.add(plugin);
+          PluginLoadTimings.getInstance().clear(this, contributor.getStableId());
         }
       }
     }
@@ -161,9 +162,13 @@ public abstract class BasePluginManager<T> implements PluginLoader {
       // FIXME I'm not certain keeping null for PC is a good idea. Indeed, we ensure consistent
       //       modules/PC come and go, but is it necessary? Moreover, hasPluginsFor() is not in use,
       //       the only place we check this consistency is unloadPlugins
+      long startTime = System.nanoTime();
       plugin = createPlugin(contributor);
-      if (plugin != null && LOG.isTraceLevel()) {
-        LOG.trace(String.format("[%s] instantiated plugin %s from the contributor %s", this, plugin, contributor));
+      if (plugin != null) {
+        PluginLoadTimings.getInstance().add(this, contributor.getStableId(), System.nanoTime() - startTime);
+        if (LOG.isTraceLevel()) {
+          LOG.trace(String.format("[%s] instantiated plugin %s from the contributor %s", this, plugin, contributor));
+        }
       }
     } catch (LinkageError le) {
       LOG.error(this + ": contributor " + contributor + " threw a linkage error during plugin creation ", le);
@@ -173,6 +178,21 @@ public abstract class BasePluginManager<T> implements PluginLoader {
       LOG.error(this + ": contributor " + contributor + " threw an exception during plugin creation " + t.getMessage(), t);
     }
     return plugin;
+  }
+
+  /**
+   * Attributes additional load time (spent outside {@link #createPlugin}, e.g. in per-plugin
+   * initialization steps of {@link #afterPluginsCreated}) to the contributor of the given plugin.
+   */
+  protected final void recordAdditionalLoadTime(T plugin, long nanos) {
+    synchronized (myPluginsLock) {
+      for (Map.Entry<PluginContributor, T> entry : myContributorToPlugin.entrySet()) {
+        if (entry.getValue() == plugin) {
+          PluginLoadTimings.getInstance().add(this, entry.getKey().getStableId(), nanos);
+          return;
+        }
+      }
+    }
   }
 
   private static boolean isPluginEnabled(PluginContributor contributor) {

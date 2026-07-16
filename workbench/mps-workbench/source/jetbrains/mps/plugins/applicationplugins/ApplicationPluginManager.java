@@ -29,6 +29,7 @@ import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * Is a {@link BasePluginManager} which is responsible for loading application plugins {@link BaseApplicationPlugin};
@@ -66,12 +67,24 @@ public class ApplicationPluginManager extends BasePluginManager<BaseApplicationP
     //     their groups, so that they need to create all groups prior to adjustGroups()
     //     This is a pure guess, however; git blame doesn't support this idea (nor
     //     contradicts it. As usual, just keeps silence).
-    plugins.forEach(BaseApplicationPlugin::createKeymaps);
-    plugins.forEach(BaseApplicationPlugin::createGroups1);
-    plugins.forEach(BaseApplicationPlugin::adjustGroups);
-    plugins.forEach(BaseApplicationPlugin::createCustomParts);
+    timedForEach(plugins, BaseApplicationPlugin::createKeymaps);
+    timedForEach(plugins, BaseApplicationPlugin::createGroups1);
+    timedForEach(plugins, BaseApplicationPlugin::adjustGroups);
+    timedForEach(plugins, BaseApplicationPlugin::createCustomParts);
     GroupAdjuster.adjustTopLevelGroups();
     GroupAdjuster.refreshCustomizations();
+  }
+
+  /**
+   * Like {@code plugins.forEach(step)}, but attributes the time spent in the step to each plugin's
+   * load time (shown in the MPS Plugins settings page).
+   */
+  private void timedForEach(List<BaseApplicationPlugin> plugins, Consumer<BaseApplicationPlugin> step) {
+    for (BaseApplicationPlugin plugin : plugins) {
+      long startTime = System.nanoTime();
+      step.accept(plugin);
+      recordAdditionalLoadTime(plugin, System.nanoTime() - startTime);
+    }
   }
 
   @Override

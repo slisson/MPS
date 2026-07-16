@@ -89,8 +89,21 @@ public class PluginEnablementConfigurable implements SearchableConfigurable {
     PluginEnablementSettings settings = PluginEnablementSettings.getInstance();
     myPluginList.clear();
     for (String pluginId : collectPluginIds(settings)) {
-      myPluginList.addItem(pluginId, pluginId, settings.isEnabled(pluginId));
+      long loadNanos = PluginLoadTimings.getInstance().getTotalNanos(pluginId);
+      String text = loadNanos < 0 ? pluginId : String.format("%s   (loaded in %s)", pluginId, formatDuration(loadNanos));
+      myPluginList.addItem(pluginId, text, settings.isEnabled(pluginId));
     }
+  }
+
+  private static String formatDuration(long nanos) {
+    double millis = nanos / 1e6;
+    if (millis < 1) {
+      return "< 1 ms";
+    }
+    if (millis < 1000) {
+      return Math.round(millis) + " ms";
+    }
+    return String.format("%.1f s", millis / 1000);
   }
 
   /**
