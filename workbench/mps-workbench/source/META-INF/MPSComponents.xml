@@ -35,6 +35,7 @@
                          id="project.options.prefs.page" nonDefaultProject="true" groupWeight="-10"/>
     <applicationConfigurable parentId="build" groupWeight="150" instance="jetbrains.mps.smodel.ModelValidationConfigurable" id="preferences.modelValidationSettings" displayName="Model Validation"/>
     <applicationConfigurable parentId="build" groupWeight="140" instance="jetbrains.mps.ide.generator.GenerationSettingsPreferencesPage" id="preferences.generationSettings" displayName="Generator"/>
+    <applicationConfigurable parentId="build" groupWeight="130" instance="jetbrains.mps.plugins.PluginEnablementConfigurable" id="preferences.mpsPluginEnablement" displayName="MPS Plugins"/>
 
     <fileEditorProvider implementation="jetbrains.mps.workbench.editors.MPSLanguageEditorProvider"/>
 
@@ -71,6 +72,7 @@
     <applicationService serviceImplementation="jetbrains.mps.ide.generator.GeneratorCacheComponent"/>
     <!-- next app service and app init listeners work together -->
     <applicationService serviceImplementation="jetbrains.mps.plugins.PluginLoaderRegistry"/>
+    <applicationService serviceImplementation="jetbrains.mps.plugins.PluginEnablementSettings"/>
     <applicationInitializedListener implementation="jetbrains.mps.plugins.MPSApplicationInitializedListener"/>
 
     <applicationService serviceImplementation="jetbrains.mps.plugins.applicationplugins.ApplicationPluginManager"/>

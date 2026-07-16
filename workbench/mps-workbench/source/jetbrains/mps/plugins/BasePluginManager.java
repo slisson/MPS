@@ -15,6 +15,8 @@
  */
 package jetbrains.mps.plugins;
 
+import com.intellij.openapi.application.Application;
+import com.intellij.openapi.application.ApplicationManager;
 import jetbrains.mps.logging.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -148,6 +150,12 @@ public abstract class BasePluginManager<T> implements PluginLoader {
 
   @Nullable
   private T createPluginChecked(PluginContributor contributor) {
+    if (!isPluginEnabled(contributor)) {
+      // keep the contributor registered (with a null plugin, which is allowed) so that it can be
+      // re-activated later without re-deploying the module
+      LOG.info(String.format("[%s] skipped deactivated plugin contributor %s", this, contributor));
+      return null;
+    }
     T plugin = null;
     try {
       // FIXME I'm not certain keeping null for PC is a good idea. Indeed, we ensure consistent
@@ -165,6 +173,15 @@ public abstract class BasePluginManager<T> implements PluginLoader {
       LOG.error(this + ": contributor " + contributor + " threw an exception during plugin creation " + t.getMessage(), t);
     }
     return plugin;
+  }
+
+  private static boolean isPluginEnabled(PluginContributor contributor) {
+    Application application = ApplicationManager.getApplication();
+    if (application == null || application.isDisposed()) {
+      return true;
+    }
+    PluginEnablementSettings settings = application.getService(PluginEnablementSettings.class);
+    return settings == null || settings.isEnabled(contributor.getStableId());
   }
 
   private void disposePlugins(final List<T> plugins) {

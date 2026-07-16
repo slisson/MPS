@@ -56,6 +56,12 @@ import java.util.Properties;
   }
 
   @Override
+  @NotNull
+  public String getStableId() {
+    return getModuleName();
+  }
+
+  @Override
   public BaseApplicationPlugin createApplicationPlugin() {
     String pluginClassName;
     boolean nameByConvention = false;

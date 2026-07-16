@@ -17,12 +17,23 @@ package jetbrains.mps.plugins;
 
 import jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin;
 import jetbrains.mps.plugins.projectplugins.BaseProjectPlugin;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
  * hashCode() and equals() must be overridden for PluginContributor!
  */
 public class PluginContributor extends AbstractPluginFactory {
+  /**
+   * An identifier that is stable across IDE restarts and module reloads (unlike identity/equality
+   * of contributor instances). It is used to persist per-plugin enablement
+   * ({@link PluginEnablementSettings}) and as the presentable name in the settings UI.
+   */
+  @NotNull
+  public String getStableId() {
+    return getClass().getName();
+  }
+
   @Nullable
   public BaseProjectPlugin createProjectPlugin() {
     return null;

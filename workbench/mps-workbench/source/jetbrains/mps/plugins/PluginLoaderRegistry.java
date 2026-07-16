@@ -187,6 +187,41 @@ public class PluginLoaderRegistry implements Disposable {
   }
 
   /**
+   * A snapshot of the plugin contributors known at the moment. EDT only.
+   */
+  @NotNull
+  public List<PluginContributor> getCurrentContributors() {
+    ThreadUtils.assertEDT();
+    return new ArrayList<>(myCurrentContributors);
+  }
+
+  /**
+   * Unloads and loads again the plugins of the contributors with the given stable ids
+   * (see {@link PluginContributor#getStableId()}) on all current loaders. EDT only.
+   * <p>
+   * Used when a plugin gets activated/deactivated in {@link PluginEnablementSettings}: re-creation
+   * of the plugin consults the settings ({@link BasePluginManager}), so the toggle takes effect
+   * without a module re-deploy or IDE restart.
+   */
+  public void reloadContributors(@NotNull Collection<String> stableIds) {
+    ThreadUtils.assertEDT();
+    Set<PluginContributor> affected = new LinkedHashSet<>();
+    for (PluginContributor contributor : myCurrentContributors) {
+      if (stableIds.contains(contributor.getStableId())) {
+        affected.add(contributor);
+      }
+    }
+    if (affected.isEmpty()) {
+      return;
+    }
+    LOG.info(String.format("Reloading %d contributors after enablement change", affected.size()));
+    ProgressMonitor monitor = new EmptyProgressMonitor();
+    unloadContributors(affected, myCurrentLoaders, monitor);
+    loadContributors(affected, myCurrentLoaders, monitor);
+    clearIDEMenusFromOurActionRefs();
+  }
+
+  /**
    * Loads the given plugin contributors one by one. Asynchronously via the platform edt queue.
    */
   private void loadContributors(Set<PluginContributor> contributors, Set<PluginLoader> pluginLoaders, ProgressMonitor monitor) {
@@ -305,6 +340,14 @@ public class PluginLoaderRegistry implements Disposable {
         String app = JavaNameUtil.shortName(myExtension.myApplicationPartContributor);
         String proj = JavaNameUtil.shortName(myExtension.myProjectPartContributor);
         return String.format("ext-point contributor (%s, %s) from %s", app, proj, getContributingPluginId());
+      }
+
+      @Override
+      @NotNull
+      public String getStableId() {
+        String app = JavaNameUtil.shortName(myExtension.myApplicationPartContributor);
+        String proj = JavaNameUtil.shortName(myExtension.myProjectPartContributor);
+        return String.format("%s (%s, %s)", getContributingPluginId(), app, proj);
       }
 
       private String getContributingPluginId() {
@@ -592,24 +635,25 @@ public class PluginLoaderRegistry implements Disposable {
       }
   }
 
-    @SuppressWarnings("UnstableApiUsage")
-    private void clearIDEMenusFromOurActionRefs() {
-      try {
-        WindowManagerEx windowManager = WindowManagerEx.getInstanceEx();
-        for (Project project : ProjectManager.getInstance().getOpenProjects()) {
-          ProjectFrameHelper frame = windowManager.getFrameHelper(project);
-          if (frame != null) {
-            frame.updateView();
-          }
-        }
+  }
 
-        ProjectFrameHelper frame = windowManager.getFrameHelper(null);
+  @SuppressWarnings("UnstableApiUsage")
+  private static void clearIDEMenusFromOurActionRefs() {
+    try {
+      WindowManagerEx windowManager = WindowManagerEx.getInstanceEx();
+      for (Project project : ProjectManager.getInstance().getOpenProjects()) {
+        ProjectFrameHelper frame = windowManager.getFrameHelper(project);
         if (frame != null) {
           frame.updateView();
         }
-      } catch (Throwable t) {
-        LOG.error("Caught exception while clearing IDE menus", t);
       }
+
+      ProjectFrameHelper frame = windowManager.getFrameHelper(null);
+      if (frame != null) {
+        frame.updateView();
+      }
+    } catch (Throwable t) {
+      LOG.error("Caught exception while clearing IDE menus", t);
     }
   }
 
