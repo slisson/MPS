@@ -120,7 +120,7 @@ public class EditorDependencyRecordingTest {
       return myListener.getChildrenToDependOn();
     }
 
-    /** (source node, link) dependencies on a reference that was resolved. */
+    /** (source node, link) dependencies on a reference link that was read, whether or not it held a reference. */
     Set<Pair<SNode, SReferenceLink>> references() {
       return myListener.getReferencesToDependOn();
     }
@@ -351,6 +351,50 @@ public class EditorDependencyRecordingTest {
     assertEquals("re-pointing the link is reported against the source, so that is what the reader depends on",
         Set.of(new Pair<>(source, ourRef)), deps.references());
     assertTrue("deleting the target must rebuild the reader too", deps.refTargets().contains(target.getReference()));
+  }
+
+  /**
+   * The counterpart to {@link #checkingEmptinessOfEmptyChildrenListDependsOnTheRole}, for references: reading a link
+   * that holds nothing depends on (source, link), so setting the reference for the first time invalidates the reader.
+   * <p/>
+   * This is the read the (source, link) dependency could not be recorded for while it was fired from {@code
+   * StaticReference.getTargetNode()}: with the link empty there is no SReference to fire it, {@code
+   * SNode.getReferenceTarget()} returned null straight away, and nothing was recorded at all. Setting the reference
+   * then matched no cell — an unset reference was the one case the removed whole-node self dependency was still
+   * covering. Re-pointing and clearing a reference were never affected, as those reads do resolve.
+   */
+  @Test
+  public void readingAnUnsetReferenceDependsOnTheSourcesLink() {
+    SNode root = singleRoot(1);
+    SNode[] target = new SNode[1];
+
+    Dependencies deps = record(() -> target[0] = root.getReferenceTarget(ourRef));
+
+    assertNull(target[0]);
+    assertEquals("setting the link must rebuild the reader", Set.of(new Pair<>(root, ourRef)), deps.references());
+    assertTrue("nothing resolved, so no target is depended upon", deps.refTargets().isEmpty());
+    assertTrue("an unset reference read records no whole-node dependency", deps.nodes().isEmpty());
+  }
+
+  /**
+   * The same via {@code getReference()}, which hands back the SReference rather than resolving it. It asks the same
+   * question of the same link and so records the same dependency, set or unset — but never a target one, as it does
+   * not resolve.
+   */
+  @Test
+  public void readingTheReferenceObjectDependsOnTheSourcesLinkOnly() {
+    myFactory = new TestModelFactory();
+    myFactory.createModel(2);
+    SNode source = myFactory.getRoot(1);
+    source.setReferenceTarget(ourRef, myFactory.getRoot(2));
+    myModelAccess.enableRead();
+    myFactory.attachTo(myRepo);
+
+    Dependencies deps = record(() -> source.getReference(ourRef));
+
+    assertEquals(Set.of(new Pair<>(source, ourRef)), deps.references());
+    assertTrue("the reference was not resolved, so its target was not read", deps.refTargets().isEmpty());
+    assertTrue(deps.nodes().isEmpty());
   }
 
   // ---------------------------------------------------------------------------------------------------------------

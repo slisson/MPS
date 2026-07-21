@@ -271,10 +271,18 @@ final class AttachedNodeOwner extends SNodeOwner {
     if (md != null) {
       md.fireReferenceRead(node, link);
     }
-    // fireNodeReferentReadAccess();
-    if (myModel.canFireReadEvent()) {
-      NodeReadEventsCaster.fireNodeReferentReadAccess(node, link.getRoleName(), target);
+    if (!myModel.canFireReadEvent()) {
+      return;
     }
+    // Deliberately notified even when the link holds no reference, for the same reason fireChildrenRead() is: the
+    // reader's outcome depends on the link being empty, so it has to be invalidated once the reference is set. The
+    // (source, link) dependency cannot be left to StaticReference.getTargetNode(), which needs an SReference to exist
+    // and so never runs for an unset link -- setting a reference for the first time then invalidated nothing.
+    // Resolving a set reference records the pair twice, here and there; it is a set, and the target dependency
+    // StaticReference adds alongside it can only be known there.
+    NodeReadAccessCasterInEditor.fireReferenceReadAccessed(node, link);
+    // fireNodeReferentReadAccess();
+    NodeReadEventsCaster.fireNodeReferentReadAccess(node, link.getRoleName(), target);
   }
 
   @Override

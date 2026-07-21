@@ -64,6 +64,18 @@ public class NodeReadAccessCasterInEditor {
     }
   }
 
+  /**
+   * A reference link was read, whether or not it holds a reference. Records the (source, link) dependency alone; the
+   * dependency on the resolved target comes from {@link #fireReferenceTargetReadAccessed}, which cannot run when the
+   * link is empty.
+   */
+  public static void fireReferenceReadAccessed(SNode sourceNode, SReferenceLink link) {
+    ListenersContainer listenersContainer = ourListenersContainer.get();
+    if (listenersContainer != null) {
+      listenersContainer.fireReferenceReadAccessed(sourceNode, link);
+    }
+  }
+
   public static void fireReferenceTargetReadAccessed(SNode sourceNode, SReferenceLink link,
       SModelReference targetModelReference, SNodeId targetNodeId) {
     ListenersContainer listenersContainer = ourListenersContainer.get();
@@ -218,6 +230,11 @@ public class NodeReadAccessCasterInEditor {
     public void fireChildrenReadAccessed(SNode node, SContainmentLink role) {
       if (myEventsBlocked || myListenersStack.isEmpty()) return;
       myListenersStack.peek().childrenReadAccess(node, role);
+    }
+
+    public void fireReferenceReadAccessed(SNode sourceNode, SReferenceLink link) {
+      if (myEventsBlocked || myListenersStack.isEmpty()) return;
+      myListenersStack.peek().referenceReadAccess(sourceNode, link);
     }
 
     public void fireReferenceTargetReadAccessed(SNode sourceNode, SReferenceLink link,
